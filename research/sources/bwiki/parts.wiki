@@ -1,0 +1,154 @@
+{{面包屑|首页=沉沦者的黑流树海|本页=$引擎配件目录}}
+{{DISPLAYTITLE:引擎配件目录}}
+<div class="outfit-gallery-title">
+{{#arraymap:拟造物质编目:收藏品,乌托邦幸福论:理想域,结局:结局,引擎配件目录:零件,实践随行录:月度小队,CG:CG|,|@@|
+[[沉沦者的黑流树海/{{#explode:@@|:|0}}|<span style="color: {{#ifeq:{{FULLPAGENAME}}|沉沦者的黑流树海/{{#explode:@@|:|0}}|#fff|#ddd}};">{{#explode:@@|:|1}}</span>]]
+|&nbsp;·&nbsp;}}
+</div>
+<bstyle>
+.rogue-scrap-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+gap: 16px;
+margin: 16px 0;
+}
+.rogue-scrap-card {
+background: linear-gradient(135deg, #16161a 0%, #09080a 100%);
+color: #f4f2ec;
+border-radius: 4px;
+padding: 14px;
+border-left: 4px solid #9aa7a5;
+display: flex;
+flex-direction: column;
+gap: 8px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+min-height: 180px; /* 适当增加最小高度，给长文本和范围留足空间 */
+box-sizing: border-box;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.rogue-scrap-card:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+}
+.rogue-scrap-card.rarity-RARE { border-left-color: #38d0d4; }
+.rogue-scrap-card.rarity-SUPER_RARE { border-left-color: #e8b341; }
+.rogue-scrap-head {
+display: flex;
+align-items: center;
+gap: 10px;
+border-bottom: 1px solid rgba(244, 242, 236, 0.1);
+padding-bottom: 6px;
+}
+.rogue-scrap-name {
+font-size: 16px;
+font-weight: 700;
+flex: 1;
+color: #9aa7a5;
+}
+.rogue-scrap-card.rarity-RARE .rogue-scrap-name { color: #38d0d4; }
+.rogue-scrap-card.rarity-SUPER_RARE .rogue-scrap-name { color: #e8b341; }
+.rogue-scrap-usage {
+line-height: 1.5;
+font-size: 13.5px;
+}
+.rogue-scrap-desc {
+opacity: .5;
+font-style: italic;
+font-size: 12px;
+line-height: 1.4;
+border-left: 2px solid rgba(244, 242, 236, 0.2);
+padding-left: 6px;
+margin-bottom: 4px;
+}
+.rogue-scrap-foot {
+margin-top: auto;
+display: flex;
+align-items: flex-end; /* 让价格和范围底部对齐 */
+justify-content: space-between;
+padding-top: 8px;
+border-top: 1px dashed rgba(244, 242, 236, 0.1);
+font-size: 13px;
+}
+.rogue-scrap-price-box {
+padding-bottom: 4px; /* 让文字与右侧图形在视觉上更平衡 */
+}
+.rogue-scrap-price {
+color: #e8b341;
+font-weight: bold;
+}
+.rogue-scrap-range-container {
+width: 65px; /* 适当放宽容器，留出容错空间 */
+height: 65px;/* 固定高度 */
+display: flex;
+align-items: center;
+justify-content: center;
+background: rgba(0, 0, 0, 0.3); /* 略微深色的背景衬托范围格子 */
+border: 1px solid rgba(244, 242, 236, 0.1);
+border-radius: 4px;
+overflow: hidden;/* 必须：隐藏溢出部分 */
+position: relative;
+}
+.rogue-scrap-range-container > div {
+transform: scale(0.45); /* 重点：因为是7x7的巨型div矩阵，强力缩小至 45% */
+transform-origin: center center;
+position: absolute;
+width: max-content !important; /* 强制其内部宽度由子节点撑开，不换行 */
+white-space: nowrap;
+}
+</bstyle>
+===加工品===
+[[file:rogue6_move_icon.png|46px|link=]]提供特殊的地图移动能力，通常有使用次数限制
+<div class="rogue-scrap-grid">
+{{肉鸽零件|图标=rogue6_scrap_M_01|名称=报废轮子|类型=MOVE|稀有度=NORMAL|效果=装载后能够移动至{{color|20b4a1|直线2格内}}任意节点（可移动1次）|描述=继续损坏下去，它就无法定义了。|范围=0000000,0001000,0001000,0112110,0001000,0001000,0000000|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_02|名称=报废假肢|类型=MOVE|稀有度=NORMAL|效果=装载后能够移动至{{color|20b4a1|相邻8格内}}任意节点（可移动1次）|描述=战争将它赐予幸存者，它将载着幸存者重返战场。|范围=0000000,0000000,0011100,0012100,0011100,0000000,0000000|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_03|名称=标准引擎|类型=MOVE|稀有度=NORMAL|效果=装载后能够移动至{{color|20b4a1|相邻8格内}}任意节点（可移动3次）|描述=可否听清轰鸣声后少了些什么？|范围=0000000,0000000,0011100,0012100,0011100,0000000,0000000|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_04|名称=重弹簧|类型=MOVE|稀有度=RARE|效果=装载后能够移动至{{color|20b4a1|周围12格内}}任意节点，无需行动力，无法被携带至下一区域（可移动1次）|描述=延展的第一步，生命的最后一步。|范围=0000000,0001000,0011100,0112110,0011100,0001000,0000000|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_05|名称=气垫底座|类型=MOVE|稀有度=NORMAL|效果=装载后能够移动至{{color|20b4a1|周围12格内}}任意节点（可移动2次）|描述=厚实却脆弱的气垫能隔绝一切不快。|范围=0000000,0001000,0011100,0112110,0011100,0001000,0000000|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_06|名称=试作外骨骼|类型=MOVE|稀有度=NORMAL|效果=装载后能够移动至{{color|20b4a1|直线3格内}}任意节点（可移动2次）|描述=最醇厚的毒药叫做力所不能及。|范围=0001000,0001000,0001000,1112111,0001000,0001000,0001000|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_07|名称=小八界|类型=MOVE|稀有度=NORMAL|效果=装载并使用后会被随机传送至任意{{color|20b4a1|非作战节点}}，无需行动力，无法被携带至下一区域（可移动1次）|描述=不要问它为何在此，也不要问它将去何方，它只是来玩的。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_08|名称=一次性喷气背包|类型=MOVE|稀有度=RARE|效果=装载后能够移动至{{color|20b4a1|任意节点}}，无需行动力（可移动1次）|描述=抬头抓取天空的人不会回头看那被灼烧殆尽的大地。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_09|名称=老妈妈的融雪|类型=MOVE|稀有度=RARE|效果=装载后能够移动至任意{{color|20b4a1|非作战节点}}，且移动后希望+2（可移动1次）|描述=一位兽主消逝前最后的愿望。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_10|名称=坎诺特的触须|类型=MOVE|稀有度=RARE|效果=装载后能够移动至任意{{color|20b4a1|行商节点}}，且每次移动后源石锭+4（可移动2次）|描述=不规则的蠕动恰如急速波动的价格。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_11|名称=结构性原理|类型=MOVE|稀有度=SUPER_RARE|效果=装载后能够移动至{{color|20b4a1|任意节点}}（可移动3次）|描述=能源耗尽前，将万物载离蛮荒。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_12|名称=“简易遥控器”|类型=MOVE|稀有度=SUPER_RARE|效果=装载后能够移动至{{color|20b4a1|相邻8格内}}任意节点，无需行动力，且移动后行动力+3（可移动1次）|描述=讽刺的是，控制兽群的机械即将遥控探索者的命运。|范围=0000000,0000000,0011100,0012100,0011100,0000000,0000000|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_13|名称=紧急逃生座椅|类型=MOVE|稀有度=RARE|效果=装载后能够移动至任意{{color|20b4a1|险路尽头}}，{{color|20b4a1|险路小径}}或{{color|20b4a1|险路恶敌}}节点（可移动1次）|描述=这只是个座椅，我们带着它干啥？等等，什么叫里面有燃料？|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_14|名称=力反馈方向盘|类型=MOVE|稀有度=SUPER_RARE|效果=装载后能够移动至{{color|20b4a1|同行或同列的}}任意节点（可移动2次）|描述=质量很不错，适合所有喜欢横冲直撞的人使用。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_15|名称=鸣笛|类型=MOVE|稀有度=NORMAL|效果=装载后能够移动至{{color|20b4a1|周围12格内}}的任意作战节点（可移动1次）|描述=按下它，丛林就会为你让出一条路。不会吗？那为什么一直按？|范围=0000000,0001000,0011100,0112110,0011100,0001000,0000000|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_M_16|名称=坎诺特特快|类型=MOVE|稀有度=SUPER_RARE|效果=装载后能够移动至任意{{color|20b4a1|不期而遇节点}}，并将其转换为{{color|20b4a1|诡意行商}}（可移动1次）|描述=快得不能再快了，你甚至不明白自己到底是如何来到他面前的。|价格=1}}
+</div>
+===自然物===
+[[file:rogue6_goods_icon.png|46px|link=]]价值会随游戏进程变化，通常能在售出时获得更多源石锭
+<div class="rogue-scrap-grid">
+{{肉鸽零件|图标=rogue6_scrap_G_01|名称=种子|类型=GOODS|稀有度=NORMAL|效果=可在秘境行商中培育并获得奖励|描述=它在孕育什么？|价格=2}}
+{{肉鸽零件|图标=rogue6_scrap_G_02|名称=血蕈|类型=GOODS|稀有度=NORMAL|效果=每次作战后估价+2|描述=请在此大快朵颐，直至你被装入餐盘。|价格=2}}
+{{肉鸽零件|图标=rogue6_scrap_G_03|名称=雾滚草|类型=GOODS|稀有度=NORMAL|效果=每次揭示节点信息时估价+1|描述=在迷雾裹挟下，离大地与根系越来越远。|价格=2}}
+{{肉鸽零件|图标=rogue6_scrap_G_04|名称=回声玉米|类型=GOODS|稀有度=RARE|效果=每次招募干员时估价+3|描述=每一粒甜言蜜语都清晰而饱满。|价格=4}}
+{{肉鸽零件|图标=rogue6_scrap_G_05|名称=浪花|类型=GOODS|稀有度=NORMAL|效果=每次移动后，估价会随机变化|描述=自然造就改变，思维将之渲染，好让生灵傲然宣称自我的自由。|价格=3}}
+{{肉鸽零件|图标=rogue6_scrap_G_06|名称=霜晶树|类型=GOODS|稀有度=RARE|效果=每次完美作战后估价+4，非完美作战后自身损坏|描述=在阳光穿透脏腑前，展现未融的精致。|价格=6}}
+{{肉鸽零件|图标=rogue6_scrap_G_07|名称=多生苔藓|类型=GOODS|稀有度=RARE|效果=获得时立刻获得3个<枯苔藓球>，获得零件时估价+1|描述=爬满泥土、树木、梦想、成长。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_G_08|名称=枯苔藓球|类型=GOODS|稀有度=NORMAL|效果=估价较低的自然物|描述=而后腐败、枯萎、绝望、死亡。|价格=2}}
+{{肉鸽零件|图标=rogue6_scrap_G_09|名称=板藤|类型=GOODS|稀有度=SUPER_RARE|效果=每次获得零件时估价+4|描述=抓住同类，不愿再放手。|价格=8}}
+{{肉鸽零件|图标=rogue6_scrap_G_10|名称=恋家果|类型=GOODS|稀有度=SUPER_RARE|效果=每次移动后估价-2|描述=受称颂蒙蔽，亲手启动生命的倒计时。|价格=32}}
+{{肉鸽零件|图标=rogue6_scrap_G_11|名称=光彩松露|类型=GOODS|稀有度=SUPER_RARE|效果=估价较高的自然物|描述=如果不被挖掘与品尝，它本配不上如此殊荣。|价格=32}}
+{{肉鸽零件|图标=rogue6_scrap_G_12|名称=笼控器|类型=GOODS|稀有度=SUPER_RARE|效果=在不期而遇中存在特殊作用|描述=短暂的安静，并不意味着真正的控制。|价格=16}}
+{{肉鸽零件|图标=rogue6_scrap_G_13|名称=薄葬草|类型=GOODS|稀有度=NORMAL|效果=估价较低，在失与得中能交换更加稀有的自然物|描述=它们绽放在最贫瘠的土地上，然后死去，变成后来者的养料。|价格=3}}
+{{肉鸽零件|图标=rogue6_scrap_G_14|名称=生逝|类型=GOODS|稀有度=RARE|效果=初始估价较低，每次移动后，消耗1源石锭，获得3估价|描述=我们排着队，每响起一次钟声，就会有一颗落下。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_G_15|名称=血橙|类型=GOODS|稀有度=NORMAL|效果=进入非战斗节点时估价+2|描述=切开我，享用我，死亡会把我们变成花朵。|价格=2}}
+{{肉鸽零件|图标=rogue6_scrap_G_16|名称=旅行绒|类型=GOODS|稀有度=SUPER_RARE|效果=每次移动时，根据移动距离提升估价|描述=去到很远很远的地方，然后变成漫长旅途的一张书签。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_G_17|名称=恋心草|类型=GOODS|稀有度=RARE|效果=每次战斗结束后估价+6，敌人进入目标点后扣除的目标生命+1|描述=他能活着回来，他没能活着回来……|价格=4}}
+{{肉鸽零件|图标=rogue6_scrap_G_18|名称=无缘果|类型=GOODS|稀有度=RARE|效果=进入诡意行商或秘境行商时估价+10，在诡意行商中卖出时刷新商品（消耗刷新次数，耗尽时无法刷新）|描述=本不是为了被卖个好价钱才长成这样的。|价格=4}}
+{{肉鸽零件|图标=rogue6_scrap_G_19|名称=种荚|类型=GOODS|稀有度=NORMAL|效果=进入下一区域时，获得1个种子|描述=愿所有孩子都有机会在和平中成长。|价格=3}}
+</div>
+===概念体===
+[[file:rogue6_passive_icon.png|46px|link=]]携带触发被动效果
+<div class="rogue-scrap-grid">
+{{肉鸽零件|图标=rogue6_scrap_P_01|名称=白模鸟|类型=PASSIVE|稀有度=RARE|效果=装载加工品移动至{{color|20b4a1|作战节点}}时，本次战斗我方单位攻击速度+50，战斗后获得1个随机收藏品（可激活1次）|描述=源石侵染前的羽翼遮蔽天空。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_P_02|名称=白模狗|类型=PASSIVE|稀有度=RARE|效果=装载加工品移动至{{color|20b4a1|非作战节点}}时，获得1个随机收藏品（可激活1次）|描述=源石侵染前的吼声响彻大地。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_P_03|名称=白模鱼|类型=PASSIVE|稀有度=RARE|效果=装载加工品移动至{{color|20b4a1|任意节点}}时，获得3点护盾（可激活1次）|描述=源石侵染前的尾鳍搅动海洋。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_P_04|名称=涂装黎博利|类型=PASSIVE|稀有度=RARE|效果=装载加工品移动至{{color|20b4a1|作战节点}}时，本次战斗我方单位攻击速度+35|描述=源石赐予了他们畅想与灵性。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_P_05|名称=涂装佩洛|类型=PASSIVE|稀有度=RARE|效果=装载加工品移动至{{color|20b4a1|得偿所愿节点}}时，获得1个随机收藏品|描述=源石赐予了他们忍耐与等待。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_P_06|名称=涂装阿戈尔|类型=PASSIVE|稀有度=RARE|效果=装载加工品移动至{{color|20b4a1|失与得节点}}时，获得2个随机收藏品|描述=源石赐予了他们沉默与发展。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_P_07|名称=洛伦茨之眼|类型=PASSIVE|稀有度=RARE|效果=装载加工品移动至{{color|20b4a1|羽瞰点}}时，揭露全图视野（可激活1次）|描述=在注视的瞬间，可能性被化为确定。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_P_08|名称=白模坎诺特|类型=PASSIVE|稀有度=RARE|效果=卖出任意一件价值不低于50源石锭的自然物时，获得2个珍贵的随机收藏品（可激活1次）|描述=等价物的概念普及后，合作与分工成为可能。这也是文明的基石之一。|价格=1}}
+{{肉鸽零件|图标=rogue6_scrap_P_09|名称=涂装坎诺特|类型=PASSIVE|稀有度=RARE|效果=装载加工品移动至{{color|20b4a1|安全的角落}}时，获得1个随机加工品|描述=被剥去威胁之后，源石也不过是种一般等价物。人们又何尝不能是呢？|价格=1}}
+</div>

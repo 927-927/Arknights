@@ -1,0 +1,27 @@
+geometry + prices            0.0s
+ap curves floor 1            0.9s
+ap curves floor 2            8.1s
+ap curves floor 3            28.7s
+ap curves floor 4            68.1s
+ap curves floor 5            133.1s
+voi floor 1                  133.1s
+voi floor 2                  133.3s
+voi floor 3                  133.8s
+voi floor 4                  134.9s
+voi floor 5                  135.7s
+parts floor 2                142.1s
+parts floor 3                195.9s
+parts floor 4                325.2s
+parts floor 5                481.4s
+boss floor 3                 482.0s
+boss floor 5                 483.2s
+hidden exit                  484.1s
+ending 2                     484.2s
+natural items                486.4s
+chain base                   513.4s
+chain pegasus                576.1s
+chain griffin                606.5s
+chain pioneer                1563.4s
+chain evacSeeker             1604.2s
+sensitivity                  1612.5s
+wrote results.js             1612.5s

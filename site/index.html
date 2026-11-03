@@ -1,0 +1,597 @@
+<title>Black Flow Ledger</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Strategy and resource-allocation research for Arknights Integrated Strategies 6, 沉沦者的黑流树海, with simulations on the real map layouts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap">
+<style>
+/* Layout: a survey ledger. One reading column, figures break wider, a sticky index bar. */
+:root {
+  --bg: #eef1ec;
+  --surface: #f8faf6;
+  --ink: #142019;
+  --ink-2: #4a5850;
+  --muted: #6f7c74;
+  --rule: #d3dbd2;
+  --rule-strong: #b9c4b9;
+  --accent: #9a5a0c;
+  --accent-soft: #f1e3cc;
+  --ap: #17706a;
+  --ap-soft: #d7ebe7;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4;
+  --good: #0ca30c; --warn: #fab219; --crit: #d03b3b;
+  --grid: #e1e6df;
+  --axis: #c3cbc1;
+  --on-fill: #ffffff;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", "Noto Sans SC", sans-serif;
+  --font-body: "IBM Plex Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --font-cjk: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --measure: 68ch;
+  --wide: 1120px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1411; --surface: #151d19; --ink: #e5ebe5; --ink-2: #aab6ad; --muted: #85928a;
+    --rule: #26312b; --rule-strong: #34413a; --accent: #e3a650; --accent-soft: #33281a; --ap: #4fb8ad; --ap-soft: #14302c;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181;
+    --grid: #222c27; --axis: #36423b; --on-fill: #ffffff;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1411; --surface: #151d19; --ink: #e5ebe5; --ink-2: #aab6ad; --muted: #85928a;
+  --rule: #26312b; --rule-strong: #34413a; --accent: #e3a650; --accent-soft: #33281a; --ap: #4fb8ad; --ap-soft: #14302c;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181;
+  --grid: #222c27; --axis: #36423b; --on-fill: #ffffff;
+  color-scheme: dark;
+}
+/* language switch: the inactive language is hidden */
+:root:not([data-lang="zh"]) [data-l="zh"], :root[data-lang="zh"] [data-l="en"] { display: none !important; }
+:root[data-lang="zh"] { --measure: 40em; }
+:root[data-lang="zh"] .prose, :root[data-lang="zh"] .thesis, :root[data-lang="zh"] figcaption { line-height: 1.8; }
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--ap); outline-offset: 2px; }
+.zh { font-family: var(--font-cjk); font-weight: 500; }
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.wrap { max-width: var(--wide); margin: 0 auto; }
+
+/* masthead */
+.masthead { padding-block: 40px 28px; display: grid; gap: 22px; }
+.stamp { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.08em; font-size: 14px; color: var(--ink-2); }
+.stamp .seal { border: 1.5px solid var(--accent); color: var(--accent); padding: 2px 8px; border-radius: 3px; font-weight: 700; }
+.langsw { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: 5px; overflow: hidden; margin-left: auto; }
+.langsw button { font: inherit; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.06em; font-size: 14px; padding: 3px 10px; border: 0; background: transparent; color: var(--ink-2); cursor: pointer; }
+.langsw button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(44px, 9vw, 92px); line-height: 0.92; letter-spacing: -0.01em; margin: 0; text-wrap: balance; text-transform: uppercase; }
+h1 .zhtitle { font-family: var(--font-cjk); font-weight: 700; letter-spacing: 0.04em; text-transform: none; }
+h1 .zh { display: block; font-size: 0.34em; letter-spacing: 0.12em; margin-top: 14px; color: var(--ink-2); text-transform: none; }
+.thesis { max-width: var(--measure); font-size: 19px; line-height: 1.55; margin: 0; color: var(--ink); }
+.figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid var(--rule-strong); border-bottom: 1px solid var(--rule-strong); }
+.fig { padding: 16px 18px 18px 0; display: grid; gap: 6px; align-content: start; min-width: 0; }
+.fig + .fig { padding-left: 18px; border-left: 1px solid var(--rule); }
+.fig .v { font-family: var(--font-display); font-weight: 600; font-size: 44px; line-height: 1; color: var(--ink); }
+.fig .v small { font-size: 0.45em; color: var(--ink-2); font-weight: 500; margin-left: 4px; }
+.fig .l { font-size: 14px; color: var(--ink-2); line-height: 1.5; }
+@media (max-width: 720px) { .fig + .fig { padding-left: 0; border-left: 0; border-top: 1px solid var(--rule); } }
+
+/* index bar */
+.index { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--rule); margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
+.index .bar { max-width: var(--wide); margin: 0 auto; display: flex; align-items: center; gap: 8px; }
+.index ol { list-style: none; margin: 0; padding: 0; flex: 1; min-width: 0; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.index ol::-webkit-scrollbar { display: none; }
+.index a { display: block; white-space: nowrap; padding: 10px 10px; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 14px; color: var(--ink-2); text-decoration: none; border-bottom: 2px solid transparent; }
+.index a:hover { color: var(--ink); }
+.index a.on { color: var(--ink); border-bottom-color: var(--accent); }
+.index .langsw { margin-left: 0; flex: none; }
+
+/* sections */
+main { display: grid; gap: 0; }
+section { padding-block: 48px 8px; border-bottom: 1px solid var(--rule); display: grid; gap: 18px; scroll-margin-top: 48px; }
+section > * { min-width: 0; }
+.eyebrow { font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 14px; color: var(--accent); display: flex; gap: 10px; align-items: baseline; }
+.eyebrow .zh { color: var(--ink-2); letter-spacing: 0.06em; text-transform: none; font-size: 15px; }
+h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 4.6vw, 44px); line-height: 1.05; margin: 0; text-wrap: balance; max-width: 26ch; text-transform: uppercase; letter-spacing: 0.005em; }
+:root[data-lang="zh"] h2 { font-family: var(--font-cjk); letter-spacing: 0.02em; font-size: clamp(26px, 3.8vw, 38px); line-height: 1.25; max-width: 20em; }
+h3 { font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 1.15; margin: 8px 0 0; letter-spacing: 0.02em; text-transform: uppercase; }
+:root[data-lang="zh"] h3 { font-family: var(--font-cjk); font-size: 20px; }
+.prose { max-width: var(--measure); display: grid; gap: 14px; min-width: 0; }
+.prose .num { overflow-wrap: anywhere; }
+.prose li, .prose p { min-width: 0; }
+.prose p { margin: 0; }
+.prose ul, .prose ol { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.rule-box { max-width: var(--measure); border-left: 3px solid var(--ap); background: var(--ap-soft); padding: 12px 16px; border-radius: 0 6px 6px 0; }
+.rule-box b.h { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.08em; font-size: 14px; display: block; color: var(--ap); margin-bottom: 2px; }
+.rule-box p { margin: 0; }
+.tag { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; padding: 1px 7px; border-radius: 3px; border: 1px solid currentColor; vertical-align: 2px; }
+.tag.exact { color: var(--ap); }
+.tag.model { color: var(--accent); }
+.tag.assume { color: var(--muted); }
+
+/* findings list */
+.findings { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 28px; }
+.findings li { padding: 14px 0; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 2.4em 1fr; gap: 4px 12px; min-width: 0; align-content: start; }
+.findings .k { font-family: var(--font-display); font-weight: 700; font-size: 26px; color: var(--accent); line-height: 1; grid-row: span 3; }
+.findings h4 { margin: 0; font-size: 16px; font-weight: 600; line-height: 1.4; }
+.findings p { margin: 0; color: var(--ink-2); font-size: 15px; }
+.findings a { font-size: 14px; }
+
+/* figures */
+figure { margin: 0; display: grid; gap: 10px; min-width: 0; }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; min-width: 0; }
+figcaption { font-size: 14px; color: var(--ink-2); max-width: var(--measure); }
+figcaption b { color: var(--ink); font-weight: 600; }
+.chart { width: 100%; position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { font-family: var(--font-body); fill: var(--ink-2); font-size: 12px; }
+.chart .axis-label { fill: var(--muted); font-size: 12px; }
+.chart .val { fill: var(--ink); font-size: 12px; font-family: var(--font-mono); }
+.chart .gridline { stroke: var(--grid); stroke-width: 1; }
+.chart .baseline { stroke: var(--axis); stroke-width: 1; }
+.chart .ref { stroke: var(--accent); stroke-width: 1.5; }
+.chart .ref-label { fill: var(--accent); font-size: 12px; font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 14px; height: 4px; border-radius: 2px; display: inline-block; }
+.legend i.dot { width: 9px; height: 9px; border-radius: 50%; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12.5px; line-height: 1.45; padding: 7px 9px; border-radius: 5px; max-width: 260px; z-index: 3; transform: translate(-50%, calc(-100% - 10px)); white-space: nowrap; }
+.tip b { font-weight: 600; }
+details.table-view { font-size: 14px; }
+details.table-view summary { cursor: pointer; color: var(--ink-2); font-size: 13px; width: max-content; max-width: 100%; }
+.tscroll { overflow-x: auto; margin-top: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--font-display); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 13px; color: var(--ink-2); }
+td.n, th.n { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; padding-left: 10px; }
+tr.hl td { background: var(--accent-soft); }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+.grid5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.mini-title { font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; font-size: 15px; margin: 0 0 4px; }
+
+/* resource diagram */
+.flow svg { display: block; width: 100%; height: auto; }
+.flow .box rect { fill: var(--surface); stroke: var(--rule-strong); stroke-width: 1; }
+.flow .box.key rect { stroke: var(--ap); stroke-width: 2; }
+.flow .box text { fill: var(--ink); font-family: var(--font-display); font-weight: 600; font-size: 15px; letter-spacing: 0.04em; text-transform: uppercase; }
+.flow .box .sub { fill: var(--ink-2); font-family: var(--font-body); font-weight: 400; font-size: 12px; text-transform: none; letter-spacing: 0; }
+.flow path { fill: none; stroke: var(--muted); stroke-width: 1.4; }
+.flow path.hot { stroke: var(--ap); stroke-width: 2; }
+.flow .lbl { fill: var(--ink-2); font-size: 11.5px; font-family: var(--font-body); }
+.flow .lbl.hot { fill: var(--ap); font-weight: 600; }
+
+/* maps */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.gallery button { all: unset; cursor: pointer; display: grid; gap: 4px; padding: 8px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); min-width: 0; }
+.gallery button:hover { border-color: var(--rule-strong); }
+.gallery button:focus-visible { outline: 2px solid var(--ap); outline-offset: 2px; }
+.gallery .cap { font-size: 12px; color: var(--ink-2); display: flex; justify-content: space-between; gap: 6px; font-family: var(--font-mono); }
+.gallery .cap b { color: var(--ink); font-weight: 500; }
+.gallery .warnmark { color: var(--crit); font-weight: 600; }
+.floor-label { font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; font-size: 15px; margin: 6px 0 -2px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.floor-label .zh { font-size: 14px; color: var(--ink-2); }
+.mapsvg .edge { stroke: var(--rule-strong); stroke-width: 3; stroke-linecap: round; }
+.mapsvg .node rect { stroke-width: 1.5; }
+.mapsvg .node text { font-family: var(--font-cjk); font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+.mapsvg .start-ring { fill: none; stroke: var(--ap); stroke-width: 2.5; }
+.mapsvg .route { fill: none; stroke: var(--ap); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.9; }
+.mapsvg .jump { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; }
+.mapsvg .stepno { font-family: var(--font-mono); font-size: 10px; fill: var(--surface); font-weight: 500; text-anchor: middle; dominant-baseline: central; }
+.mapsvg .stepdot { fill: var(--ap); }
+
+/* lab */
+.lab { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; align-items: start; }
+@media (max-width: 860px) { .lab { grid-template-columns: 1fr; } }
+.controls { display: grid; gap: 12px; font-size: 14px; }
+.controls label { display: grid; gap: 4px; color: var(--ink-2); font-size: 13px; }
+.controls select, .controls input[type="number"] { font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid var(--rule-strong); border-radius: 5px; background: var(--surface); color: var(--ink); width: 100%; }
+.seg { display: flex; flex-wrap: wrap; gap: 4px; }
+.seg button, .btn { font: inherit; font-size: 14px; padding: 6px 10px; border: 1px solid var(--rule-strong); border-radius: 5px; background: var(--surface); color: var(--ink); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn.primary { background: var(--ap); border-color: var(--ap); color: #ffffff; }
+.btn:hover, .seg button:hover { border-color: var(--ink-2); }
+.check { display: flex !important; align-items: center; gap: 8px; color: var(--ink) !important; font-size: 14px !important; }
+.readout { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px 14px; border-top: 1px solid var(--rule); padding-top: 12px; }
+.readout div { display: grid; gap: 2px; }
+.readout .rl { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; font-family: var(--font-display); font-weight: 600; }
+.readout .rv { font-family: var(--font-display); font-weight: 600; font-size: 24px; line-height: 1.1; }
+.steps { font-size: 13.5px; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.steps span { background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; padding: 1px 6px; }
+.steps span.jump { border-color: var(--accent); color: var(--accent); }
+.steps span .zh { border: 0; padding: 0; background: none; }
+.keyrow { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--ink-2); }
+.keyrow span { display: inline-flex; gap: 5px; align-items: center; }
+.keyrow i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.slider-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--ap); grid-column: 1 / -1; }
+.slider-row output { font-family: var(--font-mono); font-size: 13px; min-width: 3ch; text-align: right; color: var(--ink); }
+details.tune summary { cursor: pointer; font-size: 13px; color: var(--ink-2); }
+details.tune .slider-row { margin-top: 6px; }
+
+footer { padding-block: 32px 48px; color: var(--ink-2); font-size: 14px; display: grid; gap: 8px; max-width: var(--measure); }
+</style>
+<script>
+(function () {
+  var lang = 'en';
+  try { lang = localStorage.getItem('bfl-lang') || ((navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en'); } catch (e) {}
+  document.documentElement.setAttribute('data-lang', lang === 'zh' ? 'zh' : 'en');
+  document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+})();
+</script>
+
+<div class="wrap">
+<header class="masthead">
+  <div class="stamp"><span class="seal">集成战略 #6</span><span class="zh">沉沦者的黑流树海</span><span data-l="en">Resource &amp; route research</span><span data-l="zh">资源与路线研究</span><span><span data-l="en">Data to</span><span data-l="zh">数据截至</span> <span data-k="genDate">2026-11</span></span>
+    <span class="langsw" role="group" aria-label="Language / 语言"><button type="button" data-setlang="en">EN</button><button type="button" data-setlang="zh">中文</button></span></div>
+  <h1><span data-l="en">Black Flow Ledger</span><span data-l="zh" class="zhtitle">树海账本</span><span class="zh"><span data-l="en">树海账本 · 行动力、希望与零件的定价</span><span data-l="zh">Black Flow Ledger · 行动力、希望与零件的定价</span></span></h1>
+  <p class="thesis" data-l="en">In 黑流树海 every currency is priced against one scarce thing: the step. This ledger reconstructs the exchange rates from the game's own menus and shops, then runs an exact route optimiser and a fog-of-war player on all 43 real map layouts to measure what a step, a part, a box slot and a piece of information are actually worth.</p>
+  <p class="thesis" data-l="zh">在黑流树海里，所有资源最终都要和一种稀缺之物比价：每一步行动力。本页从游戏自己的选项菜单和商店价格里还原出各资源的汇率，再在全部 43 张真实地图模板上运行精确的路线最优解和“迷雾中”玩家模拟，量化一步行动力、一个加工品、一格零件箱和一份视野信息到底值多少。</p>
+  <div class="figs">
+    <div class="fig"><div class="v"><span data-k="lamHopeMid">2.2</span><small><span data-l="en">hope</span><span data-l="zh">希望</span></small></div><div class="l"><span data-l="en">What one extra AP buys on the map at base budget, floors Ⅱ–Ⅴ (fog play). The exit pays <b>1 hope</b> for it.</span><span data-l="zh">基础预算下，第Ⅱ–Ⅴ层多 1 点行动力在地图上能换来的价值（迷雾模拟）。险路尽头只按 <b>1 希望</b> 回收它。</span></div></div>
+    <div class="fig"><div class="v"><span data-k="floor1Rail">3 / 3</span></div><div class="l"><span data-l="en">Floor Ⅰ layouts whose exit is exactly 5 steps away, with exactly 5 AP. The first zone is on rails.</span><span data-l="zh">第Ⅰ层出口距起点恰好 5 步、行动力也恰好 5 点的模板数。第一层几乎没有选择余地。</span></div></div>
+    <div class="fig"><div class="v"><span data-k="bossOut5">6 / 10</span></div><div class="l"><span data-l="en">Floor Ⅴ layouts where the boss is beyond walking range. Most runs meet 卡德霍 through the pursuit.</span><span data-l="zh">第Ⅴ层中首领超出步行范围的模板数。多数对局是通过追猎遇到卡德霍的。</span></div></div>
+    <div class="fig"><div class="v">+<span data-k="pegasusGain">30</span><small>IE</small></div><div class="l"><span data-l="en">Gain per run from 襁褓天马 (+1 AP each zone), about <span data-k="pegasusVsGriffin">4×</span> the full-map reveal of 襁褓骏鹰.</span><span data-l="zh">襁褓天马（每区域 +1 行动力）每局带来的收益，约为襁褓骏鹰全图视野的 <span data-k="pegasusVsGriffin">4×</span>。</span></div></div>
+  </div>
+</header>
+</div>
+
+<nav class="index" aria-label="Sections">
+  <div class="bar">
+  <ol>
+    <li><a href="#findings"><span data-l="en">Findings</span><span data-l="zh">结论</span></a></li>
+    <li><a href="#ledger"><span data-l="en">Ledger</span><span data-l="zh">汇率</span></a></li>
+    <li><a href="#maps"><span data-l="en">Maps</span><span data-l="zh">地图</span></a></li>
+    <li><a href="#step"><span data-l="en">Price of a step</span><span data-l="zh">行动力价值</span></a></li>
+    <li><a href="#lab"><span data-l="en">Route lab</span><span data-l="zh">路线实验</span></a></li>
+    <li><a href="#exits"><span data-l="en">Exits</span><span data-l="zh">出口</span></a></li>
+    <li><a href="#parts"><span data-l="en">Parts</span><span data-l="zh">加工品</span></a></li>
+    <li><a href="#merchant"><span data-l="en">Merchant</span><span data-l="zh">秘境行商</span></a></li>
+    <li><a href="#info"><span data-l="en">Information</span><span data-l="zh">视野</span></a></li>
+    <li><a href="#run"><span data-l="en">Whole run</span><span data-l="zh">整局</span></a></li>
+    <li><a href="#endings"><span data-l="en">Endings</span><span data-l="zh">结局</span></a></li>
+    <li><a href="#secrecy"><span data-l="en">Secrecy</span><span data-l="zh">保密等级</span></a></li>
+    <li><a href="#method"><span data-l="en">Method</span><span data-l="zh">方法</span></a></li>
+  </ol>
+  <span class="langsw" role="group" aria-label="Language / 语言"><button type="button" data-setlang="en">EN</button><button type="button" data-setlang="zh">中文</button></span>
+  </div>
+</nav>
+
+<div class="wrap">
+<main>
+
+<section id="findings">
+  <div class="eyebrow"><span data-l="en">Summary</span><span data-l="zh">摘要</span> <span class="zh" data-l="en">结论</span></div>
+  <h2><span data-l="en">Ten rules the numbers support</span><span data-l="zh">数据支持的十条规则</span></h2>
+  <div class="prose">
+    <p data-l="en">Each rule links to the section that derives it. Tags say how solid the evidence is: <span class="tag exact">exact</span> comes straight from game data, <span class="tag model">model</span> comes from simulation on real maps with stated assumptions, <span class="tag assume">assumption</span> marks inputs nobody has published.</p>
+    <p data-l="zh">每条规则都链接到推导它的章节。标签表示证据强度：<span class="tag exact">精确</span> 直接来自游戏数据；<span class="tag model">模型</span> 来自在真实地图上的模拟，假设均已注明；<span class="tag assume">假设</span> 表示官方没有公布、需要自行估计的输入。</p>
+  </div>
+  <ol class="findings">
+    <li><span class="k">1</span>
+      <h4 data-l="en">Never bank AP while a fresh node is in reach. <span class="tag model">model</span></h4><h4 data-l="zh">只要还有新节点够得着，就别把行动力留到出口。<span class="tag model">模型</span></h4>
+      <p data-l="en">An extra AP is worth <b data-k="lamHopeRange">1.3–2.4</b> hope on the map; the exit converts it at 1. The gap holds across content mixes and survives halving node values.</p><p data-l="zh">多 1 点行动力在地图上值 <b data-k="lamHopeRange">1.3–2.4</b> 希望，出口只按 1 希望兑换。换节点构成、把节点价值减半，这个差距依然成立。</p>
+      <a href="#step"><span data-l="en">Price of a step</span><span data-l="zh">行动力价值</span></a></li>
+    <li><span class="k">2</span>
+      <h4 data-l="en">Floor Ⅰ is on rails; +1 AP there is about 1 hope. <span class="tag exact">exact</span></h4><h4 data-l="zh">第Ⅰ层是固定轨道，在那里 +1 行动力约等于 1 希望。<span class="tag exact">精确</span></h4>
+      <p data-l="en">All three floor Ⅰ layouts put the exit 5 steps from the start, and the maps are trees, so a detour costs 2 AP. The 翅膀 tech node mostly converts to hope.</p><p data-l="zh">三张第Ⅰ层模板的出口都在起点 5 步外，而地图基本是树形，绕一个岔路要花 2 点（去和回）。生命游戏的“翅膀”节点多半只会变成 1 希望。</p>
+      <a href="#maps"><span data-l="en">Maps</span><span data-l="zh">地图</span></a></li>
+    <li><span class="k">3</span>
+      <h4 data-l="en">On boss floors, spend everything and let the pursuit bring the boss. <span class="tag model">model</span></h4><h4 data-l="zh">首领层把行动力花光，让追猎把首领带来。<span class="tag model">模型</span></h4>
+      <p data-l="en">The boss is out of walking range on <b data-k="bossOut3">3</b> of 10 floor Ⅲ and <b data-k="bossOut5b">6</b> of 10 floor Ⅴ layouts. Walking in early only pays if the pursuit version costs you more than about <b data-k="bossBreak">12</b> IE.</p><p data-l="zh">第Ⅲ层 10 张模板里有 <b data-k="bossOut3">3</b> 张、第Ⅴ层有 <b data-k="bossOut5b">6</b> 张，首领在步行范围之外。只有当追猎版首领比正常版多付出约 <b data-k="bossBreak">12</b> IE 以上的代价时，提前走进首领才划算。</p>
+      <a href="#exits"><span data-l="en">Exits</span><span data-l="zh">出口</span></a></li>
+    <li><span class="k">4</span>
+      <h4 data-l="en">Take 险路小径 before the big floors. <span class="tag model">model</span></h4><h4 data-l="zh">大层之前优先走险路小径。<span class="tag model">模型</span></h4>
+      <p data-l="en">Carried AP is worth the next floor's step price, not 1 hope. Valuing it that way raises the hidden-exit take rate and adds <b data-k="carryGain">20</b> IE per run.</p><p data-l="zh">带走的行动力应按下一层的边际价值计价，而不是 1 希望。这样计价会让隐藏出口被选中的比例上升，每局多出约 <b data-k="carryGain">20</b> IE。</p>
+      <a href="#exits"><span data-l="en">Exits</span><span data-l="zh">出口</span></a></li>
+    <li><span class="k">5</span>
+      <h4 data-l="en">Movement parts are underpriced. <span class="tag model">model</span></h4><h4 data-l="zh">加工品定价偏低。<span class="tag model">模型</span></h4>
+      <p data-l="en">Used on one floor, almost every part returns several times its 秘境行商 price. 简易遥控器 and the jetpack lead; cheap jumps (报废轮子, 报废假肢) return <b data-k="cheapReturn">3–5×</b> their 2-ingot price. The exception is 紧急逃生座椅, which the pursuit makes redundant on boss floors.</p><p data-l="zh">只在一层里用掉，几乎每种加工品的回报都是它在秘境行商售价的好几倍。“简易遥控器”和一次性喷气背包最强；2 源石锭的报废轮子、报废假肢回本 <b data-k="cheapReturn">3–5×</b>。例外是紧急逃生座椅：在首领层，追猎本身就会结束这一层。</p>
+      <a href="#parts"><span data-l="en">Parts</span><span data-l="zh">加工品</span></a></li>
+    <li><span class="k">6</span>
+      <h4 data-l="en">Merchant visits matter more than box size. <span class="tag model">model</span></h4><h4 data-l="zh">进秘境行商的次数比零件箱容量更重要。<span class="tag model">模型</span></h4>
+      <p data-l="en">With few parts held, a bigger box adds little. One extra 秘境行商 visit adds about <b data-k="huntGain">9</b> ingots of trading profit. Box size starts to matter once movement parts fill half the box.</p><p data-l="zh">箱里零件不多时，扩容收益很小。多进一次秘境行商，交易利润约多 <b data-k="huntGain">9</b> 源石锭。加工品占满半箱之后，容量才开始成为瓶颈。</p>
+      <a href="#merchant"><span data-l="en">Merchant</span><span data-l="zh">秘境行商</span></a></li>
+    <li><span class="k">7</span>
+      <h4 data-l="en">Information is cheap once you know the templates. <span class="tag model">model</span></h4><h4 data-l="zh">熟悉模板之后，视野信息很便宜。<span class="tag model">模型</span></h4>
+      <p data-l="en">The fog costs <b data-k="voiRange">2–5</b> IE per floor against perfect information, because unseen nodes still show 凶戾 or 诡秘. At 保密等级 3+ knowing the layout prevents accidental pursuits.</p><p data-l="zh">相比完全信息，迷雾每层只损失 <b data-k="voiRange">2–5</b> IE，因为未揭示的节点仍会显示“凶戾”或“诡秘”。保密等级 3 以上，认得模板能避免误触追猎。</p>
+      <a href="#info"><span data-l="en">Information</span><span data-l="zh">视野</span></a></li>
+    <li><span class="k">8</span>
+      <h4 data-l="en">襁褓天马 and 襁褓金乌 are the strongest start animals; 骏鹰 trails. <span class="tag model">model</span></h4><h4 data-l="zh">开局襁褓生灵里，天马和金乌最强，骏鹰垫底。<span class="tag model">模型</span></h4>
+      <p data-l="en">Five extra AP over a run is worth about <b data-k="pegasusGainHope">9</b> hope; 金乌's three collectibles are worth about <b data-k="jinwuHope">8</b> at designer prices. 骏鹰's reveal plus 1 hope is worth about <b data-k="griffinGainHope">3</b>.</p><p data-l="zh">一局多出的 5 点行动力约值 <b data-k="pegasusGainHope">9</b> 希望；金乌的 3 件收藏品按设计者定价约值 <b data-k="jinwuHope">8</b> 希望；骏鹰的视野加 1 希望只值约 <b data-k="griffinGainHope">3</b> 希望。</p>
+      <a href="#run"><span data-l="en">Whole run</span><span data-l="zh">整局</span></a></li>
+    <li><span class="k">9</span>
+      <h4 data-l="en">With one sandbox, walk to the 命运所指 instead of paying 50. <span class="tag model">model</span></h4><h4 data-l="zh">只有一个沙盘时，走路找命运所指，别付 50 源石锭。<span class="tag model">模型</span></h4>
+      <p data-l="en">Searching on foot costs about <b data-k="e2Extra">1</b> AP more than paying, against an expected <b>33</b> ingots. Floor Ⅴ distances are long, so keep a long-range part for it.</p><p data-l="zh">步行搜索只比付费多花约 <b data-k="e2Extra">1</b> 点行动力，而付费的期望成本是 <b>33</b> 源石锭。第Ⅴ层距离很长，最好留一个远程加工品。</p>
+      <a href="#endings"><span data-l="en">Endings</span><span data-l="zh">结局</span></a></li>
+    <li><span class="k">10</span>
+      <h4 data-l="en">At 保密等级 9+, hold value as items, not ingots. <span class="tag exact">exact</span></h4><h4 data-l="zh">保密等级 9 以上，用道具而不是源石锭储值。<span class="tag exact">精确</span></h4>
+      <p data-l="en">Each zone change takes 10% of your 源石锭, so an ingot carried from Ⅰ to Ⅴ keeps 66%. Natural items and parts are not 源石锭 and keep their estimate.</p><p data-l="zh">每进入新区域扣 10% 源石锭，从第Ⅰ层带到第Ⅴ层只剩 66%。自然物和零件不是源石锭，估价不受影响。</p>
+      <a href="#secrecy"><span data-l="en">Secrecy</span><span data-l="zh">保密等级</span></a></li>
+  </ol>
+</section>
+
+<section id="ledger">
+  <div class="eyebrow"><span data-l="en">The ledger</span><span data-l="zh">账本</span> <span class="zh" data-l="en">货币与汇率</span></div>
+  <h2><span data-l="en">Eleven currencies, one bottleneck</span><span data-l="zh">十一种货币，一个瓶颈</span></h2>
+  <div class="prose">
+    <p data-l="en">A run moves value between AP (行动力), hope (希望), ingots (源石锭), collectibles, three kinds of parts, box slots, carry slots and target life. Some conversions are hard-coded. Most are not, but the designers reveal their own prices every time they offer a menu of alternatives: an option nobody would pick gets cut in testing, so the options on one menu should be worth roughly the same.</p>
+    <p data-l="zh">一局游戏里，价值在行动力、希望、源石锭、收藏品、三类零件、零件箱格、可携带干员位和目标生命之间流动。少数换算是写死的；多数没有明码标价，但设计者每次给出“多选一”菜单，就等于公开了自己的定价：没人会选的选项在测试中会被砍掉，所以同一菜单里的选项价值应当大致相等。</p>
+    <p data-l="en">The diagram shows the fixed conversions. Green arrows are the ones that involve AP.</p>
+    <p data-l="zh">下图是固定的换算关系，绿色箭头是与行动力有关的换算。</p>
+  </div>
+  <figure class="panel flow" id="flowFig"><div id="flow"></div>
+    <figcaption data-l="en"><b>Fixed conversions in 黑流树海.</b> Rates from BWIKI (events, nodes, squads) and MAA's market data (part prices). IE = ingot-equivalent, the common unit used throughout.</figcaption>
+    <figcaption data-l="zh"><b>黑流树海中的固定换算。</b>汇率来自 BWIKI（事件、节点、分队）和 MAA 的商店数据（零件价格）。IE 即“源石锭当量”，是全文统一使用的价值单位。</figcaption></figure>
+  <h3><span data-l="en">The designer price index</span><span data-l="zh">设计者价格指数</span></h3>
+  <div class="prose">
+    <p data-l="en">Fitting all seven menus at once (weighted least squares on relative error, with shop prices as weak anchors) gives one price per currency. Untick a menu to see how much each price leans on it.</p>
+    <p data-l="zh">把七个菜单放在一起拟合（按相对误差加权的最小二乘，以商店价格作为弱锚点），就能给每种货币定出一个价格。取消勾选某个菜单，可以看到各价格对它的依赖程度。</p>
+  </div>
+  <div class="grid2">
+    <figure class="panel"><div id="priceChart" class="chart"></div>
+      <figcaption data-l="en"><b>Fitted price of one unit, in ingots.</b> The AP bar is the designers' implied price; the simulation's use value of an AP is drawn as a second mark for comparison.</figcaption>
+      <figcaption data-l="zh"><b>每单位的拟合价格（源石锭）。</b>行动力一栏是菜单隐含的设计者定价，另一条是模拟得出的行动力使用价值，供对比。</figcaption></figure>
+    <div class="panel controls" id="menuToggles"><p class="mini-title"><span data-l="en">Menus in the fit</span><span data-l="zh">参与拟合的菜单</span></p></div>
+  </div>
+  <details class="table-view"><summary><span data-l="en">Show every menu option and how far it sits from its menu's value</span><span data-l="zh">查看每个菜单选项及其偏离菜单均值的程度</span></summary><div class="tscroll" id="menuTable"></div></details>
+  <div class="rule-box"><b class="h"><span data-l="en">Reading</span><span data-l="zh">解读</span></b>
+    <p data-l="en">The menus price an AP at about <span data-k="priceAPHope">1.6</span> hope (<span data-k="priceAP">3.7</span> ingots). The exit pays 1 hope. The simulation says a step spent on the map returns <span data-k="lamIE">7</span> IE. AP is the one currency the game systematically undervalues at the exit.</p>
+    <p data-l="zh">菜单给 1 点行动力的定价约为 <span data-k="priceAPHope">1.6</span> 希望（<span data-k="priceAP">3.7</span> 源石锭），出口只给 1 希望，而模拟显示花在地图上的一步能带来约 <span data-k="lamIE">7</span> IE。行动力是唯一一种在出口被系统性低估的货币。</p></div>
+</section>
+
+<section id="maps">
+  <div class="eyebrow"><span data-l="en">Geometry</span><span data-l="zh">几何</span> <span class="zh" data-l="en">地图模板</span></div>
+  <h2><span data-l="en">43 layouts, and the budget each one gives you</span><span data-l="zh">43 张模板，以及每张给你的预算</span></h2>
+  <div class="prose">
+    <p data-l="en">Every zone is drawn from a fixed set of templates: 3 for floor Ⅰ and 10 each for Ⅱ–Ⅴ. The grid sizes are 3×5, 4×5, 5×7, 5×8 and 5×10. The layouts below come from MAA's map-template file, which its authors built for automated runs. Each zone's AP is fixed (5, 6, 7, 8, 8), and walking costs one AP per node, so the distance from the start to the nearest exit decides how much of the budget is free.</p>
+    <p data-l="zh">每个区域都从一组固定模板中抽取：第Ⅰ层 3 张，第Ⅱ–Ⅴ层各 10 张，网格尺寸依次为 3×5、4×5、5×7、5×8、5×10。下列布局来自 MAA 为自动化而整理的地图模板文件。每层行动力固定（5、6、7、8、8），步行每经过一个节点耗 1 点，所以起点到最近出口的距离决定了预算里有多少可自由支配。</p>
+    <p data-l="en">Two structural facts drive almost everything that follows. The maps are nearly trees (0–8 loops each), so visiting a side branch costs 2 AP, out and back. And on the boss floors the boss is often farther away than the budget.</p>
+    <p data-l="zh">后文几乎所有结论都源于两个结构事实：地图接近树形（每张只有 0–8 个环），去一个岔路要花 2 点（去和回）；首领层的首领常常比预算还远。</p>
+  </div>
+  <figure class="panel"><div id="slackChart" class="chart"></div>
+    <figcaption data-l="en"><b>Nearest exit distance per layout, against the zone's AP.</b> Each dot is one template. Dots right of the AP line cannot reach the exit on foot with the base budget.</figcaption>
+    <figcaption data-l="zh"><b>各模板起点到最近出口的距离与本层行动力的对比。</b>每个点是一张模板，位于行动力线右侧的点无法仅靠基础预算步行到达出口。</figcaption></figure>
+  <div id="gallery"></div>
+</section>
+
+<section id="step">
+  <div class="eyebrow"><span data-l="en">Price of a step</span><span data-l="zh">一步的价格</span> <span class="zh" data-l="en">行动力的边际价值</span></div>
+  <h2><span data-l="en">What one more AP is worth, floor by floor</span><span data-l="zh">逐层看：多 1 点行动力值多少</span></h2>
+  <div class="prose">
+    <p data-l="en">For each floor we sampled hundreds of zones (random template, random contents) and solved each one exactly at budgets from 2 below to 5 above the base. The same zones were also played by a fog-of-war player who replans after every step and only sees what the game shows. The marginal value of an AP is the average gain from one more AP in the same zone.</p>
+    <p data-l="zh">我们对每层抽样数百个区域（随机模板、随机内容），在基础预算 −2 到 +5 的范围内逐一精确求解。同样的区域也交给“迷雾玩家”去走：它每走一步重新规划，只看得到游戏实际显示的信息。行动力的边际价值，就是同一区域多给 1 点行动力带来的平均收益。</p>
+    <p data-l="en">Node values are in ingot-equivalents and are an assumption (they are adjustable in the route lab). The exit converts AP at 1 hope = <span data-k="hopeIE">3.33</span> IE, from 桑尼的邀请's 3 hope = 10 ingots.</p>
+    <p data-l="zh">节点价值以源石锭当量计，属于假设（可在路线实验中调整）。出口把行动力按 1 希望 = <span data-k="hopeIE">3.33</span> IE 回收，依据是“桑尼的邀请”中 3 希望 = 10 源石锭。</p>
+  </div>
+  <div class="grid5" id="lambdaPanels"></div>
+  <div class="legend" id="lambdaLegend"></div>
+  <figcaption data-l="en"><b>Marginal value of one AP, by budget.</b> The orange line is what the exit pays for an unused AP. Where the curve sits above it, walking beats banking.</figcaption>
+  <figcaption data-l="zh"><b>不同预算下 1 点行动力的边际价值。</b>橙线是出口回收 1 点剩余行动力的价格。曲线高于它的地方，继续走比留着更划算。</figcaption>
+  <h3><span data-l="en">Does the verdict survive other assumptions?</span><span data-l="zh">换一套假设，结论还成立吗？</span></h3>
+  <div class="tscroll" id="sensTable"></div>
+  <div class="rule-box"><b class="h"><span data-l="en">Rule</span><span data-l="zh">规则</span></b>
+    <p data-l="en">If the best fresh node you can reach is worth more than about a hope per step it costs, walk to it. Bank AP only when the map has nothing left within reach, or when the remaining nodes are dangerous.</p>
+    <p data-l="zh">只要能到达的最佳新节点每一步价值超过约 1 希望，就走过去。只有当范围内已无可取之物、或剩下的节点太危险时，才把行动力留到出口。</p></div>
+</section>
+
+<section id="lab">
+  <div class="eyebrow"><span data-l="en">Route lab</span><span data-l="zh">路线实验</span> <span class="zh" data-l="en">路线实验</span></div>
+  <h2><span data-l="en">Plan a zone on a real layout</span><span data-l="zh">在真实模板上规划一个区域</span></h2>
+  <div class="prose"><p data-l="en">Pick a floor and a template, roll contents, and compare the exact best route with the fog-of-war player. Jumps with parts are drawn in amber. Change node values under <i>Node values</i> to test your own assumptions.</p>
+    <p data-l="zh">选择楼层和模板，随机生成节点内容，对比精确最优路线和迷雾玩家的走法。用加工品的跳跃以琥珀色曲线表示。可以在“节点价值”中修改各类节点的价值，检验你自己的判断。</p></div>
+  <div class="lab">
+    <div class="panel" style="display:grid;gap:12px">
+      <div id="labMap" class="mapsvg"></div>
+      <div class="keyrow" id="labKey"></div>
+      <div class="readout" id="labReadout"></div>
+      <div class="steps" id="labSteps"></div>
+    </div>
+    <div class="panel controls" id="labControls">
+      <label><span data-l="en">Floor</span><span data-l="zh">楼层</span><div class="seg" id="labFloor"></div></label>
+      <label for="labTpl"><span data-l="en">Template</span><span data-l="zh">模板</span><select id="labTpl"></select></label>
+      <div class="slider-row"><label for="labAP"><span data-l="en">AP</span><span data-l="zh">行动力</span></label><output id="labAPv"></output><input type="range" id="labAP" min="1" max="14" step="1"></div>
+      <label for="labPart1"><span data-l="en">Part 1</span><span data-l="zh">加工品 1</span><select id="labPart1"></select></label>
+      <label for="labPart2"><span data-l="en">Part 2</span><span data-l="zh">加工品 2</span><select id="labPart2"></select></label>
+      <label><span data-l="en">Player</span><span data-l="zh">玩家</span><div class="seg" id="labMode"></div></label>
+      <label class="check"><input type="checkbox" id="labTemplate" checked> <span data-l="en">Player knows the template</span><span data-l="zh">玩家认得这张模板</span></label>
+      <label class="check"><input type="checkbox" id="labSecrecy"> <span data-l="en">保密等级 3+ (one exit hidden)</span><span data-l="zh">保密等级 3+（隐藏一个出口）</span></label>
+      <button class="btn primary" id="labRoll" type="button"><span data-l="en">Roll new contents</span><span data-l="zh">重新生成内容</span></button>
+      <details class="tune"><summary><span data-l="en">Node values (IE)</span><span data-l="zh">节点价值（IE）</span></summary><div id="labValues"></div></details>
+    </div>
+  </div>
+</section>
+
+<section id="exits">
+  <div class="eyebrow"><span data-l="en">Exits</span><span data-l="zh">出口</span> <span class="zh">险路尽头 · 险路小径 · 追猎</span></div>
+  <h2><span data-l="en">Three ways out, priced</span><span data-l="zh">三种离开方式的定价</span></h2>
+  <div class="prose">
+    <p data-l="en"><b>险路尽头</b> pays 1 hope per leftover AP plus an ordinary movement part. <b>险路小径</b> (the 三重身 cat event) carries the AP into the next zone plus a rarer part. <b>The pursuit</b> starts when AP hits zero away from an exit. On ordinary floors it pays one recruit ticket and risks the run. On boss floors the pursuit is the boss itself (for example 痛苦将息, the pursuit version of 永无安宁), with normal rewards.</p>
+    <p data-l="zh"><b>险路尽头</b>：每点剩余行动力换 1 希望，外加一个普通加工品。<b>险路小径</b>（“三重身”猫事件）：剩余行动力带入下一区域，外加一个较稀有的加工品。<b>追猎</b>：行动力在出口外归零时触发；普通层只奖励一张招募券，而且可能直接输掉整局；首领层的追猎就是首领战本身（例如永无安宁的追猎版“痛苦将息”），奖励正常。</p>
+    <p data-l="en">So the hidden exit should be judged by the next floor's step price, and the boss floors change the question from "can I reach the exit" to "is one more node worth facing the pursuit version of the boss".</p>
+    <p data-l="zh">所以，隐藏出口要按下一层的行动力价格来评估；而在首领层，问题从“能不能走到出口”变成了“多拿一个节点，值不值得去打追猎版首领”。</p>
+  </div>
+  <div class="grid2">
+    <figure class="panel"><div id="evacChart" class="chart"></div>
+      <figcaption data-l="en"><b>How often the optimiser takes 险路小径 when one exists.</b> Valued at 1 hope per carried AP, against valued at the next floor's marginal step price.</figcaption>
+      <figcaption data-l="zh"><b>存在险路小径时，最优解选择它的比例。</b>分别按“每点带走的行动力值 1 希望”和“按下一层的边际价值”计价。</figcaption></figure>
+    <figure class="panel"><div id="bossChart" class="chart"></div>
+      <figcaption data-l="en"><b>Share of boss-floor zones where the best plan ends in the pursuit</b>, by how much worse the pursuit version is (IE). The game does not publish this penalty, so the chart sweeps it.</figcaption>
+      <figcaption data-l="zh"><b>首领层中最优计划以追猎结束的比例</b>，横轴为追猎版首领额外的代价（IE）。游戏没有公布这一代价，因此图中扫描了一系列取值。</figcaption></figure>
+  </div>
+  <div class="rule-box"><b class="h"><span data-l="en">Rule</span><span data-l="zh">规则</span></b>
+    <p data-l="en">On floors Ⅱ and Ⅳ, a reachable 险路小径 beats 险路尽头 unless you need hope at once to recruit. On floors Ⅲ and Ⅴ, plan to spend every AP. Walk into the boss early only if the pursuit version (猎犬proto joining, its healing at 保密等级 15) costs you more than a couple of good nodes.</p>
+    <p data-l="zh">第Ⅱ、Ⅳ层若够得着险路小径，除非急需希望招募，否则它优于险路尽头。第Ⅲ、Ⅴ层按花光所有行动力来规划；只有当追猎版首领（猎犬proto 加入，保密等级 15 时还会给首领回血）的代价超过两三个好节点时，才提前走进首领。</p></div>
+</section>
+
+<section id="parts">
+  <div class="eyebrow"><span data-l="en">Movement parts</span><span data-l="zh">移动零件</span> <span class="zh" data-l="en">加工品</span></div>
+  <h2><span data-l="en">Almost every jump pays for itself</span><span data-l="zh">几乎每一次跳跃都能回本</span></h2>
+  <div class="prose">
+    <p data-l="en">A part move skips the rule that you must finish every node you walk through, and most cost 1 AP or none. We solved the same zones with and without each part (used on that floor, full information) and took the difference.</p>
+    <p data-l="zh">加工品移动可以绕开“经过的节点必须完成”的规则，而且多数只耗 1 点行动力甚至不耗。我们把同一批区域在有、无该加工品的情况下分别求解（在该层用掉，完全信息），取两者之差。</p>
+  </div>
+  <figure class="panel"><div id="partsChart" class="chart"></div>
+    <figcaption data-l="en"><b>Value added by one part on floor Ⅱ and floor Ⅴ</b> (IE), with the 秘境行商 buy price beside each name. Parts marked * cannot leave their zone.</figcaption>
+    <figcaption data-l="zh"><b>一个加工品在第Ⅱ层和第Ⅴ层带来的价值</b>（IE），名称旁是秘境行商售价。带 * 的无法带出当前区域。</figcaption></figure>
+  <details class="table-view"><summary><span data-l="en">Show all floors</span><span data-l="zh">查看所有楼层</span></summary><div class="tscroll" id="partsTable"></div></details>
+  <div class="prose">
+    <p data-l="en">The ranking follows reach and price of use. 简易遥控器 moves for free and adds 3 AP, so it is worth about four ordinary nodes. Free long jumps (喷气背包, 重弹簧) come next. Multi-use parts (标准引擎, 试作外骨骼, 结构性原理) gain most on the larger floors Ⅳ–Ⅴ, where their extra uses find targets. 紧急逃生座椅 is only worth carrying into a floor where the exit is far, which on our sample means floor Ⅴ almost never: the pursuit already ends the zone for free.</p>
+    <p data-l="zh">排名取决于射程和每次使用的代价。“简易遥控器”免费移动还加 3 点行动力，约等于四个普通节点；其次是免费的远程跳跃（喷气背包、重弹簧）。多次使用的标准引擎、试作外骨骼、结构性原理在更大的第Ⅳ–Ⅴ层收益最高，额外的次数在那里才找得到目标。紧急逃生座椅只在出口很远的楼层才值得带，而在我们的样本里，第Ⅴ层几乎用不上它：追猎本来就会免费结束这一层。</p>
+  </div>
+</section>
+
+<section id="merchant">
+  <div class="eyebrow"><span data-l="en">The merchant</span><span data-l="zh">行商</span> <span class="zh">秘境行商 · 自然物</span></div>
+  <h2><span data-l="en">Natural items are an investment portfolio</span><span data-l="zh">自然物是一个投资组合</span></h2>
+  <div class="prose">
+    <p data-l="en">秘境行商 sells natural items at twice their estimate. Their estimates then grow with what you do: battles, moves, reveals, recruits, merchant visits. Sold later, they return ingots. The table uses the action counts our fog player actually produced on each floor, so growth is tied to realistic routes.</p>
+    <p data-l="zh">秘境行商按估价的两倍出售自然物，此后它们的估价会随你的行动增长：作战、移动、揭示、招募、进入行商……之后卖掉就能换回源石锭。下表使用迷雾玩家在各层实际产生的行动次数，使增长与真实路线挂钩。</p>
+    <p data-l="en">Two readings are uncertain. 雾滚草 says +1 "each time node information is revealed": per reveal event or per node revealed. And recruits per zone are not logged by the simulation; the table assumes 1.5. Use the controls to change both.</p>
+    <p data-l="zh">有两处不确定：雾滚草写的是“每次揭示节点信息时估价+1”，可以理解为按“揭示事件”计，也可以按“揭示的节点数”计；另外模拟没有记录每区域的招募次数，表中假设为 1.5。两者都可以用下面的控件修改。</p>
+  </div>
+  <div class="panel controls" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+    <label><span data-l="en">雾滚草 reading</span><span data-l="zh">雾滚草的理解</span><div class="seg" id="fogReading"></div></label>
+    <div class="slider-row"><label for="recruits"><span data-l="en">Recruits per zone</span><span data-l="zh">每区域招募次数</span></label><output id="recruitsV"></output><input type="range" id="recruits" min="0" max="4" step="0.5" value="1.5"></div>
+  </div>
+  <div class="tscroll" id="naturalTable"></div>
+  <h3><span data-l="en">Trading over a whole run</span><span data-l="zh">整局交易模拟</span></h3>
+  <div class="prose"><p data-l="en">A Monte Carlo trader visits 秘境行商 on floors Ⅱ–Ⅴ, sees offers drawn from MAA's recorded shop layouts and offer rates, buys whatever is expected to grow past its price, and liquidates on floor Ⅴ. It earns 10 ingots per zone from other sources.</p>
+    <p data-l="zh">蒙特卡洛交易者在第Ⅱ–Ⅴ层进入秘境行商，货架按 MAA 记录的商店布局和出现率随机生成；它买入预计能涨过售价的自然物，并在第Ⅴ层全部卖出。每区域另有 10 源石锭的其他收入。</p></div>
+  <figure class="panel"><div id="tradeChart" class="chart"></div>
+    <figcaption data-l="en"><b>Trading profit per run (ingots), mean with 10th–90th percentile.</b> “Slots held” is how much of the box movement parts and concept parts already occupy.</figcaption>
+    <figcaption data-l="zh"><b>每局交易利润（源石锭），均值及 10%–90% 分位。</b>“占用格”指零件箱里已被加工品和概念体占去的格数。</figcaption></figure>
+  <div class="rule-box"><b class="h"><span data-l="en">Rule</span><span data-l="zh">规则</span></b>
+    <p data-l="en">Plan routes through 秘境行商 on floors Ⅱ–Ⅳ before you buy capacity. Buy growth items early, because their growth compounds with every battle, move and recruit that follows. Sell everything on floor Ⅴ, as MAA's own trade profile does. 空间租赁 and 多边贸易 pay once your box is crowded with movement parts.</p>
+    <p data-l="zh">先让路线经过第Ⅱ–Ⅳ层的秘境行商，再考虑扩容。增值型自然物要早买，之后的每场作战、每次移动和招募都会让它继续增值。第Ⅴ层全部卖出，MAA 自己的交易配置也是这样做的。等零件箱被加工品挤满时，空间租赁和多边贸易分队才真正划算。</p></div>
+</section>
+
+<section id="info">
+  <div class="eyebrow"><span data-l="en">Information</span><span data-l="zh">信息</span> <span class="zh">视野 · 羽瞰点 · 模板</span></div>
+  <h2><span data-l="en">How much the fog costs</span><span data-l="zh">迷雾到底让你损失多少</span></h2>
+  <div class="prose">
+    <p data-l="en">The fog is mild. Nodes you have not reached still show whether they are hostile (未知的凶戾) or not (未知的诡秘), and exits are shown in advance below 保密等级 3. Our fog player values unseen nodes at their category average and replans after every reveal. The gap to the full-information optimum is the value of perfect information.</p>
+    <p data-l="zh">迷雾其实很温和：没走到的节点仍会显示是“未知的凶戾”还是“未知的诡秘”，保密等级 3 以下出口也会提前显示。迷雾玩家把未揭示节点按其类别的平均值估价，每次揭示后重新规划。它与完全信息最优解之间的差距，就是完全信息的价值。</p>
+  </div>
+  <figure class="panel"><div id="voiChart" class="chart"></div>
+    <figcaption data-l="en"><b>Value of seeing the whole map, per floor (IE),</b> and value of knowing the template when one exit is hidden at 保密等级 3+.</figcaption>
+    <figcaption data-l="zh"><b>每层看清全图的价值（IE）</b>，以及保密等级 3+ 隐藏一个出口时认得模板的价值。</figcaption></figure>
+  <div class="prose"><p data-l="en">Perfect information is worth less than one ordinary node per floor. That is why 襁褓骏鹰 (reveal floors Ⅰ–Ⅱ plus 1 hope) loses to 襁褓天马, and why 洛伦茨之眼 is a weak concept part. Where information does matter is avoiding mistakes: without template knowledge at 保密等级 3+, the fog player fell into an ordinary pursuit in <b data-k="pursuitNoTpl">8%</b> of floor Ⅱ zones.</p>
+    <p data-l="zh">完全信息每层的价值还不到一个普通节点。所以襁褓骏鹰（第Ⅰ–Ⅱ层全图视野 + 1 希望）不如襁褓天马，洛伦茨之眼也是偏弱的概念体。信息真正重要的地方在于避免失误：保密等级 3+ 时，不认得模板的迷雾玩家在 <b data-k="pursuitNoTpl">8%</b> 的第Ⅱ层区域里误触了普通追猎。</p></div>
+</section>
+
+<section id="run">
+  <div class="eyebrow"><span data-l="en">Whole run</span><span data-l="zh">整局</span> <span class="zh" data-l="en">整局模拟</span></div>
+  <h2><span data-l="en">Floors Ⅰ to Ⅴ, chained</span><span data-l="zh">把第Ⅰ到Ⅴ层串起来</span></h2>
+  <div class="prose"><p data-l="en">The chained simulation plays five zones in a row under fog with template knowledge. Parts carry between zones (one from each 险路尽头), carried AP flows through 险路小径, and boss floors end in the boss or its pursuit. Each variant changes one thing.</p>
+    <p data-l="zh">串联模拟在迷雾中、认得模板的前提下连续打五个区域：加工品跨区域保留（每个险路尽头给一个），剩余行动力经险路小径带走，首领层以首领战或其追猎版结束。每个变体只改动一个条件。</p></div>
+  <figure class="panel"><div id="chainChart" class="chart"></div>
+    <figcaption data-l="en"><b>Total value per run, IE</b> (mean, 10th–90th percentile), by variant.</figcaption>
+    <figcaption data-l="zh"><b>各变体每局总价值（IE）</b>，均值及 10%–90% 分位。</figcaption></figure>
+  <details class="table-view"><summary><span data-l="en">Show per-floor values and exit rates</span><span data-l="zh">查看分层价值与出口比例</span></summary><div class="tscroll" id="chainTable"></div></details>
+</section>
+
+<section id="endings">
+  <div class="eyebrow"><span data-l="en">Endings</span><span data-l="zh">结局</span> <span class="zh" data-l="en">结局预算</span></div>
+  <h2><span data-l="en">What the endings cost in steps and ingots</span><span data-l="zh">各结局要花多少行动力和源石锭</span></h2>
+  <div class="prose">
+    <p data-l="en"><b>维度重构</b> with one sandbox puts three 命运所指 on floor Ⅴ, one true. With both sandboxes the true one is marked. With one, you either pay 50 ingots at a false node to learn the true one, or walk on. We placed the three nodes at random on the real floor Ⅴ layouts and measured both strategies.</p>
+    <p data-l="zh"><b>维度重构</b>：持有沙盘后，第Ⅴ层出现三个“命运所指”，其中一个为真。两个沙盘都有时，真节点会被标出；只有一个时，走到假节点可以付 50 源石锭得知真节点，也可以自己继续走。我们在真实的第Ⅴ层模板上随机放置这三个节点，比较两种做法。</p>
+  </div>
+  <figure class="panel"><div id="e2Chart" class="chart"></div>
+    <figcaption data-l="en"><b>AP needed to reach the true 命运所指,</b> mean and 10th–90th percentile, with the share of placements beyond floor Ⅴ's 8 AP.</figcaption>
+    <figcaption data-l="zh"><b>到达真“命运所指”所需的行动力</b>，均值及 10%–90% 分位，并标出超出第Ⅴ层 8 点行动力的比例。</figcaption></figure>
+  <div class="prose">
+    <p data-l="en"><b>纠缠，调和</b> needs 先行一步's second option on floors Ⅱ–Ⅳ, which gives up the first option's promotion (3 hope for a six-star, plus a part). <b>旧日重燃</b> needs 10 ingots at a floor Ⅰ or Ⅱ 险路尽头, when ingots are scarcest: at that point 10 ingots buy about one shop collectible or two growth items that would compound for four zones.</p>
+    <p data-l="zh"><b>纠缠，调和</b>需要在第Ⅱ–Ⅳ层的先行一步选第二个选项，代价是放弃第一个选项的晋升（六星约 3 希望外加一个零件）。<b>旧日重燃</b>需要在第Ⅰ或Ⅱ层险路尽头花 10 源石锭，而那正是源石锭最紧的时候：这 10 源石锭本可以买一件商店收藏品，或两件能增值四个区域的自然物。</p>
+  </div>
+</section>
+
+<section id="secrecy">
+  <div class="eyebrow">保密等级 <span class="zh"><span data-l="en">难度缩放</span><span data-l="zh">难度缩放</span></span></div>
+  <h2><span data-l="en">How difficulty reshapes the ledger</span><span data-l="zh">难度如何改写账本</span></h2>
+  <div class="prose"><p data-l="en">The per-floor enemy increase applies on every new zone (“较上一层额外+X%”). The wiki does not say whether it compounds, so both readings are shown. The economy-relevant levels are 3 (one exit hidden), 7 (box −2), 9 (10% ingot tax per zone) and 16 (no part from 险路尽头).</p>
+    <p data-l="zh">敌人难度在每进入新区域时生效（“较上一层额外+X%”）。Wiki 没有说明是否复利叠加，所以两种理解都画出来。与经济有关的等级是 3（隐藏一个出口）、7（零件箱 −2）、9（每进入新区域扣 10% 源石锭）和 16（险路尽头不再给加工品）。</p></div>
+  <div class="grid2">
+    <figure class="panel"><div id="secChart" class="chart"></div>
+      <figcaption data-l="en"><b>Enemy ATK/HP multiplier on each floor</b> at the selected level, compounding against additive reading.</figcaption>
+      <figcaption data-l="zh"><b>所选等级下各层敌人攻击/生命倍率</b>，复利叠加与线性叠加两种理解。</figcaption></figure>
+    <div class="panel controls">
+      <div class="slider-row"><label for="secLevel">保密等级</label><output id="secLevelV"></output><input type="range" id="secLevel" min="0" max="16" value="15"></div>
+      <div id="secNotes" class="prose" style="font-size:14px"></div>
+    </div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="eyebrow"><span data-l="en">Method</span><span data-l="zh">方法</span> <span class="zh" data-l="en">数据与假设</span></div>
+  <h2><span data-l="en">Where the numbers come from</span><span data-l="zh">数据从哪里来</span></h2>
+  <div class="prose" data-l="en">
+    <h3>Data</h3>
+    <ul>
+      <li><b>Map layouts:</b> 43 templates (grid size, start, exits, every edge) from MaaAssistantArknights <span class="num">resource/roguelike/BlackFlow/map_templates.json</span> (AGPL-3.0). Exits in these files are where 险路尽头 or 险路恶敌 sit.</li>
+      <li><b>Part prices and shop layouts:</b> MAA <span class="num">scrap_market.json</span> and <span class="num">shopping.json</span>: buy prices, shelf layouts with probabilities, offer rates, refresh costs 4/8/12/16.</li>
+      <li><b>Rules, parts, events, squads, difficulty:</b> BWIKI 沉沦者的黑流树海 and its 引擎配件目录 and 调查记录 pages; PRTS for AP per zone, hope costs (6★ recruit 6, promote 3) and 应急助力 prices.</li>
+      <li><b>Reveal rule:</b> nodes are visible when nothing unfinished lies between you and them, as in BWIKI's 地图与移动 and MAA's <span class="num">reveal_through_transparent_nodes</span>.</li>
+    </ul>
+    <h3>Assumptions (not published by the game)</h3>
+    <ul>
+      <li><b>Node mix:</b> relative weights per node type, with the floor restrictions PRTS lists (no 安全的角落 on Ⅰ, no 先行一步 on Ⅰ or Ⅴ, and so on). One 诡意行商 on floor Ⅰ, as MAA's routes assume.</li>
+      <li><b>Node values</b> in ingot-equivalents: battle 6, emergency 12, encounter 9, wish 12, safe corner 10, go ahead 10. The sensitivity table and the lab sliders test these.</li>
+      <li><b>Hidden exit:</b> 50% of non-boss zones have one. <b>Tunnels:</b> 35% of larger zones have a pair. <b>Pursuit:</b> −30 IE on ordinary floors, −6 IE for the boss pursuit version.</li>
+      <li><b>Trading:</b> recruits 1.5 per zone, 10 ingots of other income per zone, shop type chosen uniformly among MAA's three layouts.</li>
+    </ul>
+    <h3>Limits</h3>
+    <ul>
+      <li>The simulation prices outcomes in ingot-equivalents. It does not model combat, so it cannot say whether a team survives the extra battles a route takes.</li>
+      <li>理想源 and 实托邦, 黑潭, 居民据点 and events with branching follow-ups are not simulated.</li>
+      <li>Long-range parts try only the most valuable targets (10, or 6 for 3-use parts), which can slightly understate them.</li>
+    </ul>
+    <h3>Reproduce</h3>
+    <p>The site is static. <span class="num">node research/scripts/build_data.js</span> rebuilds the data file from the sources, and <span class="num">node research/scripts/experiments.js</span> reruns every experiment (about 20 minutes; pass 0.1 for a quick check).</p>
+  </div>
+  <div class="prose" data-l="zh">
+    <h3>数据</h3>
+    <ul>
+      <li><b>地图模板：</b>43 张模板（网格尺寸、起点、出口和全部连线）来自 MaaAssistantArknights 的 <span class="num">resource/roguelike/BlackFlow/map_templates.json</span>（AGPL-3.0）。文件中的出口即险路尽头或险路恶敌的位置。</li>
+      <li><b>零件价格与货架布局：</b>MAA 的 <span class="num">scrap_market.json</span> 和 <span class="num">shopping.json</span>：售价、带概率的货架布局、出现率、刷新费用 4/8/12/16。</li>
+      <li><b>规则、零件、事件、分队、难度：</b>BWIKI「沉沦者的黑流树海」及其“引擎配件目录”“调查记录”页面；每层行动力、希望消耗（六星招募 6、进阶 3）和应急助力价格来自 PRTS。</li>
+      <li><b>揭示规则：</b>当你与某节点之间没有未完成的节点时，该节点可见，与 BWIKI“地图与移动”及 MAA 的 <span class="num">reveal_through_transparent_nodes</span> 一致。</li>
+    </ul>
+    <h3>假设（游戏未公布）</h3>
+    <ul>
+      <li><b>节点构成：</b>各类节点的相对权重，并遵守 PRTS 列出的楼层限制（第Ⅰ层没有安全的角落，第Ⅰ、Ⅴ层没有先行一步等）。按 MAA 路线的假定，第Ⅰ层有一个诡意行商。</li>
+      <li><b>节点价值</b>（源石锭当量）：作战 6、紧急作战 12、不期而遇 9、得偿所愿 12、安全的角落 10、先行一步 10。敏感性表格和实验滑块用于检验这些取值。</li>
+      <li><b>隐藏出口：</b>50% 的非首领区域有一个。<b>曲折密道：</b>35% 的较大区域有一对。<b>追猎：</b>普通层 −30 IE，追猎版首领 −6 IE。</li>
+      <li><b>交易：</b>每区域招募 1.5 次，每区域另有 10 源石锭收入，商店类型在 MAA 的三种布局中均匀抽取。</li>
+    </ul>
+    <h3>局限</h3>
+    <ul>
+      <li>模拟以源石锭当量为结果定价，不模拟战斗本身，因此无法判断队伍能否扛住路线额外带来的战斗。</li>
+      <li>没有模拟理想源与实托邦、黑潭、“居民”据点以及带后续分支的事件。</li>
+      <li>远程加工品只尝试价值最高的若干目标（3 次使用的为 6 个，其余为 10 个），可能略微低估它们。</li>
+    </ul>
+    <h3>复现</h3>
+    <p>本站为静态网站。<span class="num">node research/scripts/build_data.js</span> 从源数据重建数据文件，<span class="num">node research/scripts/experiments.js</span> 重跑全部实验（约 20 分钟；传入 0.1 可快速检查）。</p>
+  </div>
+</section>
+
+</main>
+<footer>
+  <p data-l="en">Black Flow Ledger is independent fan research. 明日方舟 and its content belong to Hypergryph. Map layouts and market data: MaaAssistantArknights contributors. Rules and events: BWIKI and PRTS editors.</p>
+  <p data-l="zh">树海账本是独立的玩家研究。明日方舟及其内容归鹰角网络所有。地图模板与商店数据：MaaAssistantArknights 贡献者；规则与事件：BWIKI 与 PRTS 编辑者。</p>
+  <p><span data-l="en">Results generated</span><span data-l="zh">结果生成于</span> <span data-k="genDate">2026-11</span> · scale <span data-k="scale">1</span></p>
+</footer>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/results.js"></script>
+<script src="js/app.js"></script>

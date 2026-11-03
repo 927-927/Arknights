@@ -1,0 +1,1330 @@
+{{#widget:fontMap}}
+{{面包屑|集成战略}}
+<div style="background:#eee;padding:15px;margin-bottom:10px">
+<center>'''{{新计时
+|开始时间=2026/07/17 16:00
+|结束时间=2027/03/01 04:00
+|事件=沉沦者的黑流树海
+|秒=
+}}'''</center>
+</div>
+==快速参考==
+<center>{{#widget:iframe|url=https://ak-webview.hypergryph.com/is/rogue_6|width=720px|height=430px}}</center>
+==委托一览==
+{|class="wikitable" style="width:100%"
+|-
+! 等级 || 委托名称 || 任务 ||奖励
+|-
+! style="background-color:#dbc7c2;color:#28312e" rowspan="6" | <center>'''<big>'''<big><big>a</big></big>'''</big>'''</center>
+| '''高普尼克杀手'''
+|累计击败了3次高普尼克
+! style="background-color:#dbc7c2" rowspan="6" | {{data|源流样本|500}}
+|-
+| '''犬口生还'''
+|累计通关1次结局
+|-
+| '''叮叮当当'''
+|在前瞻性投资系统中，累计投资30个源石锭
+|-
+| '''止啼'''
+|累计击败3次流泪小子
+|-
+| '''啮齿克星'''
+|累计击败3次圆仔
+|-
+| '''断獠牙'''
+|累计摆脱3次追猎
+|-
+! style="background-color:#dbc7c2;color:#28312e" rowspan="9" | <center>'''<big>'''<big><big>b</big></big>'''</big>'''</center>
+| '''惊喜连连'''
+|累计探索24次不期而遇节点
+! style="background-color:#dbc7c2" rowspan="9" | {{data|源流样本|250}}
+|-
+| '''披荆斩棘'''
+|累计探索8次紧急作战节点
+|-
+| '''主动出击'''
+|累计获得4次战术道具
+|-
+| '''呼朋唤友'''
+|累计助战招募8次干员
+|-
+| '''天衣无缝'''
+|累计完美作战12次
+|-
+| '''幸存者'''
+|在险路恶敌中，累计击败4次领袖
+|-
+| '''赏金猎人'''
+|累计迁走1次“居民”据点
+|-
+| '''半程伙伴'''
+|累计探索3次应急助力节点
+|-
+| '''好园丁'''
+|在秘境行商中，累计培育5个种子
+|-
+! style="background-color:#dbc7c2;color:#28312e" rowspan="14" | <center>'''<big>'''<big><big>c</big></big>'''</big>'''</center>
+| '''珍品收藏'''
+|累计获得35次收藏品
+! style="background-color:#dbc7c2" rowspan="14" | {{data|源流样本|125}}
+|-
+| '''分发希望'''
+|累计在招募时消耗75希望
+|-
+| '''广袤人脉'''
+|累计临时招募10次干员
+|-
+| '''实地考察'''
+|累计部署100次干员
+|-
+| '''狂飙大师'''
+|累计装载加工品进行10次移动
+|-
+| '''清仓高手'''
+|累计售出10个零件
+|-
+| '''人力管理'''
+|通过招募或应急助力，累计获得35次干员
+|-
+| '''久经战阵'''
+|累计歼灭500个敌人
+|-
+| '''资深调查员'''
+|累计探索50个非林间空地节点
+|-
+| '''甄选精英'''
+|累计进阶10次干员
+|-
+| '''源石经销商'''
+|累计消耗100源石锭
+|-
+| '''运筹帷幄'''
+|累计升级15次指挥等级
+|-
+| '''拾级而上'''
+|累计通过15个区域
+|-
+| '''行商知己'''
+|在诡意行商或秘境行商中，累计购买10件商品
+|}
+==调查相关==
+===保密难度===
+<bstyle>
+.is-diff-table-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;}
+.is-diff-table{width:100%;min-width:1100px;border-collapse:collapse;table-layout:fixed;background:#fafafa;}
+.is-diff-table td,.is-diff-table th{border:1px solid rgba(0,0,0,0.12);}
+.is-diff-table th{background-color:#0f0f0f;color:#fafafc;font-weight:bold;text-align:center;padding:10px 8px;line-height:1.5;}
+.is-diff-table td,.is-diff-table .level{padding:10px 12px;line-height:1.65;vertical-align:middle;text-align:center;}
+.is-diff-table .level{width:90px;font-weight:bold;position:sticky;left:0;z-index:2;}
+.is-diff-table .effect{width:auto;text-align:left;}
+.is-diff-table th.effect{text-align:center;}
+.is-diff-table .c-score{width:80px;}.is-diff-table .c-diff{width:80px;}.is-diff-table .c-relic{width:80px;}.is-diff-table .c-wrath{width:80px;}
+.is-diff-table .bag{width:260px;}
+.is-diff-table th.level{position:sticky;left:0;z-index:3;}
+.is-diff-table .effect small{opacity:0.6;}
+.diff-0.level{background:#79a022;color:#ffffff;border-top:4px solid #79a022;}
+.diff-0.effect{background:#89ab3d;color:#ffffff;border-top:4px solid #79a022;}
+.diff-0.c-score{background:#9ab758;color:#ffffff;border-top:4px solid #79a022;}
+.diff-0.c-diff{background:#abc374;color:#ffffff;border-top:4px solid #79a022;}
+.diff-0.c-relic{background:#bbcf90;color:#303030;border-top:4px solid #79a022;}
+.diff-0.c-wrath{background:#ccdbab;color:#303030;border-top:4px solid #79a022;}
+.diff-0.bag{background:#dde7c7;color:#303030;border-top:4px solid #79a022;}
+.diff-1.level{background:#79a022;color:#ffffff;}
+.diff-1.effect{background:#89ab3d;color:#ffffff;}
+.diff-1.c-score{background:#9ab758;color:#ffffff;}
+.diff-1.c-diff{background:#abc374;color:#ffffff;}
+.diff-1.c-relic{background:#bbcf90;color:#303030;}
+.diff-1.c-wrath{background:#ccdbab;color:#303030;}
+.diff-1.bag{background:#dde7c7;color:#303030;}
+.diff-2.level{background:#79a022;color:#ffffff;}
+.diff-2.effect{background:#89ab3d;color:#ffffff;}
+.diff-2.c-score{background:#9ab758;color:#ffffff;}
+.diff-2.c-diff{background:#abc374;color:#ffffff;}
+.diff-2.c-relic{background:#bbcf90;color:#303030;}
+.diff-2.c-wrath{background:#ccdbab;color:#303030;}
+.diff-2.bag{background:#dde7c7;color:#303030;}
+.diff-3.level{background:#79a022;color:#ffffff;}
+.diff-3.effect{background:#89ab3d;color:#ffffff;}
+.diff-3.c-score{background:#9ab758;color:#ffffff;}
+.diff-3.c-diff{background:#abc374;color:#ffffff;}
+.diff-3.c-relic{background:#bbcf90;color:#303030;}
+.diff-3.c-wrath{background:#ccdbab;color:#303030;}
+.diff-3.bag{background:#dde7c7;color:#303030;}
+.diff-4.level{background:#79a022;color:#ffffff;}
+.diff-4.effect{background:#89ab3d;color:#ffffff;}
+.diff-4.c-score{background:#9ab758;color:#ffffff;}
+.diff-4.c-diff{background:#abc374;color:#ffffff;}
+.diff-4.c-relic{background:#bbcf90;color:#303030;}
+.diff-4.c-wrath{background:#ccdbab;color:#303030;}
+.diff-4.bag{background:#dde7c7;color:#303030;}
+.diff-5.level{background:#79a022;color:#ffffff;}
+.diff-5.effect{background:#89ab3d;color:#ffffff;}
+.diff-5.c-score{background:#9ab758;color:#ffffff;}
+.diff-5.c-diff{background:#abc374;color:#ffffff;}
+.diff-5.c-relic{background:#bbcf90;color:#303030;}
+.diff-5.c-wrath{background:#ccdbab;color:#303030;}
+.diff-5.bag{background:#dde7c7;color:#303030;}
+.diff-6.level{background:#79a022;color:#ffffff;}
+.diff-6.effect{background:#89ab3d;color:#ffffff;}
+.diff-6.c-score{background:#9ab758;color:#ffffff;}
+.diff-6.c-diff{background:#abc374;color:#ffffff;}
+.diff-6.c-relic{background:#bbcf90;color:#303030;}
+.diff-6.c-wrath{background:#ccdbab;color:#303030;}
+.diff-6.bag{background:#dde7c7;color:#303030;}
+.diff-7.level{background:#79a022;color:#ffffff;}
+.diff-7.effect{background:#89ab3d;color:#ffffff;}
+.diff-7.c-score{background:#9ab758;color:#ffffff;}
+.diff-7.c-diff{background:#abc374;color:#ffffff;}
+.diff-7.c-relic{background:#bbcf90;color:#303030;}
+.diff-7.c-wrath{background:#ccdbab;color:#303030;}
+.diff-7.bag{background:#dde7c7;color:#303030;}
+.diff-8.level{background:#79a022;color:#ffffff;}
+.diff-8.effect{background:#89ab3d;color:#ffffff;}
+.diff-8.c-score{background:#9ab758;color:#ffffff;}
+.diff-8.c-diff{background:#abc374;color:#ffffff;}
+.diff-8.c-relic{background:#bbcf90;color:#303030;}
+.diff-8.c-wrath{background:#ccdbab;color:#303030;}
+.diff-8.bag{background:#dde7c7;color:#303030;}
+.diff-9.level{background:#79a022;color:#ffffff;}
+.diff-9.effect{background:#89ab3d;color:#ffffff;}
+.diff-9.c-score{background:#9ab758;color:#ffffff;}
+.diff-9.c-diff{background:#abc374;color:#ffffff;}
+.diff-9.c-relic{background:#bbcf90;color:#303030;}
+.diff-9.c-wrath{background:#ccdbab;color:#303030;}
+.diff-9.bag{background:#dde7c7;color:#303030;}
+.diff-10.level{background:#79a022;color:#ffffff;}
+.diff-10.effect{background:#89ab3d;color:#ffffff;}
+.diff-10.c-score{background:#9ab758;color:#ffffff;}
+.diff-10.c-diff{background:#abc374;color:#ffffff;}
+.diff-10.c-relic{background:#bbcf90;color:#303030;}
+.diff-10.c-wrath{background:#ccdbab;color:#303030;}
+.diff-10.bag{background:#dde7c7;color:#303030;}
+.diff-11.level{background:#b51330;color:#ffffff;border-top:4px solid #b51330;}
+.diff-11.effect{background:#be3049;color:#ffffff;border-top:4px solid #b51330;}
+.diff-11.c-score{background:#c74d63;color:#ffffff;border-top:4px solid #b51330;}
+.diff-11.c-diff{background:#d06b7d;color:#ffffff;border-top:4px solid #b51330;}
+.diff-11.c-relic{background:#d98997;color:#ffffff;border-top:4px solid #b51330;}
+.diff-11.c-wrath{background:#e2a6b1;color:#ffffff;border-top:4px solid #b51330;}
+.diff-11.bag{background:#ecc4cb;color:#303030;border-top:4px solid #b51330;}
+.diff-12.level{background:#b51330;color:#ffffff;}
+.diff-12.effect{background:#be3049;color:#ffffff;}
+.diff-12.c-score{background:#c74d63;color:#ffffff;}
+.diff-12.c-diff{background:#d06b7d;color:#ffffff;}
+.diff-12.c-relic{background:#d98997;color:#ffffff;}
+.diff-12.c-wrath{background:#e2a6b1;color:#ffffff;}
+.diff-12.bag{background:#ecc4cb;color:#303030;}
+.diff-13.level{background:#b51330;color:#ffffff;}
+.diff-13.effect{background:#be3049;color:#ffffff;}
+.diff-13.c-score{background:#c74d63;color:#ffffff;}
+.diff-13.c-diff{background:#d06b7d;color:#ffffff;}
+.diff-13.c-relic{background:#d98997;color:#ffffff;}
+.diff-13.c-wrath{background:#e2a6b1;color:#ffffff;}
+.diff-13.bag{background:#ecc4cb;color:#303030;}
+.diff-14.level{background:#b51330;color:#ffffff;}
+.diff-14.effect{background:#be3049;color:#ffffff;}
+.diff-14.c-score{background:#c74d63;color:#ffffff;}
+.diff-14.c-diff{background:#d06b7d;color:#ffffff;}
+.diff-14.c-relic{background:#d98997;color:#ffffff;}
+.diff-14.c-wrath{background:#e2a6b1;color:#ffffff;}
+.diff-14.bag{background:#ecc4cb;color:#303030;}
+.diff-15.level{background:#b51330;color:#ffffff;}
+.diff-15.effect{background:#be3049;color:#ffffff;}
+.diff-15.c-score{background:#c74d63;color:#ffffff;}
+.diff-15.c-diff{background:#d06b7d;color:#ffffff;}
+.diff-15.c-relic{background:#d98997;color:#ffffff;}
+.diff-15.c-wrath{background:#e2a6b1;color:#ffffff;}
+.diff-15.bag{background:#ecc4cb;color:#303030;}
+.diff-16.level{background:#6f349d;color:#ffffff;border-top:4px solid #6f349d;}
+.diff-16.effect{background:#814da9;color:#ffffff;border-top:4px solid #6f349d;}
+.diff-16.c-score{background:#9366b5;color:#ffffff;border-top:4px solid #6f349d;}
+.diff-16.c-diff{background:#a580c1;color:#ffffff;border-top:4px solid #6f349d;}
+.diff-16.c-relic{background:#b799cd;color:#ffffff;border-top:4px solid #6f349d;}
+.diff-16.c-wrath{background:#c9b2d9;color:#ffffff;border-top:4px solid #6f349d;}
+.diff-16.bag{background:#dbcce6;color:#303030;border-top:4px solid #6f349d;}
+@media (max-width:700px){
+.is-diff-table{min-width:900px;font-size:13px;}
+.is-diff-table td,.is-diff-table th{padding:6px 5px;}
+.is-diff-table .level{width:60px;}
+.is-diff-table .bag{width:200px;}
+}
+</bstyle>
+<div class="is-diff-table-wrapper">
+{| class="is-diff-table"
+|-
+! class="level" |难度等级
+! class="effect" |{{说明|效果|此列内容如无特殊说明，均继承上一难度效果}}
+! class="c-score" |得分效率{{#info:探索完成后的最终得分为：得分*（1+得分效率）}}
+! class="c-diff" |敌人难度{{#info:每进入新的一层，所有敌人攻击力和生命值较上一层额外+（敌人难度）%}}
+! class="c-relic" |多元化展现
+! class="c-wrath" |实托邦景象
+! class="bag" |生灵的溯游
+|-
+! class="level diff-0" |<center>保密等级·0</center><br>''沉沦于黑流，浮起幻梦或骸骨''
+| class="effect diff-0" |<center>初始生命值上限更高，失败时下次探索获得“特勤任务影像”</center>
+| class="c-score diff-0" |+0%
+| class="c-diff diff-0" |+0
+| class="c-relic diff-0" |结构化
+| class="c-wrath diff-0" |无
+| class="bag diff-0" |<center>/</center>
+|-
+! class="level diff-1" |<center>1</center>
+| class="effect diff-1" |<center>初始目标生命上限-2</center>
+| class="c-score diff-1" |+5%
+| class="c-diff diff-1" |+0
+| class="c-relic diff-1" |结构化
+| class="c-wrath diff-1" |无
+| class="bag diff-1" |<center>/</center>
+|-
+! class="level diff-2" |<center>2</center>
+| class="effect diff-2" |<center>实托邦将会在区域中生成</center>
+| class="c-score diff-2" |+10%
+| class="c-diff diff-2" |+0
+| class="c-relic diff-2" |结构化
+| class="c-wrath diff-2" |早期
+| class="bag diff-2" |<center>/</center>
+|-
+! class="level diff-3" |<center>3</center>
+| class="effect diff-3" |<center>部分【险路尽头】节点不再提前揭示 </center>
+| class="c-score diff-3" |+15%
+| class="c-diff diff-3" |+0
+| class="c-relic diff-3" |半结构化
+| class="c-wrath diff-3" |早期
+| class="bag diff-3" |<center>分裂</center>
+|-
+! class="level diff-4" |<center>4</center>
+| class="effect diff-4" |<center>出现【“居民”据点】节点，失败后不再获得“特勤任务影像”</center>
+| class="c-score diff-4" |+20%
+| class="c-diff diff-4" |+0
+| class="c-relic diff-4" |半结构化
+| class="c-wrath diff-4" |早期
+| class="bag diff-4" |<center>分裂</center>
+|-
+! class="level diff-5" |<center>5</center>
+| class="effect diff-5" |<center>所有敌人最大生命+30%</center>
+| class="c-score diff-5" |+25%
+| class="c-diff diff-5" |+1
+| class="c-relic diff-5" |半结构化
+| class="c-wrath diff-5" |早期
+| class="bag diff-5" |<center>分裂</center>
+|-
+! class="level diff-6" |<center>6</center>
+| class="effect diff-6" |<center>实托邦的效果提升至中期，将会更频繁地生成，并将添加实托邦·方针的效果</center>
+| class="c-score diff-6" |+30%
+| class="c-diff diff-6" |+2
+| class="c-relic diff-6" |非结构化
+| class="c-wrath diff-6" |中期
+| class="bag diff-6" |<center>分裂 / 卵生</center>
+|-
+! class="level diff-7" |<center>7</center>
+| class="effect diff-7" |<center>零件箱的初始容量-2</center>
+| class="c-score diff-7" |+35%
+| class="c-diff diff-7" |+3
+| class="c-relic diff-7" |非结构化
+| class="c-wrath diff-7" |中期
+| class="bag diff-7" |<center>分裂 / 卵生</center>
+|-
+! class="level diff-8" |<center>8</center>
+| class="effect diff-8" |<center>精英及领袖敌人攻击力+15%</center>
+| class="c-score diff-8" |+40%
+| class="c-diff diff-8" |+5
+| class="c-relic diff-8" |非结构化
+| class="c-wrath diff-8" |中期
+| class="bag diff-8" |<center>分裂 / 卵生</center>
+|-
+! class="level diff-9" |<center>9</center>
+| class="effect diff-9" |<center>进入下一区域时损失10%的源石锭</center>
+| class="c-score diff-9" |+45%
+| class="c-diff diff-9" |+6
+| class="c-relic diff-9" |混沌化
+| class="c-wrath diff-9" |中期
+| class="bag diff-9" |<center>分裂 / 卵生 / 胎生</center>
+|-
+! class="level diff-10" |<center>10</center>
+| class="effect diff-10" |<center>可同时部署人数-1，初始目标生命上限-2</center>
+| class="c-score diff-10" |+50%
+| class="c-diff diff-10" |+7
+| class="c-relic diff-10" |混沌化
+| class="c-wrath diff-10" |中期
+| class="bag diff-10" |<center>分裂 / 卵生 / 胎生</center>
+|-
+! class="level diff-11" |<center>11</center>
+| class="effect diff-11" |<center>领袖敌人受到的伤害降低20％</center>
+| class="c-score diff-11" |+50%
+| class="c-diff diff-11" |+8
+| class="c-relic diff-11" |混沌化
+| class="c-wrath diff-11" |中期
+| class="bag diff-11" |<center>分裂 / 卵生 / 胎生</center>
+|-
+! class="level diff-12" |<center>12</center>
+| class="effect diff-12" |<center>实托邦的效果提升至晚期，单个实托邦影响的范围扩大</center>
+| class="c-score diff-12" |+50%
+| class="c-diff diff-12" |+10
+| class="c-relic diff-12" |混沌化
+| class="c-wrath diff-12" |晚期
+| class="bag diff-12" |<center>分裂 / 卵生 / 胎生</center>
+|-
+! class="level diff-13" |<center>13</center>
+| class="effect diff-13" |<center>非初始招募五星干员的希望+1，“玻利瓦尔，症结之核”的防御力提升，“未熄之地”额外造成灼燃损伤</center>
+| class="c-score diff-13" |+50%
+| class="c-diff diff-13" |+12
+| class="c-relic diff-13" |混沌化
+| class="c-wrath diff-13" |晚期
+| class="bag diff-13" |<center>分裂 / 卵生 / 胎生</center>
+|-
+! class="level diff-14" |<center>14</center>
+| class="effect diff-14" |<center>“猎犬proto”进入目标点后行动力-1，“源阶方”的最大生命值提升，激活后全场我方每秒流失生命</center>
+| class="c-score diff-14" |+50%
+| class="c-diff diff-14" |+16
+| class="c-relic diff-14" |混沌化
+| class="c-wrath diff-14" |晚期
+| class="bag diff-14" |<center>分裂 / 卵生 / 胎生</center>
+|-
+! class="level diff-15" |<center>15</center>
+| class="effect diff-15" |<center>非初始招募六星干员的希望+1，“猎犬proto”的最大生命值提升且攻击时会为“卡德霍，黑流之源”回复生命</center>
+| class="c-score diff-15" |+50%
+| class="c-diff diff-15" |+20
+| class="c-relic diff-15" |混沌化
+| class="c-wrath diff-15" |晚期
+| class="bag diff-15" |<center>分裂 / 卵生 / 胎生</center>
+|-
+! class="level diff-16" |<center>16</center>
+| class="effect diff-16" |<center>险路尽头不再获得加工品，秘境行商和诡意行商刷新价格+4</center>
+| class="c-score diff-16" |+50%
+| class="c-diff diff-16" |+25
+| class="c-relic diff-16" |混沌化
+| class="c-wrath diff-16" |晚期
+| class="bag diff-16" |<center>分裂 / 卵生 / 胎生</center>
+|}
+</div>
+
+===调查者增益===
+'''多元化展现'''：当保密等级达到3、6、9级时，【多元奇物】类别的收藏品的效果将会一步步被强化，效果从“结构化”变为“半结构化”（<保密等级·3>）、“非结构化”（<保密等级·6>）和“混沌化”（<保密等级·9>）。强化后效果只会在达到对应难度的探索中生效。<br>
+{{提示|消息|<big>'''前往 [[沉沦者的黑流树海/拟造物质编目|拟造物质编目]]'''</big>|宽度=100%}}
+<br>
+'''生灵的溯游'''：生命游戏中的<分裂>、<卵生>、<胎生>节点无需消耗演化算子即可解锁，不会影响后续的生命游戏节点。这三个节点效果将分别在保密等级3、6、9及以上的探索中生效<br>节点效果只有在生命游戏中点亮后才能产生<br
+{{提示|消息|<big>'''前往 [[沉沦者的黑流树海/生命游戏|生命游戏]]'''</big>|宽度=100%}}
+'''<保密等级·3>及以上难度进行探索时，<分裂>生效:'''<br>
+*“指挥分队”效果提升
+*源流样本获取效率+2%
+*“羽瞰点”揭露的视野范围变大
+<br>
+'''<保密等级·6>及以上难度进行探索时，<卵生>生效:'''<br>
+*“后勤分队”效果提升
+*源流样本获取效率+2%
+*“诡意行商”中会额外出售两个商品
+<br>
+'''<保密等级·9>及以上难度进行探索时，<胎生>生效:'''<br>
+*“矛头分队”效果提升
+*源流样本获取效率+2%
+*通过“险路尽头”或“险路小径”进入下一区域后目标生命上限+2
+===开局及指挥等级===
+{{调查中}}
+<!--
+{|class="wikitable" style="width:100%;text-align: center;"
+|-
+!colspan="9" style="background-color:#121413;color:#ffffff"|'''初始状态'''
+|-
+!colspan="2" style="background-color:#121413;color:#ffffff"|
+!style="background-color:#121413;color:#ffffff"|目标生命值
+!style="background-color:#121413;color:#ffffff"|希望
+!style="background-color:#121413;color:#ffffff"|源石锭
+!style="background-color:#121413;color:#ffffff"|可携带干员数
+!style="background-color:#121413;color:#ffffff"|招募券留存上限
+!style="background-color:#121413;color:#ffffff"|初始票券数
+!style="background-color:#121413;color:#ffffff"|钱盒容量
+|-
+|colspan="2" style="background-color:#f5f5f5"|
+|style="background-color:#f5f5f5"|'''8'''
+|style="background-color:#f5f5f5"|'''6'''
+|style="background-color:#f5f5f5"|'''6'''
+|style="background-color:#f5f5f5"|'''6'''
+|style="background-color:#f5f5f5"|'''4'''
+|style="background-color:#f5f5f5"|'''0'''
+|style="background-color:#f5f5f5"|'''7'''
+|-
+!colspan="9" style="background-image: linear-gradient(to right,#1b1f22,#a0a0a0);color:#ffffff"|'''指挥等级'''
+|-
+!指挥等级
+!所需经验
+!目标生命值
+!希望
+!源石锭
+!可携带干员数
+!招募券留存上限
+!初始票券数
+!钱盒容量
+|-
+!'''1'''
+| <big>-</big>
+| <big>-</big>
+| <big>-</big>
+| /
+| <big>-</big>
+| ？
+| /
+| /
+|-
+!'''2'''
+| 10
+| <big>-</big>
+| +4
+| /
+| <big>-</big>
+| ？
+| /
+| /
+|-
+!'''3'''
+| 24
+| <big>-</big>
+| +4
+| /
+| <big>-</big>
+| ？
+| /
+| /
+|-
+!'''4'''
+| 36
+| <big>-</big>
+| +5
+| /
+| +1
+| ？
+| /
+| /
+|-
+!'''5'''
+| 40
+| <big>-</big>
+| +5
+| /
+| <big>-</big>
+| ？
+| /
+| /
+|-
+!'''6'''
+| 55
+| <big>-</big>
+| +6
+| /
+| +1
+| ？
+| /
+| /
+|-
+!'''7'''
+| 65
+| <big>-</big>
+| +6
+| /
+| <big>-</big>
+| ？
+| /
+| /
+|-
+!'''8'''
+| 75
+| <big>-</big>
+| +6
+| /
+| <big>-</big>
+| ？
+| /
+| /
+|-
+!'''9'''
+| 90
+| <big>-</big>
+| +6
+| /
+| +1
+| ？
+| /
+| /
+|-
+!'''10'''
+| 95
+| <big>-</big>
+| +8
+| /
+| <big>-</big>
+| ？
+| /
+| /
+|}
+-->
+===分队相关===
+
+{|class="wikitable" style="width:100%;table-layout:fixed;text-align:center"
+|-
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_指挥分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_特勤分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_后勤分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_矛头分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_本源研修分队.png|108px|link=]]
+|-
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>指挥分队</big>'''
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>特勤分队</big>'''
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>后勤分队</big>'''
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>矛头分队</big>'''
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>本源研修分队</big>'''
+|-
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>目标生命上限+2，每次战斗结束后额外回复1目标生命</small>{{#info:<small>生命游戏中激活“分裂”后→<br>目标生命上限+2，每次战斗结束后额外回复1目标生命；每次战斗结束后若护盾小于5点，额外获得1点护盾</small>}}
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>可携带干员+2，可同时部署人数+2，初始招募五名罗德岛预备干员</small>{{#info:<small>机械师提升至精英二阶段后→<br>可携带干员+2，可同时部署人数+2，初始招募机械师和五名罗德岛预备干员</small>}}
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>初始源石锭+20，初始希望+2</small>{{#info:<small>生命游戏中激活“卵生”后→<br>初始源石锭+20，初始希望+2；初始携带<多生苔藓></small>}}
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>初始目标生命值变为1，所有我方单位的攻击力+15%，防御力+15%，生命值+15%</small>{{#info:<small>生命游戏中激活“胎生”后→<br>初始目标生命值变为1，所有我方单位的攻击力+15%，防御力+15%，生命值+15%；初始携带【时光之末】</small>}}
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>招募和进阶4星以上【本源术师】【本源铁卫】【本源近卫】【巫役】干员时希望降低2点，并初始携带【河谷祭祈】</small>
+|-
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_地质调查分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_突击战术分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_堡垒战术分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_远程战术分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_破坏战术分队.png|108px|link=]]
+|-
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>地质调查分队</big>'''
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>突击战术分队</big>'''{{#info:'''解锁条件：'''拥有合计至少5名先锋或近卫干员完成游戏结局}}
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>堡垒战术分队</big>'''{{#info:'''解锁条件：'''拥有合计至少5名重装或辅助干员完成游戏结局}}
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>远程战术分队</big>'''{{#info:'''解锁条件：'''拥有合计至少5名医疗或狙击干员完成游戏结局}}
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>破坏战术分队</big>'''{{#info:'''解锁条件：'''拥有合计至少5名特种或术师干员完成游戏结局}}
+|-
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>可通过探访不同类型的节点，提升战斗后获得收藏品的概率</small>
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>招募和进阶4星以上的【近卫】或【先锋】干员时希望降低2点和1点，首次招募时为直升状态，并更容易购买到相应职业的招募券</small>
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>招募和进阶4星以上的【重装】或【辅助】干员时希望降低2点和1点，首次招募时为直升状态，并更容易购买到相应职业的招募券</small>
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>招募和进阶4星以上的【医疗】或【狙击】干员时希望降低2点和1点，首次招募时为直升状态，并更容易购买到相应职业的招募券</small>
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>招募和进阶4星以上的【术师】或【特种】干员时希望降低2点和1点，首次招募时为直升状态，并更容易购买到相应职业的招募券</small>
+|-
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_高台突破分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_地面突破分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_开拓者分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_多边贸易分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:20%;padding:8px;vertical-align:middle"|[[file:rogue6_文明开化分队.png|108px|link=]]
+|-
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>高台突破分队</big>'''{{#info:'''解锁条件：'''拥有合计至少4名术师、狙击、医疗或辅助干员完成游戏结局}}
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>地面突破分队</big>'''{{#info:'''解锁条件：'''拥有合计至少4名先锋、近卫、重装或特种干员完成游戏结局}}
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>开拓者分队</big>'''{{#info:'''解锁条件：'''生命游戏中激活“蹄”}}
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>多边贸易分队</big>'''{{#info:'''解锁条件：'''生命游戏中激活“鳃”}}
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>文明开化分队</big>'''{{#info:'''解锁条件：'''生命游戏中激活“羽毛”}}
+|-
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>招募4星以上【术师】【狙击】【医疗】【辅助】干员时希望降低2点</small>
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>招募4星以上【先锋】【近卫】【重装】【特种】干员时希望降低2点</small>
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>每进入一个新区域，获得1个随机加工品或概念体</small>{{#info:<small>生命游戏中激活“角”后→<br>初始携带1个加工品，进入新的区域时获得1个随机加工品或概念体</small><br><br><small>生命游戏中激活“睑板”后→<br>初始携带1个稀有的加工品，进入新的区域时获得1个随机加工品或概念体；初始携带<旅行绒></small>}}
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>零件箱容量+2，在同一个行商节点中卖出3个零件后获得8源石锭</small>{{#info:<small>生命游戏中激活“鳍”后→<br>零件箱容量+4，在同一个行商节点中卖出3个零件后获得8源石锭，每次进入行商节点时获得1个<枯苔藓球></small><br><br><small>生命游戏中激活“鳔”后→<br>零件箱容量+4，在同一个行商节点中卖出3个零件后获得8源石锭，每次进入行商节点时获得1个<枯苔藓球>；初始携带3个<枯苔藓球></small>}}
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>消除实托邦中的理想源后获得2点行动力和1个随机收藏品</small>{{#info:<small>生命游戏中激活“顶冠”后→<br>消除实托邦中的理想源后获得2点行动力和2个随机收藏品，不受实托邦·方针影响</small><br><br><small>生命游戏中激活“鸣管”后→<br>消除实托邦中的理想源后获得2点行动力和4个随机收藏品，不受实托邦·方针影响，当通过追猎进入下一区域时，触发实托邦概率增加</small>}}
+|-
+!style="background-color:#050304;color:#ffffff;height:60%;width:50%;padding:8px;vertical-align:middle"|[[file:rogue6_团结阵线分队.png|108px|link=]]
+!style="background-color:#050304;color:#ffffff;height:60%;width:50%;padding:8px;vertical-align:middle"|[[file:rogue6_踏足遍历分队.png|108px|link=]]
+|-
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>团结阵线分队</big>'''{{#info:'''解锁条件：'''通关结局1次}}
+!style="background-color:#050304;color:#ffffff;height:8%;padding:8px;vertical-align:top"|'''<big>踏足遍历分队</big>'''{{#info:'''解锁条件：'''通关结局1次}}
+|-
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>应急助力节点刷新时不再消耗源石锭，初始携带收藏品【似曾相识棋盒】</small>
+!style="background-color:#050304;color:#ffffff;height:32%;padding:10px 8px;vertical-align:top;line-height:1.6;word-break:break-word"|<small>使用加工品移动后随机揭露3处节点的视野，初始携带收藏品《去踏足》</small>
+|}
+
+===结局角标===
+{|class="wikitable" style="width:100%;text-align:center"
+|+ 当玩家使用某一分队达成结局后，在分队选择界面该分队的左上角会显示该结局角标，角标视乎通关的最高难度呈现不同效果。
+|-
+!colspan="4"|难度等级
+!rowspan="2" |通关结局
+|-
+!0-3
+!4-9
+!10-11
+!12+
+|-
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 1a.png|35px|link=]]
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 1b.png|35px|link=]]
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 1c.png|35px|link=]]
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 1d.png|35px|link=]]
+|达成 '''强制重启''' 结局
+|-
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 2a.png|35px|link=]]
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 2b.png|35px|link=]]
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 2c.png|35px|link=]]
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 2d.png|35px|link=]]
+|达成 '''维度重构''' 结局
+|-
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 3a.png|35px|link=]]
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 3b.png|35px|link=]]
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 3c.png|35px|link=]]
+|style="background:#212121;"|[[文件:Acticon rogue6 ending 3d.png|35px|link=]]
+|达成 '''纠缠，调和''' 结局
+|-
+|colspan="5"|'''前往[[沉沦者的黑流树海/结局|分形索引]]查看结局文本'''
+|}
+===区域相关===
+{|class="wikitable" style="text-align: center;"
+|-
+!colspan="2"|'''行动奖励'''
+|-
+!colspan="2"|你的上一次探索突破了至少两层困难，这一次可以获得更多支援。
+|-
+!'''未编号物'''
+|获得{{color|38d0d4|1件}}普通收藏品
+|-
+!'''调查预付款'''<br>[[file:Rogue6_choose_gold.png|60px]]
+|获得{{color|38d0d4|8}}源石锭
+|-
+!'''空间租赁'''
+|消耗{{color|d13464|6}}源石锭，零件箱容量{{color|38d0d4|+2}}
+|-
+!'''退行补偿'''
+|消耗{{color|d13464|2}}目标生命值上限，获得{{color|38d0d4|1件}}随机收藏品
+|-
+!'''林间代步'''
+|获得{{color|38d0d4|1件}}加工品
+|-
+!'''巢寄生'''
+|零件箱容量{{color|d13464|-1}}，获得{{color|38d0d4|1件}}稀有收藏品
+|-
+!colspan="2"|若上一次探索培育收获了【[[File:Rogue6_legacy_04.png|36px]]襁褓羽蛇】且突破了至少两个区域，则这一次初始可额外获得1个襁褓生灵
+|-
+!'''襁褓天马'''[[File:Rogue6_start_1.png|48px]]
+|每一区域额外获得{{color|38d0d4|1}}行动力
+|-
+!'''襁褓骏鹰'''[[File:Rogue6_start_2.png|48px]]
+|初始额外获得{{color|38d0d4|1}}希望，前2个区域初始揭露全部视野
+|-
+!'''襁褓巨龙'''[[File:Rogue6_start_3.png|48px]]
+|前2个区域中所有敌人的最大生命值-50%
+|-
+!'''襁褓九头蛇'''[[File:Rogue6_start_4.png|48px]]
+|所有敌人的攻击和生命值+30%，每次进入新的区域，我方单位攻击力和生命值+10%
+|-
+!'''襁褓白泽'''[[File:Rogue6_start_5.png|48px]]
+|临时招募干员的出现概率提升
+|-
+!'''襁褓金乌'''[[File:Rogue6_start_6.png|48px]]
+|进入区域血色空脉时获得{{color|38d0d4|3个}}随机收藏品
+|-
+!colspan="2"|若本次探索失败，下次探索时，初始可额外获得收藏品【特勤任务影像】<br>
+◈仅常规探索<保密等级难度0~3>触发
+|-
+!'''特勤任务影像'''
+|我方单位的生命、攻击力、防御力+40%，指挥经验+20%
+|}
+<br><br>
+<div style="max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;">
+{| class="wikitable" style="width:100%;font-size:90%;line-height:1.65;min-width:780px;"
+|-
+! style="width:8%;background:#5c7a1a;color:#ffffff;" | 层级
+! style="width:18%;background:#688a1d;color:#ffffff;" | 区域
+! style="width:27%;background:#eaf0dc;color:#000000;" | 入场文本
+! style="width:22%;background:#eaf0dc;color:#000000;" | {{说明|信息丢失|失败提示}}
+! style="width:25%;background:#c4d59e;color:#000000;" | 对应结局
+|-
+! style="background:#d9e4c1;color:#000000;text-align:center;font-weight:700;" | Ⅰ
+| style="background:#fffdfd;color:#222222;text-align:center;" | [[file:acticon_rogue6_zone1.png|40px|link=]]<br>'''玻利瓦尔肤层'''
+| style="background:#ffffff;color:#222222;" | 未经探索的土地将自己献与新的主人。
+| style="background:#ffffff;color:#222222;" | 征服者欣然笑纳，将剑与火作为忠诚的馈赠。
+| style="background:#f2f6e9;color:#6c7f79;text-align:center;" | —
+|-
+! style="background:#d9e4c1;color:#000000;text-align:center;font-weight:700;" | Ⅱ
+| style="background:#fffdfd;color:#222222;text-align:center;" | [[file:acticon_rogue6_zone2.png|40px|link=]]<br>'''甜美的伤口'''
+| style="background:#ffffff;color:#222222;" | 刀锋划开，原罪混杂着甘甜倾泻而出。
+| style="background:#ffffff;color:#222222;" | 饮下蜜糖之人，可曾想过它的来处？
+| style="background:#f2f6e9;color:#6c7f79;text-align:center;" | —
+|-
+! style="background:#d9e4c1;color:#000000;text-align:center;font-weight:700;" | Ⅲ
+| style="background:#fffdfd;color:#222222;text-align:center;" | [[file:acticon_rogue6_zone3.png|40px|link=]]<br>'''血色空脉'''
+| style="background:#ffffff;color:#222222;" | 当赤金沐浴阳光的那一刻，整片大地都为之闪烁。
+| style="background:#ffffff;color:#222222;" | 光芒之下，贪婪大快朵颐。
+| style="background:#f2f6e9;color:#6c7f79;text-align:center;" | —
+|-
+! style="background:#d9e4c1;color:#000000;text-align:center;font-weight:700;" | Ⅳ
+| style="background:#fffdfd;color:#222222;text-align:center;" | [[file:acticon_rogue6_zone4.png|40px|link=]]<br>'''受害者腐殖'''
+| style="background:#ffffff;color:#222222;" | 如果大地不能缓和您的愤怒，就请拿走我的血与骨。
+| style="background:#ffffff;color:#222222;" | 只知供奉的人从不知道，索取永无尽头。
+| style="background:#f2f6e9;color:#6c7f79;text-align:center;" | —
+|-
+! style="background:#cfddaf;color:#000000;text-align:center;font-weight:700;" | Ⅴ
+| style="background:#fffdfd;color:#222222;text-align:center;" | [[file:acticon_rogue6_zone5.png|40px|link=]]<br>'''卡德霍之颅'''
+| style="background:#ffffff;color:#222222;" | 有些伤口不会愈合，有些愤怒不会平息。
+| style="background:#ffffff;color:#222222;" | 当祂张开巨口，文明的辩解将苍白无力。
+| style="background:#e7eed7;color:#173b2f;" | 达成结局-[[沉沦者的黑流树海/结局|<u>{{color|5e7d1b|强制重启}}</u>]]<br>达成结局-[[沉沦者的黑流树海/结局|<u>{{color|5e7d1b|维度重构}}</u>]]
+|-
+! style="background:#cfddaf;color:#000000;text-align:center;font-weight:700;" | Ⅵ
+| style="background:#fffdfd;color:#222222;text-align:center;" | [[file:acticon_rogue6_zone6.png|40px|link=]]<br>'''源流交汇处'''
+| style="background:#ffffff;color:#222222;" | 兽主们欢迎你的到来。
+| style="background:#ffffff;color:#222222;" | 祂们很喜欢你，如果你能再多坚持一会就好了。
+| style="background:#e7eed7;color:#173b2f;" | 达成结局-[[沉沦者的黑流树海/结局|<u>{{color|5e7d1b|纠缠，调和}}</u>]]
+|-
+! style="background:#cfddaf;color:#000000;text-align:center;font-weight:700;" | Ⅶ
+| style="background:#fffdfd;color:#222222;text-align:center;" | [[file:acticon_rogue6_zone7.png|40px|link=]]<br>'''盲目者所见'''
+| style="background:#ffffff;color:#222222;" | 在此处，光与影所及之物皆是幻想
+| style="background:#ffffff;color:#222222;" | 无论面对辉煌或深渊，都不应当长久地直视。。
+| style="background:#e7eed7;color:#173b2f;" | 达成结局-[[沉沦者的黑流树海/结局|<u>{{color|5e7d1b|旧日重燃}}</u>]]
+|-
+! style="background:#d9e4c1;color:#000000;text-align:center;font-weight:700;" | ？？
+| style="background:#fffdfd;color:#222222;text-align:center;" | [[file:acticon_rogue6_zoneportal.png|40px|link=]]<br>'''未萌生的摇篮'''
+| style="background:#ffffff;color:#222222;" | 诞生前的炼狱。
+| style="background:#ffffff;color:#222222;" | 很高兴你不用见识世间的残酷。
+| style="background:#f2f6e9;color:#6c7f79;text-align:center;" | —
+|}
+</div>
+
+===地图与移动===
+在本次集成战略中，地图将改为'''四向连通结构'''，玩家可以从初始位置，沿平面路径自由选择移动路线。
+*初入黑流树海时，大部分节点为未知状态（{{color|802080|未知的凶戾}}、{{color|208020|未知的诡秘}}）
+*对于所在节点 / 节点与自身所在位置间没有未完成的内容节点 / 部分特殊节点，节点将变得清晰，显示内容。
+**部分节点在首次探索后会变为仅能移动前往但没有可进入内容的<林间空地>。
+**部分节点永久有效，可以多次进入。
+**留心附带特殊标记的节点，它们可能带来未知的机遇或危险。<br>
+<br>
+*玩家在地图内选择方向并进行移动探索，每次移动需要'''消耗行动力'''，每次进入一个新的区域，均会获得一定数量的行动力，在探索途中，也存在一些特殊手段可补充行动力。
+*可以选择徒步跋涉，也可以借助各类加工品来更高效地移动。<br>
+'''【徒步跋涉】'''<br>
+默认移动方式，只能沿着小径移动前往与当前位置相连的节点。'''徒步跋涉时，消耗的行动力=本次移动经过的节点数'''<br>
+'''【加工品】'''<br>
+通过在黑流树海收集到的这种零件，玩家使用后可以按照所属规则后进行更高效的移动，'''其消耗的行动力由加工品的使用方式决定'''<br>
+<br>
+黑流树海内路径错综复杂，在行动力耗尽前，玩家需要探寻并抵达区域“出口”，即可前往下一区域。<br> <br>
+◈'''险路尽头'''： ''只是另一场求索的起点。''<br>抵达<险路尽头>节点，可将剩余的行动力转化为希望，并立即前往下一区域。在此节点内，还可使用留存的招募券招募干员入队。<br>
+◈'''险路小径'''： ''嘘，不要把这个秘密告诉别人。''<br>特殊的隐藏出口，可以携带剩余行动力进入下一区域。<br>
+◈'''险路恶敌'''： ''坏人、恶棍、受诅咒之人......你有麻烦了。''<br>在部分区域中，需要战胜险路的敌人才能前往下一区域，剩余的行动力将转化为希望。<br><br>
+*若行动力耗尽时仍未离开当前区域，将会触发'''追猎'''，玩家将会遭遇一场异常艰难的战斗。<br> 
+在战斗中取得胜利则仍然可顺利前往下一区域，失败则将中断探索。在探索途中，也可主动耗尽全部行动力提前触发追猎。
+===节点类型===
+*'''作战'''<br> ''大家手里都拿着武器，肯定不是来谈判的。''
+**请前往[[沉沦者的黑流树海/关卡|关卡记录]]查看
+*'''紧急作战'''<br> ''有些暴力可能会超出你的预期，这很常见。''
+**请前往[[沉沦者的黑流树海/关卡|关卡记录]]查看
+<br><br>
+*'''险路恶敌'''<br> ''坏人、恶棍、受诅咒之人......你有麻烦了。''<br>在部分区域中，需要战胜险路的敌人才能前往下一区域，剩余的行动力将转化为希望。
+**请前往[[沉沦者的黑流树海/关卡|关卡记录]]查看
+*'''险路尽头'''<br> ''只是另一场求索的起点。''<br> 抵达<险路尽头>节点，可将剩余的行动力转化为希望，并立即前往下一区域。在此节点内，还可使用留存的招募券招募干员入队。
+*'''险路小径'''<br> ''嘘，不要把这个秘密告诉别人。''<br> 特殊的隐藏出口，可以携带剩余行动力进入下一区域。
+<br><br>
+*'''诡意行商'''<br> ''不是盟友也不是敌人，有些人喜欢站在中间。''<br>可以消耗源石锭购买道具和收藏品的商店，有时还提供特别的投资服务。<br>
+在<生命游戏>中点亮相关加成后，您还可以出售不再需要的零件给坎诺特换取额外的源石锭。<br>
+..或许，您可以“免费”获得这些商品？
+**前瞻性投资系统：
+''投资系统会概率性在商店中出现，其余额会在每一次的探索中继承。养成良好投资习惯，解锁投资奖赏，为后续的探索积攒优势。''
+{|class="wikitable" style="text-align: center;width:100%"
+|-
+!历史累计投资额
+!投资奖赏
+|-
+|'''{{材料|源石锭|15}}'''
+|“前瞻性投资系统”中开放“余额提取”功能
+|-
+|'''{{材料|源石锭|50}}'''
+|坎诺特向你展示了货柜？
+|-
+|'''{{材料|源石锭|125}}'''
+|诡意行商中会额外出售一个商品
+|-
+|'''{{材料|源石锭|250}}'''
+|解锁收藏品【金酒之杯】
+|-
+|'''{{材料|源石锭|500}}'''
+|诡意行商中会额外出售一个商品
+|}
+*'''秘境行商'''<br> ''秘密与路途被摆上天平，摇晃之间价码已被定下。''<br>在这里，您可以消耗源石锭购买所需的零件，也可以出售不再需要的零件以换取源石锭。<br>
+还提供特别的培育服务，提供零件箱内的种子并进行培育，有概率获得当局零件或跨局增益。
+*'''应急助力'''<br> ''人手不嫌多，朋友不嫌少。''<br>希望不足时或需要补充战力时，可以前往应急助力节点消耗源石锭征召应急干员 (不必自己获得)。这些干员可以协助参与任意一场作战，并在完成作战后离开。
+<br><br>
+*'''曲折密道'''<br> ''本地人的杰作。''<br>成对出现，可以快速移动至区域内另一个<曲折密道>节点所在的位置。
+*'''羽瞰点'''<br> ''所见并非所得，做好标记后别忘了计算行程。''<br>初始揭示附近一定范围内的节点信息；前往节点后，可进一步扩大揭示范围并获得行动力。
+<br><br>
+*'''安全的角落'''<br> ''这里不会有人打扰，食物和水也很充足，别一直紧绷着神经了。''
+*'''不期而遇'''<br> ''新朋友、老对头......奇遇不会老去，陈旧的只有伤疤。''
+**事件请前往[[沉沦者的黑流树海/调查记录|调查记录]]查看
+*'''得偿所愿'''<br> ''许愿的形式千奇百怪，而愿望本身却大同小异。''
+*'''失与得'''<br> ''失去的空洞与无措，会被获得的满足与喜悦填充。''<br>有时候，您所不需要的物品或许是别人赖以生存的宝物。<br>
+在此您可将不再需要的收藏品/零件拿去置换有用的珍贵资源。
+*'''先行一步'''<br> ''总有人要走在前头，好为后来的人指明道路。''<br>您可在此节点指定一名干员脱离队伍提前探险，在此期间该干员不可使用。<br>
+在进入下一区域时，该干员将回归队伍，获得晋升并带回零件等额外奖励。
+*'''误入奇境'''<br> ''枝条旁，叶片外，未探之地就在身边。''<br>遇到该类节点，可以选择消耗一个加工品，获得专用于本区域探索的行动力，并步入黑潭。抵御区域内的乌托邦影响，消耗行动力自由选择黑潭中的节点进行探索，可以获得更丰富的资源，提升小队实力。
+*'''狭路相逢'''<br> ''猎物与猎手的对话。''
+*'''命运所指'''<br> ''抉择就在眼前，结果早已注定。''
+<br><br>
+*'''“居民”据点'''<br> ''平静的生活被打破，也难怪它们怒火中烧。''<br>当特殊作战节点<“居民”据点>出现时，节点周边会生成若干流窜“居民”。<br>
+他们会在林间移动并占领节点，使所在节点转变为特殊作战。您可以选择等待这些“居民”离开，或直接战斗驱逐。但需注意，战胜流窜“居民”后，被占领的节点也将直接变为<林间空地>。<br>
+直面并战胜<“居民”据点>，不仅可以获得丰厚奖励，还可驱逐区域内所有流窜“居民”，使被占领的节点恢复原貌。
+*'''林间空地'''<br> ''无事发生便是最动人的温柔。''
+
+===零件与零件箱===
+【零件】是本次集成战略主题中新增的一类获得物，玩家探索时，可以通过多种途径收集零件，并存放于【零件箱】中。<br> 
+零件分为三种类型：加工品、概念体、自然物<br> 
+'''【加工品】'''<br> 
+提供特殊的地图移动能力，通常有使用次数限制<br> 
+'''【概念体】'''<br> 
+携带触发被动效果<br> 
+'''【自然物】'''<br> 
+无法使用，纯粹用于交易之物。其价值会随游戏进程变化，通常能在售出时获得更多源石锭<br> 
+<br> 
+*零件箱存在一定容量上限，'''超过后无法移动'''。玩家需要合理规划其中零件，为探索之旅提供助力。
+*所有零件均拥有价值，可在<秘境行商>或<诡意行商>中出售并获得源石锭。
+<br> 
+*除此之外，在<常规模式>的探索过程中，玩家可能会获得一些特殊的<自然物>零件——种子。<br> 
+这些种子无法直接发挥作用，不过可以在<秘境行商>节点中，通过【机械师的园圃】进行培育，每颗种子均有可能长成一个'''随机零件'''或'''襁褓生灵'''。其中，襁褓生灵可为下一次<常规模式>的探索提供助力。<br> 
+合理收集并培育这些种子，也许能在下一次出发时，为你的旅程带来关键的优势。<br> 
+{| class="wikitable" style="width:100%; text-align:center; font-size:14px;"
+|-
+|+襁褓生灵
+|-
+! 图标
+! 名称
+! 描述
+!colspan="2" | 使用效果
+|-
+| [[File:Rogue6_legacy_01.png|48px]]
+| 襁褓中的猫
+| 愿新生的他们不再遭战火蹂躏。
+| colspan="2" style="text-align:left;" | <span style="color:#ff9e20;">下次探索</span>时，初始可额外获得5源石锭
+|-
+| [[File:Rogue6_legacy_02.png|48px]]
+| 襁褓中的狗
+| 愿新生的他们不再遭外敌剥削。
+| colspan="2" style="text-align:left;" | <span style="color:#ff9e20;">下次探索</span>时，初始可额外获得1点希望
+|-
+| [[File:Rogue6_legacy_03.png|48px]]
+| 襁褓三头犬
+| 愿新生的他们不再为当下迷茫。
+| colspan="2" style="text-align:left;" | 若本次探索通过至少两个区域，<span style="color:#ff9e20;">下次探索</span>时，初始可额外获得1次选择支援的机会
+|-
+| rowspan="6" | [[File:Rogue6_legacy_04.png|48px]]
+| rowspan="6" | 襁褓羽蛇
+| rowspan="6" | 愿新生的他们不再被过往束缚。
+| rowspan="6" style="text-align:left;" | 若本次探索通过至少两个区域，<span style="color:#ff9e20;">下次探索</span>时，初始可额外获得1个支援选项
+| style="text-align:left;" | 解锁【[[File:Rogue6_start_1.png|48px]]<b>襁褓天马</b>】<br/>每一区域额外获得{{color|38d0d4|1}}行动力
+|-
+| style="text-align:left;" | 解锁【[[File:Rogue6_start_2.png|48px]]<b>襁褓骏鹰</b>】<br/>初始额外获得{{color|38d0d4|1}}希望，前2个区域初始揭露全部视野
+|-
+| style="text-align:left;" | 解锁【[[File:Rogue6_start_3.png|48px]]<b>襁褓巨龙</b>】<br/>前2个区域中所有敌人的最大生命值-50%
+|-
+| style="text-align:left;" | 解锁【[[File:Rogue6_start_4.png|48px]]<b>襁褓九头蛇</b>】<br/>所有敌人的攻击和生命值+30%，每次进入新的区域，我方单位攻击力和生命值+10%
+|-
+| style="text-align:left;" | 解锁【[[File:Rogue6_start_5.png|48px]]<b>襁褓白泽</b>】<br/>临时招募干员的出现概率提升
+|-
+| style="text-align:left;" | 解锁【[[File:Rogue6_start_6.png|48px]]<b>襁褓金乌</b>】<br/>进入区域血色空脉时获得{{color|38d0d4|3个}}随机收藏品
+|}
+{{提示|消息|前往[[沉沦者的黑流树海/引擎配件目录|引擎配件目录]]页面}}
+===理想域===
+在黑流树海内部,存在一种能够影响区域环境的现象，称为“理想域”，使部分节点产生特殊效果。在探索中，途经这些受理想域影响的节点将触发对应的特殊效果。<br> 
+根据触发区域的不同，可以将“理想域”分为实托邦和乌托邦两种类型。<br> <br> 
+'''【实托邦】'''<br> 
+实托邦仅对当前区域内部分处于“理想域”范围内的节点产生影响。<br> 
+此类“理想域”范围内通常存在一个“理想源”节点。找到并破坏“理想源”可消除对应的实托邦。<br> 
+<实托邦·理念>的效果会在进入节点时生效。并且随着保密等级提升，其效果也会越强大。<br> 
+同时【保密等级·6】及往后难度，也会额外添加<实托邦·方针>的效果<br> 
+游玩时难度越高，实托邦效果越强大，需要谨慎应对。<br> <br> 
+'''【乌托邦】'''<br> 
+乌托邦仅存在于“黑潭”区域内，会影响当前区域内的所有节点。乌托邦无法被消除。<br> 
+{{提示|消息|前往[[沉沦者的黑流树海/乌托邦幸福论|乌托邦幸福论]]页面}}
+===黑潭===
+过特殊节点<误入奇境>，可以选择消耗零件箱内加工品进入特殊区域——黑潭。<br> 
+每次进入黑潭，均会获得一定数量的行动力，随探索消耗。当行动力归零后，即可直接返回林间；也可选择主动耗尽行动力，尽快离开黑潭。<br> 
+林间未耗尽的行动力不会被带入黑潭，并会在离开黑潭后恢复继续使用。
+==关卡记录==
+{{提示|蓝色|如需查看有关'''本次主题所有关卡'''的相关信息，您可以前往[[沉沦者的黑流树海/关卡|关卡记录]]页面查看。}}
+==调查记录（事件）==
+{{提示|蓝色|如需查看有关'''本次主题所有事件'''的相关信息，您可以前往[[沉沦者的黑流树海/调查记录]]页面查看。}}
+==源流堆栈==
+===奖励预告===
+<tabber>
+2026/07=
+{|
+|style="background-color:#000000;color:#ffffff"|等级1 可获取主题干员：'''[[机械师]]'''<br/><br/>重装干员机械师，即日起纳入你的指挥序列。<br>但其实，你早就已经被列入了他的指挥序列。毕竟，你用过的许许多多设备，都由他创造，也由他掌控。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_1.png|200px]]
+|}
+|-|
+2026/08=
+{|
+|style="background-color:#000000;color:#ffffff"|等级65 可获取高级资深干员技巧集：'''[[高级资深干员技巧集]]'''<br/><br/>全面详实地记载了专家级技艺的集录，干员经过学习操练，可以快速积累经验，达到专家级的认定标准。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_2.png|200px]]
+|}
+|-|
+2026/09=
+{|
+|style="background-color:#000000;color:#ffffff"|等级73 可获取主题家具包：'''[[黑流印象家具收藏包一]]'''<br/><br/>黑流树海里流淌的记忆不会停滞。<br>生命在此诞生，断裂，又被封存。<br>时间沿着根脉爬上沉沦者的额头，<br>在林叶与泥土间，长成新的年轮。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_3.png|200px]]
+|-
+|style="background-color:#000000;color:#ffffff"|等级80 可获取界面主题：'''[[幽脉]]'''<br/><br/>襁褓溯游而上，于藤蔓与骸骨的分叉处，仰望未知的生命奇景。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_4_2.png|200px]]<!--[[file:rogue6_grand_4.png|200px]]-->
+|}
+|-|
+2026/10=
+{|
+|style="background-color:#000000;color:#ffffff"|等级95 可获取承曦格雷伊形象时装：'''[[千尺俯瞰-承曦格雷伊]]'''<br/><br/>远方的星辰在逐渐变成群青色的天空中正开始闪烁，脚下除了鸣叫着的羽兽群，更有蜿蜒不断的沿岸风景。吹在脸颊上的风变凉的时候，格雷伊明白今天的探索就要告一段落了。 多么愉快的旅程，他发自心底这么想。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_5_2.png|200px]]<!--[[file:rogue6_grand_5.png|200px]]-->
+|}
+|-|
+2026/11=
+{|
+|style="background-color:#000000;color:#ffffff"|等级105 可获取主题家具包：'''[[黑流印象家具收藏包二]]'''<br/><br/>黑流树海里流淌的记忆不会停滞。<br>生命在此诞生，断裂，又被封存。<br>记忆沿着裂隙渗入遗忘者的脊背，<br>在腐坏与萌发之间，生出新的聚落。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_6.png|200px]]
+|-
+|style="background-color:#000000;color:#ffffff"|等级110 可获取高级物资整合箱：'''[[模组数据整合箱]]'''<br/><br/>数据内容的整合，系统工程的结晶。<br>能够增强干员能力，或是辅助调整他们的作战方式。<br>你会现在就思考如何使用它吗？<br>抑或是收入囊中，等待更合适的时机？
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_7.png|200px]]
+|}
+|-|
+2026/12=
+{|
+|style="background-color:#000000;color:#ffffff"|等级118 可获取主题可交互家具：'''[[“橙黄色的美梦”]]'''<br/><br/>一段温暖的树桩，小小的橙黄色生物探出脑袋，欢快地摇晃着尾巴。这是她的美梦，现在，她想与你分享。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_8.png|200px]]
+|-
+|style="background-color:#000000;color:#ffffff"|等级125 可获取麦哲伦形象时装：'''[[绿影之下-麦哲伦]]'''<br/><br/>她上一次来到这里的时候，黑流树海中还见不到那么多奇异的生命现象。尽管被再三叮嘱要与“居民”们保持安全距离，但她还是一下子就跟它们交上了朋友。<br>真奇怪，难道她比其他探险者身上多了点什么？又或许，只是少沾染了一点不该从文明中带去的东西吧。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_9.png|200px]]
+|}
+|-|
+2027/01=
+{|
+|style="background-color:#000000;color:#ffffff"|等级140 可获取主题场景：'''[[主题场景]]'''<br/><br/>祂奔于死的荒原上，照见万灵原本的模样。从此，大地是祂的皮，河流是祂的血管，一切向上生长的是祂的骨。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_10.png|200px]]
+|}
+|-|
+2027/02=
+{|
+|style="background-color:#000000;color:#ffffff"|等级155 可获取主题头像：'''[[头像一览#神秘头像|神秘头像]]'''<br/><br/>在“长大”之前，它已经失去了诞生和死亡的资格。
+|style="background-color:#000000;color:#ffffff"|[[file:rogue6_grand_11.png|200px]]
+|}
+</tabber>
+===记录归档===
+'''获取{{材料|源流样本}}提升等级'''
+<div style="overflow-y:scroll;height:400px">
+<tabber style="font-family:MomsTypewriter;font-size:1.46rem">
+2026年7月 初始内容=
+{| class="wikitable" style="width:100%"
+|-
+!进度
+!奖励
+!进度
+!奖励
+!进度
+!奖励
+|-
+|1
+|{{材料|机械师招聘合同|1}}
+|2
+|{{材料|龙门币|20000}}
+|3
+|{{材料|高级作战记录|10}}
+|-
+|4
+|{{材料|液化高能气体|10}}
+|5
+|{{材料|技巧概要·卷1|30}}
+|6
+|{{材料|炽合金块|3}}
+|-
+|7
+|{{材料|龙门币|20000}}
+|8
+|{{材料|高级作战记录|10}}
+|9
+|{{材料|类凝结核|10}}
+|-
+|10
+|{{材料|技巧概要·卷2|10}}
+|11
+|{{材料|固化纤维板|3}}
+|12
+|{{材料|龙门币|20000}}
+|-
+|13
+|{{材料|高级作战记录|10}}
+|14
+|{{材料|电极单元|10}}
+|15
+|{{材料|技巧概要·卷3|3}}
+|-
+|16
+|{{材料|环烃预制体|3}}
+|17
+|{{材料|龙门币|20000}}
+|18
+|{{材料|高级作战记录|10}}
+|-
+|19
+|{{材料|晶体电路|3}}
+|20
+|{{材料|技巧概要·卷1|30}}
+|21
+|{{材料|晶体电子单元|1}}
+|-
+|22
+|{{材料|龙门币|30000}}
+|23
+|{{材料|精炼溶剂|3}}
+|24
+|{{材料|高级作战记录|15}}
+|-
+|25
+|{{材料|聚合凝胶|3}}
+|26
+|{{材料|龙门币|30000}}
+|27
+|{{材料|聚合剂|1}}
+|-
+|28
+|{{材料|高级作战记录|15}}
+|29
+|{{材料|聚能动力单元|3}}
+|30
+|{{材料|机械师的信物|1}}
+|-
+|31
+|{{材料|龙门币|30000}}
+|32
+|{{材料|切削原液|3}}
+|33
+|{{材料|高级作战记录|15}}
+|-
+|34
+|{{材料|手性屈光体|3}}
+|35
+|{{材料|机械师的信物|1}}
+|36
+|{{材料|龙门币|30000}}
+|-
+|37
+|{{材料|重相位对映体|1}}
+|38
+|{{材料|高级作战记录|15}}
+|39
+|{{材料|提纯源岩|3}}
+|-
+|40
+|{{材料|机械师的信物|1}}
+|41
+|{{材料|龙门币|50000}}
+|42
+|{{材料|酮阵列|3}}
+|-
+|43
+|{{材料|高级作战记录|20}}
+|44
+|{{材料|液化醚吸聚体|3}}
+|45
+|{{材料|机械师的信物|1}}
+|-
+|46
+|{{材料|龙门币|50000}}
+|47
+|{{材料|烧结核凝晶|1}}
+|48
+|{{材料|高级作战记录|20}}
+|-
+|49
+|{{材料|异铁块|3}}
+|50
+|{{材料|机械师的信物|1}}
+|
+|
+|}
+|-|
+2026年8月 内容追加=
+{| class="wikitable" style="width:100%"
+|-
+!进度
+!奖励
+!进度
+!奖励
+!进度
+!奖励
+|-
+|51
+|{{材料|龙门币|50000}}
+|52
+|{{材料|高级作战记录|20}}
+|53
+|{{材料|转质盐聚块|3}}
+|-
+|54
+|{{材料|技巧概要·卷1|30}}
+|55
+|{{材料|晶体电子单元|1}}
+|56
+|{{材料|龙门币|50000}}
+|-
+|57
+|{{材料|高级作战记录|20}}
+|58
+|{{材料|数据增补条|60}}
+|59
+|{{材料|技巧概要·卷2|10}}
+|-
+|60
+|{{材料|炽合金块|3}}
+|61
+|{{材料|龙门币|50000}}
+|62
+|{{材料|高级作战记录|20}}
+|-
+|63
+|{{材料|聚合剂|1}}
+|64
+|{{材料|技巧概要·卷3|3}}
+|65
+|{{材料|高级资深干员技巧集|1}}
+|}
+|-|
+2026年9月 内容追加=
+{| class="wikitable" style="width:100%"
+|-
+!进度
+!奖励
+!进度
+!奖励
+!进度
+!奖励
+|-
+|66
+|{{材料|龙门币|50000}}
+|67
+|{{材料|高级作战记录|20}}
+|68
+|{{材料|固化纤维板|3}}
+|-
+|69
+|{{材料|技巧概要·卷1|30}}
+|70
+|{{材料|重相位对映体|1}}
+|71
+|{{材料|龙门币|50000}}
+|-
+|72
+|{{材料|高级作战记录|20}}
+|73
+|{{材料|黑流印象家具收藏包一|1}}
+|74
+|{{材料|技巧概要·卷2|10}}
+|-
+|75
+|{{材料|环烃预制体|3}}
+|76
+|{{材料|龙门币|50000}}
+|77
+|{{材料|高级作战记录|20}}
+|-
+|78
+|{{材料|烧结核凝晶|1}}
+|79
+|{{材料|技巧概要·卷3|3}}
+|80
+|{{材料o|item_主题幽脉|游戏个性化内容#幽脉|1|name=幽脉}}
+|}
+|-|
+2026年10月 内容追加=
+{| class="wikitable" style="width:100%"
+|-
+!进度
+!奖励
+!进度
+!奖励
+!进度
+!奖励
+|-
+|81
+|{{材料|龙门币|50000}}
+|82
+|{{材料|高级作战记录|20}}
+|83
+|{{材料|晶体电路|3}}
+|-
+|84
+|{{材料|技巧概要·卷1|30}}
+|85
+|{{材料|晶体电子单元|1}}
+|86
+|{{材料|龙门币|50000}}
+|-
+|87
+|{{材料|高级作战记录|20}}
+|88
+|{{材料|精炼溶剂|3}}
+|89
+|{{材料|技巧概要·卷2|10}}
+|-
+|90
+|{{材料|聚合凝胶|3}}
+|91
+|{{材料|龙门币|50000}}
+|92
+|{{材料|高级作战记录|20}}
+|-
+|93
+|{{材料|聚合剂|1}}
+|94
+|{{材料|技巧概要·卷3|3}}
+|95
+|{{材料o|name=承曦格雷伊-千尺俯瞰|承曦格雷伊wild12|千尺俯瞰-承曦格雷伊|1}}
+|}
+|-|
+2026年11月 内容追加=
+{| class="wikitable" style="width:100%"
+|-
+!进度
+!奖励
+!进度
+!奖励
+!进度
+!奖励
+|-
+|96
+|{{材料|龙门币|50000}}
+|97
+|{{材料|高级作战记录|20}}
+|98
+|{{材料|聚能动力单元|3}}
+|-
+|99
+|{{材料|技巧概要·卷1|30}}
+|100
+|{{材料|重相位对映体|1}}
+|101
+|{{材料|龙门币|50000}}
+|-
+|102
+|{{材料|高级作战记录|20}}
+|103
+|{{材料|切削原液|3}}
+|104
+|{{材料|技巧概要·卷2|10}}
+|-
+|105
+|{{材料|黑流印象家具收藏包二|1}}
+|106
+|{{材料|龙门币|50000}}
+|107
+|{{材料|高级作战记录|20}}
+|-
+|108
+|{{材料|烧结核凝晶|1}}
+|109
+|{{材料|技巧概要·卷3|3}}
+|110
+|{{材料|模组数据整合箱|1}}
+|}
+</tabber>
+</div>
+
+==生命游戏（天赋树）==
+{{提示|蓝色|如需查看有关'''本主题天赋树'''的内容，您可以前往[[沉沦者的黑流树海/生命游戏|生命游戏]]页面查看。}}
+==黑流数据库==
+===拟造物质编目（收藏品）===
+{{提示|蓝色|如需查看有关'''本主题收藏品'''的相关信息，您可以前往[[沉沦者的黑流树海/拟造物质编目|拟造物质编目]]页面查看。}}
+===乌托邦幸福论（理想域）===
+{{提示|蓝色|如需查看有关'''本主题理想域效果'''的相关信息，您可以前往[[沉沦者的黑流树海/乌托邦幸福论|乌托邦幸福论]]页面查看。}}
+===分形索引（结局）===
+{{提示|蓝色|如需查看有关'''本主题结局'''的相关信息，您可以前往[[沉沦者的黑流树海/结局|分形索引]]页面查看。}}
+===引擎配件目录（零件）===
+{{提示|蓝色|如需查看有关'''本主题零件'''的相关信息，您可以前往[[沉沦者的黑流树海/引擎配件目录|引擎配件目录]]页面查看。}}
+===实践随行录（月度小队）===
+{{提示|蓝色|如需查看有关'''本主题月度小队（实践者列表）'''的相关信息，您可以前往[[沉沦者的黑流树海/实践随行录|实践随行录]]页面查看。}}
+===拓扑展览（CG）===
+{{提示|蓝色|如需查看有关'''本主题留影记录'''的相关信息，您可以前往[[沉沦者的黑流树海/CG|拓扑展览]]页面查看。}}
+==文本提示一览==
+{{提示|蓝色|如需了解本主题中'''特有的各类文本提示'''  / '''秘境行商(机械师)''' / '''应急助力（佩德洛）'''，您可以前往[[沉沦者的黑流树海/文本|文本提示]]页面查看}}
+
+==《特科马事件归档与附录》==
+{{提示|消息|<big>'''{{color|00000|详情请前往页面}}[[泰拉记事#沉沦者的黑流树海|泰拉记事]]'''</big>|宽度=100%}}
+
+==蚀刻章列表==
+{{蚀刻章套组|c=aebcb8|t=000000|d=记录一段丛林调查历程的蚀刻章套组。<br/>尸骸会发芽，土地在迁徙。现实异乎寻常，可他们的确存在。<br/>观察吧，理解吧，回答吧。为何我们离开襁褓这么久了，却仍被束缚在大地？|l=“往复之绿”*3*获得11枚前置蚀刻章*一枚镶嵌着墨绿锆石，闪耀着虚妄光辉的蚀刻章。<br/>发亮的尸骸，烁目的赤金，广袤的土地，遥远的星辰，都是孤独的种子。,“打捞生死”*1*在集成战略：沉沦者的黑流树海主题中探索200个非林间空地节点（常规行动或实践者列表下）*为不惧沉沦，敢于直视虚诞的您颁发的蚀刻章。<br/>您从黑流中打捞起被遗忘的名字，发现生者和死者的眼眶同样潮湿。,“现实存在”*2*在集成战略：沉沦者的黑流树海主题中达成2种结局（常规行动或实践者列表下）*为理解了玻利瓦尔的两种现实的您颁发的蚀刻章。<br/>无论战俘或行刑队，探险家或您，都无需调用太多的想象力——看吧，这就是玻利瓦尔人真实的生活。,“血管流离”*1*在集成战略：沉沦者的黑流树海主题中通过血色空脉区域20次（常规行动或实践者列表下）*为在枯枝败叶间辨出兽主足迹的您颁发的蚀刻章。<br/>您发现这里还有其他生物。小心，他们或许心地善良，也可能居心不良。,“飞跃”*1*在集成战略：沉沦者的黑流树海主题中装载加工品进行60次移动（常规行动或实践者列表下）*为将“现代”引入“蛮荒”的您颁发的蚀刻章。<br/>树海深处，您遇到陌生的“祖父”。漆黑的老人正对照着说明书，往驮兽身上安装橡胶轮胎。,“我见过你”*1*在集成战略：沉沦者的黑流树海主题中招募或应急雇佣干员40次（常规行动或实践者列表下）*基于调查员们的涂鸦设计出的纪念蚀刻章。<br/>兽亲的面孔在众人的画作中反复出现，又在您的脑海里重新凝成人的模样。,“魔幻沉淀”*2*在集成战略：沉沦者的黑流树海主题中的拟造物质编目已持有100个收藏品*为在溶解万物的淫雨中，固执地捡拾结晶的您颁发的蚀刻章。<br/>您把它们装进衣袋，一粒一粒，比赤金更沉，比骨灰更轻。,“迷梦时节”*1*在集成战略：沉沦者的黑流树海主题中消除10个实托邦（常规行动或实践者列表下）*为在单调的循环中，感受时节更替的您颁发的蚀刻章。<br/>到最后，您的全部积蓄唯剩沉默，和一双依然澄澈的眼睛。,“我认得你”*2*在集成战略：沉沦者的黑流树海主题中以不同实践者列表获得3次委托报酬*为在死寂的队列中，一眼便认出那抹旺盛灵魂的您颁发的蚀刻章。<br/>仍有人拼了命地向前走，只为供养一个也许存在的春天。,“丰饶饥馑”*2*在集成战略：沉沦者的黑流树海主题的源流堆栈中解锁至65级*从抽象而混乱的源流堆栈中整合出的蚀刻章。<br/>您已经完全理解了丛林的运行逻辑——等血水和泪水一同汇入树海，来年，入侵者的肖像上就会长出最耀眼的金漆。,“阴雨不停”*2*在集成战略：沉沦者的黑流树海主题中通过保密等级·4*为拒绝逗留，一遍又一遍穿过雨帘的您颁发的蚀刻章。<br/>“别变得和他们一样，人世间没有什么值得以这样的沉沦为代价。”*在集成战略：沉沦者的黑流树海主题中通过保密等级·10,“我理解你”*2*在集成战略：沉沦者的黑流树海主题中将机械师养成至精英阶段2*机械师陪伴您调查黑流树海时留下的蚀刻章。<br/>该特勤干员将在集成战略：沉沦者的黑流树海中随时响应您的号召。}}
