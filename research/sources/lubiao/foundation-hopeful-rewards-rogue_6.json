@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "topicId": "rogue_6",
+  "mechanism": "希望的沃土",
+  "sourceLabel": "希望硕果",
+  "interpretation": "observedFrequencyOnly",
+  "unit": "candidate-slot",
+  "updatedAt": "2026-10-21T00:25:20+08:00",
+  "sampleCount": 128,
+  "choiceCount": 64,
+  "excludedChoiceCount": 9,
+  "members": [
+    {
+      "itemId": "rogue_6_scrap_G_05",
+      "name": "浪花",
+      "count": 20,
+      "frequency": 0.15625
+    },
+    {
+      "itemId": "rogue_6_scrap_M_02",
+      "name": "报废假肢",
+      "count": 20,
+      "frequency": 0.15625
+    },
+    {
+      "itemId": "rogue_6_scrap_M_01",
+      "name": "报废轮子",
+      "count": 14,
+      "frequency": 0.109375
+    },
+    {
+      "itemId": "rogue_6_scrap_M_03",
+      "name": "标准引擎",
+      "count": 13,
+      "frequency": 0.1015625
+    },
+    {
+      "itemId": "rogue_6_scrap_G_01",
+      "name": "种子",
+      "count": 11,
+      "frequency": 0.0859375
+    },
+    {
+      "itemId": "rogue_6_scrap_G_07",
+      "name": "多生苔藓",
+      "count": 10,
+      "frequency": 0.078125
+    },
+    {
+      "itemId": "rogue_6_scrap_G_06",
+      "name": "霜晶树",
+      "count": 8,
+      "frequency": 0.0625
+    },
+    {
+      "itemId": "rogue_6_scrap_G_02",
+      "name": "血蕈",
+      "count": 6,
+      "frequency": 0.046875
+    },
+    {
+      "itemId": "rogue_6_scrap_M_05",
+      "name": "气垫底座",
+      "count": 4,
+      "frequency": 0.03125
+    },
+    {
+      "itemId": "rogue_6_scrap_P_03",
+      "name": "白模鱼",
+      "count": 4,
+      "frequency": 0.03125
+    },
+    {
+      "itemId": "rogue_6_scrap_G_04",
+      "name": "回声玉米",
+      "count": 3,
+      "frequency": 0.0234375
+    },
+    {
+      "itemId": "rogue_6_scrap_M_06",
+      "name": "试作外骨骼",
+      "count": 3,
+      "frequency": 0.0234375
+    },
+    {
+      "itemId": "rogue_6_scrap_M_07",
+      "name": "小八界",
+      "count": 3,
+      "frequency": 0.0234375
+    },
+    {
+      "itemId": "rogue_6_scrap_M_09",
+      "name": "老妈妈的融雪",
+      "count": 2,
+      "frequency": 0.015625
+    },
+    {
+      "itemId": "rogue_6_scrap_P_01",
+      "name": "白模鸟",
+      "count": 2,
+      "frequency": 0.015625
+    },
+    {
+      "itemId": "rogue_6_scrap_G_03",
+      "name": "雾滚草",
+      "count": 1,
+      "frequency": 0.0078125
+    },
+    {
+      "itemId": "rogue_6_scrap_M_04",
+      "name": "重弹簧",
+      "count": 1,
+      "frequency": 0.0078125
+    },
+    {
+      "itemId": "rogue_6_scrap_M_08",
+      "name": "一次性喷气背包",
+      "count": 1,
+      "frequency": 0.0078125
+    },
+    {
+      "itemId": "rogue_6_scrap_M_10",
+      "name": "坎诺特的触须",
+      "count": 1,
+      "frequency": 0.0078125
+    },
+    {
+      "itemId": "rogue_6_scrap_P_02",
+      "name": "白模狗",
+      "count": 1,
+      "frequency": 0.0078125
+    }
+  ],
+  "auditSha256": "95e66fb8b59b455c794a8eddd164e95ff8c9004ca8927a5292bd081361032a44"
+}

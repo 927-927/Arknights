@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "topicId": "rogue_6",
+  "updatedAt": "2026-10-20T16:25:20.854289+00:00",
+  "sampleCount": 24745,
+  "groups": [
+    {
+      "id": "1:e:0",
+      "floor": 1,
+      "type": "e",
+      "remembrance": false,
+      "sampleCount": 2780,
+      "stages": [
+        {
+          "stageId": "ro6_e_1_1",
+          "count": 744,
+          "frequency": 0.26762589928057556
+        },
+        {
+          "stageId": "ro6_e_1_2",
+          "count": 681,
+          "frequency": 0.24496402877697843
+        },
+        {
+          "stageId": "ro6_e_1_3",
+          "count": 660,
+          "frequency": 0.23741007194244604
+        },
+        {
+          "stageId": "ro6_e_1_4",
+          "count": 695,
+          "frequency": 0.25
+        }
+      ]
+    },
+    {
+      "id": "1:n:0",
+      "floor": 1,
+      "type": "n",
+      "remembrance": false,
+      "sampleCount": 9113,
+      "stages": [
+        {
+          "stageId": "ro6_n_1_1",
+          "count": 2255,
+          "frequency": 0.24744869965982663
+        },
+        {
+          "stageId": "ro6_n_1_2",
+          "count": 2302,
+          "frequency": 0.2526061670141556
+        },
+        {
+          "stageId": "ro6_n_1_3",
+          "count": 2276,
+          "frequency": 0.24975309996708
+        },
+        {
+          "stageId": "ro6_n_1_4",
+          "count": 2280,
+          "frequency": 0.2501920333589378
+        }
+      ]
+    },
+    {
+      "id": "3:b:0",
+      "floor": 3,
+      "type": "b",
+      "remembrance": false,
+      "sampleCount": 1491,
+      "stages": [
+        {
+          "stageId": "ro6_b_1",
+          "count": 525,
+          "frequency": 0.352112676056338
+        },
+        {
+          "stageId": "ro6_b_2",
+          "count": 446,
+          "frequency": 0.29912810194500333
+        },
+        {
+          "stageId": "ro6_b_3",
+          "count": 520,
+          "frequency": 0.3487592219986586
+        }
+      ]
+    },
+    {
+      "id": "3:duel:0",
+      "floor": 3,
+      "type": "duel",
+      "remembrance": false,
+      "sampleCount": 4663,
+      "stages": [
+        {
+          "stageId": "ro6_duel_1",
+          "count": 4663,
+          "frequency": 1.0
+        }
+      ]
+    },
+    {
+      "id": "4:duel:0",
+      "floor": 4,
+      "type": "duel",
+      "remembrance": false,
+      "sampleCount": 3208,
+      "stages": [
+        {
+          "stageId": "ro6_duel_1",
+          "count": 1595,
+          "frequency": 0.4971945137157107
+        },
+        {
+          "stageId": "ro6_duel_2",
+          "count": 1613,
+          "frequency": 0.5028054862842892
+        }
+      ]
+    },
+    {
+      "id": "4:duel:1",
+      "floor": 4,
+      "type": "duel",
+      "remembrance": true,
+      "sampleCount": 216,
+      "stages": [
+        {
+          "stageId": "ro6_duel_1",
+          "count": 108,
+          "frequency": 0.5
+        },
+        {
+          "stageId": "ro6_duel_2",
+          "count": 108,
+          "frequency": 0.5
+        }
+      ]
+    },
+    {
+      "id": "5:duel:0",
+      "floor": 5,
+      "type": "duel",
+      "remembrance": false,
+      "sampleCount": 3274,
+      "stages": [
+        {
+          "stageId": "ro6_duel_2",
+          "count": 3274,
+          "frequency": 1.0
+        }
+      ]
+    }
+  ],
+  "interpretation": "observedResolvedBattleShareWithinFloorAndType",
+  "sourceSnapshotId": "7c4c799ce40ba6aa477bb23a2143069668f40269f15869e2c805b6fff9bd9bfb",
+  "exclusions": {
+    "treeHole": 3746,
+    "unresolvedWanderingVariant": 2106,
+    "outsideRequestedTypesOrUnresolvedStage": 12588,
+    "predictedIdentity": 51
+  },
+  "provenance": {
+    "sourceKind": "strict-facts-selection",
+    "sourceSha256": "7c4c799ce40ba6aa477bb23a2143069668f40269f15869e2c805b6fff9bd9bfb",
+    "runCount": 5919,
+    "stageCatalogSha256": "59e9b5b847bb18e5b35838509e62b307858229ec8f7d3d82980f58a6858e7d5a",
+    "extractorSha256": "f542531a1b6e88567d18bca8fb9258b3b1ef30d1170e476d4b3f5bc64835e488",
+    "projectionSha256": "92d63ed1ca9221c88f1332c96dd4c6ac961372c1d682a7b9bc97446ee76042a7",
+    "previousCuratedSha256": "3a6a92facb64c4b9173d3a7ddb9a5e554bc9376efddb8c26892d0a0a8593053a",
+    "reviewStatus": "machine-provisional",
+    "countingUnit": "unique-run-section-node",
+    "previousRecordsAndExclusionsPreserved": true,
+    "resolutionCachePolicy": "Read normalized facts for new runs only; prior resolution cache remains read-only and old facts evidence is preserved verbatim."
+  }
+}

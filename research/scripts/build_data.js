@@ -173,6 +173,29 @@ const trades = [
   { from: '3 sold parts at one merchant', to: '+8 ingots', where: '多边贸易分队' },
 ];
 
+// Recorded node mix by walking distance, floors I–V (lubiao.wiki, 20,530 maps).
+const nodesDerived = JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'derived', 'nodes.json'), 'utf8'));
+const nodeDist = {}, nodeIcon = {};
+for (const f of nodesDerived.floors) {
+  const n = { I: 1, II: 2, III: 3, IV: 4, V: 5 }[f.floor];
+  if (!n) continue;
+  nodeDist[n] = Object.fromEntries(f.distances.map(d => [d.distance, d.share]));
+  nodeIcon[n] = Object.fromEntries(f.distances.map(d => [d.distance, { hostile: d.ifHostile, mystery: d.ifMystery }]));
+}
+const nodePerMap = Object.fromEntries(nodesDerived.floors.filter(f => ({ I: 1, II: 2, III: 3, IV: 4, V: 5 })[f.floor]).map(f => [({ I: 1, II: 2, III: 3, IV: 4, V: 5 })[f.floor], f.perMap]));
+
+// Battle stages with real enemy stats (tomimi.dev + ArknightsGameData) and drop pools (lubiao.wiki).
+const stagesDerived = JSON.parse(fs.readFileSync(path.join(ROOT, 'research', 'derived', 'stages.json'), 'utf8'));
+const stages = stagesDerived.stages.map(s => ({ id: s.id, name: s.name, code: s.code, floors: s.floors, deploy: s.deployLimit, cost: s.initialCost, desc: s.description, rewards: s.rewards, n: s.normal, e: s.elite, freq: s.frequency }));
+const lb = JSON.parse(fs.readFileSync(path.join(SRC, 'lubiao', 'blackstream.json'), 'utf8'));
+const rarityOf = Object.fromEntries(lb.classifier.items.map(i => [i.itemId, i.rarity]));
+const pools = lb.pools.dataVersions[lb.pools.defaultVersionId].map(p => {
+  const ids = p.collectibles || [];
+  const r = { NORMAL: 0, RARE: 0, SUPER_RARE: 0 };
+  ids.forEach(id => { if (r[rarityOf[id]] !== undefined) r[rarityOf[id]]++; });
+  return { name: p.name, kind: p.poolKind, cat: p.displayCategory, n: ids.length, rarity: r, nodes: (p.nodeBindings || []).map(x => x.nodeName), sources: (p.usageChannels || []).map(x => x.sourceName).slice(0, 4), ids };
+}).filter(p => p.n);
+
 const hopeCost = { recruit: { 4: 0, 5: 2, 6: 6 }, promote: { 4: 1, 5: 1, 6: 3 } };
 const start = { hp: 8, hope: 6, ingots: 6, carry: 6, ticketCap: 3, box: 10 };
 
@@ -183,7 +206,7 @@ const data = {
     market: 'MaaAssistantArknights resource/roguelike/BlackFlow/scrap_market.json (AGPL-3.0)',
     wiki: 'BWIKI 明日方舟WIKI 沉沦者的黑流树海 and subpages',
   },
-  maps, floors, processing, naturals, concepts, secrecy, menus, anchors, trades, hopeCost, start,
+  nodeDist, nodeIcon, nodePerMap, stages, pools, maps, floors, processing, naturals, concepts, secrecy, menus, anchors, trades, hopeCost, start,
   shopLayouts: market.shop_types,
   refreshCosts: market.refresh_costs,
 };

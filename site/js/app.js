@@ -61,13 +61,14 @@
     const peg = chain('pegasus') - base, gri = chain('griffin') - base;
     K.pegasusGain = f0(peg);
     K.pegasusGainHope = f0(peg / hopeIE);
-    K.griffinGainHope = f0(gri / hopeIE);
+    K.griffinGainHope = f1(gri / hopeIE);
     K.jinwuHope = f0(3 * R.prices.price.colRandom / hopeIE);
     const cheap = ['wheel', 'prosthetic'].flatMap(k => [2, 3, 4, 5].map(f => R.parts[f].find(p => p.key === k).gain / 2));
     K.cheapReturn = f0(Math.min(...cheap)) + '–' + f0(Math.max(...cheap)) + '×';
     K.pegasusVsGriffin = gri > 0 ? f0(peg / gri) + '×' : T('several times', '数倍');
     K.carryGain = f0(chain('evacSeeker') - base);
-    K.huntGain = f0(trade('box10', 'hunt').profit.mean - trade('box10', 'one').profit.mean);
+    K.huntGain = f0(trade('box10', 'one').profit.mean - trade('box10', 'sparse').profit.mean);
+    K.tradeBase = f0(trade('box10', 'one').profit.mean);
     const vois = [1, 2, 3, 4, 5].map(f => R.voi[f].voi);
     K.voiRange = f0(Math.min(...vois)) + '–' + f0(Math.max(...vois));
     K.pursuitNoTpl = pct(Math.max(R.voi[2].pursuitRateNoTemplate3, R.voi[4].pursuitRateNoTemplate3));

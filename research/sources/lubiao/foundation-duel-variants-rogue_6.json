@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "topicId": "rogue_6",
+  "nodeType": "DUEL",
+  "sampleCount": 13710,
+  "updatedAt": "2026-10-21T00:25:20.854289+08:00",
+  "variants": [
+    {
+      "id": "ro6_duel_1",
+      "name": "搏杀",
+      "eventName": "原始娱乐"
+    },
+    {
+      "id": "ro6_duel_2",
+      "name": "共斗",
+      "eventName": "掠夺成性"
+    }
+  ],
+  "rows": [
+    {
+      "label": "III",
+      "floor": 3,
+      "treeHole": false,
+      "remembrance": false,
+      "sampleCount": 4643,
+      "counts": {
+        "ro6_duel_1": 4643,
+        "ro6_duel_2": 0
+      }
+    },
+    {
+      "label": "IV",
+      "floor": 4,
+      "treeHole": false,
+      "remembrance": false,
+      "sampleCount": 3176,
+      "counts": {
+        "ro6_duel_1": 1576,
+        "ro6_duel_2": 1600
+      }
+    },
+    {
+      "label": "V",
+      "floor": 5,
+      "treeHole": false,
+      "remembrance": false,
+      "sampleCount": 3242,
+      "counts": {
+        "ro6_duel_1": 0,
+        "ro6_duel_2": 3242
+      }
+    },
+    {
+      "label": "IV误入奇境·消耗螺旋",
+      "floor": 4,
+      "treeHole": true,
+      "remembrance": false,
+      "sampleCount": 967,
+      "counts": {
+        "ro6_duel_1": 710,
+        "ro6_duel_2": 257
+      }
+    },
+    {
+      "label": "V误入奇境·消耗螺旋",
+      "floor": 5,
+      "treeHole": true,
+      "remembrance": false,
+      "sampleCount": 1405,
+      "counts": {
+        "ro6_duel_1": 335,
+        "ro6_duel_2": 1070
+      }
+    },
+    {
+      "label": "IV·追忆",
+      "floor": 4,
+      "treeHole": false,
+      "remembrance": true,
+      "sampleCount": 213,
+      "counts": {
+        "ro6_duel_1": 107,
+        "ro6_duel_2": 106
+      }
+    },
+    {
+      "label": "IV·追忆误入奇境·消耗螺旋",
+      "floor": 4,
+      "treeHole": true,
+      "remembrance": true,
+      "sampleCount": 64,
+      "counts": {
+        "ro6_duel_1": 51,
+        "ro6_duel_2": 13
+      }
+    }
+  ],
+  "source": {
+    "dataset": "N6-dlc0-cumulative-2026-10-20",
+    "snapshotDate": "2026-10-20",
+    "snapshotId": "b04e31f585fbcf968eb6c2437526f761bb55f26ea6bf8d13ba8fc852157f49c0",
+    "archiveDateRange": [
+      "2026-09-05",
+      "2026-10-17"
+    ],
+    "difficulty": 6,
+    "completeStartRequired": true,
+    "runCount": 5919,
+    "config": {
+      "repository": "Landmark-Achiever/lubiao-table",
+      "ref": "2b6c60bbf3eec9aa01ee29f37a4bab6bc0da175d",
+      "path": "roguelike_topic_tables/roguelike_topic_table_zh_CN.json",
+      "sha256": "59e9b5b847bb18e5b35838509e62b307858229ec8f7d3d82980f58a6858e7d5a"
+    },
+    "evidenceSha256": {
+      "sourceSelection": "7c4c799ce40ba6aa477bb23a2143069668f40269f15869e2c805b6fff9bd9bfb",
+      "incremental": "8a35b9900ce8e189b2978b2a1bf41be2ee0167c6ed8fbcf1fa1a91e99630d77b",
+      "baseline": "2c2480204b82c7629f7ae562d04dac812e68d549881881654f59f64d6015103b",
+      "extractor": "129b8c7db82637003b034537e3efe9ea042480e1f39ca3a3097ae29c322150f8",
+      "merger": "a1c5967f9862bd07379d872e22540a641694516870f4be42d4ba1f17000aa796",
+      "layoutReview": "932800cdca7991ad81088d5c53621c597e0ee091da351f7f42bbdf07766aad80"
+    }
+  },
+  "methodSha256": "129b8c7db82637003b034537e3efe9ea042480e1f39ca3a3097ae29c322150f8",
+  "auditFile": "data/curated/duel_variants_observations_20260919.json",
+  "excludedFrameCount": 227,
+  "limitations": [
+    "频次以同组已确认的独立狭路相逢事件为分母；前后选项页合并，跳过战斗仍计入。",
+    "消耗螺旋按进入前外层楼层分组；追忆四层单列。",
+    "123 张截图因页面归属缺失或冲突未纳入；不将未知视为未出现。",
+    "追忆四层消耗螺旋只有 13 次，频次仅供参考。"
+  ],
+  "auditSha256": "5772d17c1369bf1025ec977f567f865e6f3edc9b499fa3c369098bf0f7fd75af"
+}

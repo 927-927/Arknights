@@ -1,0 +1,1 @@
+var e=`blackstream-route:open-experienced-events`;function t(){window.dispatchEvent(new CustomEvent(e))}export{t as n,e as t};

@@ -1,0 +1,435 @@
+{
+ "stage": {
+  "name": "虫虫游戏厅",
+  "id": "ro6_n_2_1"
+ },
+ "options": {
+  "stage": "虫虫游戏厅",
+  "secrecy": 15,
+  "floor": 5,
+  "elite": false,
+  "roster": "roster.example.json",
+  "K": 6,
+  "sims": 3000,
+  "seed": 1,
+  "html": true,
+  "json": true
+ },
+ "plan": {
+  "deploys": [
+   {
+    "op": "棘刺",
+    "r": 2,
+    "c": 6,
+    "dir": "W",
+    "t": 5,
+    "config": {
+     "name": "棘刺",
+     "elite": 2,
+     "level": 75,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10
+    }
+   },
+   {
+    "op": "银灰",
+    "r": 3,
+    "c": 6,
+    "dir": "S",
+    "t": 25,
+    "config": {
+     "name": "银灰",
+     "elite": 2,
+     "level": 80,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10,
+     "module": {
+      "type": "X",
+      "stage": 3
+     }
+    }
+   },
+   {
+    "op": "塞雷娅",
+    "r": 3,
+    "c": 5,
+    "dir": "E",
+    "t": 47,
+    "config": {
+     "name": "塞雷娅",
+     "elite": 2,
+     "level": 70,
+     "potential": 1,
+     "trust": 100,
+     "skill": 2,
+     "skillLevel": 10
+    }
+   },
+   {
+    "op": "蓝毒",
+    "r": 2,
+    "c": 9,
+    "dir": "W",
+    "t": 59,
+    "config": {
+     "name": "蓝毒",
+     "elite": 2,
+     "level": 60,
+     "potential": 4,
+     "trust": 100,
+     "skill": 2,
+     "skillLevel": 8
+    }
+   },
+   {
+    "op": "逻各斯",
+    "r": 5,
+    "c": 9,
+    "dir": "N",
+    "t": 80,
+    "config": {
+     "name": "逻各斯",
+     "elite": 2,
+     "level": 70,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 9
+    }
+   },
+   {
+    "op": "能天使",
+    "r": 1,
+    "c": 9,
+    "dir": "S",
+    "t": 93,
+    "config": {
+     "name": "能天使",
+     "elite": 2,
+     "level": 70,
+     "potential": 2,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10,
+     "module": {
+      "type": "Y",
+      "stage": 3
+     }
+    }
+   }
+  ],
+  "skills": {
+   "棘刺": [
+    72.8,
+    121.5
+   ],
+   "银灰": [
+    40,
+    160
+   ],
+   "蓝毒": [
+    91
+   ],
+   "逻各斯": [
+    102
+   ]
+  },
+  "retreats": []
+ },
+ "result": {
+  "win": true,
+  "lifeLost": 0,
+  "lifeLeft": 1,
+  "leaks": 0,
+  "kills": 71,
+  "totalEnemies": 71,
+  "hpRemoved": 442407,
+  "hpTotal": 442407,
+  "duration": 162.6,
+  "score": 9999999.8374,
+  "deploys": [
+   {
+    "name": "棘刺",
+    "t": 5,
+    "r": 2,
+    "c": 6,
+    "dir": "W",
+    "cost": 20
+   },
+   {
+    "name": "银灰",
+    "t": 25,
+    "r": 3,
+    "c": 6,
+    "dir": "S",
+    "cost": 20
+   },
+   {
+    "name": "塞雷娅",
+    "t": 47,
+    "r": 3,
+    "c": 5,
+    "dir": "E",
+    "cost": 22
+   },
+   {
+    "name": "蓝毒",
+    "t": 59,
+    "r": 2,
+    "c": 9,
+    "dir": "W",
+    "cost": 12
+   },
+   {
+    "name": "逻各斯",
+    "t": 80,
+    "r": 5,
+    "c": 9,
+    "dir": "N",
+    "cost": 21
+   },
+   {
+    "name": "能天使",
+    "t": 93,
+    "r": 1,
+    "c": 9,
+    "dir": "S",
+    "cost": 13
+   }
+  ],
+  "skillUses": [
+   {
+    "name": "银灰",
+    "skill": "真银斩",
+    "t": 40,
+    "end": 70
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 54,
+    "end": 54
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 61,
+    "end": 61
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 68,
+    "end": 68
+   },
+   {
+    "name": "棘刺",
+    "skill": "至高之术",
+    "t": 72.8,
+    "end": 102.8
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 75,
+    "end": 75
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 82,
+    "end": 82
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 89,
+    "end": 89
+   },
+   {
+    "name": "蓝毒",
+    "skill": "毒液散射",
+    "t": 91,
+    "end": 118
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 96,
+    "end": 96
+   },
+   {
+    "name": "逻各斯",
+    "skill": "延异视阈",
+    "t": 102,
+    "end": 132
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 103,
+    "end": 103
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 103,
+    "end": 118
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 110,
+    "end": 110
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 117,
+    "end": 117
+   },
+   {
+    "name": "棘刺",
+    "skill": "至高之术",
+    "t": 121.5,
+    "end": 162.6
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 124,
+    "end": 124
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 131,
+    "end": 131
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 138,
+    "end": 138
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 145,
+    "end": 145
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 148,
+    "end": 162.6
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 152,
+    "end": 152
+   },
+   {
+    "name": "塞雷娅",
+    "skill": "药物配置",
+    "t": 159,
+    "end": 159
+   },
+   {
+    "name": "银灰",
+    "skill": "真银斩",
+    "t": 160,
+    "end": 162.6
+   }
+  ],
+  "losses": [],
+  "perOp": [
+   {
+    "name": "棘刺",
+    "damage": 142211.3125,
+    "healing": 0,
+    "kills": 23,
+    "blockedSeconds": 0.7,
+    "damageTaken": 187.59999999999997,
+    "skillUptime": 71.2,
+    "died": false
+   },
+   {
+    "name": "银灰",
+    "damage": 133423.3125,
+    "healing": 0,
+    "kills": 23,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 32.7,
+    "died": false
+   },
+   {
+    "name": "塞雷娅",
+    "damage": 769.5,
+    "healing": 220.9000000000001,
+    "kills": 0,
+    "blockedSeconds": 0.7,
+    "damageTaken": 33.300000000000004,
+    "skillUptime": 0,
+    "died": false
+   },
+   {
+    "name": "蓝毒",
+    "damage": 87430.625,
+    "healing": 0,
+    "kills": 12,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 27,
+    "died": false
+   },
+   {
+    "name": "逻各斯",
+    "damage": 43561.125,
+    "healing": 0,
+    "kills": 7,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 30,
+    "died": false
+   },
+   {
+    "name": "能天使",
+    "damage": 35011.125,
+    "healing": 0,
+    "kills": 6,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 29.7,
+    "died": false
+   }
+  ],
+  "dp": {
+   "generated": 162.7,
+   "spent": 108,
+   "endUnspent": 69.7,
+   "initial": 15,
+   "refunded": 0
+  },
+  "alive": 0,
+  "timedOut": false,
+  "lifePoints": 1
+ },
+ "verdict": "The plan HOLDS the stage in the model: no life lost, all 71 enemies dead in 162.6 s.",
+ "assumptions": [
+  "ASSUMPTION (sim.TPS_DEFAULT): enemy move speed 1.0 = 0.5 tiles/s (not calibrated in game); every path time scales with it.",
+  "ASSUMPTION (operators.SECRECY_PER_FLOOR_DEFAULT): +20%/floor ATK and HP is 'additive' (1 + 20% x (floor - 1), floor 1 = 0 steps), summed with the other secrecy % (pct). Enemy HP here is x2.10 of secrecy 0; 'compound' would give x2.37.",
+  "ASSUMPTION (sim.LIFE_POINTS_DEFAULT): 1 life point(s); the fight is not stopped at defeat, so lives lost can exceed it.",
+  "ASSUMPTION (sim.FRAGMENT_TIMING_DEFAULT): a fragment's preDelay counts from the end of the previous fragment ('afterLast'); a wave starts once the one before is cleared.",
+  "ASSUMPTION (sim.BLOCK_PER_ENEMY): every enemy takes 1 block; time limit = no-defence duration x 1.5 + 120 s.",
+  "NOT MODELLED (secrecy N13): “玻利瓦尔，症结之核” DEF up, “未熄之地” burn damage (no enemy named there is on this stage).",
+  "NOT MODELLED (secrecy N14): “源阶方” max HP up, team HP drain when active (no enemy named there is on this stage).",
+  "NOT MODELLED (secrecy N15): “猎犬proto” max HP up, heals the boss when attacking (no enemy named there is on this stage)."
+ ]
+}

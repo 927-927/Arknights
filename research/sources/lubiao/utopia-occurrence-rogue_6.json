@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "observedDifficulty": 6,
+  "updatedAt": "2026-10-22T10:26:06+00:00",
+  "cutoff": "2026-10-16T16:00:00+08:00",
+  "inputs": {
+    "dlc0": {
+      "file": "dlc0-facts.jsonl",
+      "sha256": "aa7625608993f10ebe4a3b12d912e5c318cf77905ac1c8b00ec3f8c062b95379"
+    },
+    "dlc1": {
+      "file": "dlc1-facts.jsonl",
+      "sha256": "efd2f61a23ad809ffb1b0b55e25b765be2bb73687dc3f046102a9bd55757efca"
+    }
+  },
+  "method": "strict-n6-physical-maps-header-audit-conservative-event-exclusion-v1",
+  "versions": {
+    "dlc0": {
+      "runCount": 5919,
+      "floors": [
+        {
+          "id": "1",
+          "label": "I",
+          "total": 5915,
+          "eligible": 5914,
+          "natural": 483,
+          "brave": 0,
+          "exclusions": {
+            "unverified": 1
+          }
+        },
+        {
+          "id": "2",
+          "label": "II",
+          "total": 5868,
+          "eligible": 5848,
+          "natural": 884,
+          "brave": 3,
+          "exclusions": {
+            "forcedBrave": 8,
+            "excludedBrave": 5,
+            "unverified": 12
+          }
+        },
+        {
+          "id": "3",
+          "label": "III",
+          "total": 5775,
+          "eligible": 5714,
+          "natural": 1709,
+          "brave": 0,
+          "exclusions": {
+            "forcedBrave": 20,
+            "excludedBrave": 20,
+            "uncertainEvent": 15,
+            "excludedHope": 10,
+            "unverified": 16
+          }
+        },
+        {
+          "id": "4",
+          "label": "IV",
+          "total": 5465,
+          "eligible": 4886,
+          "natural": 1380,
+          "brave": 2,
+          "exclusions": {
+            "uncertainEvent": 409,
+            "excludedHope": 157,
+            "forcedBrave": 6,
+            "excludedBrave": 6,
+            "unverified": 7
+          }
+        },
+        {
+          "id": "5",
+          "label": "V",
+          "total": 5150,
+          "eligible": 4644,
+          "natural": 1414,
+          "brave": 0,
+          "exclusions": {
+            "uncertainEvent": 365,
+            "excludedHope": 121,
+            "forcedBrave": 9,
+            "excludedBrave": 11,
+            "unverified": 11
+          }
+        },
+        {
+          "id": "6",
+          "label": "VI",
+          "total": 0,
+          "eligible": 0,
+          "natural": 0,
+          "brave": 0,
+          "exclusions": {}
+        },
+        {
+          "id": "4R",
+          "label": "IV·追忆",
+          "total": 345,
+          "eligible": 294,
+          "natural": 0,
+          "brave": 0,
+          "exclusions": {
+            "uncertainEvent": 46,
+            "excludedHope": 4,
+            "forcedBrave": 1
+          }
+        }
+      ]
+    },
+    "dlc1": {
+      "runCount": 86,
+      "floors": [
+        {
+          "id": "1",
+          "label": "I",
+          "total": 86,
+          "eligible": 86,
+          "natural": 4,
+          "brave": 0,
+          "exclusions": {}
+        },
+        {
+          "id": "2",
+          "label": "II",
+          "total": 86,
+          "eligible": 86,
+          "natural": 8,
+          "brave": 0,
+          "exclusions": {}
+        },
+        {
+          "id": "3",
+          "label": "III",
+          "total": 84,
+          "eligible": 84,
+          "natural": 29,
+          "brave": 0,
+          "exclusions": {}
+        },
+        {
+          "id": "4",
+          "label": "IV",
+          "total": 76,
+          "eligible": 67,
+          "natural": 18,
+          "brave": 0,
+          "exclusions": {
+            "excludedHope": 5,
+            "uncertainEvent": 4
+          }
+        },
+        {
+          "id": "5",
+          "label": "V",
+          "total": 67,
+          "eligible": 58,
+          "natural": 16,
+          "brave": 0,
+          "exclusions": {
+            "uncertainEvent": 5,
+            "excludedHope": 4
+          }
+        },
+        {
+          "id": "6",
+          "label": "VI",
+          "total": 0,
+          "eligible": 0,
+          "natural": 0,
+          "brave": 0,
+          "exclusions": {}
+        },
+        {
+          "id": "4R",
+          "label": "IV·追忆",
+          "total": 6,
+          "eligible": 5,
+          "natural": 0,
+          "brave": 0,
+          "exclusions": {
+            "uncertainEvent": 1
+          }
+        }
+      ]
+    }
+  }
+}

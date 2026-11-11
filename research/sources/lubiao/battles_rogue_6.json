@@ -1,0 +1,2322 @@
+{
+  "topicId": "rogue_6",
+  "stages": [
+    {
+      "id": "ro6_n_1_1",
+      "name": "猎犬病原",
+      "type": "n",
+      "floor": 1,
+      "description": "猎犬是由被它们撕咬吞噬的病人转化成的？你怎么会有这种可怕而不切实际的想法。\n场地中有对敌我造成伤害的<源石祭坛>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_1_1.png",
+      "rewards": {
+        "recordedExperience": 13,
+        "recordedBonus": 3,
+        "ingots": 1,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_1_2",
+      "name": "遗忘时间",
+      "type": "n",
+      "floor": 1,
+      "description": "他们说在黑流树海中时间也会被遗忘，你捡到了三天前被遗弃在雨林里的潮湿火石，转眼又看到了一百年后霓虹璀璨的夜色。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_1_2.png",
+      "rewards": {
+        "recordedExperience": 13,
+        "recordedBonus": 3,
+        "ingots": 1,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_1_3",
+      "name": "急不可耐",
+      "type": "n",
+      "floor": 1,
+      "description": "这里的“居民”们在成为独当一面的战士之前，都要踏过一条漫长的征途。在忍耐中积蓄力量是它们的信条，所以立刻行动起来，不要和它们比试耐心。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_1_3.png",
+      "rewards": {
+        "recordedExperience": 13,
+        "recordedBonus": 3,
+        "ingots": 1,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_1_4",
+      "name": "灌水贤者",
+      "type": "n",
+      "floor": 1,
+      "description": "立起围栏，然后邀请贤者们来到土地上发挥特长。这比用灌溉机要节省得多，我们或许可以给这里起名叫“种植园”。\n场地中有使我方不会成为敌人远程攻击目标的<草丛>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_1_4.png",
+      "rewards": {
+        "recordedExperience": 13,
+        "recordedBonus": 3,
+        "ingots": 1,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_2_1",
+      "name": "虫虫游戏厅",
+      "type": "n",
+      "floor": 2,
+      "description": "这里正在发生的事与你知道的那个家伙并没有任何关系，千真万确。但你如果意识到这是在说哪个家伙的话，说明你还是怀疑了，对吧？\n场地中有一段时间后自动激活的<压力归零帮手>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_2_1.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_2_2",
+      "name": "无主地",
+      "type": "n",
+      "floor": 2,
+      "description": "文明总是从生火开始，而生火总是从砍伐开始，所以文明总是从砍伐开始。有些人将从不够文明的家伙手中夺取生存空间视为一种道德。\n提供可以清除<巨蕈>的<罗德岛临时雇员>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_2_2.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_2_3",
+      "name": "本性难移",
+      "type": "n",
+      "floor": 2,
+      "description": "一名萨卡兹佣兵邀请我一同去劫掠不远处的村庄，我问他为何不耕种自己的土地。他气急败坏，张开血盆大口向我扑来。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_2_3.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_2_4",
+      "name": "远北猎场",
+      "type": "n",
+      "floor": 2,
+      "description": "猎犬吞下的部分信息会在黑流树海中被重现，可到底是谁把这些凶残的生物带到了这片大地的极北？天啊，它们真的什么都吃！",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_2_4.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_2_5",
+      "name": "枝头陷阱",
+      "type": "n",
+      "floor": 2,
+      "description": "一对兄弟被强占土地，流离失所，做起了雇佣兵。多年后他们回到故居，刺杀了正要爬树掏羽兽蛋的庄园主，最后被追兵逼到悬崖边双双自尽。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_2_5.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_3_1",
+      "name": "预算否决",
+      "type": "n",
+      "floor": 3,
+      "description": "一些探员问我们哥伦比亚政府为什么不能拨足预算，用战车和近地飞行器荡平黑流树海？而这就是原因，蠢货。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_3_1.png",
+      "rewards": {
+        "recordedExperience": 17,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_3_2",
+      "name": "生存习性",
+      "type": "n",
+      "floor": 3,
+      "description": "在这里最常见的就是狂奔着一头撞在树上的动物。它们为什么不肯回头？唉，我为什么不肯回头？",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_3_2.png",
+      "rewards": {
+        "recordedExperience": 17,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_3_3",
+      "name": "辟路行进",
+      "type": "n",
+      "floor": 3,
+      "description": "一些玻利瓦尔本土的居民第一次从行商那里见到了冰块这种东西，商人说它来自北方的国度。而那里还有另一样特产——可以荡平一切的军队。\n场地中有可以阻挡敌人行进路线的<碎石>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_3_3.png",
+      "rewards": {
+        "recordedExperience": 17,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_3_4",
+      "name": "趁火打劫",
+      "type": "n",
+      "floor": 3,
+      "description": "一伙劫匪觊觎这座富裕的村庄多年，这一天他们终于得手——原来是哥伦比亚的军队替他们敲开了门。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_3_4.png",
+      "rewards": {
+        "recordedExperience": 17,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_3_5",
+      "name": "焦土之家",
+      "type": "n",
+      "floor": 3,
+      "description": "五十年前，某片玻利瓦尔的土地被一群萨卡兹封为卡兹戴尔，争夺未果的拓荒者们将其付之一炬。五十年后，未熄的焦土之上又诞生了新的“卡兹戴尔”。\n场地中有间断对其上单位造成伤害的<热泵通道>\n提供部署以后可以阻挡敌人的行进路线的<障碍物>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_3_5.png",
+      "rewards": {
+        "recordedExperience": 17,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_3_6",
+      "name": "黑色逆流",
+      "type": "n",
+      "floor": 3,
+      "description": "一旦黑流抓住了你，它就会像一股逆流，反复冲蚀着用你生命中的经历与时光筑起的堤岸，直到摧毁并带走它们。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_3_6.png",
+      "rewards": {
+        "recordedExperience": 17,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_4_1",
+      "name": "未来见闻",
+      "type": "n",
+      "floor": 4,
+      "description": "有人在玻利瓦尔分享他在哥伦比亚科技展会上的见闻。一位记者听说后提笔写下：“在哥伦比亚，被剥夺了土地的人们只能生活在天上。”",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_4_1.png",
+      "rewards": {
+        "recordedExperience": 19,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_4_2",
+      "name": "种植园惊魂",
+      "type": "n",
+      "floor": 4,
+      "description": "十个壮劳工，下地去干活；一个变黑影，还剩九个人。九个壮劳工，牵手去施肥；一个沉黑流，还剩八个人......",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_4_2.png",
+      "rewards": {
+        "recordedExperience": 19,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_4_3",
+      "name": "选边站",
+      "type": "n",
+      "floor": 4,
+      "description": "“居民”们正在投票表决一些事情，你并不理解它们的语言，也没打算干涉，但当你从旁边经过的时候，它们齐刷刷地看向了你。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_4_3.png",
+      "rewards": {
+        "recordedExperience": 19,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_4_4",
+      "name": "诞生礼",
+      "type": "n",
+      "floor": 4,
+      "description": "“不得惊扰神圣的诞生礼！”司仪们厉声呵止住你，并尝试从黑流中抱起一个个“婴孩”。可你看得真切，那些躺在襁褓中的分明是一条条猎犬。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_4_4.png",
+      "rewards": {
+        "recordedExperience": 19,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_4_5",
+      "name": "暴力押运",
+      "type": "n",
+      "floor": 4,
+      "description": "大批的器材与设备正被运往黑流树海深处。你不该看见这些的，至少不该让那些押运人员知道你看见了。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_4_5.png",
+      "rewards": {
+        "recordedExperience": 19,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_4_6",
+      "name": "长刀寒夜",
+      "type": "n",
+      "floor": 4,
+      "description": "在那场失败行动的前夜，辛嘉斯的叛军余部做足了准备，势要清算所有的碍事者，更迭这个愚蠢的王朝。\n场地中有能预警雪崩的<圣女像>，敌我进入其范围会增加雪崩预警值",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_4_6.png",
+      "rewards": {
+        "recordedExperience": 19,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_4_7",
+      "name": "侵占家园",
+      "type": "n",
+      "floor": 4,
+      "description": "为什么似乎只有人类会在丛林中迷路？因为在学会如何认路之前，人类就会砍光丛林——反正这里也不是他们的家园。你说丛林中本来有居民？真的吗？\n场地中有能遮蔽视野的<树丛>和<盾与墙>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_4_7.png",
+      "rewards": {
+        "recordedExperience": 19,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_5_1",
+      "name": "一步之遥",
+      "type": "n",
+      "floor": 5,
+      "description": "第七次经过同一个路标的时候，你终于在两棵树之间找到了出口，不幸的是，它们突然站起身跑掉了，你追都追不上。\n场地中有能遮蔽视野的<树丛>和<盾与墙>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_5_1.png",
+      "rewards": {
+        "recordedExperience": 26,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_5_2",
+      "name": "物欲遮天",
+      "type": "n",
+      "floor": 5,
+      "description": "“这里被无休止的物欲填满了！”一位来自萨尔贡的旅客见识过多索雷斯的风土人情后，一言道出了这片土地上种种灾难的症结。\n场地中有使我方不会成为敌人远程攻击目标的<草丛>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_5_2.png",
+      "rewards": {
+        "recordedExperience": 26,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_5_3",
+      "name": "恶意讨薪",
+      "type": "n",
+      "floor": 5,
+      "description": "一群竞技骑士因工时和待遇问题组织了一场声势浩大的罢工，几周后猎犬期货价格飙升，几个月后卡西米尔多了一块生意兴隆的新墓园。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_5_3.png",
+      "rewards": {
+        "recordedExperience": 26,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_5_4",
+      "name": "送别仪式",
+      "type": "n",
+      "floor": 5,
+      "description": "遗众绕着同伴的坟茔缓慢行走，将其灵魂一片片带离，直到坟墓塌陷，灰飞烟灭。如此，逝者方能获得永远的安宁。\n场地中有使单位持续损失生命但大幅提升攻击力和攻击速度的<活性源石>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_5_4.png",
+      "rewards": {
+        "recordedExperience": 26,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_5_5",
+      "name": "彼处水如酒",
+      "type": "n",
+      "floor": 5,
+      "description": "你是说伊比利亚遍地都是这样的盐漠，人们喝不到咖啡，只能喝咸鳞汁？怪不得他们要不远万里来到玻利瓦尔扮演不受欢迎的闯入者。\n场地中有能进行炮击并发射敌人的<盐坨子炮>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_5_5.png",
+      "rewards": {
+        "recordedExperience": 26,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_5_6",
+      "name": "丛林法则",
+      "type": "n",
+      "floor": 5,
+      "description": "在这样的法则之下，这片土地上所有的野生动物、植物、人类，每个个体都只会觉得自己必须消灭其中的两种甚至三种。真是野蛮的思想。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_5_6.png",
+      "rewards": {
+        "recordedExperience": 26,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_5_7",
+      "name": "过度繁殖",
+      "type": "n",
+      "floor": 5,
+      "description": "老何塞的第九十七个孙子出生了，父亲拼命地将孩子托举到爷爷面前。可是老人早已目不能视口不能言，他可怜的庄园里也不剩下什么能继承的遗产。\n场地中有发射敌方佣兵无人机的<可移动战术机库>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_5_7.png",
+      "rewards": {
+        "recordedExperience": 26,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_6_1",
+      "name": "命运共享",
+      "type": "n",
+      "floor": 6,
+      "description": "我愿用我的血液滋养这片土地，我愿用我的血肉填补你们的血肉，只要你们没有忘记，你们原本共享同一个名字。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_6_1.png",
+      "rewards": {
+        "recordedExperience": 26,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_n_6_2",
+      "name": "同域共存",
+      "type": "n",
+      "floor": 6,
+      "description": "我定要找到梦中那片金色的原野，我将遗忘那些灰黑色的水泥、午后的烈日，还有三百多年前海岸边的船桨。我们不再创造名词区隔彼此，我们共存。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_n_6_2.png",
+      "rewards": {
+        "recordedExperience": 26,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": false
+      }
+    },
+    {
+      "id": "ro6_b_1",
+      "name": "铁腕迷思",
+      "type": "b",
+      "floor": null,
+      "description": "黑流树海铭记着这位将军所做的一切，他的铁腕手段，他的雷厉风行，却唯独遗失了他深夜迷思的碎片——那些他所假设的玻利瓦尔无法实现的未来。\n场地中有发射敌方佣兵无人机的<可移动战术机库>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_1.png",
+      "rewards": {
+        "recordedExperience": 32,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_boss_scrap",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:pool_boss",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_battle_boss_recruit",
+            "nodeName": "险路恶敌",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_b_1_b",
+      "name": "哀悼铁腕",
+      "type": "b",
+      "floor": null,
+      "description": "送葬的人排成长长的队伍，他们看到一个真实的团结者，一个虚假的背叛者，一个无法被裁定的人，一个......玻利瓦尔人。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_1_b.png",
+      "rewards": {
+        "recordedExperience": 32,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_boss_scrap",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:pool_boss",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_battle_boss_recruit",
+            "nodeName": "险路恶敌",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_b_2",
+      "name": "光荣远征",
+      "type": "b",
+      "floor": null,
+      "description": "起初，这位伟大的探险者只是发现了一片丰饶的土地，并与当地原住民在这里“各取所需”。至于开拓土地的方法——堵上耳朵就听不到炮火，闭上眼睛也就看不到杀戮。\n场地中有能进行炮击并发射敌人的<盐坨子炮>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_2.png",
+      "rewards": {
+        "recordedExperience": 32,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_boss_scrap",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:pool_boss",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_battle_boss_recruit",
+            "nodeName": "险路恶敌",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_b_2_b",
+      "name": "赤金厄运",
+      "type": "b",
+      "floor": null,
+      "description": "从这片土地被探险者发现起，这里一直在发生同样的事：失去所谓的“无用之物”，得到短暂繁荣，等待夜晚降临——夜里的蝴蝶不会带来厄运，但赤金可以。\n场地中有喷出气流的<源石流发生装置>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_2_b.png",
+      "rewards": {
+        "recordedExperience": 32,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_boss_scrap",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:pool_boss",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_battle_boss_recruit",
+            "nodeName": "险路恶敌",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_b_3",
+      "name": "狂热敬虔",
+      "type": "b",
+      "floor": null,
+      "description": "这位辛嘉斯的学者倾尽自己在这片土地上撷取来的一切财富，只为研究源石的秘密。他愿把实验成果以虔诚的姿态呈给赫尔昏佐伦，却连觐见的阶梯也未能得见。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_3.png",
+      "rewards": {
+        "recordedExperience": 32,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_boss_scrap",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:pool_boss",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_battle_boss_recruit",
+            "nodeName": "险路恶敌",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_b_3_b",
+      "name": "冰冷流亡",
+      "type": "b",
+      "floor": null,
+      "description": "这位学者不是玻利瓦尔人，更不是莱塔尼亚人。他带着自己的研究成果一路漂泊到哥伦比亚，却意外启发了另一位天才。由此，他的名字才得以回归故土。\n场地中有能晕眩敌人的<禁锢装置>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_3_b.png",
+      "rewards": {
+        "recordedExperience": 32,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_boss_scrap",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "choiceCount": 2,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:pool_boss",
+            "nodeName": "险路恶敌",
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "probabilityDescription": "N6三层险路恶敌按零件、藏品和招募奖励证据的完整交集统计，共3,764场；全部入口3,765场中，1场因候选截图截断排除。本次分母为完整交集，不沿用此前全部入口口径；追猎与地图进入合并，额外奖励单列。比例仅为样本观测出现率，不代表服务器基础概率，不外推五、六层。",
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_battle_boss_recruit",
+            "nodeName": "险路恶敌",
+            "statistics": {
+              "sampleCount": 3764,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_b_4",
+      "name": "永无安宁",
+      "type": "b",
+      "floor": null,
+      "description": "祂已经降临，如黑色的太阳，发出怒吼，吞噬一切。你没有听到吗？你难道没有听到吗？",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_4.png",
+      "rewards": {
+        "recordedExperience": 50,
+        "recordedBonus": 0,
+        "ingots": 8,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_b_4_b",
+      "name": "痛苦将息",
+      "type": "b",
+      "floor": null,
+      "description": "除了痛苦与混乱，这里没有什么是长久的。祂已经听到，祂已经分担，祂已经陨落。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_4_b.png",
+      "rewards": {
+        "recordedExperience": 50,
+        "recordedBonus": 0,
+        "ingots": 8,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_b_5",
+      "name": "混沌源阶理论",
+      "type": "b",
+      "floor": null,
+      "description": "这里是可能性的牢笼。没有人知道这些装置被启动后会发生什么，但她将尽力确保结果不偏离她的预期。\n场地中会出现可被我方治疗的<源阶方模块>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_5.png",
+      "rewards": {
+        "recordedExperience": 50,
+        "recordedBonus": 0,
+        "ingots": 8,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_b_6",
+      "name": "畸症",
+      "type": "b",
+      "floor": null,
+      "description": "它们不该出现，但它们已然存在——他们给玻利瓦尔这片土地烙下的伤疤永不愈合，掩饰只会让它愈加明显而疼痛。\n场地中有能部署高台干员的<“危朽”>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_b_6.png",
+      "rewards": {
+        "recordedExperience": 70,
+        "recordedBonus": 0,
+        "ingots": 8,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_1",
+      "name": "陌生旅伴",
+      "type": "t",
+      "floor": null,
+      "description": "伤心的狗一边哭一边走，好在同行的伙伴足够多，它回家的路上不会孤单——“你也迷路了？”",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_1.png",
+      "rewards": {
+        "recordedExperience": 10,
+        "recordedBonus": 0,
+        "ingots": "2–3",
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_2",
+      "name": "安保措施",
+      "type": "t",
+      "floor": null,
+      "description": "这位富有的商人为屡遭抢劫苦恼不已，于是他跟那位“大总统”学来了巧妙一招——找替身！",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_2.png",
+      "rewards": {
+        "recordedExperience": 12,
+        "recordedBonus": 0,
+        "ingots": 2,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_3",
+      "name": "开业剪彩",
+      "type": "t",
+      "floor": null,
+      "description": "这只扛包的熊终于有了自己的安保公司，它正神气地扛着那只熟悉的大包，检阅它的安保大队，排除现场的一切安全隐患。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_3.png",
+      "rewards": {
+        "recordedExperience": 13,
+        "recordedBonus": 0,
+        "ingots": 2,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_4",
+      "name": "合伙人会议",
+      "type": "t",
+      "floor": null,
+      "description": "这只鸭子能和任何生物合作，不管是活着的还是死去的，传言他甚至和那位将军联手过。毕竟，商业帝国就是这样繁荣起来的。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_4.png",
+      "rewards": {
+        "recordedExperience": 25,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_5",
+      "name": "湖中魇",
+      "type": "t",
+      "floor": null,
+      "description": "你被拖下了湖水，流淌的赤金和悲伤的泪水灼伤你的手，刻下了关于“贪婪”的寓言。\n场地中有能探测隐形敌人的<侦测器>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_5.png",
+      "rewards": {
+        "recordedExperience": 25,
+        "recordedBonus": 0,
+        "ingots": 4,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "choiceCount": 2,
+            "probabilityDescription": "普通湖中魇三至五层11场均出现零件选择奖励；样本出现率，不代表服务器基础权重。",
+            "assetKey": "themes/battle-rewards/parts.png",
+            "statistics": {
+              "sampleCount": 11
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "probabilityDescription": "普通湖中魇三至五层11场中5场直接掉落1件藏品、6场没有；45.45%为小样本实测比例，未完全排除局内效果，不代表已确认基础掉率。",
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_incident_lake_fairy",
+            "nodeName": "不期而遇",
+            "statistics": {
+              "sampleCount": 11
+            },
+            "probability": "45.45%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "probabilityDescription": "普通湖中魇11场均出现一份招募券奖励，包含选择入口；未据此合并券种频次。",
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "statistics": {
+              "sampleCount": 11
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_t_6",
+      "name": "死箱",
+      "type": "t",
+      "floor": null,
+      "description": "一位游历大地的古怪商人为了捕获黑流树海中的奇物，在林间留下许多带有特殊标记的箱子，总有不知情的调查员打开，随后变成触手下的一摊烂泥。\n击破<坎诺特保险柜>后，通过部署干员拾取保险柜中的奖励，可获得诡意行商中的商品",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_6.png",
+      "rewards": {
+        "recordedExperience": 10,
+        "recordedBonus": 0,
+        "ingots": 4,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_7",
+      "name": "活木",
+      "type": "t",
+      "floor": null,
+      "description": "一位游历大地的古怪商人把他的宝箱藏在了树林深处，等待树根吞下箱子长出更多箱子——而贪婪者与好奇心旺盛之人撬开箱子，将自己变成了树林的养料。\n击破<坎诺特保险柜>后，通过部署干员拾取保险柜中的奖励，可获得诡意行商中的商品",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_7.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_8",
+      "name": "强买强卖",
+      "type": "wandering",
+      "floor": null,
+      "description": "这里的“居民”完全不知道该如何拒绝机器的推销，食物和饮料自己从铁皮罐里跑了出来，“居民”们却被要求必须为此付款。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_8.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_wandering_resident_scrap",
+            "nodeName": "流窜的“居民”",
+            "choiceCount": 2,
+            "probabilityDescription": "N6强买强卖1,729场归属明确的结算中，1,729场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。",
+            "statistics": {
+              "sampleCount": 1729,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_wandering_resident_relic",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6强买强卖1,729场归属明确的结算中，562场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。",
+            "statistics": {
+              "sampleCount": 1729,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "32.50%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_wandering_resident_recruit",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6强买强卖1,729场归属明确的结算中，1,729场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。",
+            "statistics": {
+              "sampleCount": 1729,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_t_8_b",
+      "name": "强买强卖",
+      "type": "wandering",
+      "floor": null,
+      "description": "这里的“居民”完全不知道该如何拒绝机器的推销，食物和饮料自己从铁皮罐里跑了出来，“居民”们却被要求必须为此付款。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_8_b.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_wandering_resident_scrap",
+            "nodeName": "流窜的“居民”",
+            "choiceCount": 2,
+            "probabilityDescription": "N6强买强卖1,729场归属明确的结算中，1,729场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。",
+            "statistics": {
+              "sampleCount": 1729,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_wandering_resident_relic",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6强买强卖1,729场归属明确的结算中，562场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。",
+            "statistics": {
+              "sampleCount": 1729,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "32.50%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_wandering_resident_recruit",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6强买强卖1,729场归属明确的结算中，1,729场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。",
+            "statistics": {
+              "sampleCount": 1729,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_t_8_c",
+      "name": "强买强卖",
+      "type": "wandering",
+      "floor": null,
+      "description": "这里的“居民”完全不知道该如何拒绝机器的推销，食物和饮料自己从铁皮罐里跑了出来，“居民”们却被要求必须为此付款。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_8_c.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_wandering_resident_scrap",
+            "nodeName": "流窜的“居民”",
+            "choiceCount": 2,
+            "probabilityDescription": "N6强买强卖1,729场归属明确的结算中，1,729场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。",
+            "statistics": {
+              "sampleCount": 1729,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_wandering_resident_relic",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6强买强卖1,729场归属明确的结算中，562场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。",
+            "statistics": {
+              "sampleCount": 1729,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "32.50%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_wandering_resident_recruit",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6强买强卖1,729场归属明确的结算中，1,729场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。",
+            "statistics": {
+              "sampleCount": 1729,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_t_9",
+      "name": "进退趋同",
+      "type": "wandering",
+      "floor": null,
+      "description": "海洋可以提供足够的空间让生物进化，而树林拥有足够丰富的物种让生物链变得完整，延缓生物的退化。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_9.png",
+      "rewards": {
+        "recordedExperience": 18,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_wandering_resident_convergence_scrap",
+            "nodeName": "流窜的“居民”",
+            "choiceCount": 2,
+            "probabilityDescription": "N6进退趋同2场归属明确的结算中，2场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。小样本单列，不外推其他流窜战斗。",
+            "statistics": {
+              "sampleCount": 2,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_wandering_resident_convergence_relic",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6进退趋同2场归属明确的结算中，1场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。小样本单列，不外推其他流窜战斗。",
+            "statistics": {
+              "sampleCount": 2,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "50.00%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_wandering_resident_convergence_recruit",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6进退趋同2场归属明确的结算中，2场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。小样本单列，不外推其他流窜战斗。",
+            "statistics": {
+              "sampleCount": 2,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_t_9_b",
+      "name": "进退趋同",
+      "type": "wandering",
+      "floor": null,
+      "description": "海洋可以提供足够的空间让生物进化，而树林拥有足够丰富的物种让生物链变得完整，延缓生物的退化。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_9_b.png",
+      "rewards": {
+        "recordedExperience": 18,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_wandering_resident_convergence_scrap",
+            "nodeName": "流窜的“居民”",
+            "choiceCount": 2,
+            "probabilityDescription": "N6进退趋同2场归属明确的结算中，2场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。小样本单列，不外推其他流窜战斗。",
+            "statistics": {
+              "sampleCount": 2,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_wandering_resident_convergence_relic",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6进退趋同2场归属明确的结算中，1场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。小样本单列，不外推其他流窜战斗。",
+            "statistics": {
+              "sampleCount": 2,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "50.00%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_wandering_resident_convergence_recruit",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6进退趋同2场归属明确的结算中，2场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。小样本单列，不外推其他流窜战斗。",
+            "statistics": {
+              "sampleCount": 2,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_t_9_c",
+      "name": "进退趋同",
+      "type": "wandering",
+      "floor": null,
+      "description": "海洋可以提供足够的空间让生物进化，而树林拥有足够丰富的物种让生物链变得完整，延缓生物的退化。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_9_c.png",
+      "rewards": {
+        "recordedExperience": 18,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_wandering_resident_convergence_scrap",
+            "nodeName": "流窜的“居民”",
+            "choiceCount": 2,
+            "probabilityDescription": "N6进退趋同2场归属明确的结算中，2场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。小样本单列，不外推其他流窜战斗。",
+            "statistics": {
+              "sampleCount": 2,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_wandering_resident_convergence_relic",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6进退趋同2场归属明确的结算中，1场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。小样本单列，不外推其他流窜战斗。",
+            "statistics": {
+              "sampleCount": 2,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "50.00%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_wandering_resident_convergence_recruit",
+            "nodeName": "流窜的“居民”",
+            "probabilityDescription": "N6进退趋同2场归属明确的结算中，2场出现此类奖励；包含奖励选择入口，候选具名频次另算。仅为当前样本观测出现率，不代表理论权重。小样本单列，不外推其他流窜战斗。",
+            "statistics": {
+              "sampleCount": 2,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_t_10",
+      "name": "枯枝",
+      "type": "resident",
+      "floor": null,
+      "description": "死去的在这里重新苏醒生长。\n场地中有使单位持续损失生命但大幅提升攻击力和攻击速度的<活性源石>\n场地中有产生食腐使徒的<汲营枯枝>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_10.png",
+      "rewards": {
+        "recordedExperience": 25,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_savage_scrap_left",
+            "nodeName": "“居民”据点",
+            "choiceCount": 2,
+            "probabilityDescription": "4,813场两组零件入口、点击归属与候选完整可核验的结算均出现此入口；另220场候选或归属不完整未纳入此分母。仅为观测出现率。",
+            "statistics": {
+              "sampleCount": 4813,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_savage_scrap_right",
+            "nodeName": "“居民”据点",
+            "choiceCount": 2,
+            "probabilityDescription": "4,813场两组零件入口、点击归属与候选完整可核验的结算均出现此入口；另220场候选或归属不完整未纳入此分母。仅为观测出现率。",
+            "statistics": {
+              "sampleCount": 4813,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_battle_savage",
+            "nodeName": "“居民”据点",
+            "probability": "100%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_battle_savage_recruit",
+            "nodeName": "“居民”据点",
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_t_11",
+      "name": "败叶",
+      "type": "resident",
+      "floor": null,
+      "description": "活着的在这里继续长眠不醒。\n场地中有使单位持续损失生命但大幅提升攻击力和攻击速度的<活性源石>\n场地中有产生食腐使徒的<汲营枯枝>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_11.png",
+      "rewards": {
+        "recordedExperience": 30,
+        "recordedBonus": 0,
+        "ingots": 5,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_savage_scrap_left",
+            "nodeName": "“居民”据点",
+            "choiceCount": 2,
+            "probabilityDescription": "4,813场两组零件入口、点击归属与候选完整可核验的结算均出现此入口；另220场候选或归属不完整未纳入此分母。仅为观测出现率。",
+            "statistics": {
+              "sampleCount": 4813,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "零件",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/parts.png",
+            "poolId": "rogue_6:node_battle_savage_scrap_right",
+            "nodeName": "“居民”据点",
+            "choiceCount": 2,
+            "probabilityDescription": "4,813场两组零件入口、点击归属与候选完整可核验的结算均出现此入口；另220场候选或归属不完整未纳入此分母。仅为观测出现率。",
+            "statistics": {
+              "sampleCount": 4813,
+              "updatedAt": "2026-10-01T13:17:00+08:00"
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_battle_savage",
+            "nodeName": "“居民”据点",
+            "probability": "100%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "poolId": "rogue_6:node_battle_savage_recruit",
+            "nodeName": "“居民”据点",
+            "probability": "100%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_t_12",
+      "name": "无效验尸",
+      "type": "t",
+      "floor": null,
+      "description": "趁死亡还在泥土中翻找名字，他们把整个家族从坟墓里挖出来，试图从根源找到畸症的原因——结果一无所获。那时一切都没有名字，也没有原因。\n<“血债账款”>进度达到最大后进入“清算时刻”",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_12.png",
+      "rewards": {
+        "recordedExperience": 36,
+        "recordedBonus": 0,
+        "ingots": null,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_13",
+      "name": "“闹乐”",
+      "type": "t",
+      "floor": null,
+      "description": "多利决定加入这场不够热闹的派对，没有理由，单纯因为喜欢。\n提供击破后可在周围产生纯白水汽的<水汽汽水瓶>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_13.png",
+      "rewards": {
+        "recordedExperience": 30,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_14",
+      "name": "“纵怒”",
+      "type": "t",
+      "floor": null,
+      "description": "扎罗决定加入这场不够血腥的战斗，没有理由，单纯因为愤怒。\n场地中有被摧毁时扣除目标生命值的<指挥终端>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_14.png",
+      "rewards": {
+        "recordedExperience": 30,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_t_15",
+      "name": "“灭身”",
+      "type": "t",
+      "floor": null,
+      "description": "这头失去理智的生物决定加入这场不够悲惨的集会，没有理由，单纯因为求生。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_t_15.png",
+      "rewards": {
+        "recordedExperience": 30,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_duel_1",
+      "name": "搏杀",
+      "type": "duel",
+      "floor": null,
+      "description": "一对玻利瓦尔孪生兄弟在平原上大战了三天三夜难分胜负，只为争夺自己母亲的遗产。但人们始终不知道获胜的究竟是哥哥还是弟弟，只记得那个胜利的佩洛挥舞着一条染血的手帕，消失在平原尽头。\n选择对手进行战斗，失败不会扣除目标生命值，在限定时间内击败越难的对手将会获得更好的奖励",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_duel_1.png",
+      "rewards": {
+        "recordedExperience": 13,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "招募券",
+            "quantity": 2,
+            "probability": "100%",
+            "assetKey": "themes/battle-rewards/recruitment.png"
+          }
+        ],
+        "variants": [
+          {
+            "id": "left",
+            "label": "左",
+            "items": [
+              {
+                "name": "零件",
+                "quantity": 1,
+                "choiceCount": 2,
+                "probability": "100%",
+                "assetKey": "themes/battle-rewards/parts.png",
+                "poolId": "rogue_6:狭路相逢：左",
+                "nodeName": "狭路相逢"
+              }
+            ]
+          },
+          {
+            "id": "middle",
+            "label": "中",
+            "items": [
+              {
+                "name": "零件",
+                "quantity": 1,
+                "choiceCount": 2,
+                "probability": "100%",
+                "assetKey": "themes/battle-rewards/parts.png",
+                "poolId": "rogue_6:狭路相逢：中",
+                "nodeName": "狭路相逢"
+              }
+            ]
+          },
+          {
+            "id": "right",
+            "label": "右",
+            "items": [
+              {
+                "name": "藏品",
+                "quantity": 1,
+                "probability": "100%",
+                "assetKey": "themes/battle-rewards/relic.png",
+                "poolId": "rogue_6:狭路相逢：右",
+                "nodeName": "狭路相逢"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_duel_2",
+      "name": "共斗",
+      "type": "duel",
+      "floor": null,
+      "description": "这种原始野蛮的娱乐方式流传至今，必然有它的道理。鲜血令生灵兴奋，死亡令生灵警醒。\n选择对手进行战斗，失败不会扣除目标生命值，在限定时间内击败越难的对手将会获得更好的奖励",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_duel_2.png",
+      "rewards": {
+        "recordedExperience": 18,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "招募券",
+            "quantity": 2,
+            "probability": "100%",
+            "assetKey": "themes/battle-rewards/recruitment.png"
+          }
+        ],
+        "variants": [
+          {
+            "id": "left",
+            "label": "左",
+            "items": [
+              {
+                "name": "零件",
+                "quantity": 1,
+                "choiceCount": 2,
+                "probability": "100%",
+                "assetKey": "themes/battle-rewards/parts.png",
+                "poolId": "rogue_6:狭路相逢：左",
+                "nodeName": "狭路相逢"
+              }
+            ]
+          },
+          {
+            "id": "middle",
+            "label": "中",
+            "items": [
+              {
+                "name": "零件",
+                "quantity": 1,
+                "choiceCount": 2,
+                "probability": "100%",
+                "assetKey": "themes/battle-rewards/parts.png",
+                "poolId": "rogue_6:狭路相逢：中",
+                "nodeName": "狭路相逢"
+              }
+            ]
+          },
+          {
+            "id": "right",
+            "label": "右",
+            "items": [
+              {
+                "name": "藏品",
+                "quantity": 1,
+                "probability": "100%",
+                "assetKey": "themes/battle-rewards/relic.png",
+                "poolId": "rogue_6:狭路相逢：右",
+                "nodeName": "狭路相逢"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ro6_c_1",
+      "name": "血夜回魂",
+      "type": "hunt",
+      "floor": null,
+      "description": "被自己手下杀死在雨夜的一家之主，会在红色的雨夜归来，身边跟着死去的凶手。现在你也从猎犬口中得知了这个故事，祝你好运。\n<“血债账款”>进度达到最大后进入“清算时刻”",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_c_1.png"
+    },
+    {
+      "id": "ro6_c_1_b",
+      "name": "毛绒游戏",
+      "type": "hunt",
+      "floor": null,
+      "description": "多利只是不希望探索者的体验过于糟糕，他没想到他们看到毛绒绒的生物依然夺路而逃。游戏价值大打折扣，他很难过。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_c_1_b.png"
+    },
+    {
+      "id": "ro6_c_1_c",
+      "name": "在劫难逃",
+      "type": "hunt",
+      "floor": null,
+      "description": "一时无法判断是猎犬可怕，还是眼前的异质裂兽更胜一筹。唯一能确定的是，你还不想变异。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_c_1_c.png"
+    },
+    {
+      "id": "ro6_c_2",
+      "name": "咩的朋友",
+      "type": "hunt",
+      "floor": null,
+      "description": "同样是头上有角，身上长着绒毛的生物，角兽不明白为什么自己听不懂那只跳来跳去的家伙在说什么，但身体却本能地跟着对方一起去散步了。\n提供部署以后可以阻挡敌人的行进路线的<障碍物>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_c_2.png"
+    },
+    {
+      "id": "ro6_c_3",
+      "name": "外显尖牙",
+      "type": "hunt",
+      "floor": null,
+      "description": "仇恨是狼的语言，一致对外才是团结的基本。\n场地中有使我方不会成为敌人远程攻击目标的<草丛>\n<“血债账款”>进度达到最大后进入“清算时刻”",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_c_3.png"
+    },
+    {
+      "id": "ro6_c_4",
+      "name": "一视同仁",
+      "type": "hunt",
+      "floor": null,
+      "description": "敌我不分是文明堕落的开始，至于终点在哪里，死人不会开口。\n场地中有阻挡敌人的<城防路障>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_c_4.png"
+    },
+    {
+      "id": "ro6_c_5",
+      "name": "“闹乐”",
+      "type": "hunt",
+      "floor": null,
+      "description": "多利决定加入这场不够热闹的派对，没有理由，单纯因为喜欢。\n提供击破后可在周围产生纯白水汽的<水汽汽水瓶>",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_c_5.png"
+    },
+    {
+      "id": "ro6_c_6",
+      "name": "“纵怒”",
+      "type": "hunt",
+      "floor": null,
+      "description": "扎罗决定加入这场不够血腥的战斗，没有理由，单纯因为愤怒。\n场地中有被摧毁时扣除目标生命值的<指挥终端>\n<“血债账款”>进度达到最大后进入“清算时刻”",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_c_6.png"
+    },
+    {
+      "id": "ro6_c_7",
+      "name": "“灭身”",
+      "type": "hunt",
+      "floor": null,
+      "description": "这头失去理智的生物决定加入这场不够悲惨的集会，没有理由，单纯因为求生。",
+      "eliteDescription": "",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_c_7.png"
+    },
+    {
+      "id": "ro6_e_1_1",
+      "name": "猎犬病原",
+      "type": "e",
+      "floor": 1,
+      "description": "猎犬是由被它们撕咬吞噬的病人转化成的？你怎么会有这种可怕而不切实际的想法。\n场地中有对敌我造成伤害的<源石祭坛>",
+      "eliteDescription": "敌人的攻击力和生命值提升，部分敌人有所不同",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_1_1.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_1_2",
+      "name": "遗忘时间",
+      "type": "e",
+      "floor": 1,
+      "description": "他们说在黑流树海中时间也会被遗忘，你捡到了三天前被遗弃在雨林里的潮湿火石，转眼又看到了一百年后霓虹璀璨的夜色。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_1_2.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_1_3",
+      "name": "急不可耐",
+      "type": "e",
+      "floor": 1,
+      "description": "这里的“居民”们在成为独当一面的战士之前，都要踏过一条漫长的征途。在忍耐中积蓄力量是它们的信条，所以立刻行动起来，不要和它们比试耐心。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_1_3.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_1_4",
+      "name": "灌水贤者",
+      "type": "e",
+      "floor": 1,
+      "description": "立起围栏，然后邀请贤者们来到土地上发挥特长。这比用灌溉机要节省得多，我们或许可以给这里起名叫“种植园”。\n场地中有使我方不会成为敌人远程攻击目标的<草丛>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，部分敌人有所不同",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_1_4.png",
+      "rewards": {
+        "recordedExperience": 15,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_2_1",
+      "name": "虫虫游戏厅",
+      "type": "e",
+      "floor": 2,
+      "description": "这里正在发生的事与你知道的那个家伙并没有任何关系，千真万确。但你如果意识到这是在说哪个家伙的话，说明你还是怀疑了，对吧？\n场地中有一段时间后自动激活的<压力归零帮手>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的“压力舒缓帮手”",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_2_1.png",
+      "rewards": {
+        "recordedExperience": 23,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_2_2",
+      "name": "无主地",
+      "type": "e",
+      "floor": 2,
+      "description": "文明总是从生火开始，而生火总是从砍伐开始，所以文明总是从砍伐开始。有些人将从不够文明的家伙手中夺取生存空间视为一种道德。\n提供可以清除<巨蕈>的<罗德岛临时雇员>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，部分敌人有所不同",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_2_2.png",
+      "rewards": {
+        "recordedExperience": 23,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_2_3",
+      "name": "本性难移",
+      "type": "e",
+      "floor": 2,
+      "description": "一名萨卡兹佣兵邀请我一同去劫掠不远处的村庄，我问他为何不耕种自己的土地。他气急败坏，张开血盆大口向我扑来。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，部分敌人有所不同",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_2_3.png",
+      "rewards": {
+        "recordedExperience": 23,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_2_4",
+      "name": "远北猎场",
+      "type": "e",
+      "floor": 2,
+      "description": "猎犬吞下的部分信息会在黑流树海中被重现，可到底是谁把这些凶残的生物带到了这片大地的极北？天啊，它们真的什么都吃！",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，“颂水贤者”的路线改变",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_2_4.png",
+      "rewards": {
+        "recordedExperience": 23,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_2_5",
+      "name": "枝头陷阱",
+      "type": "e",
+      "floor": 2,
+      "description": "一对兄弟被强占土地，流离失所，做起了雇佣兵。多年后他们回到故居，刺杀了正要爬树掏羽兽蛋的庄园主，最后被追兵逼到悬崖边双双自尽。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_2_5.png",
+      "rewards": {
+        "recordedExperience": 23,
+        "recordedBonus": 3,
+        "ingots": 2,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_3_1",
+      "name": "预算否决",
+      "type": "e",
+      "floor": 3,
+      "description": "一些探员问我们哥伦比亚政府为什么不能拨足预算，用战车和近地飞行器荡平黑流树海？而这就是原因，蠢货。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，部分敌人有所不同",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_3_1.png",
+      "rewards": {
+        "recordedExperience": 33,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_3_2",
+      "name": "生存习性",
+      "type": "e",
+      "floor": 3,
+      "description": "在这里最常见的就是狂奔着一头撞在树上的动物。它们为什么不肯回头？唉，我为什么不肯回头？",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_3_2.png",
+      "rewards": {
+        "recordedExperience": 33,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_3_3",
+      "name": "辟路行进",
+      "type": "e",
+      "floor": 3,
+      "description": "一些玻利瓦尔本土的居民第一次从行商那里见到了冰块这种东西，商人说它来自北方的国度。而那里还有另一样特产——可以荡平一切的军队。\n场地中有可以阻挡敌人行进路线的<碎石>",
+      "eliteDescription": "敌人的攻击力、生命值提升,“爆破攻坚手”的攻击力大幅提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_3_3.png",
+      "rewards": {
+        "recordedExperience": 33,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_3_4",
+      "name": "趁火打劫",
+      "type": "e",
+      "floor": 3,
+      "description": "一伙劫匪觊觎这座富裕的村庄多年，这一天他们终于得手——原来是哥伦比亚的军队替他们敲开了门。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，部分敌人有所不同",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_3_4.png",
+      "rewards": {
+        "recordedExperience": 33,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_3_5",
+      "name": "焦土之家",
+      "type": "e",
+      "floor": 3,
+      "description": "五十年前，某片玻利瓦尔的土地被一群萨卡兹封为卡兹戴尔，争夺未果的拓荒者们将其付之一炬。五十年后，未熄的焦土之上又诞生了新的“卡兹戴尔”。\n场地中有间断对其上单位造成伤害的<热泵通道>\n提供部署以后可以阻挡敌人的行进路线的<障碍物>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现额外的“汲营枯枝”",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_3_5.png",
+      "rewards": {
+        "recordedExperience": 33,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_3_6",
+      "name": "黑色逆流",
+      "type": "e",
+      "floor": 3,
+      "description": "一旦黑流抓住了你，它就会像一股逆流，反复冲蚀着用你生命中的经历与时光筑起的堤岸，直到摧毁并带走它们。",
+      "eliteDescription": "敌人的攻击力、生命值和移动速度提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_3_6.png",
+      "rewards": {
+        "recordedExperience": 33,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_4_1",
+      "name": "未来见闻",
+      "type": "e",
+      "floor": 4,
+      "description": "有人在玻利瓦尔分享他在哥伦比亚科技展会上的见闻。一位记者听说后提笔写下：“在哥伦比亚，被剥夺了土地的人们只能生活在天上。”",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，“行天救护车”的生命值大幅提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_4_1.png",
+      "rewards": {
+        "recordedExperience": 39,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_4_2",
+      "name": "种植园惊魂",
+      "type": "e",
+      "floor": 4,
+      "description": "十个壮劳工，下地去干活；一个变黑影，还剩九个人。九个壮劳工，牵手去施肥；一个沉黑流，还剩八个人......",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_4_2.png",
+      "rewards": {
+        "recordedExperience": 39,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_4_3",
+      "name": "选边站",
+      "type": "e",
+      "floor": 4,
+      "description": "“居民”们正在投票表决一些事情，你并不理解它们的语言，也没打算干涉，但当你从旁边经过的时候，它们齐刷刷地看向了你。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_4_3.png",
+      "rewards": {
+        "recordedExperience": 39,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_4_4",
+      "name": "诞生礼",
+      "type": "e",
+      "floor": 4,
+      "description": "“不得惊扰神圣的诞生礼！”司仪们厉声呵止住你，并尝试从黑流中抱起一个个“婴孩”。可你看得真切，那些躺在襁褓中的分明是一条条猎犬。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_4_4.png",
+      "rewards": {
+        "recordedExperience": 39,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_4_5",
+      "name": "暴力押运",
+      "type": "e",
+      "floor": 4,
+      "description": "大批的器材与设备正被运往黑流树海深处。你不该看见这些的，至少不该让那些押运人员知道你看见了。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，“‘肇事者’量产型”获得隐匿",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_4_5.png",
+      "rewards": {
+        "recordedExperience": 39,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_4_6",
+      "name": "长刀寒夜",
+      "type": "e",
+      "floor": 4,
+      "description": "在那场失败行动的前夜，辛嘉斯的叛军余部做足了准备，势要清算所有的碍事者，更迭这个愚蠢的王朝。\n场地中有能预警雪崩的<圣女像>，敌我进入其范围会增加雪崩预警值",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_4_6.png",
+      "rewards": {
+        "recordedExperience": 39,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_4_7",
+      "name": "侵占家园",
+      "type": "e",
+      "floor": 4,
+      "description": "为什么似乎只有人类会在丛林中迷路？因为在学会如何认路之前，人类就会砍光丛林——反正这里也不是他们的家园。你说丛林中本来有居民？真的吗？\n场地中有能遮蔽视野的<树丛>和<盾与墙>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，部分敌人有所不同",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_4_7.png",
+      "rewards": {
+        "recordedExperience": 39,
+        "recordedBonus": 3,
+        "ingots": 3,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_5_1",
+      "name": "一步之遥",
+      "type": "e",
+      "floor": 5,
+      "description": "第七次经过同一个路标的时候，你终于在两棵树之间找到了出口，不幸的是，它们突然站起身跑掉了，你追都追不上。\n场地中有能遮蔽视野的<树丛>和<盾与墙>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，远程敌人的攻击范围提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_5_1.png",
+      "rewards": {
+        "recordedExperience": 47,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_5_2",
+      "name": "物欲遮天",
+      "type": "e",
+      "floor": 5,
+      "description": "“这里被无休止的物欲填满了！”一位来自萨尔贡的旅客见识过多索雷斯的风土人情后，一言道出了这片土地上种种灾难的症结。\n场地中有使我方不会成为敌人远程攻击目标的<草丛>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_5_2.png",
+      "rewards": {
+        "recordedExperience": 47,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_5_3",
+      "name": "恶意讨薪",
+      "type": "e",
+      "floor": 5,
+      "description": "一群竞技骑士因工时和待遇问题组织了一场声势浩大的罢工，几周后猎犬期货价格飙升，几个月后卡西米尔多了一块生意兴隆的新墓园。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_5_3.png",
+      "rewards": {
+        "recordedExperience": 47,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_5_4",
+      "name": "送别仪式",
+      "type": "e",
+      "floor": 5,
+      "description": "遗众绕着同伴的坟茔缓慢行走，将其灵魂一片片带离，直到坟墓塌陷，灰飞烟灭。如此，逝者方能获得永远的安宁。\n场地中有使单位持续损失生命但大幅提升攻击力和攻击速度的<活性源石>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_5_4.png",
+      "rewards": {
+        "recordedExperience": 47,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_5_5",
+      "name": "彼处水如酒",
+      "type": "e",
+      "floor": 5,
+      "description": "你是说伊比利亚遍地都是这样的盐漠，人们喝不到咖啡，只能喝咸鳞汁？怪不得他们要不远万里来到玻利瓦尔扮演不受欢迎的闯入者。\n场地中有能进行炮击并发射敌人的<盐坨子炮>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，3个位置不可部署",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_5_5.png",
+      "rewards": {
+        "recordedExperience": 47,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_5_6",
+      "name": "丛林法则",
+      "type": "e",
+      "floor": 5,
+      "description": "在这样的法则之下，这片土地上所有的野生动物、植物、人类，每个个体都只会觉得自己必须消灭其中的两种甚至三种。真是野蛮的思想。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_5_6.png",
+      "rewards": {
+        "recordedExperience": 47,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_5_7",
+      "name": "过度繁殖",
+      "type": "e",
+      "floor": 5,
+      "description": "老何塞的第九十七个孙子出生了，父亲拼命地将孩子托举到爷爷面前。可是老人早已目不能视口不能言，他可怜的庄园里也不剩下什么能继承的遗产。\n场地中有发射敌方佣兵无人机的<可移动战术机库>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，部分敌人有所不同",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_5_7.png",
+      "rewards": {
+        "recordedExperience": 47,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_6_1",
+      "name": "命运共享",
+      "type": "e",
+      "floor": 6,
+      "description": "我愿用我的血液滋养这片土地，我愿用我的血肉填补你们的血肉，只要你们没有忘记，你们原本共享同一个名字。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，部分敌人路线有所不同",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_6_1.png",
+      "rewards": {
+        "recordedExperience": 47,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_6_2",
+      "name": "同域共存",
+      "type": "e",
+      "floor": 6,
+      "description": "我定要找到梦中那片金色的原野，我将遗忘那些灰黑色的水泥、午后的烈日，还有三百多年前海岸边的船桨。我们不再创造名词区隔彼此，我们共存。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，“猎犬proto”获得隐匿",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_6_2.png",
+      "rewards": {
+        "recordedExperience": 47,
+        "recordedBonus": 3,
+        "ingots": 5,
+        "guaranteedItems": true
+      }
+    },
+    {
+      "id": "ro6_e_t_3",
+      "name": "开业剪彩",
+      "type": "e",
+      "floor": null,
+      "description": "这只扛包的熊终于有了自己的安保公司，它正神气地扛着那只熟悉的大包，检阅它的安保大队，排除现场的一切安全隐患。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_t_3.png",
+      "rewards": {
+        "recordedExperience": 24,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_e_t_4",
+      "name": "合伙人会议",
+      "type": "e",
+      "floor": null,
+      "description": "这只鸭子能和任何生物合作，不管是活着的还是死去的，传言他甚至和那位将军联手过。毕竟，商业帝国就是这样繁荣起来的。",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_t_4.png",
+      "rewards": {
+        "recordedExperience": 36,
+        "recordedBonus": 0,
+        "ingots": 3,
+        "guaranteedItems": true,
+        "items": []
+      }
+    },
+    {
+      "id": "ro6_e_t_5",
+      "name": "湖中魇",
+      "type": "e",
+      "floor": null,
+      "description": "你被拖下了湖水，流淌的赤金和悲伤的泪水灼伤你的手，刻下了关于“贪婪”的寓言。\n场地中有能探测隐形敌人的<侦测器>",
+      "eliteDescription": "敌人的攻击力、防御力和生命值提升，出现新的敌人",
+      "previewKey": "themes/battle-previews/rogue_6/ro6_e_t_5.png",
+      "rewards": {
+        "recordedExperience": 36,
+        "recordedBonus": 0,
+        "ingots": 8,
+        "guaranteedItems": true,
+        "items": [
+          {
+            "name": "零件",
+            "quantity": 1,
+            "choiceCount": 2,
+            "probabilityDescription": "紧急湖中魇三至五层27场均出现零件选择奖励；样本出现率，不代表服务器基础权重。",
+            "assetKey": "themes/battle-rewards/parts.png",
+            "statistics": {
+              "sampleCount": 27
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "藏品",
+            "quantity": 1,
+            "probabilityDescription": "紧急湖中魇三至五层27场均有藏品奖励：24场直接显示藏品，3场显示收藏品选择入口。这里统计奖励出现率，不把选择入口误写成额外直接单件，也不据此断言基础机制。",
+            "assetKey": "themes/battle-rewards/relic.png",
+            "poolId": "rogue_6:node_incident_lake_fairy_emergency",
+            "nodeName": "不期而遇",
+            "statistics": {
+              "sampleCount": 27
+            },
+            "probability": "100%"
+          },
+          {
+            "name": "招募券",
+            "quantity": 1,
+            "probabilityDescription": "紧急湖中魇27场均出现一份招募券奖励；未据此合并券种频次。",
+            "assetKey": "themes/battle-rewards/recruitment.png",
+            "statistics": {
+              "sampleCount": 27
+            },
+            "probability": "100%"
+          }
+        ]
+      }
+    }
+  ]
+}

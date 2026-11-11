@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "topicId": "rogue_6",
+  "updatedAt": "2026-09-20T01:03:36+08:00",
+  "range": {
+    "minimum": -6,
+    "maximum": 8
+  },
+  "source": {
+    "snapshotSha256": "e82c953cfe58ee5f6825d91adb609bf9dc0d1de0174cbd9f83920deaf616c2a8",
+    "difficulty": "mixed-manual",
+    "scope": "两个原始工作表逐行前后估价"
+  },
+  "observed": {
+    "sampleCount": 3957,
+    "rows": [
+      {
+        "delta": -6,
+        "count": 210,
+        "frequency": 0.05307050796057619
+      },
+      {
+        "delta": -5,
+        "count": 227,
+        "frequency": 0.05736669193833712
+      },
+      {
+        "delta": -4,
+        "count": 241,
+        "frequency": 0.060904725802375534
+      },
+      {
+        "delta": -3,
+        "count": 285,
+        "frequency": 0.07202426080363912
+      },
+      {
+        "delta": -2,
+        "count": 268,
+        "frequency": 0.0677280768258782
+      },
+      {
+        "delta": -1,
+        "count": 266,
+        "frequency": 0.06722264341672984
+      },
+      {
+        "delta": 0,
+        "count": 304,
+        "frequency": 0.0768258781905484
+      },
+      {
+        "delta": 1,
+        "count": 275,
+        "frequency": 0.0694970937578974
+      },
+      {
+        "delta": 2,
+        "count": 270,
+        "frequency": 0.06823351023502654
+      },
+      {
+        "delta": 3,
+        "count": 294,
+        "frequency": 0.07429871114480667
+      },
+      {
+        "delta": 4,
+        "count": 278,
+        "frequency": 0.07025524387161991
+      },
+      {
+        "delta": 5,
+        "count": 282,
+        "frequency": 0.0712661106899166
+      },
+      {
+        "delta": 6,
+        "count": 243,
+        "frequency": 0.06141015921152388
+      },
+      {
+        "delta": 7,
+        "count": 265,
+        "frequency": 0.06696992671215567
+      },
+      {
+        "delta": 8,
+        "count": 249,
+        "frequency": 0.06292645943896892
+      }
+    ]
+  },
+  "uncensored": {
+    "sampleCount": 3520,
+    "rows": [
+      {
+        "delta": -6,
+        "count": 210,
+        "frequency": 0.05965909090909091
+      },
+      {
+        "delta": -5,
+        "count": 223,
+        "frequency": 0.06335227272727273
+      },
+      {
+        "delta": -4,
+        "count": 233,
+        "frequency": 0.06619318181818182
+      },
+      {
+        "delta": -3,
+        "count": 234,
+        "frequency": 0.06647727272727273
+      },
+      {
+        "delta": -2,
+        "count": 242,
+        "frequency": 0.06875
+      },
+      {
+        "delta": -1,
+        "count": 232,
+        "frequency": 0.0659090909090909
+      },
+      {
+        "delta": 0,
+        "count": 219,
+        "frequency": 0.06221590909090909
+      },
+      {
+        "delta": 1,
+        "count": 238,
+        "frequency": 0.06761363636363636
+      },
+      {
+        "delta": 2,
+        "count": 246,
+        "frequency": 0.06988636363636364
+      },
+      {
+        "delta": 3,
+        "count": 257,
+        "frequency": 0.07301136363636364
+      },
+      {
+        "delta": 4,
+        "count": 246,
+        "frequency": 0.06988636363636364
+      },
+      {
+        "delta": 5,
+        "count": 257,
+        "frequency": 0.07301136363636364
+      },
+      {
+        "delta": 6,
+        "count": 219,
+        "frequency": 0.06221590909090909
+      },
+      {
+        "delta": 7,
+        "count": 242,
+        "frequency": 0.06875
+      },
+      {
+        "delta": 8,
+        "count": 222,
+        "frequency": 0.06306818181818181
+      }
+    ]
+  },
+  "bySource": {
+    "0hmccm": {
+      "name": "浪花价格研究",
+      "sampleCount": 1051,
+      "uncensoredSampleCount": 750,
+      "excludedReasons": {
+        "missed-step-note": 5,
+        "missing-or-invalid-price": 8,
+        "outside-minus6-plus8": 7
+      }
+    },
+    "4z4vqm": {
+      "name": "浪花（烈焰）",
+      "sampleCount": 2906,
+      "uncensoredSampleCount": 2770,
+      "excludedReasons": {}
+    }
+  },
+  "excluded": [
+    {
+      "sheetId": "0hmccm",
+      "row": 24,
+      "reason": "missed-step-note",
+      "before": 21,
+      "after": 24,
+      "note": "中间忘了，卖了"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 153,
+      "reason": "missing-or-invalid-price",
+      "before": null,
+      "after": 3,
+      "note": "热血开荒n6"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 184,
+      "reason": "outside-minus6-plus8",
+      "before": 13,
+      "after": 5,
+      "note": ""
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 188,
+      "reason": "outside-minus6-plus8",
+      "before": 10,
+      "after": 21,
+      "note": ""
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 390,
+      "reason": "outside-minus6-plus8",
+      "before": 8,
+      "after": 18,
+      "note": ""
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 392,
+      "reason": "missing-or-invalid-price",
+      "before": 20,
+      "after": "？",
+      "note": "少看1次"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 393,
+      "reason": "missing-or-invalid-price",
+      "before": "？",
+      "after": 18,
+      "note": ""
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 593,
+      "reason": "missing-or-invalid-price",
+      "before": null,
+      "after": 3,
+      "note": "n7蠕动开荒中"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 656,
+      "reason": "missing-or-invalid-price",
+      "before": 7,
+      "after": "？",
+      "note": ""
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 657,
+      "reason": "missing-or-invalid-price",
+      "before": "？",
+      "after": 15,
+      "note": ""
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 673,
+      "reason": "outside-minus6-plus8",
+      "before": 7,
+      "after": 0,
+      "note": ""
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 781,
+      "reason": "outside-minus6-plus8",
+      "before": 10,
+      "after": 3,
+      "note": "第一次统计数据可能有点问题"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 792,
+      "reason": "outside-minus6-plus8",
+      "before": 27,
+      "after": 20,
+      "note": ""
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 837,
+      "reason": "missed-step-note",
+      "before": 22,
+      "after": 25,
+      "note": "忘了"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 915,
+      "reason": "missing-or-invalid-price",
+      "before": 0,
+      "after": null,
+      "note": "忘记了（）"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 916,
+      "reason": "missing-or-invalid-price",
+      "before": null,
+      "after": 5,
+      "note": ""
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 1017,
+      "reason": "missed-step-note",
+      "before": 34,
+      "after": 33,
+      "note": "忘记看了"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 1314,
+      "reason": "missed-step-note",
+      "before": 20,
+      "after": 25,
+      "note": "忘了"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 1368,
+      "reason": "missed-step-note",
+      "before": 15,
+      "after": 17,
+      "note": "忘了"
+    },
+    {
+      "sheetId": "0hmccm",
+      "row": 1380,
+      "reason": "outside-minus6-plus8",
+      "before": 11,
+      "after": 4,
+      "note": ""
+    }
+  ],
+  "method": "由前后估价相减；剔除范围外、价格不完整及明确漏记步骤。随机增减分布仅用变化前估价≥6的记录，避免0估价下限截断。",
+  "limitations": [
+    "人工记录包含不同难度，不并入N6自动战斗样本。",
+    "相同价格对可正常重复，不按数值去重。"
+  ],
+  "auditSha256": "fd428dfc89a2f2a8c9122b9c1490d24160b906881a3886cfca82105ae55bdd50"
+}

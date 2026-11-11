@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "metric": "ordinary-utopia-generation",
+  "sourceUrl": "https://prts.wiki/w/沉沦者的黑流树海#保密等级",
+  "checkedAt": "2026-09-20",
+  "theoretical": [
+    {
+      "label": "N0–N1",
+      "minDifficulty": 0,
+      "maxDifficulty": 1,
+      "rates": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "N2–N5",
+      "minDifficulty": 2,
+      "maxDifficulty": 5,
+      "rates": [
+        0,
+        0.1,
+        0.15,
+        0.2,
+        0.2,
+        0
+      ]
+    },
+    {
+      "label": "N6–N11",
+      "minDifficulty": 6,
+      "maxDifficulty": 11,
+      "rates": [
+        0.1,
+        0.2,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "label": "N12–N16",
+      "minDifficulty": 12,
+      "maxDifficulty": 16,
+      "rates": [
+        0.1,
+        0.2,
+        0.4,
+        0.4,
+        0.4,
+        0.3
+      ]
+    }
+  ],
+  "difficultyExtension": {
+    "source": "维护者于 2026-10-22 指定 N12–N16 共用此档推算",
+    "date": "2026-10-22"
+  }
+}

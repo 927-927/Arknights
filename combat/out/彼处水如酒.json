@@ -1,0 +1,384 @@
+{
+ "stage": {
+  "name": "彼处水如酒",
+  "id": "ro6_n_5_5"
+ },
+ "options": {
+  "stage": "彼处水如酒",
+  "secrecy": 15,
+  "floor": 5,
+  "elite": false,
+  "roster": "roster.example.json",
+  "K": 6,
+  "sims": 3000,
+  "seed": 1,
+  "html": true,
+  "json": true
+ },
+ "plan": {
+  "deploys": [
+   {
+    "op": "能天使",
+    "r": 5,
+    "c": 7,
+    "dir": "W",
+    "t": 3,
+    "config": {
+     "name": "能天使",
+     "elite": 2,
+     "level": 70,
+     "potential": 2,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10,
+     "module": {
+      "type": "Y",
+      "stage": 3
+     }
+    }
+   },
+   {
+    "op": "艾雅法拉",
+    "r": 2,
+    "c": 8,
+    "dir": "E",
+    "t": 24,
+    "config": {
+     "name": "艾雅法拉",
+     "elite": 2,
+     "level": 80,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10
+    }
+   },
+   {
+    "op": "蓝毒",
+    "r": 5,
+    "c": 9,
+    "dir": "W",
+    "t": 36,
+    "config": {
+     "name": "蓝毒",
+     "elite": 2,
+     "level": 60,
+     "potential": 4,
+     "trust": 100,
+     "skill": 2,
+     "skillLevel": 8
+    }
+   },
+   {
+    "op": "银灰",
+    "r": 3,
+    "c": 9,
+    "dir": "W",
+    "t": 77,
+    "config": {
+     "name": "银灰",
+     "elite": 2,
+     "level": 80,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10,
+     "module": {
+      "type": "X",
+      "stage": 3
+     }
+    }
+   },
+   {
+    "op": "逻各斯",
+    "r": 2,
+    "c": 7,
+    "dir": "E",
+    "t": 77,
+    "config": {
+     "name": "逻各斯",
+     "elite": 2,
+     "level": 70,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 9
+    }
+   },
+   {
+    "op": "棘刺",
+    "r": 5,
+    "c": 8,
+    "dir": "E",
+    "t": 97,
+    "config": {
+     "name": "棘刺",
+     "elite": 2,
+     "level": 75,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10
+    }
+   }
+  ],
+  "skills": {
+   "艾雅法拉": [
+    43
+   ],
+   "蓝毒": [
+    63,
+    137
+   ],
+   "银灰": [
+    92
+   ],
+   "逻各斯": [
+    102.5,
+    177.5
+   ],
+   "棘刺": [
+    125.6,
+    179.9
+   ]
+  },
+  "retreats": []
+ },
+ "result": {
+  "win": false,
+  "lifeLost": 4,
+  "lifeLeft": 0,
+  "leaks": 4,
+  "kills": 36,
+  "totalEnemies": 40,
+  "hpRemoved": 1594828.602500003,
+  "hpTotal": 1650600,
+  "duration": 195.1,
+  "score": -390338020.1951,
+  "deploys": [
+   {
+    "name": "能天使",
+    "t": 3,
+    "r": 5,
+    "c": 7,
+    "dir": "W",
+    "cost": 13
+   },
+   {
+    "name": "艾雅法拉",
+    "t": 24,
+    "r": 2,
+    "c": 8,
+    "dir": "E",
+    "cost": 21
+   },
+   {
+    "name": "蓝毒",
+    "t": 36,
+    "r": 5,
+    "c": 9,
+    "dir": "W",
+    "cost": 12
+   },
+   {
+    "name": "银灰",
+    "t": 77,
+    "r": 3,
+    "c": 9,
+    "dir": "W",
+    "cost": 20
+   },
+   {
+    "name": "逻各斯",
+    "t": 77,
+    "r": 2,
+    "c": 7,
+    "dir": "E",
+    "cost": 21
+   },
+   {
+    "name": "棘刺",
+    "t": 97,
+    "r": 5,
+    "c": 8,
+    "dir": "E",
+    "cost": 20
+   }
+  ],
+  "skillUses": [
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 13,
+    "end": 28
+   },
+   {
+    "name": "艾雅法拉",
+    "skill": "火山",
+    "t": 43,
+    "end": 58
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 58,
+    "end": 73
+   },
+   {
+    "name": "蓝毒",
+    "skill": "毒液散射",
+    "t": 63,
+    "end": 90
+   },
+   {
+    "name": "银灰",
+    "skill": "真银斩",
+    "t": 92,
+    "end": 102.7
+   },
+   {
+    "name": "逻各斯",
+    "skill": "延异视阈",
+    "t": 102.5,
+    "end": 132.5
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 103,
+    "end": 118
+   },
+   {
+    "name": "棘刺",
+    "skill": "至高之术",
+    "t": 125.6,
+    "end": 155.6
+   },
+   {
+    "name": "蓝毒",
+    "skill": "毒液散射",
+    "t": 137,
+    "end": 164
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 148,
+    "end": 163
+   },
+   {
+    "name": "逻各斯",
+    "skill": "延异视阈",
+    "t": 177.5,
+    "end": 195.1
+   },
+   {
+    "name": "棘刺",
+    "skill": "至高之术",
+    "t": 179.9,
+    "end": 195.1
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 193,
+    "end": 195.1
+   }
+  ],
+  "losses": [
+   {
+    "name": "艾雅法拉",
+    "t": 61.4,
+    "cause": "died"
+   },
+   {
+    "name": "银灰",
+    "t": 102.7,
+    "cause": "died"
+   }
+  ],
+  "perOp": [
+   {
+    "name": "能天使",
+    "damage": 410184.8218750001,
+    "healing": 0,
+    "kills": 12,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 62.2,
+    "died": false
+   },
+   {
+    "name": "艾雅法拉",
+    "damage": 330514.6275000003,
+    "healing": 0,
+    "kills": 3,
+    "blockedSeconds": 0,
+    "damageTaken": 2295,
+    "skillUptime": 15,
+    "died": true
+   },
+   {
+    "name": "蓝毒",
+    "damage": 349433.375,
+    "healing": 0,
+    "kills": 9,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 54,
+    "died": false
+   },
+   {
+    "name": "银灰",
+    "damage": 103291.54375000004,
+    "healing": 0,
+    "kills": 1,
+    "blockedSeconds": 6.1,
+    "damageTaken": 3820.5000000000005,
+    "skillUptime": 10.8,
+    "died": true
+   },
+   {
+    "name": "逻各斯",
+    "damage": 323902.45625000034,
+    "healing": 0,
+    "kills": 9,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 47.7,
+    "died": false
+   },
+   {
+    "name": "棘刺",
+    "damage": 77501.77812500004,
+    "healing": 0,
+    "kills": 2,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 45.3,
+    "died": false
+   }
+  ],
+  "dp": {
+   "generated": 195.2,
+   "spent": 107,
+   "endUnspent": 98.2,
+   "initial": 10,
+   "refunded": 0
+  },
+  "alive": 0,
+  "timedOut": false,
+  "lifePoints": 1
+ },
+ "verdict": "The roster as placed does NOT hold this stage in the model: 4 life lost (life points 1), 4 of 40 enemies leaked (3 x 爆炸信奉者, 1 x 美声水手长), 0 still alive at the end; 96.6% of enemy HP removed.",
+ "assumptions": [
+  "ASSUMPTION (sim.TPS_DEFAULT): enemy move speed 1.0 = 0.5 tiles/s (not calibrated in game); every path time scales with it.",
+  "ASSUMPTION (operators.SECRECY_PER_FLOOR_DEFAULT): +20%/floor ATK and HP is 'additive' (1 + 20% x (floor - 1), floor 1 = 0 steps), summed with the other secrecy % (pct). Enemy HP here is x2.10 of secrecy 0; 'compound' would give x2.37.",
+  "ASSUMPTION (sim.LIFE_POINTS_DEFAULT): 1 life point(s); the fight is not stopped at defeat, so lives lost can exceed it.",
+  "ASSUMPTION (sim.FRAGMENT_TIMING_DEFAULT): a fragment's preDelay counts from the end of the previous fragment ('afterLast'); a wave starts once the one before is cleared.",
+  "ASSUMPTION (sim.BLOCK_PER_ENEMY): every enemy takes 1 block; time limit = no-defence duration x 1.5 + 120 s.",
+  "NOT MODELLED (secrecy N13): “玻利瓦尔，症结之核” DEF up, “未熄之地” burn damage (no enemy named there is on this stage).",
+  "NOT MODELLED (secrecy N14): “源阶方” max HP up, team HP drain when active (no enemy named there is on this stage).",
+  "NOT MODELLED (secrecy N15): “猎犬proto” max HP up, heals the boss when attacking (no enemy named there is on this stage)."
+ ]
+}

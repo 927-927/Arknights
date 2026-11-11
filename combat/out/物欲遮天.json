@@ -1,0 +1,385 @@
+{
+ "stage": {
+  "name": "物欲遮天",
+  "id": "ro6_n_5_2"
+ },
+ "options": {
+  "stage": "物欲遮天",
+  "secrecy": 15,
+  "floor": 5,
+  "elite": false,
+  "roster": "roster.example.json",
+  "K": 6,
+  "sims": 3000,
+  "seed": 1,
+  "html": true,
+  "json": true
+ },
+ "plan": {
+  "deploys": [
+   {
+    "op": "桃金娘",
+    "r": 6,
+    "c": 2,
+    "dir": "E",
+    "t": 0,
+    "config": {
+     "name": "桃金娘",
+     "elite": 2,
+     "level": 60,
+     "potential": 6,
+     "trust": 100,
+     "skill": 1,
+     "skillLevel": 7
+    }
+   },
+   {
+    "op": "星熊",
+    "r": 5,
+    "c": 2,
+    "dir": "S",
+    "t": 17.2,
+    "config": {
+     "name": "星熊",
+     "elite": 2,
+     "level": 60,
+     "potential": 1,
+     "trust": 100,
+     "skill": 2,
+     "skillLevel": 7
+    }
+   },
+   {
+    "op": "银灰",
+    "r": 2,
+    "c": 2,
+    "dir": "E",
+    "t": 27,
+    "config": {
+     "name": "银灰",
+     "elite": 2,
+     "level": 80,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10,
+     "module": {
+      "type": "X",
+      "stage": 3
+     }
+    }
+   },
+   {
+    "op": "能天使",
+    "r": 4,
+    "c": 5,
+    "dir": "N",
+    "t": 40,
+    "config": {
+     "name": "能天使",
+     "elite": 2,
+     "level": 70,
+     "potential": 2,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10,
+     "module": {
+      "type": "Y",
+      "stage": 3
+     }
+    }
+   },
+   {
+    "op": "艾雅法拉",
+    "r": 5,
+    "c": 4,
+    "dir": "N",
+    "t": 52.8,
+    "config": {
+     "name": "艾雅法拉",
+     "elite": 2,
+     "level": 80,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10
+    }
+   },
+   {
+    "op": "棘刺",
+    "r": 2,
+    "c": 5,
+    "dir": "N",
+    "t": 67,
+    "config": {
+     "name": "棘刺",
+     "elite": 2,
+     "level": 75,
+     "potential": 1,
+     "trust": 100,
+     "skill": 3,
+     "skillLevel": 10
+    }
+   }
+  ],
+  "skills": {
+   "桃金娘": [
+    15,
+    48,
+    81,
+    114,
+    147
+   ],
+   "银灰": [
+    42,
+    162
+   ],
+   "艾雅法拉": [
+    159.8
+   ],
+   "棘刺": [
+    113.2,
+    164.6
+   ]
+  },
+  "retreats": []
+ },
+ "result": {
+  "win": true,
+  "lifeLost": 0,
+  "lifeLeft": 1,
+  "leaks": 0,
+  "kills": 33,
+  "totalEnemies": 33,
+  "hpRemoved": 700349.9999999983,
+  "hpTotal": 700350,
+  "duration": 190.7,
+  "score": 9999989.8093,
+  "deploys": [
+   {
+    "name": "桃金娘",
+    "t": 0,
+    "r": 6,
+    "c": 2,
+    "dir": "E",
+    "cost": 8
+   },
+   {
+    "name": "星熊",
+    "t": 17.2,
+    "r": 5,
+    "c": 2,
+    "dir": "S",
+    "cost": 23
+   },
+   {
+    "name": "银灰",
+    "t": 27,
+    "r": 2,
+    "c": 2,
+    "dir": "E",
+    "cost": 20
+   },
+   {
+    "name": "能天使",
+    "t": 40,
+    "r": 4,
+    "c": 5,
+    "dir": "N",
+    "cost": 13
+   },
+   {
+    "name": "艾雅法拉",
+    "t": 52.8,
+    "r": 5,
+    "c": 4,
+    "dir": "N",
+    "cost": 21
+   },
+   {
+    "name": "棘刺",
+    "t": 67,
+    "r": 2,
+    "c": 5,
+    "dir": "N",
+    "cost": 20
+   }
+  ],
+  "skillUses": [
+   {
+    "name": "桃金娘",
+    "skill": "支援号令·β型",
+    "t": 15,
+    "end": 23
+   },
+   {
+    "name": "银灰",
+    "skill": "真银斩",
+    "t": 42,
+    "end": 72
+   },
+   {
+    "name": "桃金娘",
+    "skill": "支援号令·β型",
+    "t": 48,
+    "end": 56
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 50,
+    "end": 65
+   },
+   {
+    "name": "桃金娘",
+    "skill": "支援号令·β型",
+    "t": 81,
+    "end": 89
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 95,
+    "end": 110
+   },
+   {
+    "name": "棘刺",
+    "skill": "至高之术",
+    "t": 113.2,
+    "end": 143.2
+   },
+   {
+    "name": "桃金娘",
+    "skill": "支援号令·β型",
+    "t": 114,
+    "end": 122
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 140,
+    "end": 155
+   },
+   {
+    "name": "桃金娘",
+    "skill": "支援号令·β型",
+    "t": 147,
+    "end": 155
+   },
+   {
+    "name": "艾雅法拉",
+    "skill": "火山",
+    "t": 159.8,
+    "end": 174.8
+   },
+   {
+    "name": "银灰",
+    "skill": "真银斩",
+    "t": 162,
+    "end": 190.7
+   },
+   {
+    "name": "棘刺",
+    "skill": "至高之术",
+    "t": 164.6,
+    "end": 190.7
+   },
+   {
+    "name": "能天使",
+    "skill": "过载模式",
+    "t": 185,
+    "end": 190.7
+   }
+  ],
+  "losses": [
+   {
+    "name": "桃金娘",
+    "t": 155,
+    "cause": "died"
+   }
+  ],
+  "perOp": [
+   {
+    "name": "桃金娘",
+    "damage": 335,
+    "healing": 0,
+    "kills": 0,
+    "blockedSeconds": 0.1,
+    "damageTaken": 2030.4,
+    "skillUptime": 40,
+    "died": true
+   },
+   {
+    "name": "星熊",
+    "damage": 5557.5,
+    "healing": 0,
+    "kills": 0,
+    "blockedSeconds": 17,
+    "damageTaken": 4669.844400000001,
+    "skillUptime": 0,
+    "died": false
+   },
+   {
+    "name": "银灰",
+    "damage": 138292.0996875,
+    "healing": 0,
+    "kills": 6,
+    "blockedSeconds": 3.6,
+    "damageTaken": 3598.9720000000007,
+    "skillUptime": 58.8,
+    "died": false
+   },
+   {
+    "name": "能天使",
+    "damage": 307306.33156249986,
+    "healing": 0,
+    "kills": 22,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 50.8,
+    "died": false
+   },
+   {
+    "name": "艾雅法拉",
+    "damage": 167306.16875000007,
+    "healing": 0,
+    "kills": 4,
+    "blockedSeconds": 0,
+    "damageTaken": 0,
+    "skillUptime": 15,
+    "died": false
+   },
+   {
+    "name": "棘刺",
+    "damage": 81552.9,
+    "healing": 0,
+    "kills": 1,
+    "blockedSeconds": 0,
+    "damageTaken": 5286.4,
+    "skillUptime": 56.2,
+    "died": false
+   }
+  ],
+  "dp": {
+   "generated": 194,
+   "spent": 105,
+   "endUnspent": 99,
+   "initial": 10,
+   "refunded": 0
+  },
+  "alive": 0,
+  "timedOut": false,
+  "lifePoints": 1
+ },
+ "verdict": "The plan HOLDS the stage in the model: no life lost, all 33 enemies dead in 190.7 s.",
+ "assumptions": [
+  "ASSUMPTION (sim.TPS_DEFAULT): enemy move speed 1.0 = 0.5 tiles/s (not calibrated in game); every path time scales with it.",
+  "ASSUMPTION (operators.SECRECY_PER_FLOOR_DEFAULT): +20%/floor ATK and HP is 'additive' (1 + 20% x (floor - 1), floor 1 = 0 steps), summed with the other secrecy % (pct). Enemy HP here is x2.10 of secrecy 0; 'compound' would give x2.37.",
+  "ASSUMPTION (sim.LIFE_POINTS_DEFAULT): 1 life point(s); the fight is not stopped at defeat, so lives lost can exceed it.",
+  "ASSUMPTION (sim.FRAGMENT_TIMING_DEFAULT): a fragment's preDelay counts from the end of the previous fragment ('afterLast'); a wave starts once the one before is cleared.",
+  "ASSUMPTION (sim.BLOCK_PER_ENEMY): every enemy takes 1 block; time limit = no-defence duration x 1.5 + 120 s.",
+  "NOT MODELLED (secrecy N13): “玻利瓦尔，症结之核” DEF up, “未熄之地” burn damage (no enemy named there is on this stage).",
+  "NOT MODELLED (secrecy N14): “源阶方” max HP up, team HP drain when active (no enemy named there is on this stage).",
+  "NOT MODELLED (secrecy N15): “猎犬proto” max HP up, heals the boss when attacking (no enemy named there is on this stage)."
+ ]
+}

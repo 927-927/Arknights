@@ -1,0 +1,3430 @@
+{
+ "generated": "2026-11-05",
+ "source": "lubiao.wiki node-distance-frequencies-rogue_6.json (20530 maps, 481984 nodes)",
+ "floors": [
+  {
+   "floor": "I",
+   "maps": 4269,
+   "nodes": 39114,
+   "perMap": {
+    "battle": 1.828,
+    "elite": 0.639,
+    "shop": 1.269,
+    "incident": 0.847,
+    "wish": 0.589,
+    "scrap": 0.112,
+    "final": 1.653,
+    "evac": 0.231,
+    "empty": 1.995
+   },
+   "distances": [
+    {
+     "distance": 1,
+     "samples": 5079,
+     "perMap": 1.19,
+     "share": {
+      "battle": 1
+     },
+     "ifHostile": {
+      "battle": 1
+     },
+     "ifMystery": {}
+    },
+    {
+     "distance": 2,
+     "samples": 6668,
+     "perMap": 1.56,
+     "share": {
+      "empty": 0.452,
+      "incident": 0.2116,
+      "shop": 0.2022,
+      "wish": 0.1342
+     },
+     "ifHostile": {},
+     "ifMystery": {
+      "shop": 0.2022,
+      "incident": 0.2116,
+      "wish": 0.1342,
+      "empty": 0.452
+     }
+    },
+    {
+     "distance": 3,
+     "samples": 8986,
+     "perMap": 2.1,
+     "share": {
+      "empty": 0.2968,
+      "elite": 0.1677,
+      "shop": 0.1536,
+      "battle": 0.1381,
+      "incident": 0.1281,
+      "wish": 0.089,
+      "scrap": 0.0267
+     },
+     "ifHostile": {
+      "battle": 0.4516,
+      "elite": 0.5484
+     },
+     "ifMystery": {
+      "shop": 0.2212,
+      "incident": 0.1845,
+      "wish": 0.1282,
+      "scrap": 0.0385,
+      "empty": 0.4275
+     }
+    },
+    {
+     "distance": 4,
+     "samples": 11325,
+     "perMap": 2.65,
+     "share": {
+      "empty": 0.2504,
+      "shop": 0.2376,
+      "battle": 0.1309,
+      "elite": 0.1078,
+      "incident": 0.0931,
+      "evac": 0.087,
+      "wish": 0.0723,
+      "scrap": 0.0208
+     },
+     "ifHostile": {
+      "battle": 0.5484,
+      "elite": 0.4516
+     },
+     "ifMystery": {
+      "shop": 0.3121,
+      "incident": 0.1223,
+      "wish": 0.095,
+      "scrap": 0.0274,
+      "evac": 0.1143,
+      "empty": 0.329
+     }
+    },
+    {
+     "distance": 5,
+     "samples": 7056,
+     "perMap": 1.65,
+     "share": {
+      "final": 1
+     },
+     "ifHostile": {},
+     "ifMystery": {
+      "final": 1
+     }
+    }
+   ]
+  },
+  {
+   "floor": "II",
+   "maps": 4315,
+   "nodes": 72275,
+   "perMap": {
+    "battle": 2.977,
+    "elite": 0.66,
+    "shop": 0.324,
+    "rest": 0.339,
+    "incident": 1.782,
+    "wish": 0.738,
+    "sacrifice": 0.54,
+    "expedition": 0.889,
+    "employ": 0.532,
+    "scrap": 0.926,
+    "final": 1.984,
+    "evac": 0.088,
+    "light": 0.724,
+    "savage": 0.253,
+    "roamer": 0.057,
+    "empty": 3.937
+   },
+   "distances": [
+    {
+     "distance": 1,
+     "samples": 9420,
+     "perMap": 2.18,
+     "share": {
+      "battle": 0.9998,
+      "empty": 0.0002
+     },
+     "ifHostile": {
+      "battle": 1
+     },
+     "ifMystery": {
+      "empty": 1
+     }
+    },
+    {
+     "distance": 2,
+     "samples": 13651,
+     "perMap": 3.16,
+     "share": {
+      "empty": 0.4753,
+      "incident": 0.2061,
+      "expedition": 0.1341,
+      "scrap": 0.1024,
+      "employ": 0.0779,
+      "roamer": 0.0042,
+      "shop": 0.0001,
+      "rest": 0.0001
+     },
+     "ifHostile": {
+      "roamer": 1
+     },
+     "ifMystery": {
+      "shop": 0.0001,
+      "rest": 0.0001,
+      "incident": 0.2069,
+      "expedition": 0.1346,
+      "employ": 0.0782,
+      "scrap": 0.1028,
+      "empty": 0.4773
+     }
+    },
+    {
+     "distance": 3,
+     "samples": 14357,
+     "perMap": 3.33,
+     "share": {
+      "empty": 0.2627,
+      "incident": 0.1185,
+      "expedition": 0.0837,
+      "light": 0.0809,
+      "battle": 0.08,
+      "elite": 0.072,
+      "sacrifice": 0.0713,
+      "scrap": 0.0636,
+      "rest": 0.0486,
+      "shop": 0.0466,
+      "employ": 0.0375,
+      "final": 0.0309,
+      "roamer": 0.0037
+     },
+     "ifHostile": {
+      "battle": 0.5139,
+      "elite": 0.4624,
+      "roamer": 0.0237
+     },
+     "ifMystery": {
+      "shop": 0.0552,
+      "rest": 0.0576,
+      "incident": 0.1403,
+      "sacrifice": 0.0844,
+      "expedition": 0.0992,
+      "employ": 0.0445,
+      "scrap": 0.0753,
+      "final": 0.0365,
+      "light": 0.0959,
+      "empty": 0.3111
+     }
+    },
+    {
+     "distance": 4,
+     "samples": 14043,
+     "perMap": 3.25,
+     "share": {
+      "empty": 0.1881,
+      "final": 0.1538,
+      "wish": 0.0948,
+      "incident": 0.0919,
+      "battle": 0.061,
+      "light": 0.0604,
+      "expedition": 0.0573,
+      "elite": 0.0548,
+      "sacrifice": 0.0548,
+      "scrap": 0.0535,
+      "rest": 0.0333,
+      "savage": 0.0316,
+      "shop": 0.0306,
+      "employ": 0.0298,
+      "roamer": 0.0037,
+      "evac": 0.0006
+     },
+     "ifHostile": {
+      "battle": 0.4037,
+      "elite": 0.3627,
+      "savage": 0.2091,
+      "roamer": 0.0245
+     },
+     "ifMystery": {
+      "shop": 0.0361,
+      "rest": 0.0392,
+      "incident": 0.1082,
+      "wish": 0.1117,
+      "sacrifice": 0.0646,
+      "expedition": 0.0674,
+      "employ": 0.0351,
+      "scrap": 0.0631,
+      "final": 0.1812,
+      "evac": 0.0007,
+      "light": 0.0711,
+      "empty": 0.2216
+     }
+    },
+    {
+     "distance": 5,
+     "samples": 14772,
+     "perMap": 3.42,
+     "share": {
+      "final": 0.2926,
+      "empty": 0.1721,
+      "wish": 0.0862,
+      "incident": 0.086,
+      "battle": 0.0643,
+      "light": 0.0561,
+      "elite": 0.0488,
+      "scrap": 0.048,
+      "sacrifice": 0.0363,
+      "savage": 0.0297,
+      "rest": 0.02,
+      "shop": 0.02,
+      "employ": 0.0188,
+      "evac": 0.0175,
+      "roamer": 0.0037
+     },
+     "ifHostile": {
+      "battle": 0.439,
+      "elite": 0.3332,
+      "savage": 0.2024,
+      "roamer": 0.0254
+     },
+     "ifMystery": {
+      "shop": 0.0234,
+      "rest": 0.0235,
+      "incident": 0.1007,
+      "wish": 0.101,
+      "sacrifice": 0.0425,
+      "employ": 0.022,
+      "scrap": 0.0562,
+      "final": 0.3429,
+      "evac": 0.0205,
+      "light": 0.0658,
+      "empty": 0.2016
+     }
+    },
+    {
+     "distance": 6,
+     "samples": 4784,
+     "perMap": 1.11,
+     "share": {
+      "empty": 0.2897,
+      "final": 0.1637,
+      "incident": 0.1168,
+      "wish": 0.1106,
+      "battle": 0.0867,
+      "elite": 0.0604,
+      "light": 0.0594,
+      "scrap": 0.047,
+      "savage": 0.0399,
+      "evac": 0.0207,
+      "roamer": 0.0048,
+      "shop": 0.0002
+     },
+     "ifHostile": {
+      "battle": 0.4521,
+      "elite": 0.3148,
+      "savage": 0.2081,
+      "roamer": 0.0251
+     },
+     "ifMystery": {
+      "shop": 0.0003,
+      "incident": 0.1446,
+      "wish": 0.1368,
+      "scrap": 0.0582,
+      "final": 0.2025,
+      "evac": 0.0256,
+      "light": 0.0735,
+      "empty": 0.3585
+     }
+    },
+    {
+     "distance": 7,
+     "samples": 837,
+     "perMap": 0.19,
+     "share": {
+      "final": 0.5293,
+      "empty": 0.1864,
+      "incident": 0.0693,
+      "battle": 0.0669,
+      "wish": 0.0633,
+      "elite": 0.0382,
+      "savage": 0.0239,
+      "evac": 0.0179,
+      "roamer": 0.0048
+     },
+     "ifHostile": {
+      "battle": 0.5,
+      "elite": 0.2857,
+      "savage": 0.1786,
+      "roamer": 0.0357
+     },
+     "ifMystery": {
+      "incident": 0.08,
+      "wish": 0.0731,
+      "final": 0.611,
+      "evac": 0.0207,
+      "empty": 0.2152
+     }
+    },
+    {
+     "distance": 8,
+     "samples": 411,
+     "perMap": 0.1,
+     "share": {
+      "final": 1
+     },
+     "ifHostile": {},
+     "ifMystery": {
+      "final": 1
+     }
+    }
+   ]
+  },
+  {
+   "floor": "III",
+   "maps": 4167,
+   "nodes": 112003,
+   "perMap": {
+    "battle": 3.08,
+    "elite": 1.801,
+    "boss": 1,
+    "shop": 0.939,
+    "rest": 0.838,
+    "incident": 2.236,
+    "wish": 1.131,
+    "sacrifice": 0.909,
+    "expedition": 0.88,
+    "duel": 0.886,
+    "employ": 0.905,
+    "scrap": 0.942,
+    "light": 0.967,
+    "door": 1.755,
+    "portal": 0.437,
+    "empty": 8.174
+   },
+   "distances": [
+    {
+     "distance": 1,
+     "samples": 7460,
+     "perMap": 1.79,
+     "share": {
+      "battle": 0.4169,
+      "incident": 0.3323,
+      "door": 0.2489,
+      "empty": 0.0019
+     },
+     "ifHostile": {
+      "battle": 1
+     },
+     "ifMystery": {
+      "incident": 0.5699,
+      "door": 0.4269,
+      "empty": 0.0032
+     }
+    },
+    {
+     "distance": 2,
+     "samples": 11410,
+     "perMap": 2.74,
+     "share": {
+      "empty": 0.4609,
+      "battle": 0.158,
+      "duel": 0.1459,
+      "expedition": 0.138,
+      "door": 0.097,
+      "rest": 0.0001
+     },
+     "ifHostile": {
+      "battle": 0.5199,
+      "duel": 0.4801
+     },
+     "ifMystery": {
+      "rest": 0.0001,
+      "expedition": 0.1983,
+      "door": 0.1394,
+      "empty": 0.6622
+     }
+    },
+    {
+     "distance": 3,
+     "samples": 12681,
+     "perMap": 3.04,
+     "share": {
+      "empty": 0.3195,
+      "expedition": 0.0804,
+      "elite": 0.08,
+      "shop": 0.0799,
+      "sacrifice": 0.078,
+      "duel": 0.0773,
+      "scrap": 0.0757,
+      "incident": 0.0722,
+      "rest": 0.0717,
+      "door": 0.0653
+     },
+     "ifHostile": {
+      "elite": 0.5088,
+      "duel": 0.4912
+     },
+     "ifMystery": {
+      "shop": 0.0948,
+      "rest": 0.0851,
+      "incident": 0.0857,
+      "sacrifice": 0.0926,
+      "expedition": 0.0954,
+      "scrap": 0.0898,
+      "door": 0.0775,
+      "empty": 0.3792
+     }
+    },
+    {
+     "distance": 4,
+     "samples": 15459,
+     "perMap": 3.71,
+     "share": {
+      "empty": 0.2597,
+      "battle": 0.0721,
+      "expedition": 0.0693,
+      "duel": 0.0676,
+      "scrap": 0.0655,
+      "light": 0.0653,
+      "elite": 0.064,
+      "shop": 0.0637,
+      "sacrifice": 0.0601,
+      "rest": 0.0572,
+      "incident": 0.0538,
+      "wish": 0.0463,
+      "employ": 0.0349,
+      "door": 0.0205
+     },
+     "ifHostile": {
+      "battle": 0.3539,
+      "elite": 0.3142,
+      "duel": 0.332
+     },
+     "ifMystery": {
+      "shop": 0.0799,
+      "rest": 0.0719,
+      "incident": 0.0676,
+      "wish": 0.0582,
+      "sacrifice": 0.0755,
+      "expedition": 0.087,
+      "employ": 0.0439,
+      "scrap": 0.0822,
+      "light": 0.082,
+      "door": 0.0257,
+      "empty": 0.3261
+     }
+    },
+    {
+     "distance": 5,
+     "samples": 15176,
+     "perMap": 3.64,
+     "share": {
+      "empty": 0.2576,
+      "battle": 0.0733,
+      "shop": 0.0694,
+      "scrap": 0.069,
+      "light": 0.0664,
+      "sacrifice": 0.0664,
+      "portal": 0.0637,
+      "elite": 0.0624,
+      "rest": 0.0579,
+      "boss": 0.0561,
+      "incident": 0.0529,
+      "wish": 0.0441,
+      "employ": 0.0396,
+      "door": 0.0212
+     },
+     "ifHostile": {
+      "battle": 0.3823,
+      "elite": 0.3253,
+      "boss": 0.2923
+     },
+     "ifMystery": {
+      "shop": 0.0859,
+      "rest": 0.0717,
+      "incident": 0.0655,
+      "wish": 0.0545,
+      "sacrifice": 0.0821,
+      "employ": 0.049,
+      "scrap": 0.0854,
+      "light": 0.0822,
+      "door": 0.0262,
+      "portal": 0.0788,
+      "empty": 0.3188
+     }
+    },
+    {
+     "distance": 6,
+     "samples": 12985,
+     "perMap": 3.12,
+     "share": {
+      "empty": 0.2416,
+      "battle": 0.0755,
+      "scrap": 0.0696,
+      "sacrifice": 0.0665,
+      "shop": 0.0665,
+      "portal": 0.0658,
+      "boss": 0.0642,
+      "elite": 0.0631,
+      "rest": 0.0629,
+      "light": 0.0579,
+      "incident": 0.0521,
+      "wish": 0.0404,
+      "door": 0.037,
+      "employ": 0.0369
+     },
+     "ifHostile": {
+      "battle": 0.3722,
+      "elite": 0.3114,
+      "boss": 0.3164
+     },
+     "ifMystery": {
+      "shop": 0.0834,
+      "rest": 0.0789,
+      "incident": 0.0654,
+      "wish": 0.0507,
+      "sacrifice": 0.0835,
+      "employ": 0.0463,
+      "scrap": 0.0873,
+      "light": 0.0726,
+      "door": 0.0464,
+      "portal": 0.0825,
+      "empty": 0.303
+     }
+    },
+    {
+     "distance": 7,
+     "samples": 12184,
+     "perMap": 2.92,
+     "share": {
+      "empty": 0.3317,
+      "battle": 0.1117,
+      "light": 0.1034,
+      "boss": 0.1026,
+      "elite": 0.0912,
+      "incident": 0.0865,
+      "wish": 0.0673,
+      "door": 0.0552,
+      "employ": 0.0502,
+      "scrap": 0.0001
+     },
+     "ifHostile": {
+      "battle": 0.3657,
+      "elite": 0.2985,
+      "boss": 0.3358
+     },
+     "ifMystery": {
+      "incident": 0.1246,
+      "wish": 0.0969,
+      "employ": 0.0723,
+      "scrap": 0.0001,
+      "light": 0.1489,
+      "door": 0.0795,
+      "empty": 0.4777
+     }
+    },
+    {
+     "distance": 8,
+     "samples": 10060,
+     "perMap": 2.41,
+     "share": {
+      "empty": 0.3446,
+      "battle": 0.1308,
+      "boss": 0.1226,
+      "elite": 0.1021,
+      "incident": 0.0962,
+      "wish": 0.0766,
+      "door": 0.0705,
+      "employ": 0.0566
+     },
+     "ifHostile": {
+      "battle": 0.368,
+      "elite": 0.2872,
+      "boss": 0.3448
+     },
+     "ifMystery": {
+      "incident": 0.1493,
+      "wish": 0.1189,
+      "employ": 0.0878,
+      "door": 0.1093,
+      "empty": 0.5347
+     }
+    },
+    {
+     "distance": 9,
+     "samples": 6654,
+     "perMap": 1.6,
+     "share": {
+      "empty": 0.4088,
+      "battle": 0.1399,
+      "incident": 0.1169,
+      "elite": 0.1106,
+      "wish": 0.0837,
+      "door": 0.0747,
+      "employ": 0.0654
+     },
+     "ifHostile": {
+      "battle": 0.5585,
+      "elite": 0.4415
+     },
+     "ifMystery": {
+      "incident": 0.156,
+      "wish": 0.1117,
+      "employ": 0.0872,
+      "door": 0.0997,
+      "empty": 0.5454
+     }
+    },
+    {
+     "distance": 10,
+     "samples": 3206,
+     "perMap": 0.77,
+     "share": {
+      "empty": 0.3989,
+      "battle": 0.1494,
+      "elite": 0.1167,
+      "incident": 0.1042,
+      "wish": 0.092,
+      "door": 0.0721,
+      "employ": 0.0667
+     },
+     "ifHostile": {
+      "battle": 0.5615,
+      "elite": 0.4385
+     },
+     "ifMystery": {
+      "incident": 0.1419,
+      "wish": 0.1254,
+      "employ": 0.0909,
+      "door": 0.0982,
+      "empty": 0.5436
+     }
+    },
+    {
+     "distance": 11,
+     "samples": 2172,
+     "perMap": 0.52,
+     "share": {
+      "empty": 0.4231,
+      "battle": 0.1331,
+      "elite": 0.1022,
+      "incident": 0.0981,
+      "wish": 0.0902,
+      "door": 0.0778,
+      "employ": 0.0755
+     },
+     "ifHostile": {
+      "battle": 0.5656,
+      "elite": 0.4344
+     },
+     "ifMystery": {
+      "incident": 0.1282,
+      "wish": 0.118,
+      "employ": 0.0987,
+      "door": 0.1017,
+      "empty": 0.5533
+     }
+    },
+    {
+     "distance": 12,
+     "samples": 1135,
+     "perMap": 0.27,
+     "share": {
+      "empty": 0.4775,
+      "battle": 0.1286,
+      "incident": 0.1119,
+      "elite": 0.1031,
+      "wish": 0.0634,
+      "employ": 0.0634,
+      "door": 0.052
+     },
+     "ifHostile": {
+      "battle": 0.5551,
+      "elite": 0.4449
+     },
+     "ifMystery": {
+      "incident": 0.1456,
+      "wish": 0.0826,
+      "employ": 0.0826,
+      "door": 0.0677,
+      "empty": 0.6216
+     }
+    },
+    {
+     "distance": 13,
+     "samples": 720,
+     "perMap": 0.17,
+     "share": {
+      "empty": 0.475,
+      "battle": 0.1208,
+      "elite": 0.1056,
+      "incident": 0.0917,
+      "wish": 0.0819,
+      "employ": 0.0722,
+      "door": 0.0528
+     },
+     "ifHostile": {
+      "battle": 0.5337,
+      "elite": 0.4663
+     },
+     "ifMystery": {
+      "incident": 0.1185,
+      "wish": 0.1059,
+      "employ": 0.0934,
+      "door": 0.0682,
+      "empty": 0.614
+     }
+    },
+    {
+     "distance": 14,
+     "samples": 356,
+     "perMap": 0.09,
+     "share": {
+      "empty": 0.5,
+      "battle": 0.1601,
+      "elite": 0.1208,
+      "incident": 0.0871,
+      "employ": 0.0506,
+      "wish": 0.0478,
+      "door": 0.0337
+     },
+     "ifHostile": {
+      "battle": 0.57,
+      "elite": 0.43
+     },
+     "ifMystery": {
+      "incident": 0.1211,
+      "wish": 0.0664,
+      "employ": 0.0703,
+      "door": 0.0469,
+      "empty": 0.6953
+     }
+    },
+    {
+     "distance": 15,
+     "samples": 345,
+     "perMap": 0.08,
+     "share": {
+      "empty": 0.5333,
+      "battle": 0.1391,
+      "incident": 0.1101,
+      "elite": 0.0841,
+      "employ": 0.0493,
+      "door": 0.0435,
+      "wish": 0.0406
+     },
+     "ifHostile": {
+      "battle": 0.6234,
+      "elite": 0.3766
+     },
+     "ifMystery": {
+      "incident": 0.1418,
+      "wish": 0.0522,
+      "employ": 0.0634,
+      "door": 0.056,
+      "empty": 0.6866
+     }
+    }
+   ]
+  },
+  {
+   "floor": "IV",
+   "maps": 3859,
+   "nodes": 113326,
+   "perMap": {
+    "battle": 2.332,
+    "elite": 1.68,
+    "shop": 0.932,
+    "rest": 0.875,
+    "incident": 1.997,
+    "wish": 0.933,
+    "sacrifice": 0.693,
+    "expedition": 0.845,
+    "duel": 0.867,
+    "employ": 0.4,
+    "scrap": 0.913,
+    "final": 2.95,
+    "evac": 0.582,
+    "light": 1.023,
+    "door": 1.74,
+    "portal": 0.73,
+    "savage": 0.686,
+    "roamer": 0.772,
+    "empty": 8.417
+   },
+   "distances": [
+    {
+     "distance": 1,
+     "samples": 8301,
+     "perMap": 2.15,
+     "share": {
+      "battle": 0.4302,
+      "incident": 0.3059,
+      "door": 0.2532,
+      "empty": 0.01,
+      "roamer": 0.0007
+     },
+     "ifHostile": {
+      "battle": 0.9983,
+      "roamer": 0.0017
+     },
+     "ifMystery": {
+      "incident": 0.5375,
+      "door": 0.445,
+      "empty": 0.0176
+     }
+    },
+    {
+     "distance": 2,
+     "samples": 11635,
+     "perMap": 3.02,
+     "share": {
+      "empty": 0.3826,
+      "expedition": 0.0848,
+      "sacrifice": 0.0709,
+      "battle": 0.0688,
+      "incident": 0.0664,
+      "employ": 0.0633,
+      "scrap": 0.0625,
+      "duel": 0.0478,
+      "door": 0.0451,
+      "rest": 0.0435,
+      "shop": 0.0434,
+      "roamer": 0.0207,
+      "elite": 0.0001
+     },
+     "ifHostile": {
+      "battle": 0.5009,
+      "elite": 0.0006,
+      "duel": 0.3477,
+      "roamer": 0.1507
+     },
+     "ifMystery": {
+      "shop": 0.0503,
+      "rest": 0.0504,
+      "incident": 0.0769,
+      "sacrifice": 0.0822,
+      "expedition": 0.0983,
+      "employ": 0.0734,
+      "scrap": 0.0724,
+      "door": 0.0523,
+      "empty": 0.4436
+     }
+    },
+    {
+     "distance": 3,
+     "samples": 13553,
+     "perMap": 3.51,
+     "share": {
+      "empty": 0.3469,
+      "elite": 0.0971,
+      "expedition": 0.0902,
+      "sacrifice": 0.0702,
+      "light": 0.066,
+      "door": 0.0599,
+      "employ": 0.0595,
+      "scrap": 0.0571,
+      "duel": 0.0479,
+      "shop": 0.0434,
+      "rest": 0.0381,
+      "roamer": 0.0237
+     },
+     "ifHostile": {
+      "elite": 0.5757,
+      "duel": 0.2839,
+      "roamer": 0.1404
+     },
+     "ifMystery": {
+      "shop": 0.0522,
+      "rest": 0.0458,
+      "sacrifice": 0.0845,
+      "expedition": 0.1085,
+      "employ": 0.0716,
+      "scrap": 0.0687,
+      "light": 0.0793,
+      "door": 0.0721,
+      "empty": 0.4173
+     }
+    },
+    {
+     "distance": 4,
+     "samples": 13180,
+     "perMap": 3.42,
+     "share": {
+      "empty": 0.3165,
+      "expedition": 0.0798,
+      "elite": 0.071,
+      "sacrifice": 0.0681,
+      "battle": 0.0634,
+      "incident": 0.0568,
+      "final": 0.0552,
+      "wish": 0.0533,
+      "light": 0.0498,
+      "scrap": 0.0472,
+      "savage": 0.0407,
+      "shop": 0.0326,
+      "rest": 0.0313,
+      "roamer": 0.0263,
+      "door": 0.008,
+      "duel": 0.0001
+     },
+     "ifHostile": {
+      "battle": 0.3145,
+      "elite": 0.3525,
+      "duel": 0.0004,
+      "savage": 0.2019,
+      "roamer": 0.1307
+     },
+     "ifMystery": {
+      "shop": 0.0409,
+      "rest": 0.0391,
+      "incident": 0.0711,
+      "wish": 0.0667,
+      "sacrifice": 0.0853,
+      "expedition": 0.1,
+      "scrap": 0.0591,
+      "final": 0.0691,
+      "light": 0.0623,
+      "door": 0.0101,
+      "empty": 0.3964
+     }
+    },
+    {
+     "distance": 5,
+     "samples": 14256,
+     "perMap": 3.69,
+     "share": {
+      "empty": 0.2658,
+      "final": 0.154,
+      "elite": 0.0667,
+      "portal": 0.0643,
+      "battle": 0.052,
+      "incident": 0.0507,
+      "scrap": 0.0495,
+      "light": 0.0462,
+      "wish": 0.0449,
+      "savage": 0.0344,
+      "door": 0.034,
+      "duel": 0.0329,
+      "evac": 0.0295,
+      "shop": 0.0283,
+      "rest": 0.0252,
+      "roamer": 0.0216
+     },
+     "ifHostile": {
+      "battle": 0.2504,
+      "elite": 0.3214,
+      "duel": 0.1585,
+      "savage": 0.1656,
+      "roamer": 0.1041
+     },
+     "ifMystery": {
+      "shop": 0.0358,
+      "rest": 0.0318,
+      "incident": 0.064,
+      "wish": 0.0567,
+      "scrap": 0.0625,
+      "final": 0.1944,
+      "evac": 0.0372,
+      "light": 0.0583,
+      "door": 0.0429,
+      "portal": 0.0811,
+      "empty": 0.3354
+     }
+    },
+    {
+     "distance": 6,
+     "samples": 13039,
+     "perMap": 3.38,
+     "share": {
+      "empty": 0.29,
+      "final": 0.1101,
+      "elite": 0.0653,
+      "portal": 0.0586,
+      "battle": 0.0574,
+      "incident": 0.0533,
+      "scrap": 0.0532,
+      "light": 0.0489,
+      "wish": 0.0443,
+      "savage": 0.0347,
+      "evac": 0.0345,
+      "duel": 0.0327,
+      "shop": 0.0313,
+      "door": 0.0305,
+      "roamer": 0.0276,
+      "rest": 0.0275
+     },
+     "ifHostile": {
+      "battle": 0.2637,
+      "elite": 0.3,
+      "duel": 0.1504,
+      "savage": 0.1592,
+      "roamer": 0.1268
+     },
+     "ifMystery": {
+      "shop": 0.04,
+      "rest": 0.0351,
+      "incident": 0.0681,
+      "wish": 0.0566,
+      "scrap": 0.068,
+      "final": 0.1408,
+      "evac": 0.0441,
+      "light": 0.0626,
+      "door": 0.039,
+      "portal": 0.0749,
+      "empty": 0.3707
+     }
+    },
+    {
+     "distance": 7,
+     "samples": 12670,
+     "perMap": 3.28,
+     "share": {
+      "empty": 0.2696,
+      "final": 0.1567,
+      "elite": 0.0633,
+      "portal": 0.0593,
+      "battle": 0.0579,
+      "incident": 0.0556,
+      "light": 0.0549,
+      "door": 0.0542,
+      "wish": 0.0411,
+      "evac": 0.0336,
+      "roamer": 0.033,
+      "shop": 0.0323,
+      "duel": 0.03,
+      "savage": 0.0297,
+      "rest": 0.0288
+     },
+     "ifHostile": {
+      "battle": 0.2706,
+      "elite": 0.2961,
+      "duel": 0.1403,
+      "savage": 0.1388,
+      "roamer": 0.1543
+     },
+     "ifMystery": {
+      "shop": 0.0411,
+      "rest": 0.0366,
+      "incident": 0.0708,
+      "wish": 0.0523,
+      "final": 0.1993,
+      "evac": 0.0428,
+      "light": 0.0699,
+      "door": 0.069,
+      "portal": 0.0754,
+      "empty": 0.3429
+     }
+    },
+    {
+     "distance": 8,
+     "samples": 10989,
+     "perMap": 2.85,
+     "share": {
+      "empty": 0.2921,
+      "final": 0.1798,
+      "elite": 0.0604,
+      "door": 0.0551,
+      "incident": 0.0526,
+      "battle": 0.0524,
+      "wish": 0.0438,
+      "roamer": 0.0373,
+      "light": 0.0369,
+      "portal": 0.035,
+      "duel": 0.0323,
+      "shop": 0.0319,
+      "evac": 0.0316,
+      "savage": 0.0311,
+      "rest": 0.0278
+     },
+     "ifHostile": {
+      "battle": 0.2454,
+      "elite": 0.2829,
+      "duel": 0.1513,
+      "savage": 0.1457,
+      "roamer": 0.1747
+     },
+     "ifMystery": {
+      "shop": 0.0405,
+      "rest": 0.0353,
+      "incident": 0.0669,
+      "wish": 0.0557,
+      "final": 0.2287,
+      "evac": 0.0402,
+      "light": 0.0469,
+      "door": 0.07,
+      "portal": 0.0445,
+      "empty": 0.3714
+     }
+    },
+    {
+     "distance": 9,
+     "samples": 7369,
+     "perMap": 1.91,
+     "share": {
+      "empty": 0.2828,
+      "final": 0.2611,
+      "door": 0.0615,
+      "elite": 0.0597,
+      "battle": 0.0544,
+      "incident": 0.0543,
+      "wish": 0.0411,
+      "roamer": 0.0338,
+      "evac": 0.0335,
+      "rest": 0.0323,
+      "duel": 0.0305,
+      "shop": 0.0275,
+      "savage": 0.0274
+     },
+     "ifHostile": {
+      "battle": 0.2643,
+      "elite": 0.29,
+      "duel": 0.1483,
+      "savage": 0.1332,
+      "roamer": 0.1641
+     },
+     "ifMystery": {
+      "shop": 0.0347,
+      "rest": 0.0407,
+      "incident": 0.0684,
+      "wish": 0.0518,
+      "final": 0.3288,
+      "evac": 0.0422,
+      "door": 0.0774,
+      "empty": 0.3561
+     }
+    },
+    {
+     "distance": 10,
+     "samples": 4731,
+     "perMap": 1.23,
+     "share": {
+      "empty": 0.3839,
+      "final": 0.074,
+      "battle": 0.0704,
+      "incident": 0.0676,
+      "door": 0.0664,
+      "elite": 0.0636,
+      "roamer": 0.0461,
+      "wish": 0.0444,
+      "evac": 0.0408,
+      "rest": 0.0399,
+      "shop": 0.0355,
+      "savage": 0.034,
+      "duel": 0.0334
+     },
+     "ifHostile": {
+      "battle": 0.2844,
+      "elite": 0.257,
+      "duel": 0.1349,
+      "savage": 0.1375,
+      "roamer": 0.1862
+     },
+     "ifMystery": {
+      "shop": 0.0472,
+      "rest": 0.0531,
+      "incident": 0.0899,
+      "wish": 0.059,
+      "final": 0.0983,
+      "evac": 0.0542,
+      "door": 0.0882,
+      "empty": 0.5101
+     }
+    },
+    {
+     "distance": 11,
+     "samples": 2056,
+     "perMap": 0.53,
+     "share": {
+      "empty": 0.3069,
+      "final": 0.1693,
+      "battle": 0.0725,
+      "elite": 0.0657,
+      "door": 0.0642,
+      "incident": 0.0632,
+      "wish": 0.0482,
+      "evac": 0.0443,
+      "shop": 0.0404,
+      "rest": 0.036,
+      "roamer": 0.035,
+      "duel": 0.0321,
+      "savage": 0.0224
+     },
+     "ifHostile": {
+      "battle": 0.3184,
+      "elite": 0.2885,
+      "duel": 0.141,
+      "savage": 0.0983,
+      "roamer": 0.1538
+     },
+     "ifMystery": {
+      "shop": 0.0523,
+      "rest": 0.0466,
+      "incident": 0.0819,
+      "wish": 0.0623,
+      "final": 0.2191,
+      "evac": 0.0573,
+      "door": 0.0831,
+      "empty": 0.3974
+     }
+    },
+    {
+     "distance": 12,
+     "samples": 879,
+     "perMap": 0.23,
+     "share": {
+      "empty": 0.3561,
+      "battle": 0.0922,
+      "door": 0.0762,
+      "incident": 0.0751,
+      "elite": 0.0694,
+      "evac": 0.0614,
+      "wish": 0.0603,
+      "rest": 0.0523,
+      "duel": 0.0501,
+      "shop": 0.0398,
+      "savage": 0.0364,
+      "roamer": 0.0307
+     },
+     "ifHostile": {
+      "battle": 0.3306,
+      "elite": 0.249,
+      "duel": 0.1796,
+      "savage": 0.1306,
+      "roamer": 0.1102
+     },
+     "ifMystery": {
+      "shop": 0.0552,
+      "rest": 0.0726,
+      "incident": 0.1041,
+      "wish": 0.0836,
+      "evac": 0.0852,
+      "door": 0.1057,
+      "empty": 0.4937
+     }
+    },
+    {
+     "distance": 13,
+     "samples": 668,
+     "perMap": 0.17,
+     "share": {
+      "final": 0.6632,
+      "empty": 0.0479,
+      "incident": 0.0464,
+      "battle": 0.0419,
+      "door": 0.0404,
+      "elite": 0.0374,
+      "evac": 0.0269,
+      "wish": 0.024,
+      "shop": 0.021,
+      "duel": 0.021,
+      "rest": 0.015,
+      "savage": 0.0135,
+      "roamer": 0.0015
+     },
+     "ifHostile": {
+      "battle": 0.3636,
+      "elite": 0.3247,
+      "duel": 0.1818,
+      "savage": 0.1169,
+      "roamer": 0.013
+     },
+     "ifMystery": {
+      "shop": 0.0237,
+      "rest": 0.0169,
+      "incident": 0.0525,
+      "wish": 0.0271,
+      "final": 0.7496,
+      "evac": 0.0305,
+      "door": 0.0457,
+      "empty": 0.0541
+     }
+    }
+   ]
+  },
+  {
+   "floor": "IV · 追忆",
+   "maps": 244,
+   "nodes": 7248,
+   "perMap": {
+    "battle": 2.418,
+    "elite": 1.758,
+    "shop": 1.008,
+    "rest": 0.926,
+    "incident": 1.988,
+    "wish": 0.963,
+    "sacrifice": 0.676,
+    "expedition": 0.877,
+    "duel": 0.893,
+    "employ": 0.385,
+    "scrap": 0.939,
+    "final": 3,
+    "evac": 0.57,
+    "light": 1.016,
+    "door": 1.713,
+    "portal": 0.762,
+    "savage": 0.734,
+    "roamer": 0.398,
+    "empty": 8.68
+   },
+   "distances": [
+    {
+     "distance": 1,
+     "samples": 544,
+     "perMap": 2.23,
+     "share": {
+      "battle": 0.4338,
+      "incident": 0.3051,
+      "door": 0.2463,
+      "empty": 0.0147
+     },
+     "ifHostile": {
+      "battle": 1
+     },
+     "ifMystery": {
+      "incident": 0.539,
+      "door": 0.4351,
+      "empty": 0.026
+     }
+    },
+    {
+     "distance": 2,
+     "samples": 779,
+     "perMap": 3.19,
+     "share": {
+      "empty": 0.3851,
+      "expedition": 0.086,
+      "battle": 0.077,
+      "sacrifice": 0.0706,
+      "scrap": 0.0655,
+      "incident": 0.0603,
+      "employ": 0.0565,
+      "rest": 0.0513,
+      "shop": 0.0488,
+      "door": 0.0462,
+      "duel": 0.0424,
+      "roamer": 0.0103
+     },
+     "ifHostile": {
+      "battle": 0.5941,
+      "duel": 0.3267,
+      "roamer": 0.0792
+     },
+     "ifMystery": {
+      "shop": 0.056,
+      "rest": 0.059,
+      "incident": 0.0693,
+      "sacrifice": 0.0811,
+      "expedition": 0.0988,
+      "employ": 0.0649,
+      "scrap": 0.0752,
+      "door": 0.0531,
+      "empty": 0.4425
+     }
+    },
+    {
+     "distance": 3,
+     "samples": 869,
+     "perMap": 3.56,
+     "share": {
+      "empty": 0.3936,
+      "expedition": 0.0944,
+      "elite": 0.0875,
+      "sacrifice": 0.0702,
+      "employ": 0.0575,
+      "light": 0.0564,
+      "scrap": 0.0552,
+      "duel": 0.0541,
+      "door": 0.0495,
+      "shop": 0.0437,
+      "rest": 0.0299,
+      "roamer": 0.0081
+     },
+     "ifHostile": {
+      "elite": 0.5846,
+      "duel": 0.3615,
+      "roamer": 0.0538
+     },
+     "ifMystery": {
+      "shop": 0.0514,
+      "rest": 0.0352,
+      "sacrifice": 0.0825,
+      "expedition": 0.111,
+      "employ": 0.0677,
+      "scrap": 0.065,
+      "light": 0.0663,
+      "door": 0.0582,
+      "empty": 0.4628
+     }
+    },
+    {
+     "distance": 4,
+     "samples": 844,
+     "perMap": 3.46,
+     "share": {
+      "empty": 0.3294,
+      "elite": 0.0782,
+      "expedition": 0.077,
+      "battle": 0.0675,
+      "final": 0.0604,
+      "sacrifice": 0.0581,
+      "wish": 0.0533,
+      "incident": 0.0509,
+      "scrap": 0.0498,
+      "light": 0.0486,
+      "savage": 0.0462,
+      "rest": 0.0296,
+      "shop": 0.0273,
+      "roamer": 0.0178,
+      "door": 0.0059
+     },
+     "ifHostile": {
+      "battle": 0.322,
+      "elite": 0.3729,
+      "savage": 0.2203,
+      "roamer": 0.0847
+     },
+     "ifMystery": {
+      "shop": 0.0345,
+      "rest": 0.0375,
+      "incident": 0.0645,
+      "wish": 0.0675,
+      "sacrifice": 0.0735,
+      "expedition": 0.0975,
+      "scrap": 0.063,
+      "final": 0.0765,
+      "light": 0.0615,
+      "door": 0.0075,
+      "empty": 0.4168
+     }
+    },
+    {
+     "distance": 5,
+     "samples": 952,
+     "perMap": 3.9,
+     "share": {
+      "empty": 0.2626,
+      "final": 0.146,
+      "elite": 0.0777,
+      "portal": 0.0588,
+      "battle": 0.0536,
+      "wish": 0.0536,
+      "incident": 0.0515,
+      "light": 0.0473,
+      "scrap": 0.0431,
+      "shop": 0.0378,
+      "savage": 0.0378,
+      "door": 0.0347,
+      "evac": 0.0305,
+      "duel": 0.0284,
+      "rest": 0.0263,
+      "roamer": 0.0105
+     },
+     "ifHostile": {
+      "battle": 0.2576,
+      "elite": 0.3737,
+      "duel": 0.1364,
+      "savage": 0.1818,
+      "roamer": 0.0505
+     },
+     "ifMystery": {
+      "shop": 0.0477,
+      "rest": 0.0332,
+      "incident": 0.065,
+      "wish": 0.0676,
+      "scrap": 0.0544,
+      "final": 0.1844,
+      "evac": 0.0385,
+      "light": 0.0597,
+      "door": 0.0438,
+      "portal": 0.0743,
+      "empty": 0.3316
+     }
+    },
+    {
+     "distance": 6,
+     "samples": 906,
+     "perMap": 3.71,
+     "share": {
+      "empty": 0.2494,
+      "final": 0.149,
+      "elite": 0.0762,
+      "battle": 0.0673,
+      "scrap": 0.0519,
+      "incident": 0.0497,
+      "light": 0.0442,
+      "portal": 0.0408,
+      "wish": 0.0386,
+      "shop": 0.0375,
+      "duel": 0.0375,
+      "evac": 0.0375,
+      "rest": 0.0364,
+      "savage": 0.0353,
+      "door": 0.0342,
+      "roamer": 0.0143
+     },
+     "ifHostile": {
+      "battle": 0.2919,
+      "elite": 0.3301,
+      "duel": 0.1627,
+      "savage": 0.1531,
+      "roamer": 0.0622
+     },
+     "ifMystery": {
+      "shop": 0.0488,
+      "rest": 0.0473,
+      "incident": 0.0646,
+      "wish": 0.0502,
+      "scrap": 0.0674,
+      "final": 0.1937,
+      "evac": 0.0488,
+      "light": 0.0574,
+      "door": 0.0445,
+      "portal": 0.0531,
+      "empty": 0.3242
+     }
+    },
+    {
+     "distance": 7,
+     "samples": 782,
+     "perMap": 3.2,
+     "share": {
+      "empty": 0.2916,
+      "final": 0.156,
+      "elite": 0.0678,
+      "door": 0.0665,
+      "wish": 0.0537,
+      "light": 0.0537,
+      "incident": 0.0499,
+      "rest": 0.046,
+      "battle": 0.0396,
+      "portal": 0.0384,
+      "evac": 0.0332,
+      "savage": 0.032,
+      "shop": 0.0294,
+      "duel": 0.0256,
+      "roamer": 0.0166
+     },
+     "ifHostile": {
+      "battle": 0.2183,
+      "elite": 0.3732,
+      "duel": 0.1408,
+      "savage": 0.1761,
+      "roamer": 0.0915
+     },
+     "ifMystery": {
+      "shop": 0.0359,
+      "rest": 0.0563,
+      "incident": 0.0609,
+      "wish": 0.0656,
+      "final": 0.1906,
+      "evac": 0.0406,
+      "light": 0.0656,
+      "door": 0.0813,
+      "portal": 0.0469,
+      "empty": 0.3563
+     }
+    },
+    {
+     "distance": 8,
+     "samples": 638,
+     "perMap": 2.61,
+     "share": {
+      "empty": 0.3041,
+      "final": 0.1646,
+      "incident": 0.0627,
+      "battle": 0.0596,
+      "door": 0.0502,
+      "light": 0.0486,
+      "elite": 0.047,
+      "wish": 0.0408,
+      "duel": 0.0392,
+      "portal": 0.0392,
+      "shop": 0.0329,
+      "evac": 0.0313,
+      "savage": 0.0313,
+      "rest": 0.0266,
+      "roamer": 0.0219
+     },
+     "ifHostile": {
+      "battle": 0.2992,
+      "elite": 0.2362,
+      "duel": 0.1969,
+      "savage": 0.1575,
+      "roamer": 0.1102
+     },
+     "ifMystery": {
+      "shop": 0.0411,
+      "rest": 0.0333,
+      "incident": 0.0783,
+      "wish": 0.0509,
+      "final": 0.2055,
+      "evac": 0.0391,
+      "light": 0.0607,
+      "door": 0.0626,
+      "portal": 0.0489,
+      "empty": 0.3796
+     }
+    },
+    {
+     "distance": 9,
+     "samples": 447,
+     "perMap": 1.83,
+     "share": {
+      "empty": 0.2886,
+      "final": 0.2595,
+      "elite": 0.0716,
+      "battle": 0.0582,
+      "incident": 0.0515,
+      "door": 0.0515,
+      "shop": 0.0425,
+      "evac": 0.0313,
+      "wish": 0.0291,
+      "portal": 0.0291,
+      "duel": 0.0268,
+      "savage": 0.0268,
+      "rest": 0.0179,
+      "roamer": 0.0157
+     },
+     "ifHostile": {
+      "battle": 0.2921,
+      "elite": 0.3596,
+      "duel": 0.1348,
+      "savage": 0.1348,
+      "roamer": 0.0787
+     },
+     "ifMystery": {
+      "shop": 0.0531,
+      "rest": 0.0223,
+      "incident": 0.0642,
+      "wish": 0.0363,
+      "final": 0.324,
+      "evac": 0.0391,
+      "door": 0.0642,
+      "portal": 0.0363,
+      "empty": 0.3603
+     }
+    },
+    {
+     "distance": 10,
+     "samples": 269,
+     "perMap": 1.1,
+     "share": {
+      "empty": 0.3755,
+      "battle": 0.0781,
+      "incident": 0.0743,
+      "final": 0.0632,
+      "portal": 0.0632,
+      "wish": 0.0558,
+      "door": 0.0558,
+      "elite": 0.052,
+      "duel": 0.0446,
+      "rest": 0.0372,
+      "evac": 0.0372,
+      "savage": 0.0297,
+      "roamer": 0.0223,
+      "shop": 0.0112
+     },
+     "ifHostile": {
+      "battle": 0.3443,
+      "elite": 0.2295,
+      "duel": 0.1967,
+      "savage": 0.1311,
+      "roamer": 0.0984
+     },
+     "ifMystery": {
+      "shop": 0.0144,
+      "rest": 0.0481,
+      "incident": 0.0962,
+      "wish": 0.0721,
+      "final": 0.0817,
+      "evac": 0.0481,
+      "door": 0.0721,
+      "portal": 0.0817,
+      "empty": 0.4856
+     }
+    },
+    {
+     "distance": 11,
+     "samples": 118,
+     "perMap": 0.48,
+     "share": {
+      "empty": 0.3136,
+      "final": 0.1441,
+      "door": 0.0932,
+      "elite": 0.0678,
+      "incident": 0.0678,
+      "shop": 0.0508,
+      "portal": 0.0508,
+      "battle": 0.0424,
+      "wish": 0.0424,
+      "evac": 0.0339,
+      "savage": 0.0339,
+      "roamer": 0.0254,
+      "rest": 0.0169,
+      "duel": 0.0169
+     },
+     "ifHostile": {
+      "battle": 0.2273,
+      "elite": 0.3636,
+      "duel": 0.0909,
+      "savage": 0.1818,
+      "roamer": 0.1364
+     },
+     "ifMystery": {
+      "shop": 0.0625,
+      "rest": 0.0208,
+      "incident": 0.0833,
+      "wish": 0.0521,
+      "final": 0.1771,
+      "evac": 0.0417,
+      "door": 0.1146,
+      "portal": 0.0625,
+      "empty": 0.3854
+     }
+    },
+    {
+     "distance": 12,
+     "samples": 57,
+     "perMap": 0.23,
+     "share": {
+      "empty": 0.4386,
+      "elite": 0.0702,
+      "shop": 0.0702,
+      "incident": 0.0702,
+      "duel": 0.0702,
+      "battle": 0.0526,
+      "wish": 0.0526,
+      "savage": 0.0526,
+      "rest": 0.0351,
+      "door": 0.0351,
+      "portal": 0.0351,
+      "roamer": 0.0175
+     },
+     "ifHostile": {
+      "battle": 0.2,
+      "elite": 0.2667,
+      "duel": 0.2667,
+      "savage": 0.2,
+      "roamer": 0.0667
+     },
+     "ifMystery": {
+      "shop": 0.0952,
+      "rest": 0.0476,
+      "incident": 0.0952,
+      "wish": 0.0714,
+      "door": 0.0476,
+      "portal": 0.0476,
+      "empty": 0.5952
+     }
+    },
+    {
+     "distance": 13,
+     "samples": 43,
+     "perMap": 0.18,
+     "share": {
+      "final": 0.6977,
+      "elite": 0.0698,
+      "rest": 0.0465,
+      "duel": 0.0465,
+      "evac": 0.0465,
+      "battle": 0.0233,
+      "shop": 0.0233,
+      "incident": 0.0233,
+      "door": 0.0233
+     },
+     "ifHostile": {
+      "battle": 0.1667,
+      "elite": 0.5,
+      "duel": 0.3333
+     },
+     "ifMystery": {
+      "shop": 0.027,
+      "rest": 0.0541,
+      "incident": 0.027,
+      "final": 0.8108,
+      "evac": 0.0541,
+      "door": 0.027
+     }
+    }
+   ]
+  },
+  {
+   "floor": "V",
+   "maps": 3676,
+   "nodes": 138018,
+   "perMap": {
+    "battle": 3.285,
+    "elite": 2.128,
+    "boss": 1,
+    "shop": 1.072,
+    "rest": 1.03,
+    "incident": 3.108,
+    "wish": 1.869,
+    "sacrifice": 0.962,
+    "duel": 0.789,
+    "employ": 0.756,
+    "fate": 1.838,
+    "scrap": 1.005,
+    "light": 0.999,
+    "door": 1.915,
+    "portal": 0.922,
+    "savage": 0.786,
+    "roamer": 0.782,
+    "empty": 13.297
+   },
+   "distances": [
+    {
+     "distance": 1,
+     "samples": 7352,
+     "perMap": 2,
+     "share": {
+      "battle": 0.3139,
+      "door": 0.2053,
+      "wish": 0.1983,
+      "incident": 0.1663,
+      "shop": 0.1145,
+      "empty": 0.0016
+     },
+     "ifHostile": {
+      "battle": 1
+     },
+     "ifMystery": {
+      "shop": 0.1669,
+      "incident": 0.2425,
+      "wish": 0.2891,
+      "door": 0.2992,
+      "empty": 0.0024
+     }
+    },
+    {
+     "distance": 2,
+     "samples": 9823,
+     "perMap": 2.67,
+     "share": {
+      "empty": 0.4066,
+      "battle": 0.1123,
+      "door": 0.0999,
+      "duel": 0.0926,
+      "incident": 0.0669,
+      "wish": 0.0498,
+      "shop": 0.0435,
+      "scrap": 0.0431,
+      "sacrifice": 0.0341,
+      "rest": 0.0337,
+      "roamer": 0.0176
+     },
+     "ifHostile": {
+      "battle": 0.5046,
+      "duel": 0.4163,
+      "roamer": 0.0791
+     },
+     "ifMystery": {
+      "shop": 0.0559,
+      "rest": 0.0433,
+      "incident": 0.086,
+      "wish": 0.064,
+      "sacrifice": 0.0439,
+      "scrap": 0.0554,
+      "door": 0.1285,
+      "empty": 0.523
+     }
+    },
+    {
+     "distance": 3,
+     "samples": 10951,
+     "perMap": 2.98,
+     "share": {
+      "empty": 0.3609,
+      "door": 0.0941,
+      "incident": 0.0849,
+      "duel": 0.0809,
+      "elite": 0.0697,
+      "fate": 0.0669,
+      "employ": 0.0584,
+      "portal": 0.0392,
+      "scrap": 0.0377,
+      "wish": 0.0348,
+      "sacrifice": 0.028,
+      "rest": 0.0275,
+      "roamer": 0.017
+     },
+     "ifHostile": {
+      "elite": 0.4158,
+      "duel": 0.4828,
+      "roamer": 0.1014
+     },
+     "ifMystery": {
+      "rest": 0.033,
+      "incident": 0.102,
+      "wish": 0.0418,
+      "sacrifice": 0.0337,
+      "employ": 0.0702,
+      "fate": 0.0804,
+      "scrap": 0.0453,
+      "door": 0.113,
+      "portal": 0.0471,
+      "empty": 0.4335
+     }
+    },
+    {
+     "distance": 4,
+     "samples": 13311,
+     "perMap": 3.62,
+     "share": {
+      "empty": 0.3724,
+      "incident": 0.0936,
+      "duel": 0.0829,
+      "elite": 0.0741,
+      "fate": 0.0673,
+      "employ": 0.0654,
+      "wish": 0.0421,
+      "portal": 0.0418,
+      "scrap": 0.0415,
+      "rest": 0.0342,
+      "sacrifice": 0.0313,
+      "savage": 0.0285,
+      "roamer": 0.0184,
+      "door": 0.0043,
+      "battle": 0.0021
+     },
+     "ifHostile": {
+      "battle": 0.0102,
+      "elite": 0.3597,
+      "duel": 0.4023,
+      "savage": 0.1385,
+      "roamer": 0.0893
+     },
+     "ifMystery": {
+      "rest": 0.0431,
+      "incident": 0.1179,
+      "wish": 0.053,
+      "sacrifice": 0.0395,
+      "employ": 0.0823,
+      "fate": 0.0848,
+      "scrap": 0.0523,
+      "door": 0.0054,
+      "portal": 0.0526,
+      "empty": 0.4691
+     }
+    },
+    {
+     "distance": 5,
+     "samples": 18067,
+     "perMap": 4.91,
+     "share": {
+      "empty": 0.3612,
+      "battle": 0.0901,
+      "incident": 0.078,
+      "employ": 0.0703,
+      "elite": 0.0637,
+      "light": 0.0599,
+      "fate": 0.0521,
+      "wish": 0.0374,
+      "portal": 0.0351,
+      "shop": 0.0294,
+      "savage": 0.0256,
+      "rest": 0.024,
+      "sacrifice": 0.0238,
+      "roamer": 0.0215,
+      "boss": 0.0211,
+      "door": 0.007
+     },
+     "ifHostile": {
+      "battle": 0.4061,
+      "elite": 0.2869,
+      "boss": 0.095,
+      "savage": 0.1152,
+      "roamer": 0.0968
+     },
+     "ifMystery": {
+      "shop": 0.0378,
+      "rest": 0.0308,
+      "incident": 0.1002,
+      "wish": 0.048,
+      "sacrifice": 0.0306,
+      "employ": 0.0903,
+      "fate": 0.0669,
+      "light": 0.077,
+      "door": 0.009,
+      "portal": 0.0451,
+      "empty": 0.4641
+     }
+    },
+    {
+     "distance": 6,
+     "samples": 17018,
+     "perMap": 4.63,
+     "share": {
+      "empty": 0.3768,
+      "battle": 0.089,
+      "incident": 0.0733,
+      "elite": 0.0651,
+      "light": 0.0583,
+      "fate": 0.0516,
+      "wish": 0.04,
+      "portal": 0.0398,
+      "scrap": 0.0299,
+      "savage": 0.0281,
+      "rest": 0.0279,
+      "shop": 0.0273,
+      "sacrifice": 0.0253,
+      "door": 0.025,
+      "roamer": 0.0214,
+      "boss": 0.0212
+     },
+     "ifHostile": {
+      "battle": 0.3957,
+      "elite": 0.2896,
+      "boss": 0.0944,
+      "savage": 0.1249,
+      "roamer": 0.0954
+     },
+     "ifMystery": {
+      "shop": 0.0352,
+      "rest": 0.036,
+      "incident": 0.0945,
+      "wish": 0.0516,
+      "sacrifice": 0.0326,
+      "fate": 0.0666,
+      "scrap": 0.0386,
+      "light": 0.0752,
+      "door": 0.0322,
+      "portal": 0.0514,
+      "empty": 0.4861
+     }
+    },
+    {
+     "distance": 7,
+     "samples": 16143,
+     "perMap": 4.39,
+     "share": {
+      "empty": 0.3769,
+      "battle": 0.0862,
+      "incident": 0.0733,
+      "elite": 0.0614,
+      "light": 0.0537,
+      "fate": 0.0484,
+      "boss": 0.0458,
+      "wish": 0.0411,
+      "portal": 0.0401,
+      "rest": 0.0295,
+      "scrap": 0.0269,
+      "shop": 0.0263,
+      "savage": 0.0245,
+      "sacrifice": 0.0235,
+      "roamer": 0.0215,
+      "door": 0.0208
+     },
+     "ifHostile": {
+      "battle": 0.3599,
+      "elite": 0.2564,
+      "boss": 0.1915,
+      "savage": 0.1025,
+      "roamer": 0.0898
+     },
+     "ifMystery": {
+      "shop": 0.0345,
+      "rest": 0.0388,
+      "incident": 0.0964,
+      "wish": 0.054,
+      "sacrifice": 0.0309,
+      "fate": 0.0637,
+      "scrap": 0.0354,
+      "light": 0.0706,
+      "door": 0.0273,
+      "portal": 0.0527,
+      "empty": 0.4956
+     }
+    },
+    {
+     "distance": 8,
+     "samples": 11963,
+     "perMap": 3.25,
+     "share": {
+      "empty": 0.371,
+      "battle": 0.0882,
+      "incident": 0.0759,
+      "elite": 0.0621,
+      "light": 0.0611,
+      "fate": 0.0535,
+      "door": 0.0497,
+      "wish": 0.0411,
+      "portal": 0.0372,
+      "scrap": 0.0294,
+      "rest": 0.0291,
+      "shop": 0.0267,
+      "savage": 0.0254,
+      "roamer": 0.0251,
+      "sacrifice": 0.0245
+     },
+     "ifHostile": {
+      "battle": 0.4392,
+      "elite": 0.3093,
+      "savage": 0.1266,
+      "roamer": 0.1249
+     },
+     "ifMystery": {
+      "shop": 0.0335,
+      "rest": 0.0364,
+      "incident": 0.095,
+      "wish": 0.0515,
+      "sacrifice": 0.0306,
+      "fate": 0.0669,
+      "scrap": 0.0368,
+      "light": 0.0765,
+      "door": 0.0621,
+      "portal": 0.0465,
+      "empty": 0.4642
+     }
+    },
+    {
+     "distance": 9,
+     "samples": 11970,
+     "perMap": 3.26,
+     "share": {
+      "empty": 0.3583,
+      "boss": 0.0934,
+      "battle": 0.092,
+      "incident": 0.0749,
+      "elite": 0.0648,
+      "door": 0.0564,
+      "fate": 0.0523,
+      "wish": 0.0453,
+      "scrap": 0.0303,
+      "sacrifice": 0.0295,
+      "shop": 0.027,
+      "rest": 0.0256,
+      "savage": 0.0252,
+      "roamer": 0.025
+     },
+     "ifHostile": {
+      "battle": 0.3062,
+      "elite": 0.2158,
+      "boss": 0.3109,
+      "savage": 0.084,
+      "roamer": 0.0831
+     },
+     "ifMystery": {
+      "shop": 0.0386,
+      "rest": 0.0365,
+      "incident": 0.1071,
+      "wish": 0.0647,
+      "sacrifice": 0.0422,
+      "fate": 0.0748,
+      "scrap": 0.0433,
+      "door": 0.0806,
+      "empty": 0.5122
+     }
+    },
+    {
+     "distance": 10,
+     "samples": 10220,
+     "perMap": 2.78,
+     "share": {
+      "empty": 0.3705,
+      "battle": 0.0881,
+      "incident": 0.0812,
+      "boss": 0.0738,
+      "elite": 0.0627,
+      "door": 0.0626,
+      "fate": 0.0566,
+      "wish": 0.0444,
+      "rest": 0.0288,
+      "scrap": 0.0288,
+      "shop": 0.0275,
+      "sacrifice": 0.0272,
+      "roamer": 0.0241,
+      "savage": 0.0238
+     },
+     "ifHostile": {
+      "battle": 0.3233,
+      "elite": 0.2302,
+      "boss": 0.2708,
+      "savage": 0.0873,
+      "roamer": 0.0884
+     },
+     "ifMystery": {
+      "shop": 0.0378,
+      "rest": 0.0395,
+      "incident": 0.1116,
+      "wish": 0.0611,
+      "sacrifice": 0.0374,
+      "fate": 0.0777,
+      "scrap": 0.0395,
+      "door": 0.0861,
+      "empty": 0.5093
+     }
+    },
+    {
+     "distance": 11,
+     "samples": 5424,
+     "perMap": 1.48,
+     "share": {
+      "empty": 0.3813,
+      "battle": 0.0937,
+      "incident": 0.0778,
+      "fate": 0.0634,
+      "boss": 0.0594,
+      "door": 0.0548,
+      "elite": 0.0542,
+      "wish": 0.0402,
+      "rest": 0.0319,
+      "scrap": 0.0317,
+      "shop": 0.0299,
+      "savage": 0.0299,
+      "sacrifice": 0.0265,
+      "roamer": 0.0254
+     },
+     "ifHostile": {
+      "battle": 0.3567,
+      "elite": 0.2065,
+      "boss": 0.2261,
+      "savage": 0.1138,
+      "roamer": 0.0969
+     },
+     "ifMystery": {
+      "shop": 0.0405,
+      "rest": 0.0432,
+      "incident": 0.1055,
+      "wish": 0.0545,
+      "sacrifice": 0.036,
+      "fate": 0.086,
+      "scrap": 0.043,
+      "door": 0.0742,
+      "empty": 0.517
+     }
+    },
+    {
+     "distance": 12,
+     "samples": 3051,
+     "perMap": 0.83,
+     "share": {
+      "empty": 0.3986,
+      "battle": 0.0957,
+      "incident": 0.0882,
+      "elite": 0.0652,
+      "fate": 0.0619,
+      "door": 0.061,
+      "wish": 0.0439,
+      "rest": 0.0354,
+      "sacrifice": 0.0318,
+      "shop": 0.0311,
+      "savage": 0.0298,
+      "roamer": 0.0288,
+      "scrap": 0.0285
+     },
+     "ifHostile": {
+      "battle": 0.4358,
+      "elite": 0.297,
+      "savage": 0.1358,
+      "roamer": 0.1313
+     },
+     "ifMystery": {
+      "shop": 0.0399,
+      "rest": 0.0454,
+      "incident": 0.113,
+      "wish": 0.0563,
+      "sacrifice": 0.0407,
+      "fate": 0.0794,
+      "scrap": 0.0365,
+      "door": 0.0781,
+      "empty": 0.5107
+     }
+    },
+    {
+     "distance": 13,
+     "samples": 1729,
+     "perMap": 0.47,
+     "share": {
+      "empty": 0.4286,
+      "battle": 0.0896,
+      "incident": 0.0821,
+      "elite": 0.0682,
+      "door": 0.0567,
+      "fate": 0.0544,
+      "wish": 0.0411,
+      "roamer": 0.0388,
+      "rest": 0.0359,
+      "scrap": 0.0307,
+      "sacrifice": 0.0295,
+      "shop": 0.0231,
+      "savage": 0.0214
+     },
+     "ifHostile": {
+      "battle": 0.4111,
+      "elite": 0.313,
+      "savage": 0.0981,
+      "roamer": 0.1777
+     },
+     "ifMystery": {
+      "shop": 0.0296,
+      "rest": 0.0459,
+      "incident": 0.105,
+      "wish": 0.0525,
+      "sacrifice": 0.0377,
+      "fate": 0.0695,
+      "scrap": 0.0392,
+      "door": 0.0725,
+      "empty": 0.5481
+     }
+    },
+    {
+     "distance": 14,
+     "samples": 996,
+     "perMap": 0.27,
+     "share": {
+      "empty": 0.4056,
+      "battle": 0.0944,
+      "door": 0.0853,
+      "incident": 0.0633,
+      "fate": 0.0572,
+      "elite": 0.0542,
+      "wish": 0.0532,
+      "scrap": 0.0402,
+      "savage": 0.0351,
+      "roamer": 0.0331,
+      "shop": 0.0301,
+      "rest": 0.0251,
+      "sacrifice": 0.0231
+     },
+     "ifHostile": {
+      "battle": 0.4352,
+      "elite": 0.25,
+      "savage": 0.162,
+      "roamer": 0.1528
+     },
+     "ifMystery": {
+      "shop": 0.0385,
+      "rest": 0.0321,
+      "incident": 0.0808,
+      "wish": 0.0679,
+      "sacrifice": 0.0295,
+      "fate": 0.0731,
+      "scrap": 0.0513,
+      "door": 0.109,
+      "empty": 0.5179
+     }
+    }
+   ]
+  }
+ ],
+ "stageLists": [
+  {
+   "floor": 1,
+   "zone": "玻利瓦尔肤层",
+   "normal": [
+    "ro6_n_1_1",
+    "ro6_n_1_2",
+    "ro6_n_1_3",
+    "ro6_n_1_4"
+   ],
+   "elite": [
+    "ro6_e_1_1",
+    "ro6_e_1_2",
+    "ro6_e_1_3",
+    "ro6_e_1_4"
+   ]
+  },
+  {
+   "floor": 2,
+   "zone": "甜美的伤口",
+   "normal": [
+    "ro6_n_2_1",
+    "ro6_n_2_2",
+    "ro6_n_2_3",
+    "ro6_n_2_4",
+    "ro6_n_2_5"
+   ],
+   "elite": [
+    "ro6_e_2_1",
+    "ro6_e_2_2",
+    "ro6_e_2_3",
+    "ro6_e_2_4",
+    "ro6_e_2_5"
+   ]
+  },
+  {
+   "floor": 3,
+   "zone": "血色空脉",
+   "normal": [
+    "ro6_n_3_1",
+    "ro6_n_3_2",
+    "ro6_n_3_3",
+    "ro6_n_3_4",
+    "ro6_n_3_5",
+    "ro6_n_3_6"
+   ],
+   "elite": [
+    "ro6_e_3_1",
+    "ro6_e_3_2",
+    "ro6_e_3_3",
+    "ro6_e_3_4",
+    "ro6_e_3_5",
+    "ro6_e_3_6"
+   ]
+  },
+  {
+   "floor": 4,
+   "zone": "受害者腐殖",
+   "normal": [
+    "ro6_n_4_1",
+    "ro6_n_4_2",
+    "ro6_n_4_3",
+    "ro6_n_4_4",
+    "ro6_n_4_5",
+    "ro6_n_4_6",
+    "ro6_n_4_7"
+   ],
+   "elite": [
+    "ro6_e_4_1",
+    "ro6_e_4_2",
+    "ro6_e_4_3",
+    "ro6_e_4_4",
+    "ro6_e_4_5",
+    "ro6_e_4_6",
+    "ro6_e_4_7"
+   ]
+  },
+  {
+   "floor": 5,
+   "zone": "卡德霍之颅",
+   "normal": [
+    "ro6_n_5_1",
+    "ro6_n_5_2",
+    "ro6_n_5_3",
+    "ro6_n_5_4",
+    "ro6_n_5_5",
+    "ro6_n_5_6",
+    "ro6_n_5_7"
+   ],
+   "elite": [
+    "ro6_e_5_1",
+    "ro6_e_5_2",
+    "ro6_e_5_3",
+    "ro6_e_5_4",
+    "ro6_e_5_5",
+    "ro6_e_5_6",
+    "ro6_e_5_7"
+   ]
+  },
+  {
+   "floor": 6,
+   "zone": "源流交汇处",
+   "normal": [
+    "ro6_n_6_1",
+    "ro6_n_6_2"
+   ],
+   "elite": [
+    "ro6_e_6_1",
+    "ro6_e_6_2"
+   ]
+  }
+ ],
+ "treehole": [
+  {
+   "id": "rogue_6:treehole",
+   "topicId": "rogue_6",
+   "name": "未萌生的摇篮",
+   "alias": "树洞层",
+   "entranceFloors": [
+    3,
+    4,
+    5
+   ],
+   "incidentRule": "sameAsEntranceFloor",
+   "exceptions": [
+    {
+     "name": "和平守卫者",
+     "availableFromEntranceFloors": [
+      3
+     ]
+    }
+   ],
+   "duelEventRule": "bothEventsAtAnyEntranceFloor",
+   "battleRule": "entranceFloorAndNextFloor",
+   "battleSourceFloors": {
+    "3": [
+     3,
+     4
+    ],
+    "4": [
+     4,
+     5
+    ],
+    "5": [
+     5,
+     6
+    ]
+   },
+   "normalStageIdsByEntranceFloor": {
+    "3": [
+     "ro6_n_3_1",
+     "ro6_n_3_2",
+     "ro6_n_3_3",
+     "ro6_n_3_4",
+     "ro6_n_3_5",
+     "ro6_n_3_6",
+     "ro6_n_4_1",
+     "ro6_n_4_2",
+     "ro6_n_4_3",
+     "ro6_n_4_4",
+     "ro6_n_4_5",
+     "ro6_n_4_6",
+     "ro6_n_4_7"
+    ],
+    "4": [
+     "ro6_n_4_1",
+     "ro6_n_4_2",
+     "ro6_n_4_3",
+     "ro6_n_4_4",
+     "ro6_n_4_5",
+     "ro6_n_4_6",
+     "ro6_n_4_7",
+     "ro6_n_5_1",
+     "ro6_n_5_2",
+     "ro6_n_5_3",
+     "ro6_n_5_4",
+     "ro6_n_5_5",
+     "ro6_n_5_6",
+     "ro6_n_5_7"
+    ],
+    "5": [
+     "ro6_n_5_1",
+     "ro6_n_5_2",
+     "ro6_n_5_3",
+     "ro6_n_5_4",
+     "ro6_n_5_5",
+     "ro6_n_5_6",
+     "ro6_n_5_7",
+     "ro6_n_6_1",
+     "ro6_n_6_2"
+    ]
+   },
+   "eliteStageIdsByEntranceFloor": {
+    "3": [
+     "ro6_e_3_1",
+     "ro6_e_3_2",
+     "ro6_e_3_3",
+     "ro6_e_3_4",
+     "ro6_e_3_5",
+     "ro6_e_3_6",
+     "ro6_e_4_1",
+     "ro6_e_4_2",
+     "ro6_e_4_3",
+     "ro6_e_4_4",
+     "ro6_e_4_5",
+     "ro6_e_4_6",
+     "ro6_e_4_7"
+    ],
+    "4": [
+     "ro6_e_4_1",
+     "ro6_e_4_2",
+     "ro6_e_4_3",
+     "ro6_e_4_4",
+     "ro6_e_4_5",
+     "ro6_e_4_6",
+     "ro6_e_4_7",
+     "ro6_e_5_1",
+     "ro6_e_5_2",
+     "ro6_e_5_3",
+     "ro6_e_5_4",
+     "ro6_e_5_5",
+     "ro6_e_5_6",
+     "ro6_e_5_7"
+    ],
+    "5": [
+     "ro6_e_5_1",
+     "ro6_e_5_2",
+     "ro6_e_5_3",
+     "ro6_e_5_4",
+     "ro6_e_5_5",
+     "ro6_e_5_6",
+     "ro6_e_5_7",
+     "ro6_e_6_1",
+     "ro6_e_6_2"
+    ]
+   },
+   "eventsByEntranceFloor": {
+    "3": {
+     "INCIDENT": [
+      {
+       "name": "敲动杠杆",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_res5_1",
+        "rogue_6:scene_ro6_res5_2",
+        "rogue_6:scene_ro6_res5_3",
+        "rogue_6:scene_ro6_res5_enter"
+       ],
+       "repeatable": true
+      },
+      {
+       "name": "沉寂之屋",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal1_1",
+        "rogue_6:scene_ro6_normal1_2",
+        "rogue_6:scene_ro6_normal1_3",
+        "rogue_6:scene_ro6_normal1_enter"
+       ]
+      },
+      {
+       "name": "黑诞",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal2_1",
+        "rogue_6:scene_ro6_normal2_2",
+        "rogue_6:scene_ro6_normal2_enter"
+       ]
+      },
+      {
+       "name": "独活",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_task2_1",
+        "rogue_6:scene_ro6_task2_2",
+        "rogue_6:scene_ro6_task2_enter"
+       ]
+      },
+      {
+       "name": "划算买卖",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat2_1",
+        "rogue_6:scene_ro6_bat2_2",
+        "rogue_6:scene_ro6_bat2_enter"
+       ]
+      },
+      {
+       "name": "货从口出",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_res3_1",
+        "rogue_6:scene_ro6_res3_2",
+        "rogue_6:scene_ro6_res3_3",
+        "rogue_6:scene_ro6_res3_4",
+        "rogue_6:scene_ro6_res3_enter"
+       ],
+       "repeatable": true
+      },
+      {
+       "name": "沉重的契约",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_res4_1",
+        "rogue_6:scene_ro6_res4_2",
+        "rogue_6:scene_ro6_res4_3",
+        "rogue_6:scene_ro6_res4_enter"
+       ]
+      },
+      {
+       "name": "血衣之下",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_relic1_1",
+        "rogue_6:scene_ro6_relic1_2",
+        "rogue_6:scene_ro6_relic1_3",
+        "rogue_6:scene_ro6_relic1_4",
+        "rogue_6:scene_ro6_relic1_enter"
+       ]
+      },
+      {
+       "name": "呼吸的红苔",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal3_1",
+        "rogue_6:scene_ro6_normal3_2",
+        "rogue_6:scene_ro6_normal3_3",
+        "rogue_6:scene_ro6_normal3_enter"
+       ],
+       "prerequisiteEventIds": [
+        "rogue_6:scene_ro6_normal1"
+       ]
+      },
+      {
+       "name": "被歌颂的影子",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal4_1",
+        "rogue_6:scene_ro6_normal4_10",
+        "rogue_6:scene_ro6_normal4_11",
+        "rogue_6:scene_ro6_normal4_12",
+        "rogue_6:scene_ro6_normal4_13",
+        "rogue_6:scene_ro6_normal4_14",
+        "rogue_6:scene_ro6_normal4_15",
+        "rogue_6:scene_ro6_normal4_16",
+        "rogue_6:scene_ro6_normal4_17",
+        "rogue_6:scene_ro6_normal4_18",
+        "rogue_6:scene_ro6_normal4_19",
+        "rogue_6:scene_ro6_normal4_2",
+        "rogue_6:scene_ro6_normal4_20",
+        "rogue_6:scene_ro6_normal4_21",
+        "rogue_6:scene_ro6_normal4_22",
+        "rogue_6:scene_ro6_normal4_23",
+        "rogue_6:scene_ro6_normal4_24",
+        "rogue_6:scene_ro6_normal4_25",
+        "rogue_6:scene_ro6_normal4_26",
+        "rogue_6:scene_ro6_normal4_27",
+        "rogue_6:scene_ro6_normal4_3",
+        "rogue_6:scene_ro6_normal4_4",
+        "rogue_6:scene_ro6_normal4_5",
+        "rogue_6:scene_ro6_normal4_6",
+        "rogue_6:scene_ro6_normal4_7",
+        "rogue_6:scene_ro6_normal4_8",
+        "rogue_6:scene_ro6_normal4_9",
+        "rogue_6:scene_ro6_normal4_enter"
+       ]
+      },
+      {
+       "name": "临时中介所",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_hire1_1",
+        "rogue_6:scene_ro6_hire1_2",
+        "rogue_6:scene_ro6_hire1_3",
+        "rogue_6:scene_ro6_hire1_enter"
+       ]
+      },
+      {
+       "name": "线人",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bomb1_1",
+        "rogue_6:scene_ro6_bomb1_2",
+        "rogue_6:scene_ro6_bomb1_3",
+        "rogue_6:scene_ro6_bomb1_enter"
+       ]
+      },
+      {
+       "name": "鸭托邦",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat3_1",
+        "rogue_6:scene_ro6_bat3_2",
+        "rogue_6:scene_ro6_bat3_3",
+        "rogue_6:scene_ro6_bat3_enter"
+       ]
+      },
+      {
+       "name": "湖中仙女",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat5_1",
+        "rogue_6:scene_ro6_bat5_2",
+        "rogue_6:scene_ro6_bat5_3",
+        "rogue_6:scene_ro6_bat5_4",
+        "rogue_6:scene_ro6_bat5_5",
+        "rogue_6:scene_ro6_bat5_6",
+        "rogue_6:scene_ro6_bat5_7",
+        "rogue_6:scene_ro6_bat5_8",
+        "rogue_6:scene_ro6_bat5_9",
+        "rogue_6:scene_ro6_bat5_enter"
+       ]
+      },
+      {
+       "name": "洞中宝",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat6_1",
+        "rogue_6:scene_ro6_bat6_10",
+        "rogue_6:scene_ro6_bat6_11",
+        "rogue_6:scene_ro6_bat6_12",
+        "rogue_6:scene_ro6_bat6_13",
+        "rogue_6:scene_ro6_bat6_14",
+        "rogue_6:scene_ro6_bat6_15",
+        "rogue_6:scene_ro6_bat6_16",
+        "rogue_6:scene_ro6_bat6_17",
+        "rogue_6:scene_ro6_bat6_18",
+        "rogue_6:scene_ro6_bat6_19",
+        "rogue_6:scene_ro6_bat6_2",
+        "rogue_6:scene_ro6_bat6_20",
+        "rogue_6:scene_ro6_bat6_21",
+        "rogue_6:scene_ro6_bat6_22",
+        "rogue_6:scene_ro6_bat6_3",
+        "rogue_6:scene_ro6_bat6_4",
+        "rogue_6:scene_ro6_bat6_5",
+        "rogue_6:scene_ro6_bat6_6",
+        "rogue_6:scene_ro6_bat6_7",
+        "rogue_6:scene_ro6_bat6_8",
+        "rogue_6:scene_ro6_bat6_9",
+        "rogue_6:scene_ro6_bat6_enter",
+        "rogue_6:scene_ro6_bat6b_1",
+        "rogue_6:scene_ro6_bat6b_10",
+        "rogue_6:scene_ro6_bat6b_11",
+        "rogue_6:scene_ro6_bat6b_12",
+        "rogue_6:scene_ro6_bat6b_13",
+        "rogue_6:scene_ro6_bat6b_14",
+        "rogue_6:scene_ro6_bat6b_15",
+        "rogue_6:scene_ro6_bat6b_16",
+        "rogue_6:scene_ro6_bat6b_17",
+        "rogue_6:scene_ro6_bat6b_18",
+        "rogue_6:scene_ro6_bat6b_19",
+        "rogue_6:scene_ro6_bat6b_2",
+        "rogue_6:scene_ro6_bat6b_20",
+        "rogue_6:scene_ro6_bat6b_21",
+        "rogue_6:scene_ro6_bat6b_22",
+        "rogue_6:scene_ro6_bat6b_3",
+        "rogue_6:scene_ro6_bat6b_4",
+        "rogue_6:scene_ro6_bat6b_5",
+        "rogue_6:scene_ro6_bat6b_6",
+        "rogue_6:scene_ro6_bat6b_7",
+        "rogue_6:scene_ro6_bat6b_8",
+        "rogue_6:scene_ro6_bat6b_9",
+        "rogue_6:scene_ro6_bat6b_enter"
+       ],
+       "repeatable": true
+      },
+      {
+       "name": "擒与缚",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_relic2_1",
+        "rogue_6:scene_ro6_relic2_2",
+        "rogue_6:scene_ro6_relic2_3",
+        "rogue_6:scene_ro6_relic2_enter"
+       ]
+      },
+      {
+       "name": "和平守卫者",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_task1_1",
+        "rogue_6:scene_ro6_task1_2",
+        "rogue_6:scene_ro6_task1_enter"
+       ]
+      },
+      {
+       "name": "泪之聚落",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_chimera2_1",
+        "rogue_6:scene_ro6_chimera2_2",
+        "rogue_6:scene_ro6_chimera2_enter"
+       ]
+      }
+     ],
+     "DUEL": [
+      {
+       "name": "原始娱乐",
+       "nodeType": "DUEL",
+       "classification": "狭路相逢",
+       "sceneIds": [
+        "rogue_6:scene_ro6_sala1_1",
+        "rogue_6:scene_ro6_sala1_2",
+        "rogue_6:scene_ro6_sala1_enter"
+       ]
+      },
+      {
+       "name": "掠夺成性",
+       "nodeType": "DUEL",
+       "classification": "狭路相逢",
+       "sceneIds": [
+        "rogue_6:scene_ro6_sala2_1",
+        "rogue_6:scene_ro6_sala2_2",
+        "rogue_6:scene_ro6_sala2_enter"
+       ]
+      }
+     ]
+    },
+    "4": {
+     "INCIDENT": [
+      {
+       "name": "敲动杠杆",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_res5_1",
+        "rogue_6:scene_ro6_res5_2",
+        "rogue_6:scene_ro6_res5_3",
+        "rogue_6:scene_ro6_res5_enter"
+       ],
+       "repeatable": true
+      },
+      {
+       "name": "黑诞",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal2_1",
+        "rogue_6:scene_ro6_normal2_2",
+        "rogue_6:scene_ro6_normal2_enter"
+       ]
+      },
+      {
+       "name": "独活",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_task2_1",
+        "rogue_6:scene_ro6_task2_2",
+        "rogue_6:scene_ro6_task2_enter"
+       ]
+      },
+      {
+       "name": "货从口出",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_res3_1",
+        "rogue_6:scene_ro6_res3_2",
+        "rogue_6:scene_ro6_res3_3",
+        "rogue_6:scene_ro6_res3_4",
+        "rogue_6:scene_ro6_res3_enter"
+       ],
+       "repeatable": true
+      },
+      {
+       "name": "沉重的契约",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_res4_1",
+        "rogue_6:scene_ro6_res4_2",
+        "rogue_6:scene_ro6_res4_3",
+        "rogue_6:scene_ro6_res4_enter"
+       ]
+      },
+      {
+       "name": "血衣之下",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_relic1_1",
+        "rogue_6:scene_ro6_relic1_2",
+        "rogue_6:scene_ro6_relic1_3",
+        "rogue_6:scene_ro6_relic1_4",
+        "rogue_6:scene_ro6_relic1_enter"
+       ]
+      },
+      {
+       "name": "呼吸的红苔",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal3_1",
+        "rogue_6:scene_ro6_normal3_2",
+        "rogue_6:scene_ro6_normal3_3",
+        "rogue_6:scene_ro6_normal3_enter"
+       ],
+       "prerequisiteEventIds": [
+        "rogue_6:scene_ro6_normal1"
+       ]
+      },
+      {
+       "name": "被歌颂的影子",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal4_1",
+        "rogue_6:scene_ro6_normal4_10",
+        "rogue_6:scene_ro6_normal4_11",
+        "rogue_6:scene_ro6_normal4_12",
+        "rogue_6:scene_ro6_normal4_13",
+        "rogue_6:scene_ro6_normal4_14",
+        "rogue_6:scene_ro6_normal4_15",
+        "rogue_6:scene_ro6_normal4_16",
+        "rogue_6:scene_ro6_normal4_17",
+        "rogue_6:scene_ro6_normal4_18",
+        "rogue_6:scene_ro6_normal4_19",
+        "rogue_6:scene_ro6_normal4_2",
+        "rogue_6:scene_ro6_normal4_20",
+        "rogue_6:scene_ro6_normal4_21",
+        "rogue_6:scene_ro6_normal4_22",
+        "rogue_6:scene_ro6_normal4_23",
+        "rogue_6:scene_ro6_normal4_24",
+        "rogue_6:scene_ro6_normal4_25",
+        "rogue_6:scene_ro6_normal4_26",
+        "rogue_6:scene_ro6_normal4_27",
+        "rogue_6:scene_ro6_normal4_3",
+        "rogue_6:scene_ro6_normal4_4",
+        "rogue_6:scene_ro6_normal4_5",
+        "rogue_6:scene_ro6_normal4_6",
+        "rogue_6:scene_ro6_normal4_7",
+        "rogue_6:scene_ro6_normal4_8",
+        "rogue_6:scene_ro6_normal4_9",
+        "rogue_6:scene_ro6_normal4_enter"
+       ]
+      },
+      {
+       "name": "临时中介所",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_hire1_1",
+        "rogue_6:scene_ro6_hire1_2",
+        "rogue_6:scene_ro6_hire1_3",
+        "rogue_6:scene_ro6_hire1_enter"
+       ]
+      },
+      {
+       "name": "线人",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bomb1_1",
+        "rogue_6:scene_ro6_bomb1_2",
+        "rogue_6:scene_ro6_bomb1_3",
+        "rogue_6:scene_ro6_bomb1_enter"
+       ]
+      },
+      {
+       "name": "鸭托邦",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat3_1",
+        "rogue_6:scene_ro6_bat3_2",
+        "rogue_6:scene_ro6_bat3_3",
+        "rogue_6:scene_ro6_bat3_enter"
+       ]
+      },
+      {
+       "name": "湖中仙女",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat5_1",
+        "rogue_6:scene_ro6_bat5_2",
+        "rogue_6:scene_ro6_bat5_3",
+        "rogue_6:scene_ro6_bat5_4",
+        "rogue_6:scene_ro6_bat5_5",
+        "rogue_6:scene_ro6_bat5_6",
+        "rogue_6:scene_ro6_bat5_7",
+        "rogue_6:scene_ro6_bat5_8",
+        "rogue_6:scene_ro6_bat5_9",
+        "rogue_6:scene_ro6_bat5_enter"
+       ]
+      },
+      {
+       "name": "洞中宝",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat6_1",
+        "rogue_6:scene_ro6_bat6_10",
+        "rogue_6:scene_ro6_bat6_11",
+        "rogue_6:scene_ro6_bat6_12",
+        "rogue_6:scene_ro6_bat6_13",
+        "rogue_6:scene_ro6_bat6_14",
+        "rogue_6:scene_ro6_bat6_15",
+        "rogue_6:scene_ro6_bat6_16",
+        "rogue_6:scene_ro6_bat6_17",
+        "rogue_6:scene_ro6_bat6_18",
+        "rogue_6:scene_ro6_bat6_19",
+        "rogue_6:scene_ro6_bat6_2",
+        "rogue_6:scene_ro6_bat6_20",
+        "rogue_6:scene_ro6_bat6_21",
+        "rogue_6:scene_ro6_bat6_22",
+        "rogue_6:scene_ro6_bat6_3",
+        "rogue_6:scene_ro6_bat6_4",
+        "rogue_6:scene_ro6_bat6_5",
+        "rogue_6:scene_ro6_bat6_6",
+        "rogue_6:scene_ro6_bat6_7",
+        "rogue_6:scene_ro6_bat6_8",
+        "rogue_6:scene_ro6_bat6_9",
+        "rogue_6:scene_ro6_bat6_enter",
+        "rogue_6:scene_ro6_bat6b_1",
+        "rogue_6:scene_ro6_bat6b_10",
+        "rogue_6:scene_ro6_bat6b_11",
+        "rogue_6:scene_ro6_bat6b_12",
+        "rogue_6:scene_ro6_bat6b_13",
+        "rogue_6:scene_ro6_bat6b_14",
+        "rogue_6:scene_ro6_bat6b_15",
+        "rogue_6:scene_ro6_bat6b_16",
+        "rogue_6:scene_ro6_bat6b_17",
+        "rogue_6:scene_ro6_bat6b_18",
+        "rogue_6:scene_ro6_bat6b_19",
+        "rogue_6:scene_ro6_bat6b_2",
+        "rogue_6:scene_ro6_bat6b_20",
+        "rogue_6:scene_ro6_bat6b_21",
+        "rogue_6:scene_ro6_bat6b_22",
+        "rogue_6:scene_ro6_bat6b_3",
+        "rogue_6:scene_ro6_bat6b_4",
+        "rogue_6:scene_ro6_bat6b_5",
+        "rogue_6:scene_ro6_bat6b_6",
+        "rogue_6:scene_ro6_bat6b_7",
+        "rogue_6:scene_ro6_bat6b_8",
+        "rogue_6:scene_ro6_bat6b_9",
+        "rogue_6:scene_ro6_bat6b_enter"
+       ],
+       "repeatable": true
+      },
+      {
+       "name": "愈创之心",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal5_1",
+        "rogue_6:scene_ro6_normal5_2",
+        "rogue_6:scene_ro6_normal5_3",
+        "rogue_6:scene_ro6_normal5_4",
+        "rogue_6:scene_ro6_normal5_5",
+        "rogue_6:scene_ro6_normal5_enter"
+       ]
+      },
+      {
+       "name": "传奇团伙",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat4_1",
+        "rogue_6:scene_ro6_bat4_2",
+        "rogue_6:scene_ro6_bat4_3",
+        "rogue_6:scene_ro6_bat4_enter"
+       ]
+      },
+      {
+       "name": "和平守卫者",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_task1_1",
+        "rogue_6:scene_ro6_task1_2",
+        "rogue_6:scene_ro6_task1_enter"
+       ]
+      },
+      {
+       "name": "泪之聚落",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_chimera2_1",
+        "rogue_6:scene_ro6_chimera2_2",
+        "rogue_6:scene_ro6_chimera2_enter"
+       ]
+      }
+     ],
+     "DUEL": [
+      {
+       "name": "原始娱乐",
+       "nodeType": "DUEL",
+       "classification": "狭路相逢",
+       "sceneIds": [
+        "rogue_6:scene_ro6_sala1_1",
+        "rogue_6:scene_ro6_sala1_2",
+        "rogue_6:scene_ro6_sala1_enter"
+       ]
+      },
+      {
+       "name": "掠夺成性",
+       "nodeType": "DUEL",
+       "classification": "狭路相逢",
+       "sceneIds": [
+        "rogue_6:scene_ro6_sala2_1",
+        "rogue_6:scene_ro6_sala2_2",
+        "rogue_6:scene_ro6_sala2_enter"
+       ]
+      }
+     ]
+    },
+    "5": {
+     "INCIDENT": [
+      {
+       "name": "敲动杠杆",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_res5_1",
+        "rogue_6:scene_ro6_res5_2",
+        "rogue_6:scene_ro6_res5_3",
+        "rogue_6:scene_ro6_res5_enter"
+       ],
+       "repeatable": true
+      },
+      {
+       "name": "黑诞",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal2_1",
+        "rogue_6:scene_ro6_normal2_2",
+        "rogue_6:scene_ro6_normal2_enter"
+       ]
+      },
+      {
+       "name": "货从口出",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_res3_1",
+        "rogue_6:scene_ro6_res3_2",
+        "rogue_6:scene_ro6_res3_3",
+        "rogue_6:scene_ro6_res3_4",
+        "rogue_6:scene_ro6_res3_enter"
+       ],
+       "repeatable": true
+      },
+      {
+       "name": "沉重的契约",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_res4_1",
+        "rogue_6:scene_ro6_res4_2",
+        "rogue_6:scene_ro6_res4_3",
+        "rogue_6:scene_ro6_res4_enter"
+       ]
+      },
+      {
+       "name": "血衣之下",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_relic1_1",
+        "rogue_6:scene_ro6_relic1_2",
+        "rogue_6:scene_ro6_relic1_3",
+        "rogue_6:scene_ro6_relic1_4",
+        "rogue_6:scene_ro6_relic1_enter"
+       ]
+      },
+      {
+       "name": "被歌颂的影子",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_normal4_1",
+        "rogue_6:scene_ro6_normal4_10",
+        "rogue_6:scene_ro6_normal4_11",
+        "rogue_6:scene_ro6_normal4_12",
+        "rogue_6:scene_ro6_normal4_13",
+        "rogue_6:scene_ro6_normal4_14",
+        "rogue_6:scene_ro6_normal4_15",
+        "rogue_6:scene_ro6_normal4_16",
+        "rogue_6:scene_ro6_normal4_17",
+        "rogue_6:scene_ro6_normal4_18",
+        "rogue_6:scene_ro6_normal4_19",
+        "rogue_6:scene_ro6_normal4_2",
+        "rogue_6:scene_ro6_normal4_20",
+        "rogue_6:scene_ro6_normal4_21",
+        "rogue_6:scene_ro6_normal4_22",
+        "rogue_6:scene_ro6_normal4_23",
+        "rogue_6:scene_ro6_normal4_24",
+        "rogue_6:scene_ro6_normal4_25",
+        "rogue_6:scene_ro6_normal4_26",
+        "rogue_6:scene_ro6_normal4_27",
+        "rogue_6:scene_ro6_normal4_3",
+        "rogue_6:scene_ro6_normal4_4",
+        "rogue_6:scene_ro6_normal4_5",
+        "rogue_6:scene_ro6_normal4_6",
+        "rogue_6:scene_ro6_normal4_7",
+        "rogue_6:scene_ro6_normal4_8",
+        "rogue_6:scene_ro6_normal4_9",
+        "rogue_6:scene_ro6_normal4_enter"
+       ]
+      },
+      {
+       "name": "临时中介所",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_hire1_1",
+        "rogue_6:scene_ro6_hire1_2",
+        "rogue_6:scene_ro6_hire1_3",
+        "rogue_6:scene_ro6_hire1_enter"
+       ]
+      },
+      {
+       "name": "湖中仙女",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat5_1",
+        "rogue_6:scene_ro6_bat5_2",
+        "rogue_6:scene_ro6_bat5_3",
+        "rogue_6:scene_ro6_bat5_4",
+        "rogue_6:scene_ro6_bat5_5",
+        "rogue_6:scene_ro6_bat5_6",
+        "rogue_6:scene_ro6_bat5_7",
+        "rogue_6:scene_ro6_bat5_8",
+        "rogue_6:scene_ro6_bat5_9",
+        "rogue_6:scene_ro6_bat5_enter"
+       ]
+      },
+      {
+       "name": "擒与缚",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_relic2_1",
+        "rogue_6:scene_ro6_relic2_2",
+        "rogue_6:scene_ro6_relic2_3",
+        "rogue_6:scene_ro6_relic2_enter"
+       ]
+      },
+      {
+       "name": "传奇团伙",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_bat4_1",
+        "rogue_6:scene_ro6_bat4_2",
+        "rogue_6:scene_ro6_bat4_3",
+        "rogue_6:scene_ro6_bat4_enter"
+       ]
+      },
+      {
+       "name": "和平守卫者",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_task1_1",
+        "rogue_6:scene_ro6_task1_2",
+        "rogue_6:scene_ro6_task1_enter"
+       ]
+      },
+      {
+       "name": "泪之聚落",
+       "nodeType": "INCIDENT",
+       "classification": "不期而遇",
+       "sceneIds": [
+        "rogue_6:scene_ro6_chimera2_1",
+        "rogue_6:scene_ro6_chimera2_2",
+        "rogue_6:scene_ro6_chimera2_enter"
+       ]
+      }
+     ],
+     "DUEL": [
+      {
+       "name": "原始娱乐",
+       "nodeType": "DUEL",
+       "classification": "狭路相逢",
+       "sceneIds": [
+        "rogue_6:scene_ro6_sala1_1",
+        "rogue_6:scene_ro6_sala1_2",
+        "rogue_6:scene_ro6_sala1_enter"
+       ]
+      },
+      {
+       "name": "掠夺成性",
+       "nodeType": "DUEL",
+       "classification": "狭路相逢",
+       "sceneIds": [
+        "rogue_6:scene_ro6_sala2_1",
+        "rogue_6:scene_ro6_sala2_2",
+        "rogue_6:scene_ro6_sala2_enter"
+       ]
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

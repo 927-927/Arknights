@@ -1,0 +1,3538 @@
+{
+  "schemaVersion": 1,
+  "topicId": "rogue_6",
+  "count": 6,
+  "floors": [
+    {
+      "id": "rogue_6:floor_1",
+      "topicId": "rogue_6",
+      "floor": 1,
+      "name": "第1层",
+      "zoneId": "zone_1",
+      "zoneName": "玻利瓦尔肤层",
+      "backgroundId": "rogue_6_map_1",
+      "description": "未经探索的土地将自己献与新的主人。",
+      "stageIds": [
+        "ro6_n_1_1",
+        "ro6_n_1_2",
+        "ro6_n_1_3",
+        "ro6_n_1_4"
+      ],
+      "normalStageIds": [
+        "ro6_n_1_1",
+        "ro6_n_1_2",
+        "ro6_n_1_3",
+        "ro6_n_1_4"
+      ],
+      "eliteStageIds": [
+        "ro6_e_1_1",
+        "ro6_e_1_2",
+        "ro6_e_1_3",
+        "ro6_e_1_4"
+      ],
+      "stageCount": 4,
+      "eliteStageCount": 4,
+      "eventsByNodeType": {
+        "INCIDENT": [
+          {
+            "name": "思乡心切",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat1_1",
+              "rogue_6:scene_ro6_bat1_2",
+              "rogue_6:scene_ro6_bat1_enter"
+            ]
+          },
+          {
+            "name": "桑尼的邀请",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res1_1",
+              "rogue_6:scene_ro6_res1_2",
+              "rogue_6:scene_ro6_res1_enter"
+            ]
+          },
+          {
+            "name": "色味不同源",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res2_1",
+              "rogue_6:scene_ro6_res2_2",
+              "rogue_6:scene_ro6_res2_3",
+              "rogue_6:scene_ro6_res2_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "敲动杠杆",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res5_1",
+              "rogue_6:scene_ro6_res5_2",
+              "rogue_6:scene_ro6_res5_3",
+              "rogue_6:scene_ro6_res5_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "沉寂之屋",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal1_1",
+              "rogue_6:scene_ro6_normal1_2",
+              "rogue_6:scene_ro6_normal1_3",
+              "rogue_6:scene_ro6_normal1_enter"
+            ]
+          }
+        ],
+        "SPECIAL_EVENT": [
+          {
+            "name": "安眠一隅",
+            "nodeType": "SPECIAL_EVENT",
+            "classification": "隐藏特殊事件",
+            "sceneIds": [
+              "rogue_6:scene_ro6_surprise_1",
+              "rogue_6:scene_ro6_surprise_10",
+              "rogue_6:scene_ro6_surprise_11",
+              "rogue_6:scene_ro6_surprise_2",
+              "rogue_6:scene_ro6_surprise_3",
+              "rogue_6:scene_ro6_surprise_4",
+              "rogue_6:scene_ro6_surprise_5",
+              "rogue_6:scene_ro6_surprise_6",
+              "rogue_6:scene_ro6_surprise_7",
+              "rogue_6:scene_ro6_surprise_8",
+              "rogue_6:scene_ro6_surprise_9",
+              "rogue_6:scene_ro6_surprise_enter"
+            ]
+          }
+        ]
+      },
+      "conditionalEvents": [
+        {
+          "name": "无人商店",
+          "nodeType": "WISH",
+          "classification": "得偿所愿",
+          "sceneIds": [
+            "rogue_6:scene_ro6_wish_1",
+            "rogue_6:scene_ro6_wish_2",
+            "rogue_6:scene_ro6_wish_3",
+            "rogue_6:scene_ro6_wish_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "险路尽头",
+          "nodeType": "FINAL",
+          "classification": "险路尽头",
+          "sceneIds": [
+            "rogue_6:scene_ro6_final1_1",
+            "rogue_6:scene_ro6_final1_2",
+            "rogue_6:scene_ro6_final1_3",
+            "rogue_6:scene_ro6_final1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "三重身",
+          "nodeType": "EVACUATE",
+          "classification": "险路小径",
+          "sceneIds": [
+            "rogue_6:scene_ro6_evacuate2_1",
+            "rogue_6:scene_ro6_evacuate2_2",
+            "rogue_6:scene_ro6_evacuate2_enter",
+            "rogue_6:scene_ro6_evacuate3_1",
+            "rogue_6:scene_ro6_evacuate3_2",
+            "rogue_6:scene_ro6_evacuate3_enter",
+            "rogue_6:scene_ro6_evacuate_1",
+            "rogue_6:scene_ro6_evacuate_2",
+            "rogue_6:scene_ro6_evacuate_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "金色凝滞",
+          "nodeType": "REST",
+          "classification": "安全的角落",
+          "sceneIds": [
+            "rogue_6:scene_ro6_rest_1",
+            "rogue_6:scene_ro6_rest_2",
+            "rogue_6:scene_ro6_rest_3",
+            "rogue_6:scene_ro6_rest_4",
+            "rogue_6:scene_ro6_rest_5",
+            "rogue_6:scene_ro6_rest_6",
+            "rogue_6:scene_ro6_rest_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "好奇心与死",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end1_1",
+            "rogue_6:scene_ro6_end1_2",
+            "rogue_6:scene_ro6_end1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "窥视箱中",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end2_1",
+            "rogue_6:scene_ro6_end2_2",
+            "rogue_6:scene_ro6_end2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "调谐仪式",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end3_1",
+            "rogue_6:scene_ro6_end3_2",
+            "rogue_6:scene_ro6_end3_3",
+            "rogue_6:scene_ro6_end3_4",
+            "rogue_6:scene_ro6_end3_5",
+            "rogue_6:scene_ro6_end3_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "未涉足之树",
+          "nodeType": "EXPEDITION",
+          "classification": "先行一步",
+          "sceneIds": [
+            "rogue_6:scene_ro6_scout_1",
+            "rogue_6:scene_ro6_scout_2",
+            "rogue_6:scene_ro6_scout_3",
+            "rogue_6:scene_ro6_scout_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "回滚文明",
+          "nodeType": "SACRIFICE",
+          "classification": "失与得",
+          "sceneIds": [
+            "rogue_6:scene_ro6_sacrifice1_1",
+            "rogue_6:scene_ro6_sacrifice1_10",
+            "rogue_6:scene_ro6_sacrifice1_11",
+            "rogue_6:scene_ro6_sacrifice1_12",
+            "rogue_6:scene_ro6_sacrifice1_13",
+            "rogue_6:scene_ro6_sacrifice1_14",
+            "rogue_6:scene_ro6_sacrifice1_15",
+            "rogue_6:scene_ro6_sacrifice1_16",
+            "rogue_6:scene_ro6_sacrifice1_17",
+            "rogue_6:scene_ro6_sacrifice1_18",
+            "rogue_6:scene_ro6_sacrifice1_19",
+            "rogue_6:scene_ro6_sacrifice1_2",
+            "rogue_6:scene_ro6_sacrifice1_3",
+            "rogue_6:scene_ro6_sacrifice1_4",
+            "rogue_6:scene_ro6_sacrifice1_5",
+            "rogue_6:scene_ro6_sacrifice1_6",
+            "rogue_6:scene_ro6_sacrifice1_7",
+            "rogue_6:scene_ro6_sacrifice1_8",
+            "rogue_6:scene_ro6_sacrifice1_9",
+            "rogue_6:scene_ro6_sacrifice1_enter",
+            "rogue_6:scene_ro6_sacrifice2_1",
+            "rogue_6:scene_ro6_sacrifice2_10",
+            "rogue_6:scene_ro6_sacrifice2_11",
+            "rogue_6:scene_ro6_sacrifice2_12",
+            "rogue_6:scene_ro6_sacrifice2_13",
+            "rogue_6:scene_ro6_sacrifice2_14",
+            "rogue_6:scene_ro6_sacrifice2_15",
+            "rogue_6:scene_ro6_sacrifice2_16",
+            "rogue_6:scene_ro6_sacrifice2_17",
+            "rogue_6:scene_ro6_sacrifice2_18",
+            "rogue_6:scene_ro6_sacrifice2_19",
+            "rogue_6:scene_ro6_sacrifice2_2",
+            "rogue_6:scene_ro6_sacrifice2_20",
+            "rogue_6:scene_ro6_sacrifice2_21",
+            "rogue_6:scene_ro6_sacrifice2_3",
+            "rogue_6:scene_ro6_sacrifice2_4",
+            "rogue_6:scene_ro6_sacrifice2_5",
+            "rogue_6:scene_ro6_sacrifice2_6",
+            "rogue_6:scene_ro6_sacrifice2_7",
+            "rogue_6:scene_ro6_sacrifice2_8",
+            "rogue_6:scene_ro6_sacrifice2_9",
+            "rogue_6:scene_ro6_sacrifice2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "行动奖励",
+          "nodeType": "SPECIAL_MECHANIC",
+          "classification": "探索开始奖励",
+          "sceneIds": [
+            "rogue_6:scene_ro6_startbuff_enter"
+          ],
+          "floorRule": "explorationStart"
+        }
+      ]
+    },
+    {
+      "id": "rogue_6:floor_2",
+      "topicId": "rogue_6",
+      "floor": 2,
+      "name": "第2层",
+      "zoneId": "zone_2",
+      "zoneName": "甜美的伤口",
+      "backgroundId": "rogue_6_map_2",
+      "description": "刀锋划开，原罪混杂着甘甜倾泻而出。",
+      "stageIds": [
+        "ro6_n_2_1",
+        "ro6_n_2_2",
+        "ro6_n_2_3",
+        "ro6_n_2_4",
+        "ro6_n_2_5"
+      ],
+      "normalStageIds": [
+        "ro6_n_2_1",
+        "ro6_n_2_2",
+        "ro6_n_2_3",
+        "ro6_n_2_4",
+        "ro6_n_2_5"
+      ],
+      "eliteStageIds": [
+        "ro6_e_2_1",
+        "ro6_e_2_2",
+        "ro6_e_2_3",
+        "ro6_e_2_4",
+        "ro6_e_2_5"
+      ],
+      "stageCount": 5,
+      "eliteStageCount": 5,
+      "eventsByNodeType": {
+        "INCIDENT": [
+          {
+            "name": "思乡心切",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat1_1",
+              "rogue_6:scene_ro6_bat1_2",
+              "rogue_6:scene_ro6_bat1_enter"
+            ]
+          },
+          {
+            "name": "桑尼的邀请",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res1_1",
+              "rogue_6:scene_ro6_res1_2",
+              "rogue_6:scene_ro6_res1_enter"
+            ]
+          },
+          {
+            "name": "色味不同源",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res2_1",
+              "rogue_6:scene_ro6_res2_2",
+              "rogue_6:scene_ro6_res2_3",
+              "rogue_6:scene_ro6_res2_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "敲动杠杆",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res5_1",
+              "rogue_6:scene_ro6_res5_2",
+              "rogue_6:scene_ro6_res5_3",
+              "rogue_6:scene_ro6_res5_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "沉寂之屋",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal1_1",
+              "rogue_6:scene_ro6_normal1_2",
+              "rogue_6:scene_ro6_normal1_3",
+              "rogue_6:scene_ro6_normal1_enter"
+            ]
+          },
+          {
+            "name": "独活",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_task2_1",
+              "rogue_6:scene_ro6_task2_2",
+              "rogue_6:scene_ro6_task2_enter"
+            ]
+          },
+          {
+            "name": "划算买卖",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat2_1",
+              "rogue_6:scene_ro6_bat2_2",
+              "rogue_6:scene_ro6_bat2_enter"
+            ]
+          },
+          {
+            "name": "沉重的契约",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res4_1",
+              "rogue_6:scene_ro6_res4_2",
+              "rogue_6:scene_ro6_res4_3",
+              "rogue_6:scene_ro6_res4_enter"
+            ]
+          },
+          {
+            "name": "血衣之下",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_relic1_1",
+              "rogue_6:scene_ro6_relic1_2",
+              "rogue_6:scene_ro6_relic1_3",
+              "rogue_6:scene_ro6_relic1_4",
+              "rogue_6:scene_ro6_relic1_enter"
+            ]
+          },
+          {
+            "name": "呼吸的红苔",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal3_1",
+              "rogue_6:scene_ro6_normal3_2",
+              "rogue_6:scene_ro6_normal3_3",
+              "rogue_6:scene_ro6_normal3_enter"
+            ],
+            "prerequisiteEventIds": [
+              "rogue_6:scene_ro6_normal1"
+            ]
+          },
+          {
+            "name": "被歌颂的影子",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal4_1",
+              "rogue_6:scene_ro6_normal4_10",
+              "rogue_6:scene_ro6_normal4_11",
+              "rogue_6:scene_ro6_normal4_12",
+              "rogue_6:scene_ro6_normal4_13",
+              "rogue_6:scene_ro6_normal4_14",
+              "rogue_6:scene_ro6_normal4_15",
+              "rogue_6:scene_ro6_normal4_16",
+              "rogue_6:scene_ro6_normal4_17",
+              "rogue_6:scene_ro6_normal4_18",
+              "rogue_6:scene_ro6_normal4_19",
+              "rogue_6:scene_ro6_normal4_2",
+              "rogue_6:scene_ro6_normal4_20",
+              "rogue_6:scene_ro6_normal4_21",
+              "rogue_6:scene_ro6_normal4_22",
+              "rogue_6:scene_ro6_normal4_23",
+              "rogue_6:scene_ro6_normal4_24",
+              "rogue_6:scene_ro6_normal4_25",
+              "rogue_6:scene_ro6_normal4_26",
+              "rogue_6:scene_ro6_normal4_27",
+              "rogue_6:scene_ro6_normal4_3",
+              "rogue_6:scene_ro6_normal4_4",
+              "rogue_6:scene_ro6_normal4_5",
+              "rogue_6:scene_ro6_normal4_6",
+              "rogue_6:scene_ro6_normal4_7",
+              "rogue_6:scene_ro6_normal4_8",
+              "rogue_6:scene_ro6_normal4_9",
+              "rogue_6:scene_ro6_normal4_enter"
+            ]
+          },
+          {
+            "name": "临时中介所",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_hire1_1",
+              "rogue_6:scene_ro6_hire1_2",
+              "rogue_6:scene_ro6_hire1_3",
+              "rogue_6:scene_ro6_hire1_enter"
+            ]
+          },
+          {
+            "name": "线人",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bomb1_1",
+              "rogue_6:scene_ro6_bomb1_2",
+              "rogue_6:scene_ro6_bomb1_3",
+              "rogue_6:scene_ro6_bomb1_enter"
+            ]
+          }
+        ],
+        "SPECIAL_EVENT": [
+          {
+            "name": "安眠一隅",
+            "nodeType": "SPECIAL_EVENT",
+            "classification": "隐藏特殊事件",
+            "sceneIds": [
+              "rogue_6:scene_ro6_surprise_1",
+              "rogue_6:scene_ro6_surprise_10",
+              "rogue_6:scene_ro6_surprise_11",
+              "rogue_6:scene_ro6_surprise_2",
+              "rogue_6:scene_ro6_surprise_3",
+              "rogue_6:scene_ro6_surprise_4",
+              "rogue_6:scene_ro6_surprise_5",
+              "rogue_6:scene_ro6_surprise_6",
+              "rogue_6:scene_ro6_surprise_7",
+              "rogue_6:scene_ro6_surprise_8",
+              "rogue_6:scene_ro6_surprise_9",
+              "rogue_6:scene_ro6_surprise_enter"
+            ]
+          }
+        ]
+      },
+      "conditionalEvents": [
+        {
+          "name": "无人商店",
+          "nodeType": "WISH",
+          "classification": "得偿所愿",
+          "sceneIds": [
+            "rogue_6:scene_ro6_wish_1",
+            "rogue_6:scene_ro6_wish_2",
+            "rogue_6:scene_ro6_wish_3",
+            "rogue_6:scene_ro6_wish_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "险路尽头",
+          "nodeType": "FINAL",
+          "classification": "险路尽头",
+          "sceneIds": [
+            "rogue_6:scene_ro6_final1_1",
+            "rogue_6:scene_ro6_final1_2",
+            "rogue_6:scene_ro6_final1_3",
+            "rogue_6:scene_ro6_final1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "三重身",
+          "nodeType": "EVACUATE",
+          "classification": "险路小径",
+          "sceneIds": [
+            "rogue_6:scene_ro6_evacuate2_1",
+            "rogue_6:scene_ro6_evacuate2_2",
+            "rogue_6:scene_ro6_evacuate2_enter",
+            "rogue_6:scene_ro6_evacuate3_1",
+            "rogue_6:scene_ro6_evacuate3_2",
+            "rogue_6:scene_ro6_evacuate3_enter",
+            "rogue_6:scene_ro6_evacuate_1",
+            "rogue_6:scene_ro6_evacuate_2",
+            "rogue_6:scene_ro6_evacuate_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "金色凝滞",
+          "nodeType": "REST",
+          "classification": "安全的角落",
+          "sceneIds": [
+            "rogue_6:scene_ro6_rest_1",
+            "rogue_6:scene_ro6_rest_2",
+            "rogue_6:scene_ro6_rest_3",
+            "rogue_6:scene_ro6_rest_4",
+            "rogue_6:scene_ro6_rest_5",
+            "rogue_6:scene_ro6_rest_6",
+            "rogue_6:scene_ro6_rest_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "好奇心与死",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end1_1",
+            "rogue_6:scene_ro6_end1_2",
+            "rogue_6:scene_ro6_end1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "窥视箱中",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end2_1",
+            "rogue_6:scene_ro6_end2_2",
+            "rogue_6:scene_ro6_end2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "调谐仪式",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end3_1",
+            "rogue_6:scene_ro6_end3_2",
+            "rogue_6:scene_ro6_end3_3",
+            "rogue_6:scene_ro6_end3_4",
+            "rogue_6:scene_ro6_end3_5",
+            "rogue_6:scene_ro6_end3_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "未涉足之树",
+          "nodeType": "EXPEDITION",
+          "classification": "先行一步",
+          "sceneIds": [
+            "rogue_6:scene_ro6_scout_1",
+            "rogue_6:scene_ro6_scout_2",
+            "rogue_6:scene_ro6_scout_3",
+            "rogue_6:scene_ro6_scout_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "回滚文明",
+          "nodeType": "SACRIFICE",
+          "classification": "失与得",
+          "sceneIds": [
+            "rogue_6:scene_ro6_sacrifice1_1",
+            "rogue_6:scene_ro6_sacrifice1_10",
+            "rogue_6:scene_ro6_sacrifice1_11",
+            "rogue_6:scene_ro6_sacrifice1_12",
+            "rogue_6:scene_ro6_sacrifice1_13",
+            "rogue_6:scene_ro6_sacrifice1_14",
+            "rogue_6:scene_ro6_sacrifice1_15",
+            "rogue_6:scene_ro6_sacrifice1_16",
+            "rogue_6:scene_ro6_sacrifice1_17",
+            "rogue_6:scene_ro6_sacrifice1_18",
+            "rogue_6:scene_ro6_sacrifice1_19",
+            "rogue_6:scene_ro6_sacrifice1_2",
+            "rogue_6:scene_ro6_sacrifice1_3",
+            "rogue_6:scene_ro6_sacrifice1_4",
+            "rogue_6:scene_ro6_sacrifice1_5",
+            "rogue_6:scene_ro6_sacrifice1_6",
+            "rogue_6:scene_ro6_sacrifice1_7",
+            "rogue_6:scene_ro6_sacrifice1_8",
+            "rogue_6:scene_ro6_sacrifice1_9",
+            "rogue_6:scene_ro6_sacrifice1_enter",
+            "rogue_6:scene_ro6_sacrifice2_1",
+            "rogue_6:scene_ro6_sacrifice2_10",
+            "rogue_6:scene_ro6_sacrifice2_11",
+            "rogue_6:scene_ro6_sacrifice2_12",
+            "rogue_6:scene_ro6_sacrifice2_13",
+            "rogue_6:scene_ro6_sacrifice2_14",
+            "rogue_6:scene_ro6_sacrifice2_15",
+            "rogue_6:scene_ro6_sacrifice2_16",
+            "rogue_6:scene_ro6_sacrifice2_17",
+            "rogue_6:scene_ro6_sacrifice2_18",
+            "rogue_6:scene_ro6_sacrifice2_19",
+            "rogue_6:scene_ro6_sacrifice2_2",
+            "rogue_6:scene_ro6_sacrifice2_20",
+            "rogue_6:scene_ro6_sacrifice2_21",
+            "rogue_6:scene_ro6_sacrifice2_3",
+            "rogue_6:scene_ro6_sacrifice2_4",
+            "rogue_6:scene_ro6_sacrifice2_5",
+            "rogue_6:scene_ro6_sacrifice2_6",
+            "rogue_6:scene_ro6_sacrifice2_7",
+            "rogue_6:scene_ro6_sacrifice2_8",
+            "rogue_6:scene_ro6_sacrifice2_9",
+            "rogue_6:scene_ro6_sacrifice2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "行动奖励",
+          "nodeType": "SPECIAL_MECHANIC",
+          "classification": "探索开始奖励",
+          "sceneIds": [
+            "rogue_6:scene_ro6_startbuff_enter"
+          ],
+          "floorRule": "explorationStart"
+        }
+      ]
+    },
+    {
+      "id": "rogue_6:floor_3",
+      "topicId": "rogue_6",
+      "floor": 3,
+      "name": "第3层",
+      "zoneId": "zone_3",
+      "zoneName": "血色空脉",
+      "backgroundId": "rogue_6_map_3",
+      "description": "当赤金沐浴阳光的那一刻，整片大地都为之闪烁。",
+      "stageIds": [
+        "ro6_n_3_1",
+        "ro6_n_3_2",
+        "ro6_n_3_3",
+        "ro6_n_3_4",
+        "ro6_n_3_5",
+        "ro6_n_3_6"
+      ],
+      "normalStageIds": [
+        "ro6_n_3_1",
+        "ro6_n_3_2",
+        "ro6_n_3_3",
+        "ro6_n_3_4",
+        "ro6_n_3_5",
+        "ro6_n_3_6"
+      ],
+      "eliteStageIds": [
+        "ro6_e_3_1",
+        "ro6_e_3_2",
+        "ro6_e_3_3",
+        "ro6_e_3_4",
+        "ro6_e_3_5",
+        "ro6_e_3_6"
+      ],
+      "stageCount": 6,
+      "eliteStageCount": 6,
+      "eventsByNodeType": {
+        "INCIDENT": [
+          {
+            "name": "敲动杠杆",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res5_1",
+              "rogue_6:scene_ro6_res5_2",
+              "rogue_6:scene_ro6_res5_3",
+              "rogue_6:scene_ro6_res5_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "沉寂之屋",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal1_1",
+              "rogue_6:scene_ro6_normal1_2",
+              "rogue_6:scene_ro6_normal1_3",
+              "rogue_6:scene_ro6_normal1_enter"
+            ]
+          },
+          {
+            "name": "黑诞",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal2_1",
+              "rogue_6:scene_ro6_normal2_2",
+              "rogue_6:scene_ro6_normal2_enter"
+            ]
+          },
+          {
+            "name": "独活",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_task2_1",
+              "rogue_6:scene_ro6_task2_2",
+              "rogue_6:scene_ro6_task2_enter"
+            ]
+          },
+          {
+            "name": "划算买卖",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat2_1",
+              "rogue_6:scene_ro6_bat2_2",
+              "rogue_6:scene_ro6_bat2_enter"
+            ]
+          },
+          {
+            "name": "货从口出",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res3_1",
+              "rogue_6:scene_ro6_res3_2",
+              "rogue_6:scene_ro6_res3_3",
+              "rogue_6:scene_ro6_res3_4",
+              "rogue_6:scene_ro6_res3_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "沉重的契约",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res4_1",
+              "rogue_6:scene_ro6_res4_2",
+              "rogue_6:scene_ro6_res4_3",
+              "rogue_6:scene_ro6_res4_enter"
+            ]
+          },
+          {
+            "name": "血衣之下",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_relic1_1",
+              "rogue_6:scene_ro6_relic1_2",
+              "rogue_6:scene_ro6_relic1_3",
+              "rogue_6:scene_ro6_relic1_4",
+              "rogue_6:scene_ro6_relic1_enter"
+            ]
+          },
+          {
+            "name": "呼吸的红苔",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal3_1",
+              "rogue_6:scene_ro6_normal3_2",
+              "rogue_6:scene_ro6_normal3_3",
+              "rogue_6:scene_ro6_normal3_enter"
+            ],
+            "prerequisiteEventIds": [
+              "rogue_6:scene_ro6_normal1"
+            ]
+          },
+          {
+            "name": "被歌颂的影子",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal4_1",
+              "rogue_6:scene_ro6_normal4_10",
+              "rogue_6:scene_ro6_normal4_11",
+              "rogue_6:scene_ro6_normal4_12",
+              "rogue_6:scene_ro6_normal4_13",
+              "rogue_6:scene_ro6_normal4_14",
+              "rogue_6:scene_ro6_normal4_15",
+              "rogue_6:scene_ro6_normal4_16",
+              "rogue_6:scene_ro6_normal4_17",
+              "rogue_6:scene_ro6_normal4_18",
+              "rogue_6:scene_ro6_normal4_19",
+              "rogue_6:scene_ro6_normal4_2",
+              "rogue_6:scene_ro6_normal4_20",
+              "rogue_6:scene_ro6_normal4_21",
+              "rogue_6:scene_ro6_normal4_22",
+              "rogue_6:scene_ro6_normal4_23",
+              "rogue_6:scene_ro6_normal4_24",
+              "rogue_6:scene_ro6_normal4_25",
+              "rogue_6:scene_ro6_normal4_26",
+              "rogue_6:scene_ro6_normal4_27",
+              "rogue_6:scene_ro6_normal4_3",
+              "rogue_6:scene_ro6_normal4_4",
+              "rogue_6:scene_ro6_normal4_5",
+              "rogue_6:scene_ro6_normal4_6",
+              "rogue_6:scene_ro6_normal4_7",
+              "rogue_6:scene_ro6_normal4_8",
+              "rogue_6:scene_ro6_normal4_9",
+              "rogue_6:scene_ro6_normal4_enter"
+            ]
+          },
+          {
+            "name": "临时中介所",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_hire1_1",
+              "rogue_6:scene_ro6_hire1_2",
+              "rogue_6:scene_ro6_hire1_3",
+              "rogue_6:scene_ro6_hire1_enter"
+            ]
+          },
+          {
+            "name": "线人",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bomb1_1",
+              "rogue_6:scene_ro6_bomb1_2",
+              "rogue_6:scene_ro6_bomb1_3",
+              "rogue_6:scene_ro6_bomb1_enter"
+            ]
+          },
+          {
+            "name": "鸭托邦",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat3_1",
+              "rogue_6:scene_ro6_bat3_2",
+              "rogue_6:scene_ro6_bat3_3",
+              "rogue_6:scene_ro6_bat3_enter"
+            ]
+          },
+          {
+            "name": "湖中仙女",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat5_1",
+              "rogue_6:scene_ro6_bat5_2",
+              "rogue_6:scene_ro6_bat5_3",
+              "rogue_6:scene_ro6_bat5_4",
+              "rogue_6:scene_ro6_bat5_5",
+              "rogue_6:scene_ro6_bat5_6",
+              "rogue_6:scene_ro6_bat5_7",
+              "rogue_6:scene_ro6_bat5_8",
+              "rogue_6:scene_ro6_bat5_9",
+              "rogue_6:scene_ro6_bat5_enter"
+            ]
+          },
+          {
+            "name": "洞中宝",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat6_1",
+              "rogue_6:scene_ro6_bat6_10",
+              "rogue_6:scene_ro6_bat6_11",
+              "rogue_6:scene_ro6_bat6_12",
+              "rogue_6:scene_ro6_bat6_13",
+              "rogue_6:scene_ro6_bat6_14",
+              "rogue_6:scene_ro6_bat6_15",
+              "rogue_6:scene_ro6_bat6_16",
+              "rogue_6:scene_ro6_bat6_17",
+              "rogue_6:scene_ro6_bat6_18",
+              "rogue_6:scene_ro6_bat6_19",
+              "rogue_6:scene_ro6_bat6_2",
+              "rogue_6:scene_ro6_bat6_20",
+              "rogue_6:scene_ro6_bat6_21",
+              "rogue_6:scene_ro6_bat6_22",
+              "rogue_6:scene_ro6_bat6_3",
+              "rogue_6:scene_ro6_bat6_4",
+              "rogue_6:scene_ro6_bat6_5",
+              "rogue_6:scene_ro6_bat6_6",
+              "rogue_6:scene_ro6_bat6_7",
+              "rogue_6:scene_ro6_bat6_8",
+              "rogue_6:scene_ro6_bat6_9",
+              "rogue_6:scene_ro6_bat6_enter",
+              "rogue_6:scene_ro6_bat6b_1",
+              "rogue_6:scene_ro6_bat6b_10",
+              "rogue_6:scene_ro6_bat6b_11",
+              "rogue_6:scene_ro6_bat6b_12",
+              "rogue_6:scene_ro6_bat6b_13",
+              "rogue_6:scene_ro6_bat6b_14",
+              "rogue_6:scene_ro6_bat6b_15",
+              "rogue_6:scene_ro6_bat6b_16",
+              "rogue_6:scene_ro6_bat6b_17",
+              "rogue_6:scene_ro6_bat6b_18",
+              "rogue_6:scene_ro6_bat6b_19",
+              "rogue_6:scene_ro6_bat6b_2",
+              "rogue_6:scene_ro6_bat6b_20",
+              "rogue_6:scene_ro6_bat6b_21",
+              "rogue_6:scene_ro6_bat6b_22",
+              "rogue_6:scene_ro6_bat6b_3",
+              "rogue_6:scene_ro6_bat6b_4",
+              "rogue_6:scene_ro6_bat6b_5",
+              "rogue_6:scene_ro6_bat6b_6",
+              "rogue_6:scene_ro6_bat6b_7",
+              "rogue_6:scene_ro6_bat6b_8",
+              "rogue_6:scene_ro6_bat6b_9",
+              "rogue_6:scene_ro6_bat6b_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "擒与缚",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_relic2_1",
+              "rogue_6:scene_ro6_relic2_2",
+              "rogue_6:scene_ro6_relic2_3",
+              "rogue_6:scene_ro6_relic2_enter"
+            ]
+          },
+          {
+            "name": "泪之聚落",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_chimera2_1",
+              "rogue_6:scene_ro6_chimera2_2",
+              "rogue_6:scene_ro6_chimera2_enter"
+            ]
+          }
+        ],
+        "PORTAL": [
+          {
+            "name": "溯源",
+            "nodeType": "PORTAL",
+            "classification": "误入奇境",
+            "sceneIds": [
+              "rogue_6:scene_ro6_portal1a_1",
+              "rogue_6:scene_ro6_portal1a_2",
+              "rogue_6:scene_ro6_portal1a_3",
+              "rogue_6:scene_ro6_portal1a_enter",
+              "rogue_6:scene_ro6_portal1b_1",
+              "rogue_6:scene_ro6_portal1b_2",
+              "rogue_6:scene_ro6_portal1b_3",
+              "rogue_6:scene_ro6_portal1b_enter",
+              "rogue_6:scene_ro6_portal2a_1",
+              "rogue_6:scene_ro6_portal2a_2",
+              "rogue_6:scene_ro6_portal2a_3",
+              "rogue_6:scene_ro6_portal2a_enter",
+              "rogue_6:scene_ro6_portal2b_1",
+              "rogue_6:scene_ro6_portal2b_2",
+              "rogue_6:scene_ro6_portal2b_3",
+              "rogue_6:scene_ro6_portal2b_enter",
+              "rogue_6:scene_ro6_portal3a_1",
+              "rogue_6:scene_ro6_portal3a_2",
+              "rogue_6:scene_ro6_portal3a_3",
+              "rogue_6:scene_ro6_portal3a_enter",
+              "rogue_6:scene_ro6_portal3b_1",
+              "rogue_6:scene_ro6_portal3b_2",
+              "rogue_6:scene_ro6_portal3b_3",
+              "rogue_6:scene_ro6_portal3b_enter",
+              "rogue_6:scene_ro6_portal4a_1",
+              "rogue_6:scene_ro6_portal4a_2",
+              "rogue_6:scene_ro6_portal4a_3",
+              "rogue_6:scene_ro6_portal4a_enter",
+              "rogue_6:scene_ro6_portal4b_1",
+              "rogue_6:scene_ro6_portal4b_2",
+              "rogue_6:scene_ro6_portal4b_3",
+              "rogue_6:scene_ro6_portal4b_enter",
+              "rogue_6:scene_ro6_portal5a_1",
+              "rogue_6:scene_ro6_portal5a_2",
+              "rogue_6:scene_ro6_portal5a_3",
+              "rogue_6:scene_ro6_portal5a_enter",
+              "rogue_6:scene_ro6_portal5b_1",
+              "rogue_6:scene_ro6_portal5b_2",
+              "rogue_6:scene_ro6_portal5b_3",
+              "rogue_6:scene_ro6_portal5b_enter",
+              "rogue_6:scene_ro6_portal5c_1",
+              "rogue_6:scene_ro6_portal5c_2",
+              "rogue_6:scene_ro6_portal5c_3",
+              "rogue_6:scene_ro6_portal5c_enter",
+              "rogue_6:scene_ro6_portal6a_1",
+              "rogue_6:scene_ro6_portal6a_2",
+              "rogue_6:scene_ro6_portal6a_3",
+              "rogue_6:scene_ro6_portal6a_enter",
+              "rogue_6:scene_ro6_portal6b_1",
+              "rogue_6:scene_ro6_portal6b_2",
+              "rogue_6:scene_ro6_portal6b_3",
+              "rogue_6:scene_ro6_portal6b_enter",
+              "rogue_6:scene_ro6_portal6c_1",
+              "rogue_6:scene_ro6_portal6c_2",
+              "rogue_6:scene_ro6_portal6c_3",
+              "rogue_6:scene_ro6_portal6c_enter",
+              "rogue_6:scene_ro6_portal7a_1",
+              "rogue_6:scene_ro6_portal7a_2",
+              "rogue_6:scene_ro6_portal7a_3",
+              "rogue_6:scene_ro6_portal7a_enter",
+              "rogue_6:scene_ro6_portal7b_1",
+              "rogue_6:scene_ro6_portal7b_2",
+              "rogue_6:scene_ro6_portal7b_3",
+              "rogue_6:scene_ro6_portal7b_enter",
+              "rogue_6:scene_ro6_portal8a_1",
+              "rogue_6:scene_ro6_portal8a_2",
+              "rogue_6:scene_ro6_portal8a_3",
+              "rogue_6:scene_ro6_portal8a_enter",
+              "rogue_6:scene_ro6_portal8b_1",
+              "rogue_6:scene_ro6_portal8b_2",
+              "rogue_6:scene_ro6_portal8b_3",
+              "rogue_6:scene_ro6_portal8b_enter",
+              "rogue_6:scene_ro6_portal9_1",
+              "rogue_6:scene_ro6_portal9_2",
+              "rogue_6:scene_ro6_portal9_3",
+              "rogue_6:scene_ro6_portal9_enter"
+            ]
+          }
+        ],
+        "DUEL": [
+          {
+            "name": "原始娱乐",
+            "nodeType": "DUEL",
+            "classification": "狭路相逢",
+            "sceneIds": [
+              "rogue_6:scene_ro6_sala1_1",
+              "rogue_6:scene_ro6_sala1_2",
+              "rogue_6:scene_ro6_sala1_enter"
+            ]
+          }
+        ],
+        "SPECIAL_EVENT": [
+          {
+            "name": "安眠一隅",
+            "nodeType": "SPECIAL_EVENT",
+            "classification": "隐藏特殊事件",
+            "sceneIds": [
+              "rogue_6:scene_ro6_surprise_1",
+              "rogue_6:scene_ro6_surprise_10",
+              "rogue_6:scene_ro6_surprise_11",
+              "rogue_6:scene_ro6_surprise_2",
+              "rogue_6:scene_ro6_surprise_3",
+              "rogue_6:scene_ro6_surprise_4",
+              "rogue_6:scene_ro6_surprise_5",
+              "rogue_6:scene_ro6_surprise_6",
+              "rogue_6:scene_ro6_surprise_7",
+              "rogue_6:scene_ro6_surprise_8",
+              "rogue_6:scene_ro6_surprise_9",
+              "rogue_6:scene_ro6_surprise_enter"
+            ]
+          }
+        ]
+      },
+      "conditionalEvents": [
+        {
+          "name": "无人商店",
+          "nodeType": "WISH",
+          "classification": "得偿所愿",
+          "sceneIds": [
+            "rogue_6:scene_ro6_wish_1",
+            "rogue_6:scene_ro6_wish_2",
+            "rogue_6:scene_ro6_wish_3",
+            "rogue_6:scene_ro6_wish_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "险路尽头",
+          "nodeType": "FINAL",
+          "classification": "险路尽头",
+          "sceneIds": [
+            "rogue_6:scene_ro6_final1_1",
+            "rogue_6:scene_ro6_final1_2",
+            "rogue_6:scene_ro6_final1_3",
+            "rogue_6:scene_ro6_final1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "三重身",
+          "nodeType": "EVACUATE",
+          "classification": "险路小径",
+          "sceneIds": [
+            "rogue_6:scene_ro6_evacuate2_1",
+            "rogue_6:scene_ro6_evacuate2_2",
+            "rogue_6:scene_ro6_evacuate2_enter",
+            "rogue_6:scene_ro6_evacuate3_1",
+            "rogue_6:scene_ro6_evacuate3_2",
+            "rogue_6:scene_ro6_evacuate3_enter",
+            "rogue_6:scene_ro6_evacuate_1",
+            "rogue_6:scene_ro6_evacuate_2",
+            "rogue_6:scene_ro6_evacuate_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "金色凝滞",
+          "nodeType": "REST",
+          "classification": "安全的角落",
+          "sceneIds": [
+            "rogue_6:scene_ro6_rest_1",
+            "rogue_6:scene_ro6_rest_2",
+            "rogue_6:scene_ro6_rest_3",
+            "rogue_6:scene_ro6_rest_4",
+            "rogue_6:scene_ro6_rest_5",
+            "rogue_6:scene_ro6_rest_6",
+            "rogue_6:scene_ro6_rest_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "好奇心与死",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end1_1",
+            "rogue_6:scene_ro6_end1_2",
+            "rogue_6:scene_ro6_end1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "窥视箱中",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end2_1",
+            "rogue_6:scene_ro6_end2_2",
+            "rogue_6:scene_ro6_end2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "调谐仪式",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end3_1",
+            "rogue_6:scene_ro6_end3_2",
+            "rogue_6:scene_ro6_end3_3",
+            "rogue_6:scene_ro6_end3_4",
+            "rogue_6:scene_ro6_end3_5",
+            "rogue_6:scene_ro6_end3_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "未涉足之树",
+          "nodeType": "EXPEDITION",
+          "classification": "先行一步",
+          "sceneIds": [
+            "rogue_6:scene_ro6_scout_1",
+            "rogue_6:scene_ro6_scout_2",
+            "rogue_6:scene_ro6_scout_3",
+            "rogue_6:scene_ro6_scout_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "回滚文明",
+          "nodeType": "SACRIFICE",
+          "classification": "失与得",
+          "sceneIds": [
+            "rogue_6:scene_ro6_sacrifice1_1",
+            "rogue_6:scene_ro6_sacrifice1_10",
+            "rogue_6:scene_ro6_sacrifice1_11",
+            "rogue_6:scene_ro6_sacrifice1_12",
+            "rogue_6:scene_ro6_sacrifice1_13",
+            "rogue_6:scene_ro6_sacrifice1_14",
+            "rogue_6:scene_ro6_sacrifice1_15",
+            "rogue_6:scene_ro6_sacrifice1_16",
+            "rogue_6:scene_ro6_sacrifice1_17",
+            "rogue_6:scene_ro6_sacrifice1_18",
+            "rogue_6:scene_ro6_sacrifice1_19",
+            "rogue_6:scene_ro6_sacrifice1_2",
+            "rogue_6:scene_ro6_sacrifice1_3",
+            "rogue_6:scene_ro6_sacrifice1_4",
+            "rogue_6:scene_ro6_sacrifice1_5",
+            "rogue_6:scene_ro6_sacrifice1_6",
+            "rogue_6:scene_ro6_sacrifice1_7",
+            "rogue_6:scene_ro6_sacrifice1_8",
+            "rogue_6:scene_ro6_sacrifice1_9",
+            "rogue_6:scene_ro6_sacrifice1_enter",
+            "rogue_6:scene_ro6_sacrifice2_1",
+            "rogue_6:scene_ro6_sacrifice2_10",
+            "rogue_6:scene_ro6_sacrifice2_11",
+            "rogue_6:scene_ro6_sacrifice2_12",
+            "rogue_6:scene_ro6_sacrifice2_13",
+            "rogue_6:scene_ro6_sacrifice2_14",
+            "rogue_6:scene_ro6_sacrifice2_15",
+            "rogue_6:scene_ro6_sacrifice2_16",
+            "rogue_6:scene_ro6_sacrifice2_17",
+            "rogue_6:scene_ro6_sacrifice2_18",
+            "rogue_6:scene_ro6_sacrifice2_19",
+            "rogue_6:scene_ro6_sacrifice2_2",
+            "rogue_6:scene_ro6_sacrifice2_20",
+            "rogue_6:scene_ro6_sacrifice2_21",
+            "rogue_6:scene_ro6_sacrifice2_3",
+            "rogue_6:scene_ro6_sacrifice2_4",
+            "rogue_6:scene_ro6_sacrifice2_5",
+            "rogue_6:scene_ro6_sacrifice2_6",
+            "rogue_6:scene_ro6_sacrifice2_7",
+            "rogue_6:scene_ro6_sacrifice2_8",
+            "rogue_6:scene_ro6_sacrifice2_9",
+            "rogue_6:scene_ro6_sacrifice2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "行动奖励",
+          "nodeType": "SPECIAL_MECHANIC",
+          "classification": "探索开始奖励",
+          "sceneIds": [
+            "rogue_6:scene_ro6_startbuff_enter"
+          ],
+          "floorRule": "explorationStart"
+        }
+      ]
+    },
+    {
+      "id": "rogue_6:floor_4",
+      "topicId": "rogue_6",
+      "floor": 4,
+      "name": "第4层",
+      "zoneId": "zone_4",
+      "zoneName": "受害者腐殖",
+      "backgroundId": "rogue_6_map_4",
+      "description": "如果大地不能缓和您的愤怒，就请拿走我的血与骨。",
+      "stageIds": [
+        "ro6_n_4_1",
+        "ro6_n_4_2",
+        "ro6_n_4_3",
+        "ro6_n_4_4",
+        "ro6_n_4_5",
+        "ro6_n_4_6",
+        "ro6_n_4_7"
+      ],
+      "normalStageIds": [
+        "ro6_n_4_1",
+        "ro6_n_4_2",
+        "ro6_n_4_3",
+        "ro6_n_4_4",
+        "ro6_n_4_5",
+        "ro6_n_4_6",
+        "ro6_n_4_7"
+      ],
+      "eliteStageIds": [
+        "ro6_e_4_1",
+        "ro6_e_4_2",
+        "ro6_e_4_3",
+        "ro6_e_4_4",
+        "ro6_e_4_5",
+        "ro6_e_4_6",
+        "ro6_e_4_7"
+      ],
+      "stageCount": 7,
+      "eliteStageCount": 7,
+      "eventsByNodeType": {
+        "INCIDENT": [
+          {
+            "name": "敲动杠杆",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res5_1",
+              "rogue_6:scene_ro6_res5_2",
+              "rogue_6:scene_ro6_res5_3",
+              "rogue_6:scene_ro6_res5_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "黑诞",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal2_1",
+              "rogue_6:scene_ro6_normal2_2",
+              "rogue_6:scene_ro6_normal2_enter"
+            ]
+          },
+          {
+            "name": "独活",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_task2_1",
+              "rogue_6:scene_ro6_task2_2",
+              "rogue_6:scene_ro6_task2_enter"
+            ]
+          },
+          {
+            "name": "货从口出",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res3_1",
+              "rogue_6:scene_ro6_res3_2",
+              "rogue_6:scene_ro6_res3_3",
+              "rogue_6:scene_ro6_res3_4",
+              "rogue_6:scene_ro6_res3_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "沉重的契约",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res4_1",
+              "rogue_6:scene_ro6_res4_2",
+              "rogue_6:scene_ro6_res4_3",
+              "rogue_6:scene_ro6_res4_enter"
+            ]
+          },
+          {
+            "name": "血衣之下",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_relic1_1",
+              "rogue_6:scene_ro6_relic1_2",
+              "rogue_6:scene_ro6_relic1_3",
+              "rogue_6:scene_ro6_relic1_4",
+              "rogue_6:scene_ro6_relic1_enter"
+            ]
+          },
+          {
+            "name": "呼吸的红苔",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal3_1",
+              "rogue_6:scene_ro6_normal3_2",
+              "rogue_6:scene_ro6_normal3_3",
+              "rogue_6:scene_ro6_normal3_enter"
+            ],
+            "prerequisiteEventIds": [
+              "rogue_6:scene_ro6_normal1"
+            ]
+          },
+          {
+            "name": "被歌颂的影子",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal4_1",
+              "rogue_6:scene_ro6_normal4_10",
+              "rogue_6:scene_ro6_normal4_11",
+              "rogue_6:scene_ro6_normal4_12",
+              "rogue_6:scene_ro6_normal4_13",
+              "rogue_6:scene_ro6_normal4_14",
+              "rogue_6:scene_ro6_normal4_15",
+              "rogue_6:scene_ro6_normal4_16",
+              "rogue_6:scene_ro6_normal4_17",
+              "rogue_6:scene_ro6_normal4_18",
+              "rogue_6:scene_ro6_normal4_19",
+              "rogue_6:scene_ro6_normal4_2",
+              "rogue_6:scene_ro6_normal4_20",
+              "rogue_6:scene_ro6_normal4_21",
+              "rogue_6:scene_ro6_normal4_22",
+              "rogue_6:scene_ro6_normal4_23",
+              "rogue_6:scene_ro6_normal4_24",
+              "rogue_6:scene_ro6_normal4_25",
+              "rogue_6:scene_ro6_normal4_26",
+              "rogue_6:scene_ro6_normal4_27",
+              "rogue_6:scene_ro6_normal4_3",
+              "rogue_6:scene_ro6_normal4_4",
+              "rogue_6:scene_ro6_normal4_5",
+              "rogue_6:scene_ro6_normal4_6",
+              "rogue_6:scene_ro6_normal4_7",
+              "rogue_6:scene_ro6_normal4_8",
+              "rogue_6:scene_ro6_normal4_9",
+              "rogue_6:scene_ro6_normal4_enter"
+            ]
+          },
+          {
+            "name": "临时中介所",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_hire1_1",
+              "rogue_6:scene_ro6_hire1_2",
+              "rogue_6:scene_ro6_hire1_3",
+              "rogue_6:scene_ro6_hire1_enter"
+            ]
+          },
+          {
+            "name": "线人",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bomb1_1",
+              "rogue_6:scene_ro6_bomb1_2",
+              "rogue_6:scene_ro6_bomb1_3",
+              "rogue_6:scene_ro6_bomb1_enter"
+            ]
+          },
+          {
+            "name": "鸭托邦",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat3_1",
+              "rogue_6:scene_ro6_bat3_2",
+              "rogue_6:scene_ro6_bat3_3",
+              "rogue_6:scene_ro6_bat3_enter"
+            ]
+          },
+          {
+            "name": "湖中仙女",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat5_1",
+              "rogue_6:scene_ro6_bat5_2",
+              "rogue_6:scene_ro6_bat5_3",
+              "rogue_6:scene_ro6_bat5_4",
+              "rogue_6:scene_ro6_bat5_5",
+              "rogue_6:scene_ro6_bat5_6",
+              "rogue_6:scene_ro6_bat5_7",
+              "rogue_6:scene_ro6_bat5_8",
+              "rogue_6:scene_ro6_bat5_9",
+              "rogue_6:scene_ro6_bat5_enter"
+            ]
+          },
+          {
+            "name": "洞中宝",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat6_1",
+              "rogue_6:scene_ro6_bat6_10",
+              "rogue_6:scene_ro6_bat6_11",
+              "rogue_6:scene_ro6_bat6_12",
+              "rogue_6:scene_ro6_bat6_13",
+              "rogue_6:scene_ro6_bat6_14",
+              "rogue_6:scene_ro6_bat6_15",
+              "rogue_6:scene_ro6_bat6_16",
+              "rogue_6:scene_ro6_bat6_17",
+              "rogue_6:scene_ro6_bat6_18",
+              "rogue_6:scene_ro6_bat6_19",
+              "rogue_6:scene_ro6_bat6_2",
+              "rogue_6:scene_ro6_bat6_20",
+              "rogue_6:scene_ro6_bat6_21",
+              "rogue_6:scene_ro6_bat6_22",
+              "rogue_6:scene_ro6_bat6_3",
+              "rogue_6:scene_ro6_bat6_4",
+              "rogue_6:scene_ro6_bat6_5",
+              "rogue_6:scene_ro6_bat6_6",
+              "rogue_6:scene_ro6_bat6_7",
+              "rogue_6:scene_ro6_bat6_8",
+              "rogue_6:scene_ro6_bat6_9",
+              "rogue_6:scene_ro6_bat6_enter",
+              "rogue_6:scene_ro6_bat6b_1",
+              "rogue_6:scene_ro6_bat6b_10",
+              "rogue_6:scene_ro6_bat6b_11",
+              "rogue_6:scene_ro6_bat6b_12",
+              "rogue_6:scene_ro6_bat6b_13",
+              "rogue_6:scene_ro6_bat6b_14",
+              "rogue_6:scene_ro6_bat6b_15",
+              "rogue_6:scene_ro6_bat6b_16",
+              "rogue_6:scene_ro6_bat6b_17",
+              "rogue_6:scene_ro6_bat6b_18",
+              "rogue_6:scene_ro6_bat6b_19",
+              "rogue_6:scene_ro6_bat6b_2",
+              "rogue_6:scene_ro6_bat6b_20",
+              "rogue_6:scene_ro6_bat6b_21",
+              "rogue_6:scene_ro6_bat6b_22",
+              "rogue_6:scene_ro6_bat6b_3",
+              "rogue_6:scene_ro6_bat6b_4",
+              "rogue_6:scene_ro6_bat6b_5",
+              "rogue_6:scene_ro6_bat6b_6",
+              "rogue_6:scene_ro6_bat6b_7",
+              "rogue_6:scene_ro6_bat6b_8",
+              "rogue_6:scene_ro6_bat6b_9",
+              "rogue_6:scene_ro6_bat6b_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "愈创之心",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal5_1",
+              "rogue_6:scene_ro6_normal5_2",
+              "rogue_6:scene_ro6_normal5_3",
+              "rogue_6:scene_ro6_normal5_4",
+              "rogue_6:scene_ro6_normal5_5",
+              "rogue_6:scene_ro6_normal5_enter"
+            ]
+          },
+          {
+            "name": "传奇团伙",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat4_1",
+              "rogue_6:scene_ro6_bat4_2",
+              "rogue_6:scene_ro6_bat4_3",
+              "rogue_6:scene_ro6_bat4_enter"
+            ]
+          },
+          {
+            "name": "和平守卫者",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_task1_1",
+              "rogue_6:scene_ro6_task1_2",
+              "rogue_6:scene_ro6_task1_enter"
+            ]
+          },
+          {
+            "name": "泪之聚落",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_chimera2_1",
+              "rogue_6:scene_ro6_chimera2_2",
+              "rogue_6:scene_ro6_chimera2_enter"
+            ]
+          }
+        ],
+        "PORTAL": [
+          {
+            "name": "溯源",
+            "nodeType": "PORTAL",
+            "classification": "误入奇境",
+            "sceneIds": [
+              "rogue_6:scene_ro6_portal1a_1",
+              "rogue_6:scene_ro6_portal1a_2",
+              "rogue_6:scene_ro6_portal1a_3",
+              "rogue_6:scene_ro6_portal1a_enter",
+              "rogue_6:scene_ro6_portal1b_1",
+              "rogue_6:scene_ro6_portal1b_2",
+              "rogue_6:scene_ro6_portal1b_3",
+              "rogue_6:scene_ro6_portal1b_enter",
+              "rogue_6:scene_ro6_portal2a_1",
+              "rogue_6:scene_ro6_portal2a_2",
+              "rogue_6:scene_ro6_portal2a_3",
+              "rogue_6:scene_ro6_portal2a_enter",
+              "rogue_6:scene_ro6_portal2b_1",
+              "rogue_6:scene_ro6_portal2b_2",
+              "rogue_6:scene_ro6_portal2b_3",
+              "rogue_6:scene_ro6_portal2b_enter",
+              "rogue_6:scene_ro6_portal3a_1",
+              "rogue_6:scene_ro6_portal3a_2",
+              "rogue_6:scene_ro6_portal3a_3",
+              "rogue_6:scene_ro6_portal3a_enter",
+              "rogue_6:scene_ro6_portal3b_1",
+              "rogue_6:scene_ro6_portal3b_2",
+              "rogue_6:scene_ro6_portal3b_3",
+              "rogue_6:scene_ro6_portal3b_enter",
+              "rogue_6:scene_ro6_portal4a_1",
+              "rogue_6:scene_ro6_portal4a_2",
+              "rogue_6:scene_ro6_portal4a_3",
+              "rogue_6:scene_ro6_portal4a_enter",
+              "rogue_6:scene_ro6_portal4b_1",
+              "rogue_6:scene_ro6_portal4b_2",
+              "rogue_6:scene_ro6_portal4b_3",
+              "rogue_6:scene_ro6_portal4b_enter",
+              "rogue_6:scene_ro6_portal5a_1",
+              "rogue_6:scene_ro6_portal5a_2",
+              "rogue_6:scene_ro6_portal5a_3",
+              "rogue_6:scene_ro6_portal5a_enter",
+              "rogue_6:scene_ro6_portal5b_1",
+              "rogue_6:scene_ro6_portal5b_2",
+              "rogue_6:scene_ro6_portal5b_3",
+              "rogue_6:scene_ro6_portal5b_enter",
+              "rogue_6:scene_ro6_portal5c_1",
+              "rogue_6:scene_ro6_portal5c_2",
+              "rogue_6:scene_ro6_portal5c_3",
+              "rogue_6:scene_ro6_portal5c_enter",
+              "rogue_6:scene_ro6_portal6a_1",
+              "rogue_6:scene_ro6_portal6a_2",
+              "rogue_6:scene_ro6_portal6a_3",
+              "rogue_6:scene_ro6_portal6a_enter",
+              "rogue_6:scene_ro6_portal6b_1",
+              "rogue_6:scene_ro6_portal6b_2",
+              "rogue_6:scene_ro6_portal6b_3",
+              "rogue_6:scene_ro6_portal6b_enter",
+              "rogue_6:scene_ro6_portal6c_1",
+              "rogue_6:scene_ro6_portal6c_2",
+              "rogue_6:scene_ro6_portal6c_3",
+              "rogue_6:scene_ro6_portal6c_enter",
+              "rogue_6:scene_ro6_portal7a_1",
+              "rogue_6:scene_ro6_portal7a_2",
+              "rogue_6:scene_ro6_portal7a_3",
+              "rogue_6:scene_ro6_portal7a_enter",
+              "rogue_6:scene_ro6_portal7b_1",
+              "rogue_6:scene_ro6_portal7b_2",
+              "rogue_6:scene_ro6_portal7b_3",
+              "rogue_6:scene_ro6_portal7b_enter",
+              "rogue_6:scene_ro6_portal8a_1",
+              "rogue_6:scene_ro6_portal8a_2",
+              "rogue_6:scene_ro6_portal8a_3",
+              "rogue_6:scene_ro6_portal8a_enter",
+              "rogue_6:scene_ro6_portal8b_1",
+              "rogue_6:scene_ro6_portal8b_2",
+              "rogue_6:scene_ro6_portal8b_3",
+              "rogue_6:scene_ro6_portal8b_enter",
+              "rogue_6:scene_ro6_portal9_1",
+              "rogue_6:scene_ro6_portal9_2",
+              "rogue_6:scene_ro6_portal9_3",
+              "rogue_6:scene_ro6_portal9_enter"
+            ]
+          }
+        ],
+        "DUEL": [
+          {
+            "name": "原始娱乐",
+            "nodeType": "DUEL",
+            "classification": "狭路相逢",
+            "sceneIds": [
+              "rogue_6:scene_ro6_sala1_1",
+              "rogue_6:scene_ro6_sala1_2",
+              "rogue_6:scene_ro6_sala1_enter"
+            ]
+          },
+          {
+            "name": "掠夺成性",
+            "nodeType": "DUEL",
+            "classification": "狭路相逢",
+            "sceneIds": [
+              "rogue_6:scene_ro6_sala2_1",
+              "rogue_6:scene_ro6_sala2_2",
+              "rogue_6:scene_ro6_sala2_enter"
+            ]
+          }
+        ],
+        "SPECIAL_EVENT": [
+          {
+            "name": "安眠一隅",
+            "nodeType": "SPECIAL_EVENT",
+            "classification": "隐藏特殊事件",
+            "sceneIds": [
+              "rogue_6:scene_ro6_surprise_1",
+              "rogue_6:scene_ro6_surprise_10",
+              "rogue_6:scene_ro6_surprise_11",
+              "rogue_6:scene_ro6_surprise_2",
+              "rogue_6:scene_ro6_surprise_3",
+              "rogue_6:scene_ro6_surprise_4",
+              "rogue_6:scene_ro6_surprise_5",
+              "rogue_6:scene_ro6_surprise_6",
+              "rogue_6:scene_ro6_surprise_7",
+              "rogue_6:scene_ro6_surprise_8",
+              "rogue_6:scene_ro6_surprise_9",
+              "rogue_6:scene_ro6_surprise_enter"
+            ]
+          }
+        ]
+      },
+      "conditionalEvents": [
+        {
+          "name": "无人商店",
+          "nodeType": "WISH",
+          "classification": "得偿所愿",
+          "sceneIds": [
+            "rogue_6:scene_ro6_wish_1",
+            "rogue_6:scene_ro6_wish_2",
+            "rogue_6:scene_ro6_wish_3",
+            "rogue_6:scene_ro6_wish_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "险路尽头",
+          "nodeType": "FINAL",
+          "classification": "险路尽头",
+          "sceneIds": [
+            "rogue_6:scene_ro6_final1_1",
+            "rogue_6:scene_ro6_final1_2",
+            "rogue_6:scene_ro6_final1_3",
+            "rogue_6:scene_ro6_final1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "三重身",
+          "nodeType": "EVACUATE",
+          "classification": "险路小径",
+          "sceneIds": [
+            "rogue_6:scene_ro6_evacuate2_1",
+            "rogue_6:scene_ro6_evacuate2_2",
+            "rogue_6:scene_ro6_evacuate2_enter",
+            "rogue_6:scene_ro6_evacuate3_1",
+            "rogue_6:scene_ro6_evacuate3_2",
+            "rogue_6:scene_ro6_evacuate3_enter",
+            "rogue_6:scene_ro6_evacuate_1",
+            "rogue_6:scene_ro6_evacuate_2",
+            "rogue_6:scene_ro6_evacuate_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "金色凝滞",
+          "nodeType": "REST",
+          "classification": "安全的角落",
+          "sceneIds": [
+            "rogue_6:scene_ro6_rest_1",
+            "rogue_6:scene_ro6_rest_2",
+            "rogue_6:scene_ro6_rest_3",
+            "rogue_6:scene_ro6_rest_4",
+            "rogue_6:scene_ro6_rest_5",
+            "rogue_6:scene_ro6_rest_6",
+            "rogue_6:scene_ro6_rest_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "好奇心与死",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end1_1",
+            "rogue_6:scene_ro6_end1_2",
+            "rogue_6:scene_ro6_end1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "窥视箱中",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end2_1",
+            "rogue_6:scene_ro6_end2_2",
+            "rogue_6:scene_ro6_end2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "调谐仪式",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end3_1",
+            "rogue_6:scene_ro6_end3_2",
+            "rogue_6:scene_ro6_end3_3",
+            "rogue_6:scene_ro6_end3_4",
+            "rogue_6:scene_ro6_end3_5",
+            "rogue_6:scene_ro6_end3_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "未涉足之树",
+          "nodeType": "EXPEDITION",
+          "classification": "先行一步",
+          "sceneIds": [
+            "rogue_6:scene_ro6_scout_1",
+            "rogue_6:scene_ro6_scout_2",
+            "rogue_6:scene_ro6_scout_3",
+            "rogue_6:scene_ro6_scout_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "回滚文明",
+          "nodeType": "SACRIFICE",
+          "classification": "失与得",
+          "sceneIds": [
+            "rogue_6:scene_ro6_sacrifice1_1",
+            "rogue_6:scene_ro6_sacrifice1_10",
+            "rogue_6:scene_ro6_sacrifice1_11",
+            "rogue_6:scene_ro6_sacrifice1_12",
+            "rogue_6:scene_ro6_sacrifice1_13",
+            "rogue_6:scene_ro6_sacrifice1_14",
+            "rogue_6:scene_ro6_sacrifice1_15",
+            "rogue_6:scene_ro6_sacrifice1_16",
+            "rogue_6:scene_ro6_sacrifice1_17",
+            "rogue_6:scene_ro6_sacrifice1_18",
+            "rogue_6:scene_ro6_sacrifice1_19",
+            "rogue_6:scene_ro6_sacrifice1_2",
+            "rogue_6:scene_ro6_sacrifice1_3",
+            "rogue_6:scene_ro6_sacrifice1_4",
+            "rogue_6:scene_ro6_sacrifice1_5",
+            "rogue_6:scene_ro6_sacrifice1_6",
+            "rogue_6:scene_ro6_sacrifice1_7",
+            "rogue_6:scene_ro6_sacrifice1_8",
+            "rogue_6:scene_ro6_sacrifice1_9",
+            "rogue_6:scene_ro6_sacrifice1_enter",
+            "rogue_6:scene_ro6_sacrifice2_1",
+            "rogue_6:scene_ro6_sacrifice2_10",
+            "rogue_6:scene_ro6_sacrifice2_11",
+            "rogue_6:scene_ro6_sacrifice2_12",
+            "rogue_6:scene_ro6_sacrifice2_13",
+            "rogue_6:scene_ro6_sacrifice2_14",
+            "rogue_6:scene_ro6_sacrifice2_15",
+            "rogue_6:scene_ro6_sacrifice2_16",
+            "rogue_6:scene_ro6_sacrifice2_17",
+            "rogue_6:scene_ro6_sacrifice2_18",
+            "rogue_6:scene_ro6_sacrifice2_19",
+            "rogue_6:scene_ro6_sacrifice2_2",
+            "rogue_6:scene_ro6_sacrifice2_20",
+            "rogue_6:scene_ro6_sacrifice2_21",
+            "rogue_6:scene_ro6_sacrifice2_3",
+            "rogue_6:scene_ro6_sacrifice2_4",
+            "rogue_6:scene_ro6_sacrifice2_5",
+            "rogue_6:scene_ro6_sacrifice2_6",
+            "rogue_6:scene_ro6_sacrifice2_7",
+            "rogue_6:scene_ro6_sacrifice2_8",
+            "rogue_6:scene_ro6_sacrifice2_9",
+            "rogue_6:scene_ro6_sacrifice2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "行动奖励",
+          "nodeType": "SPECIAL_MECHANIC",
+          "classification": "探索开始奖励",
+          "sceneIds": [
+            "rogue_6:scene_ro6_startbuff_enter"
+          ],
+          "floorRule": "explorationStart"
+        }
+      ]
+    },
+    {
+      "id": "rogue_6:floor_5",
+      "topicId": "rogue_6",
+      "floor": 5,
+      "name": "第5层",
+      "zoneId": "zone_5",
+      "zoneName": "卡德霍之颅",
+      "backgroundId": "rogue_6_map_5",
+      "description": "有些伤口不会愈合，有些愤怒不会平息。",
+      "stageIds": [
+        "ro6_n_5_1",
+        "ro6_n_5_2",
+        "ro6_n_5_3",
+        "ro6_n_5_4",
+        "ro6_n_5_5",
+        "ro6_n_5_6",
+        "ro6_n_5_7"
+      ],
+      "normalStageIds": [
+        "ro6_n_5_1",
+        "ro6_n_5_2",
+        "ro6_n_5_3",
+        "ro6_n_5_4",
+        "ro6_n_5_5",
+        "ro6_n_5_6",
+        "ro6_n_5_7"
+      ],
+      "eliteStageIds": [
+        "ro6_e_5_1",
+        "ro6_e_5_2",
+        "ro6_e_5_3",
+        "ro6_e_5_4",
+        "ro6_e_5_5",
+        "ro6_e_5_6",
+        "ro6_e_5_7"
+      ],
+      "stageCount": 7,
+      "eliteStageCount": 7,
+      "eventsByNodeType": {
+        "INCIDENT": [
+          {
+            "name": "敲动杠杆",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res5_1",
+              "rogue_6:scene_ro6_res5_2",
+              "rogue_6:scene_ro6_res5_3",
+              "rogue_6:scene_ro6_res5_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "黑诞",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal2_1",
+              "rogue_6:scene_ro6_normal2_2",
+              "rogue_6:scene_ro6_normal2_enter"
+            ]
+          },
+          {
+            "name": "货从口出",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res3_1",
+              "rogue_6:scene_ro6_res3_2",
+              "rogue_6:scene_ro6_res3_3",
+              "rogue_6:scene_ro6_res3_4",
+              "rogue_6:scene_ro6_res3_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "沉重的契约",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res4_1",
+              "rogue_6:scene_ro6_res4_2",
+              "rogue_6:scene_ro6_res4_3",
+              "rogue_6:scene_ro6_res4_enter"
+            ]
+          },
+          {
+            "name": "血衣之下",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_relic1_1",
+              "rogue_6:scene_ro6_relic1_2",
+              "rogue_6:scene_ro6_relic1_3",
+              "rogue_6:scene_ro6_relic1_4",
+              "rogue_6:scene_ro6_relic1_enter"
+            ]
+          },
+          {
+            "name": "被歌颂的影子",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal4_1",
+              "rogue_6:scene_ro6_normal4_10",
+              "rogue_6:scene_ro6_normal4_11",
+              "rogue_6:scene_ro6_normal4_12",
+              "rogue_6:scene_ro6_normal4_13",
+              "rogue_6:scene_ro6_normal4_14",
+              "rogue_6:scene_ro6_normal4_15",
+              "rogue_6:scene_ro6_normal4_16",
+              "rogue_6:scene_ro6_normal4_17",
+              "rogue_6:scene_ro6_normal4_18",
+              "rogue_6:scene_ro6_normal4_19",
+              "rogue_6:scene_ro6_normal4_2",
+              "rogue_6:scene_ro6_normal4_20",
+              "rogue_6:scene_ro6_normal4_21",
+              "rogue_6:scene_ro6_normal4_22",
+              "rogue_6:scene_ro6_normal4_23",
+              "rogue_6:scene_ro6_normal4_24",
+              "rogue_6:scene_ro6_normal4_25",
+              "rogue_6:scene_ro6_normal4_26",
+              "rogue_6:scene_ro6_normal4_27",
+              "rogue_6:scene_ro6_normal4_3",
+              "rogue_6:scene_ro6_normal4_4",
+              "rogue_6:scene_ro6_normal4_5",
+              "rogue_6:scene_ro6_normal4_6",
+              "rogue_6:scene_ro6_normal4_7",
+              "rogue_6:scene_ro6_normal4_8",
+              "rogue_6:scene_ro6_normal4_9",
+              "rogue_6:scene_ro6_normal4_enter"
+            ]
+          },
+          {
+            "name": "临时中介所",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_hire1_1",
+              "rogue_6:scene_ro6_hire1_2",
+              "rogue_6:scene_ro6_hire1_3",
+              "rogue_6:scene_ro6_hire1_enter"
+            ]
+          },
+          {
+            "name": "湖中仙女",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat5_1",
+              "rogue_6:scene_ro6_bat5_2",
+              "rogue_6:scene_ro6_bat5_3",
+              "rogue_6:scene_ro6_bat5_4",
+              "rogue_6:scene_ro6_bat5_5",
+              "rogue_6:scene_ro6_bat5_6",
+              "rogue_6:scene_ro6_bat5_7",
+              "rogue_6:scene_ro6_bat5_8",
+              "rogue_6:scene_ro6_bat5_9",
+              "rogue_6:scene_ro6_bat5_enter"
+            ]
+          },
+          {
+            "name": "擒与缚",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_relic2_1",
+              "rogue_6:scene_ro6_relic2_2",
+              "rogue_6:scene_ro6_relic2_3",
+              "rogue_6:scene_ro6_relic2_enter"
+            ]
+          },
+          {
+            "name": "传奇团伙",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat4_1",
+              "rogue_6:scene_ro6_bat4_2",
+              "rogue_6:scene_ro6_bat4_3",
+              "rogue_6:scene_ro6_bat4_enter"
+            ]
+          },
+          {
+            "name": "和平守卫者",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_task1_1",
+              "rogue_6:scene_ro6_task1_2",
+              "rogue_6:scene_ro6_task1_enter"
+            ]
+          },
+          {
+            "name": "泪之聚落",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_chimera2_1",
+              "rogue_6:scene_ro6_chimera2_2",
+              "rogue_6:scene_ro6_chimera2_enter"
+            ]
+          }
+        ],
+        "PORTAL": [
+          {
+            "name": "溯源",
+            "nodeType": "PORTAL",
+            "classification": "误入奇境",
+            "sceneIds": [
+              "rogue_6:scene_ro6_portal1a_1",
+              "rogue_6:scene_ro6_portal1a_2",
+              "rogue_6:scene_ro6_portal1a_3",
+              "rogue_6:scene_ro6_portal1a_enter",
+              "rogue_6:scene_ro6_portal1b_1",
+              "rogue_6:scene_ro6_portal1b_2",
+              "rogue_6:scene_ro6_portal1b_3",
+              "rogue_6:scene_ro6_portal1b_enter",
+              "rogue_6:scene_ro6_portal2a_1",
+              "rogue_6:scene_ro6_portal2a_2",
+              "rogue_6:scene_ro6_portal2a_3",
+              "rogue_6:scene_ro6_portal2a_enter",
+              "rogue_6:scene_ro6_portal2b_1",
+              "rogue_6:scene_ro6_portal2b_2",
+              "rogue_6:scene_ro6_portal2b_3",
+              "rogue_6:scene_ro6_portal2b_enter",
+              "rogue_6:scene_ro6_portal3a_1",
+              "rogue_6:scene_ro6_portal3a_2",
+              "rogue_6:scene_ro6_portal3a_3",
+              "rogue_6:scene_ro6_portal3a_enter",
+              "rogue_6:scene_ro6_portal3b_1",
+              "rogue_6:scene_ro6_portal3b_2",
+              "rogue_6:scene_ro6_portal3b_3",
+              "rogue_6:scene_ro6_portal3b_enter",
+              "rogue_6:scene_ro6_portal4a_1",
+              "rogue_6:scene_ro6_portal4a_2",
+              "rogue_6:scene_ro6_portal4a_3",
+              "rogue_6:scene_ro6_portal4a_enter",
+              "rogue_6:scene_ro6_portal4b_1",
+              "rogue_6:scene_ro6_portal4b_2",
+              "rogue_6:scene_ro6_portal4b_3",
+              "rogue_6:scene_ro6_portal4b_enter",
+              "rogue_6:scene_ro6_portal5a_1",
+              "rogue_6:scene_ro6_portal5a_2",
+              "rogue_6:scene_ro6_portal5a_3",
+              "rogue_6:scene_ro6_portal5a_enter",
+              "rogue_6:scene_ro6_portal5b_1",
+              "rogue_6:scene_ro6_portal5b_2",
+              "rogue_6:scene_ro6_portal5b_3",
+              "rogue_6:scene_ro6_portal5b_enter",
+              "rogue_6:scene_ro6_portal5c_1",
+              "rogue_6:scene_ro6_portal5c_2",
+              "rogue_6:scene_ro6_portal5c_3",
+              "rogue_6:scene_ro6_portal5c_enter",
+              "rogue_6:scene_ro6_portal6a_1",
+              "rogue_6:scene_ro6_portal6a_2",
+              "rogue_6:scene_ro6_portal6a_3",
+              "rogue_6:scene_ro6_portal6a_enter",
+              "rogue_6:scene_ro6_portal6b_1",
+              "rogue_6:scene_ro6_portal6b_2",
+              "rogue_6:scene_ro6_portal6b_3",
+              "rogue_6:scene_ro6_portal6b_enter",
+              "rogue_6:scene_ro6_portal6c_1",
+              "rogue_6:scene_ro6_portal6c_2",
+              "rogue_6:scene_ro6_portal6c_3",
+              "rogue_6:scene_ro6_portal6c_enter",
+              "rogue_6:scene_ro6_portal7a_1",
+              "rogue_6:scene_ro6_portal7a_2",
+              "rogue_6:scene_ro6_portal7a_3",
+              "rogue_6:scene_ro6_portal7a_enter",
+              "rogue_6:scene_ro6_portal7b_1",
+              "rogue_6:scene_ro6_portal7b_2",
+              "rogue_6:scene_ro6_portal7b_3",
+              "rogue_6:scene_ro6_portal7b_enter",
+              "rogue_6:scene_ro6_portal8a_1",
+              "rogue_6:scene_ro6_portal8a_2",
+              "rogue_6:scene_ro6_portal8a_3",
+              "rogue_6:scene_ro6_portal8a_enter",
+              "rogue_6:scene_ro6_portal8b_1",
+              "rogue_6:scene_ro6_portal8b_2",
+              "rogue_6:scene_ro6_portal8b_3",
+              "rogue_6:scene_ro6_portal8b_enter",
+              "rogue_6:scene_ro6_portal9_1",
+              "rogue_6:scene_ro6_portal9_2",
+              "rogue_6:scene_ro6_portal9_3",
+              "rogue_6:scene_ro6_portal9_enter"
+            ]
+          }
+        ],
+        "DUEL": [
+          {
+            "name": "掠夺成性",
+            "nodeType": "DUEL",
+            "classification": "狭路相逢",
+            "sceneIds": [
+              "rogue_6:scene_ro6_sala2_1",
+              "rogue_6:scene_ro6_sala2_2",
+              "rogue_6:scene_ro6_sala2_enter"
+            ]
+          }
+        ]
+      },
+      "conditionalEvents": [
+        {
+          "name": "无人商店",
+          "nodeType": "WISH",
+          "classification": "得偿所愿",
+          "sceneIds": [
+            "rogue_6:scene_ro6_wish_1",
+            "rogue_6:scene_ro6_wish_2",
+            "rogue_6:scene_ro6_wish_3",
+            "rogue_6:scene_ro6_wish_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "险路尽头",
+          "nodeType": "FINAL",
+          "classification": "险路尽头",
+          "sceneIds": [
+            "rogue_6:scene_ro6_final1_1",
+            "rogue_6:scene_ro6_final1_2",
+            "rogue_6:scene_ro6_final1_3",
+            "rogue_6:scene_ro6_final1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "三重身",
+          "nodeType": "EVACUATE",
+          "classification": "险路小径",
+          "sceneIds": [
+            "rogue_6:scene_ro6_evacuate2_1",
+            "rogue_6:scene_ro6_evacuate2_2",
+            "rogue_6:scene_ro6_evacuate2_enter",
+            "rogue_6:scene_ro6_evacuate3_1",
+            "rogue_6:scene_ro6_evacuate3_2",
+            "rogue_6:scene_ro6_evacuate3_enter",
+            "rogue_6:scene_ro6_evacuate_1",
+            "rogue_6:scene_ro6_evacuate_2",
+            "rogue_6:scene_ro6_evacuate_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "金色凝滞",
+          "nodeType": "REST",
+          "classification": "安全的角落",
+          "sceneIds": [
+            "rogue_6:scene_ro6_rest_1",
+            "rogue_6:scene_ro6_rest_2",
+            "rogue_6:scene_ro6_rest_3",
+            "rogue_6:scene_ro6_rest_4",
+            "rogue_6:scene_ro6_rest_5",
+            "rogue_6:scene_ro6_rest_6",
+            "rogue_6:scene_ro6_rest_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "好奇心与死",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end1_1",
+            "rogue_6:scene_ro6_end1_2",
+            "rogue_6:scene_ro6_end1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "窥视箱中",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end2_1",
+            "rogue_6:scene_ro6_end2_2",
+            "rogue_6:scene_ro6_end2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "调谐仪式",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end3_1",
+            "rogue_6:scene_ro6_end3_2",
+            "rogue_6:scene_ro6_end3_3",
+            "rogue_6:scene_ro6_end3_4",
+            "rogue_6:scene_ro6_end3_5",
+            "rogue_6:scene_ro6_end3_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "未涉足之树",
+          "nodeType": "EXPEDITION",
+          "classification": "先行一步",
+          "sceneIds": [
+            "rogue_6:scene_ro6_scout_1",
+            "rogue_6:scene_ro6_scout_2",
+            "rogue_6:scene_ro6_scout_3",
+            "rogue_6:scene_ro6_scout_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "回滚文明",
+          "nodeType": "SACRIFICE",
+          "classification": "失与得",
+          "sceneIds": [
+            "rogue_6:scene_ro6_sacrifice1_1",
+            "rogue_6:scene_ro6_sacrifice1_10",
+            "rogue_6:scene_ro6_sacrifice1_11",
+            "rogue_6:scene_ro6_sacrifice1_12",
+            "rogue_6:scene_ro6_sacrifice1_13",
+            "rogue_6:scene_ro6_sacrifice1_14",
+            "rogue_6:scene_ro6_sacrifice1_15",
+            "rogue_6:scene_ro6_sacrifice1_16",
+            "rogue_6:scene_ro6_sacrifice1_17",
+            "rogue_6:scene_ro6_sacrifice1_18",
+            "rogue_6:scene_ro6_sacrifice1_19",
+            "rogue_6:scene_ro6_sacrifice1_2",
+            "rogue_6:scene_ro6_sacrifice1_3",
+            "rogue_6:scene_ro6_sacrifice1_4",
+            "rogue_6:scene_ro6_sacrifice1_5",
+            "rogue_6:scene_ro6_sacrifice1_6",
+            "rogue_6:scene_ro6_sacrifice1_7",
+            "rogue_6:scene_ro6_sacrifice1_8",
+            "rogue_6:scene_ro6_sacrifice1_9",
+            "rogue_6:scene_ro6_sacrifice1_enter",
+            "rogue_6:scene_ro6_sacrifice2_1",
+            "rogue_6:scene_ro6_sacrifice2_10",
+            "rogue_6:scene_ro6_sacrifice2_11",
+            "rogue_6:scene_ro6_sacrifice2_12",
+            "rogue_6:scene_ro6_sacrifice2_13",
+            "rogue_6:scene_ro6_sacrifice2_14",
+            "rogue_6:scene_ro6_sacrifice2_15",
+            "rogue_6:scene_ro6_sacrifice2_16",
+            "rogue_6:scene_ro6_sacrifice2_17",
+            "rogue_6:scene_ro6_sacrifice2_18",
+            "rogue_6:scene_ro6_sacrifice2_19",
+            "rogue_6:scene_ro6_sacrifice2_2",
+            "rogue_6:scene_ro6_sacrifice2_20",
+            "rogue_6:scene_ro6_sacrifice2_21",
+            "rogue_6:scene_ro6_sacrifice2_3",
+            "rogue_6:scene_ro6_sacrifice2_4",
+            "rogue_6:scene_ro6_sacrifice2_5",
+            "rogue_6:scene_ro6_sacrifice2_6",
+            "rogue_6:scene_ro6_sacrifice2_7",
+            "rogue_6:scene_ro6_sacrifice2_8",
+            "rogue_6:scene_ro6_sacrifice2_9",
+            "rogue_6:scene_ro6_sacrifice2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "行动奖励",
+          "nodeType": "SPECIAL_MECHANIC",
+          "classification": "探索开始奖励",
+          "sceneIds": [
+            "rogue_6:scene_ro6_startbuff_enter"
+          ],
+          "floorRule": "explorationStart"
+        }
+      ]
+    },
+    {
+      "id": "rogue_6:floor_6",
+      "topicId": "rogue_6",
+      "floor": 6,
+      "name": "第6层",
+      "zoneId": "zone_6",
+      "zoneName": "源流交汇处",
+      "backgroundId": "rogue_6_map_6",
+      "description": "兽主们欢迎你的到来。",
+      "stageIds": [
+        "ro6_n_6_1",
+        "ro6_n_6_2"
+      ],
+      "normalStageIds": [
+        "ro6_n_6_1",
+        "ro6_n_6_2"
+      ],
+      "eliteStageIds": [
+        "ro6_e_6_1",
+        "ro6_e_6_2"
+      ],
+      "stageCount": 2,
+      "eliteStageCount": 2,
+      "eventsByNodeType": {
+        "INCIDENT": [
+          {
+            "name": "敲动杠杆",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res5_1",
+              "rogue_6:scene_ro6_res5_2",
+              "rogue_6:scene_ro6_res5_3",
+              "rogue_6:scene_ro6_res5_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "货从口出",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_res3_1",
+              "rogue_6:scene_ro6_res3_2",
+              "rogue_6:scene_ro6_res3_3",
+              "rogue_6:scene_ro6_res3_4",
+              "rogue_6:scene_ro6_res3_enter"
+            ],
+            "repeatable": true
+          },
+          {
+            "name": "被歌颂的影子",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_normal4_1",
+              "rogue_6:scene_ro6_normal4_10",
+              "rogue_6:scene_ro6_normal4_11",
+              "rogue_6:scene_ro6_normal4_12",
+              "rogue_6:scene_ro6_normal4_13",
+              "rogue_6:scene_ro6_normal4_14",
+              "rogue_6:scene_ro6_normal4_15",
+              "rogue_6:scene_ro6_normal4_16",
+              "rogue_6:scene_ro6_normal4_17",
+              "rogue_6:scene_ro6_normal4_18",
+              "rogue_6:scene_ro6_normal4_19",
+              "rogue_6:scene_ro6_normal4_2",
+              "rogue_6:scene_ro6_normal4_20",
+              "rogue_6:scene_ro6_normal4_21",
+              "rogue_6:scene_ro6_normal4_22",
+              "rogue_6:scene_ro6_normal4_23",
+              "rogue_6:scene_ro6_normal4_24",
+              "rogue_6:scene_ro6_normal4_25",
+              "rogue_6:scene_ro6_normal4_26",
+              "rogue_6:scene_ro6_normal4_27",
+              "rogue_6:scene_ro6_normal4_3",
+              "rogue_6:scene_ro6_normal4_4",
+              "rogue_6:scene_ro6_normal4_5",
+              "rogue_6:scene_ro6_normal4_6",
+              "rogue_6:scene_ro6_normal4_7",
+              "rogue_6:scene_ro6_normal4_8",
+              "rogue_6:scene_ro6_normal4_9",
+              "rogue_6:scene_ro6_normal4_enter"
+            ]
+          },
+          {
+            "name": "擒与缚",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_relic2_1",
+              "rogue_6:scene_ro6_relic2_2",
+              "rogue_6:scene_ro6_relic2_3",
+              "rogue_6:scene_ro6_relic2_enter"
+            ]
+          },
+          {
+            "name": "传奇团伙",
+            "nodeType": "INCIDENT",
+            "classification": "不期而遇",
+            "sceneIds": [
+              "rogue_6:scene_ro6_bat4_1",
+              "rogue_6:scene_ro6_bat4_2",
+              "rogue_6:scene_ro6_bat4_3",
+              "rogue_6:scene_ro6_bat4_enter"
+            ]
+          }
+        ]
+      },
+      "conditionalEvents": [
+        {
+          "name": "无人商店",
+          "nodeType": "WISH",
+          "classification": "得偿所愿",
+          "sceneIds": [
+            "rogue_6:scene_ro6_wish_1",
+            "rogue_6:scene_ro6_wish_2",
+            "rogue_6:scene_ro6_wish_3",
+            "rogue_6:scene_ro6_wish_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "险路尽头",
+          "nodeType": "FINAL",
+          "classification": "险路尽头",
+          "sceneIds": [
+            "rogue_6:scene_ro6_final1_1",
+            "rogue_6:scene_ro6_final1_2",
+            "rogue_6:scene_ro6_final1_3",
+            "rogue_6:scene_ro6_final1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "三重身",
+          "nodeType": "EVACUATE",
+          "classification": "险路小径",
+          "sceneIds": [
+            "rogue_6:scene_ro6_evacuate2_1",
+            "rogue_6:scene_ro6_evacuate2_2",
+            "rogue_6:scene_ro6_evacuate2_enter",
+            "rogue_6:scene_ro6_evacuate3_1",
+            "rogue_6:scene_ro6_evacuate3_2",
+            "rogue_6:scene_ro6_evacuate3_enter",
+            "rogue_6:scene_ro6_evacuate_1",
+            "rogue_6:scene_ro6_evacuate_2",
+            "rogue_6:scene_ro6_evacuate_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "金色凝滞",
+          "nodeType": "REST",
+          "classification": "安全的角落",
+          "sceneIds": [
+            "rogue_6:scene_ro6_rest_1",
+            "rogue_6:scene_ro6_rest_2",
+            "rogue_6:scene_ro6_rest_3",
+            "rogue_6:scene_ro6_rest_4",
+            "rogue_6:scene_ro6_rest_5",
+            "rogue_6:scene_ro6_rest_6",
+            "rogue_6:scene_ro6_rest_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "好奇心与死",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end1_1",
+            "rogue_6:scene_ro6_end1_2",
+            "rogue_6:scene_ro6_end1_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "窥视箱中",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end2_1",
+            "rogue_6:scene_ro6_end2_2",
+            "rogue_6:scene_ro6_end2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "调谐仪式",
+          "nodeType": "STORY",
+          "classification": "命运所指",
+          "sceneIds": [
+            "rogue_6:scene_ro6_end3_1",
+            "rogue_6:scene_ro6_end3_2",
+            "rogue_6:scene_ro6_end3_3",
+            "rogue_6:scene_ro6_end3_4",
+            "rogue_6:scene_ro6_end3_5",
+            "rogue_6:scene_ro6_end3_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "未涉足之树",
+          "nodeType": "EXPEDITION",
+          "classification": "先行一步",
+          "sceneIds": [
+            "rogue_6:scene_ro6_scout_1",
+            "rogue_6:scene_ro6_scout_2",
+            "rogue_6:scene_ro6_scout_3",
+            "rogue_6:scene_ro6_scout_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "回滚文明",
+          "nodeType": "SACRIFICE",
+          "classification": "失与得",
+          "sceneIds": [
+            "rogue_6:scene_ro6_sacrifice1_1",
+            "rogue_6:scene_ro6_sacrifice1_10",
+            "rogue_6:scene_ro6_sacrifice1_11",
+            "rogue_6:scene_ro6_sacrifice1_12",
+            "rogue_6:scene_ro6_sacrifice1_13",
+            "rogue_6:scene_ro6_sacrifice1_14",
+            "rogue_6:scene_ro6_sacrifice1_15",
+            "rogue_6:scene_ro6_sacrifice1_16",
+            "rogue_6:scene_ro6_sacrifice1_17",
+            "rogue_6:scene_ro6_sacrifice1_18",
+            "rogue_6:scene_ro6_sacrifice1_19",
+            "rogue_6:scene_ro6_sacrifice1_2",
+            "rogue_6:scene_ro6_sacrifice1_3",
+            "rogue_6:scene_ro6_sacrifice1_4",
+            "rogue_6:scene_ro6_sacrifice1_5",
+            "rogue_6:scene_ro6_sacrifice1_6",
+            "rogue_6:scene_ro6_sacrifice1_7",
+            "rogue_6:scene_ro6_sacrifice1_8",
+            "rogue_6:scene_ro6_sacrifice1_9",
+            "rogue_6:scene_ro6_sacrifice1_enter",
+            "rogue_6:scene_ro6_sacrifice2_1",
+            "rogue_6:scene_ro6_sacrifice2_10",
+            "rogue_6:scene_ro6_sacrifice2_11",
+            "rogue_6:scene_ro6_sacrifice2_12",
+            "rogue_6:scene_ro6_sacrifice2_13",
+            "rogue_6:scene_ro6_sacrifice2_14",
+            "rogue_6:scene_ro6_sacrifice2_15",
+            "rogue_6:scene_ro6_sacrifice2_16",
+            "rogue_6:scene_ro6_sacrifice2_17",
+            "rogue_6:scene_ro6_sacrifice2_18",
+            "rogue_6:scene_ro6_sacrifice2_19",
+            "rogue_6:scene_ro6_sacrifice2_2",
+            "rogue_6:scene_ro6_sacrifice2_20",
+            "rogue_6:scene_ro6_sacrifice2_21",
+            "rogue_6:scene_ro6_sacrifice2_3",
+            "rogue_6:scene_ro6_sacrifice2_4",
+            "rogue_6:scene_ro6_sacrifice2_5",
+            "rogue_6:scene_ro6_sacrifice2_6",
+            "rogue_6:scene_ro6_sacrifice2_7",
+            "rogue_6:scene_ro6_sacrifice2_8",
+            "rogue_6:scene_ro6_sacrifice2_9",
+            "rogue_6:scene_ro6_sacrifice2_enter"
+          ],
+          "floorRule": "nodeTypeAvailable"
+        },
+        {
+          "name": "行动奖励",
+          "nodeType": "SPECIAL_MECHANIC",
+          "classification": "探索开始奖励",
+          "sceneIds": [
+            "rogue_6:scene_ro6_startbuff_enter"
+          ],
+          "floorRule": "explorationStart"
+        }
+      ]
+    }
+  ],
+  "specialLayers": [
+    {
+      "id": "rogue_6:treehole",
+      "topicId": "rogue_6",
+      "name": "未萌生的摇篮",
+      "alias": "树洞层",
+      "entranceFloors": [
+        3,
+        4,
+        5
+      ],
+      "incidentRule": "sameAsEntranceFloor",
+      "exceptions": [
+        {
+          "name": "和平守卫者",
+          "availableFromEntranceFloors": [
+            3
+          ]
+        }
+      ],
+      "duelEventRule": "bothEventsAtAnyEntranceFloor",
+      "battleRule": "entranceFloorAndNextFloor",
+      "battleSourceFloors": {
+        "3": [
+          3,
+          4
+        ],
+        "4": [
+          4,
+          5
+        ],
+        "5": [
+          5,
+          6
+        ]
+      },
+      "normalStageIdsByEntranceFloor": {
+        "3": [
+          "ro6_n_3_1",
+          "ro6_n_3_2",
+          "ro6_n_3_3",
+          "ro6_n_3_4",
+          "ro6_n_3_5",
+          "ro6_n_3_6",
+          "ro6_n_4_1",
+          "ro6_n_4_2",
+          "ro6_n_4_3",
+          "ro6_n_4_4",
+          "ro6_n_4_5",
+          "ro6_n_4_6",
+          "ro6_n_4_7"
+        ],
+        "4": [
+          "ro6_n_4_1",
+          "ro6_n_4_2",
+          "ro6_n_4_3",
+          "ro6_n_4_4",
+          "ro6_n_4_5",
+          "ro6_n_4_6",
+          "ro6_n_4_7",
+          "ro6_n_5_1",
+          "ro6_n_5_2",
+          "ro6_n_5_3",
+          "ro6_n_5_4",
+          "ro6_n_5_5",
+          "ro6_n_5_6",
+          "ro6_n_5_7"
+        ],
+        "5": [
+          "ro6_n_5_1",
+          "ro6_n_5_2",
+          "ro6_n_5_3",
+          "ro6_n_5_4",
+          "ro6_n_5_5",
+          "ro6_n_5_6",
+          "ro6_n_5_7",
+          "ro6_n_6_1",
+          "ro6_n_6_2"
+        ]
+      },
+      "eliteStageIdsByEntranceFloor": {
+        "3": [
+          "ro6_e_3_1",
+          "ro6_e_3_2",
+          "ro6_e_3_3",
+          "ro6_e_3_4",
+          "ro6_e_3_5",
+          "ro6_e_3_6",
+          "ro6_e_4_1",
+          "ro6_e_4_2",
+          "ro6_e_4_3",
+          "ro6_e_4_4",
+          "ro6_e_4_5",
+          "ro6_e_4_6",
+          "ro6_e_4_7"
+        ],
+        "4": [
+          "ro6_e_4_1",
+          "ro6_e_4_2",
+          "ro6_e_4_3",
+          "ro6_e_4_4",
+          "ro6_e_4_5",
+          "ro6_e_4_6",
+          "ro6_e_4_7",
+          "ro6_e_5_1",
+          "ro6_e_5_2",
+          "ro6_e_5_3",
+          "ro6_e_5_4",
+          "ro6_e_5_5",
+          "ro6_e_5_6",
+          "ro6_e_5_7"
+        ],
+        "5": [
+          "ro6_e_5_1",
+          "ro6_e_5_2",
+          "ro6_e_5_3",
+          "ro6_e_5_4",
+          "ro6_e_5_5",
+          "ro6_e_5_6",
+          "ro6_e_5_7",
+          "ro6_e_6_1",
+          "ro6_e_6_2"
+        ]
+      },
+      "eventsByEntranceFloor": {
+        "3": {
+          "INCIDENT": [
+            {
+              "name": "敲动杠杆",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_res5_1",
+                "rogue_6:scene_ro6_res5_2",
+                "rogue_6:scene_ro6_res5_3",
+                "rogue_6:scene_ro6_res5_enter"
+              ],
+              "repeatable": true
+            },
+            {
+              "name": "沉寂之屋",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal1_1",
+                "rogue_6:scene_ro6_normal1_2",
+                "rogue_6:scene_ro6_normal1_3",
+                "rogue_6:scene_ro6_normal1_enter"
+              ]
+            },
+            {
+              "name": "黑诞",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal2_1",
+                "rogue_6:scene_ro6_normal2_2",
+                "rogue_6:scene_ro6_normal2_enter"
+              ]
+            },
+            {
+              "name": "独活",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_task2_1",
+                "rogue_6:scene_ro6_task2_2",
+                "rogue_6:scene_ro6_task2_enter"
+              ]
+            },
+            {
+              "name": "划算买卖",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat2_1",
+                "rogue_6:scene_ro6_bat2_2",
+                "rogue_6:scene_ro6_bat2_enter"
+              ]
+            },
+            {
+              "name": "货从口出",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_res3_1",
+                "rogue_6:scene_ro6_res3_2",
+                "rogue_6:scene_ro6_res3_3",
+                "rogue_6:scene_ro6_res3_4",
+                "rogue_6:scene_ro6_res3_enter"
+              ],
+              "repeatable": true
+            },
+            {
+              "name": "沉重的契约",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_res4_1",
+                "rogue_6:scene_ro6_res4_2",
+                "rogue_6:scene_ro6_res4_3",
+                "rogue_6:scene_ro6_res4_enter"
+              ]
+            },
+            {
+              "name": "血衣之下",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_relic1_1",
+                "rogue_6:scene_ro6_relic1_2",
+                "rogue_6:scene_ro6_relic1_3",
+                "rogue_6:scene_ro6_relic1_4",
+                "rogue_6:scene_ro6_relic1_enter"
+              ]
+            },
+            {
+              "name": "呼吸的红苔",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal3_1",
+                "rogue_6:scene_ro6_normal3_2",
+                "rogue_6:scene_ro6_normal3_3",
+                "rogue_6:scene_ro6_normal3_enter"
+              ],
+              "prerequisiteEventIds": [
+                "rogue_6:scene_ro6_normal1"
+              ]
+            },
+            {
+              "name": "被歌颂的影子",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal4_1",
+                "rogue_6:scene_ro6_normal4_10",
+                "rogue_6:scene_ro6_normal4_11",
+                "rogue_6:scene_ro6_normal4_12",
+                "rogue_6:scene_ro6_normal4_13",
+                "rogue_6:scene_ro6_normal4_14",
+                "rogue_6:scene_ro6_normal4_15",
+                "rogue_6:scene_ro6_normal4_16",
+                "rogue_6:scene_ro6_normal4_17",
+                "rogue_6:scene_ro6_normal4_18",
+                "rogue_6:scene_ro6_normal4_19",
+                "rogue_6:scene_ro6_normal4_2",
+                "rogue_6:scene_ro6_normal4_20",
+                "rogue_6:scene_ro6_normal4_21",
+                "rogue_6:scene_ro6_normal4_22",
+                "rogue_6:scene_ro6_normal4_23",
+                "rogue_6:scene_ro6_normal4_24",
+                "rogue_6:scene_ro6_normal4_25",
+                "rogue_6:scene_ro6_normal4_26",
+                "rogue_6:scene_ro6_normal4_27",
+                "rogue_6:scene_ro6_normal4_3",
+                "rogue_6:scene_ro6_normal4_4",
+                "rogue_6:scene_ro6_normal4_5",
+                "rogue_6:scene_ro6_normal4_6",
+                "rogue_6:scene_ro6_normal4_7",
+                "rogue_6:scene_ro6_normal4_8",
+                "rogue_6:scene_ro6_normal4_9",
+                "rogue_6:scene_ro6_normal4_enter"
+              ]
+            },
+            {
+              "name": "临时中介所",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_hire1_1",
+                "rogue_6:scene_ro6_hire1_2",
+                "rogue_6:scene_ro6_hire1_3",
+                "rogue_6:scene_ro6_hire1_enter"
+              ]
+            },
+            {
+              "name": "线人",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bomb1_1",
+                "rogue_6:scene_ro6_bomb1_2",
+                "rogue_6:scene_ro6_bomb1_3",
+                "rogue_6:scene_ro6_bomb1_enter"
+              ]
+            },
+            {
+              "name": "鸭托邦",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat3_1",
+                "rogue_6:scene_ro6_bat3_2",
+                "rogue_6:scene_ro6_bat3_3",
+                "rogue_6:scene_ro6_bat3_enter"
+              ]
+            },
+            {
+              "name": "湖中仙女",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat5_1",
+                "rogue_6:scene_ro6_bat5_2",
+                "rogue_6:scene_ro6_bat5_3",
+                "rogue_6:scene_ro6_bat5_4",
+                "rogue_6:scene_ro6_bat5_5",
+                "rogue_6:scene_ro6_bat5_6",
+                "rogue_6:scene_ro6_bat5_7",
+                "rogue_6:scene_ro6_bat5_8",
+                "rogue_6:scene_ro6_bat5_9",
+                "rogue_6:scene_ro6_bat5_enter"
+              ]
+            },
+            {
+              "name": "洞中宝",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat6_1",
+                "rogue_6:scene_ro6_bat6_10",
+                "rogue_6:scene_ro6_bat6_11",
+                "rogue_6:scene_ro6_bat6_12",
+                "rogue_6:scene_ro6_bat6_13",
+                "rogue_6:scene_ro6_bat6_14",
+                "rogue_6:scene_ro6_bat6_15",
+                "rogue_6:scene_ro6_bat6_16",
+                "rogue_6:scene_ro6_bat6_17",
+                "rogue_6:scene_ro6_bat6_18",
+                "rogue_6:scene_ro6_bat6_19",
+                "rogue_6:scene_ro6_bat6_2",
+                "rogue_6:scene_ro6_bat6_20",
+                "rogue_6:scene_ro6_bat6_21",
+                "rogue_6:scene_ro6_bat6_22",
+                "rogue_6:scene_ro6_bat6_3",
+                "rogue_6:scene_ro6_bat6_4",
+                "rogue_6:scene_ro6_bat6_5",
+                "rogue_6:scene_ro6_bat6_6",
+                "rogue_6:scene_ro6_bat6_7",
+                "rogue_6:scene_ro6_bat6_8",
+                "rogue_6:scene_ro6_bat6_9",
+                "rogue_6:scene_ro6_bat6_enter",
+                "rogue_6:scene_ro6_bat6b_1",
+                "rogue_6:scene_ro6_bat6b_10",
+                "rogue_6:scene_ro6_bat6b_11",
+                "rogue_6:scene_ro6_bat6b_12",
+                "rogue_6:scene_ro6_bat6b_13",
+                "rogue_6:scene_ro6_bat6b_14",
+                "rogue_6:scene_ro6_bat6b_15",
+                "rogue_6:scene_ro6_bat6b_16",
+                "rogue_6:scene_ro6_bat6b_17",
+                "rogue_6:scene_ro6_bat6b_18",
+                "rogue_6:scene_ro6_bat6b_19",
+                "rogue_6:scene_ro6_bat6b_2",
+                "rogue_6:scene_ro6_bat6b_20",
+                "rogue_6:scene_ro6_bat6b_21",
+                "rogue_6:scene_ro6_bat6b_22",
+                "rogue_6:scene_ro6_bat6b_3",
+                "rogue_6:scene_ro6_bat6b_4",
+                "rogue_6:scene_ro6_bat6b_5",
+                "rogue_6:scene_ro6_bat6b_6",
+                "rogue_6:scene_ro6_bat6b_7",
+                "rogue_6:scene_ro6_bat6b_8",
+                "rogue_6:scene_ro6_bat6b_9",
+                "rogue_6:scene_ro6_bat6b_enter"
+              ],
+              "repeatable": true
+            },
+            {
+              "name": "擒与缚",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_relic2_1",
+                "rogue_6:scene_ro6_relic2_2",
+                "rogue_6:scene_ro6_relic2_3",
+                "rogue_6:scene_ro6_relic2_enter"
+              ]
+            },
+            {
+              "name": "和平守卫者",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_task1_1",
+                "rogue_6:scene_ro6_task1_2",
+                "rogue_6:scene_ro6_task1_enter"
+              ]
+            },
+            {
+              "name": "泪之聚落",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_chimera2_1",
+                "rogue_6:scene_ro6_chimera2_2",
+                "rogue_6:scene_ro6_chimera2_enter"
+              ]
+            }
+          ],
+          "DUEL": [
+            {
+              "name": "原始娱乐",
+              "nodeType": "DUEL",
+              "classification": "狭路相逢",
+              "sceneIds": [
+                "rogue_6:scene_ro6_sala1_1",
+                "rogue_6:scene_ro6_sala1_2",
+                "rogue_6:scene_ro6_sala1_enter"
+              ]
+            },
+            {
+              "name": "掠夺成性",
+              "nodeType": "DUEL",
+              "classification": "狭路相逢",
+              "sceneIds": [
+                "rogue_6:scene_ro6_sala2_1",
+                "rogue_6:scene_ro6_sala2_2",
+                "rogue_6:scene_ro6_sala2_enter"
+              ]
+            }
+          ]
+        },
+        "4": {
+          "INCIDENT": [
+            {
+              "name": "敲动杠杆",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_res5_1",
+                "rogue_6:scene_ro6_res5_2",
+                "rogue_6:scene_ro6_res5_3",
+                "rogue_6:scene_ro6_res5_enter"
+              ],
+              "repeatable": true
+            },
+            {
+              "name": "黑诞",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal2_1",
+                "rogue_6:scene_ro6_normal2_2",
+                "rogue_6:scene_ro6_normal2_enter"
+              ]
+            },
+            {
+              "name": "独活",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_task2_1",
+                "rogue_6:scene_ro6_task2_2",
+                "rogue_6:scene_ro6_task2_enter"
+              ]
+            },
+            {
+              "name": "货从口出",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_res3_1",
+                "rogue_6:scene_ro6_res3_2",
+                "rogue_6:scene_ro6_res3_3",
+                "rogue_6:scene_ro6_res3_4",
+                "rogue_6:scene_ro6_res3_enter"
+              ],
+              "repeatable": true
+            },
+            {
+              "name": "沉重的契约",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_res4_1",
+                "rogue_6:scene_ro6_res4_2",
+                "rogue_6:scene_ro6_res4_3",
+                "rogue_6:scene_ro6_res4_enter"
+              ]
+            },
+            {
+              "name": "血衣之下",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_relic1_1",
+                "rogue_6:scene_ro6_relic1_2",
+                "rogue_6:scene_ro6_relic1_3",
+                "rogue_6:scene_ro6_relic1_4",
+                "rogue_6:scene_ro6_relic1_enter"
+              ]
+            },
+            {
+              "name": "呼吸的红苔",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal3_1",
+                "rogue_6:scene_ro6_normal3_2",
+                "rogue_6:scene_ro6_normal3_3",
+                "rogue_6:scene_ro6_normal3_enter"
+              ],
+              "prerequisiteEventIds": [
+                "rogue_6:scene_ro6_normal1"
+              ]
+            },
+            {
+              "name": "被歌颂的影子",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal4_1",
+                "rogue_6:scene_ro6_normal4_10",
+                "rogue_6:scene_ro6_normal4_11",
+                "rogue_6:scene_ro6_normal4_12",
+                "rogue_6:scene_ro6_normal4_13",
+                "rogue_6:scene_ro6_normal4_14",
+                "rogue_6:scene_ro6_normal4_15",
+                "rogue_6:scene_ro6_normal4_16",
+                "rogue_6:scene_ro6_normal4_17",
+                "rogue_6:scene_ro6_normal4_18",
+                "rogue_6:scene_ro6_normal4_19",
+                "rogue_6:scene_ro6_normal4_2",
+                "rogue_6:scene_ro6_normal4_20",
+                "rogue_6:scene_ro6_normal4_21",
+                "rogue_6:scene_ro6_normal4_22",
+                "rogue_6:scene_ro6_normal4_23",
+                "rogue_6:scene_ro6_normal4_24",
+                "rogue_6:scene_ro6_normal4_25",
+                "rogue_6:scene_ro6_normal4_26",
+                "rogue_6:scene_ro6_normal4_27",
+                "rogue_6:scene_ro6_normal4_3",
+                "rogue_6:scene_ro6_normal4_4",
+                "rogue_6:scene_ro6_normal4_5",
+                "rogue_6:scene_ro6_normal4_6",
+                "rogue_6:scene_ro6_normal4_7",
+                "rogue_6:scene_ro6_normal4_8",
+                "rogue_6:scene_ro6_normal4_9",
+                "rogue_6:scene_ro6_normal4_enter"
+              ]
+            },
+            {
+              "name": "临时中介所",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_hire1_1",
+                "rogue_6:scene_ro6_hire1_2",
+                "rogue_6:scene_ro6_hire1_3",
+                "rogue_6:scene_ro6_hire1_enter"
+              ]
+            },
+            {
+              "name": "线人",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bomb1_1",
+                "rogue_6:scene_ro6_bomb1_2",
+                "rogue_6:scene_ro6_bomb1_3",
+                "rogue_6:scene_ro6_bomb1_enter"
+              ]
+            },
+            {
+              "name": "鸭托邦",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat3_1",
+                "rogue_6:scene_ro6_bat3_2",
+                "rogue_6:scene_ro6_bat3_3",
+                "rogue_6:scene_ro6_bat3_enter"
+              ]
+            },
+            {
+              "name": "湖中仙女",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat5_1",
+                "rogue_6:scene_ro6_bat5_2",
+                "rogue_6:scene_ro6_bat5_3",
+                "rogue_6:scene_ro6_bat5_4",
+                "rogue_6:scene_ro6_bat5_5",
+                "rogue_6:scene_ro6_bat5_6",
+                "rogue_6:scene_ro6_bat5_7",
+                "rogue_6:scene_ro6_bat5_8",
+                "rogue_6:scene_ro6_bat5_9",
+                "rogue_6:scene_ro6_bat5_enter"
+              ]
+            },
+            {
+              "name": "洞中宝",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat6_1",
+                "rogue_6:scene_ro6_bat6_10",
+                "rogue_6:scene_ro6_bat6_11",
+                "rogue_6:scene_ro6_bat6_12",
+                "rogue_6:scene_ro6_bat6_13",
+                "rogue_6:scene_ro6_bat6_14",
+                "rogue_6:scene_ro6_bat6_15",
+                "rogue_6:scene_ro6_bat6_16",
+                "rogue_6:scene_ro6_bat6_17",
+                "rogue_6:scene_ro6_bat6_18",
+                "rogue_6:scene_ro6_bat6_19",
+                "rogue_6:scene_ro6_bat6_2",
+                "rogue_6:scene_ro6_bat6_20",
+                "rogue_6:scene_ro6_bat6_21",
+                "rogue_6:scene_ro6_bat6_22",
+                "rogue_6:scene_ro6_bat6_3",
+                "rogue_6:scene_ro6_bat6_4",
+                "rogue_6:scene_ro6_bat6_5",
+                "rogue_6:scene_ro6_bat6_6",
+                "rogue_6:scene_ro6_bat6_7",
+                "rogue_6:scene_ro6_bat6_8",
+                "rogue_6:scene_ro6_bat6_9",
+                "rogue_6:scene_ro6_bat6_enter",
+                "rogue_6:scene_ro6_bat6b_1",
+                "rogue_6:scene_ro6_bat6b_10",
+                "rogue_6:scene_ro6_bat6b_11",
+                "rogue_6:scene_ro6_bat6b_12",
+                "rogue_6:scene_ro6_bat6b_13",
+                "rogue_6:scene_ro6_bat6b_14",
+                "rogue_6:scene_ro6_bat6b_15",
+                "rogue_6:scene_ro6_bat6b_16",
+                "rogue_6:scene_ro6_bat6b_17",
+                "rogue_6:scene_ro6_bat6b_18",
+                "rogue_6:scene_ro6_bat6b_19",
+                "rogue_6:scene_ro6_bat6b_2",
+                "rogue_6:scene_ro6_bat6b_20",
+                "rogue_6:scene_ro6_bat6b_21",
+                "rogue_6:scene_ro6_bat6b_22",
+                "rogue_6:scene_ro6_bat6b_3",
+                "rogue_6:scene_ro6_bat6b_4",
+                "rogue_6:scene_ro6_bat6b_5",
+                "rogue_6:scene_ro6_bat6b_6",
+                "rogue_6:scene_ro6_bat6b_7",
+                "rogue_6:scene_ro6_bat6b_8",
+                "rogue_6:scene_ro6_bat6b_9",
+                "rogue_6:scene_ro6_bat6b_enter"
+              ],
+              "repeatable": true
+            },
+            {
+              "name": "愈创之心",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal5_1",
+                "rogue_6:scene_ro6_normal5_2",
+                "rogue_6:scene_ro6_normal5_3",
+                "rogue_6:scene_ro6_normal5_4",
+                "rogue_6:scene_ro6_normal5_5",
+                "rogue_6:scene_ro6_normal5_enter"
+              ]
+            },
+            {
+              "name": "传奇团伙",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat4_1",
+                "rogue_6:scene_ro6_bat4_2",
+                "rogue_6:scene_ro6_bat4_3",
+                "rogue_6:scene_ro6_bat4_enter"
+              ]
+            },
+            {
+              "name": "和平守卫者",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_task1_1",
+                "rogue_6:scene_ro6_task1_2",
+                "rogue_6:scene_ro6_task1_enter"
+              ]
+            },
+            {
+              "name": "泪之聚落",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_chimera2_1",
+                "rogue_6:scene_ro6_chimera2_2",
+                "rogue_6:scene_ro6_chimera2_enter"
+              ]
+            }
+          ],
+          "DUEL": [
+            {
+              "name": "原始娱乐",
+              "nodeType": "DUEL",
+              "classification": "狭路相逢",
+              "sceneIds": [
+                "rogue_6:scene_ro6_sala1_1",
+                "rogue_6:scene_ro6_sala1_2",
+                "rogue_6:scene_ro6_sala1_enter"
+              ]
+            },
+            {
+              "name": "掠夺成性",
+              "nodeType": "DUEL",
+              "classification": "狭路相逢",
+              "sceneIds": [
+                "rogue_6:scene_ro6_sala2_1",
+                "rogue_6:scene_ro6_sala2_2",
+                "rogue_6:scene_ro6_sala2_enter"
+              ]
+            }
+          ]
+        },
+        "5": {
+          "INCIDENT": [
+            {
+              "name": "敲动杠杆",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_res5_1",
+                "rogue_6:scene_ro6_res5_2",
+                "rogue_6:scene_ro6_res5_3",
+                "rogue_6:scene_ro6_res5_enter"
+              ],
+              "repeatable": true
+            },
+            {
+              "name": "黑诞",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal2_1",
+                "rogue_6:scene_ro6_normal2_2",
+                "rogue_6:scene_ro6_normal2_enter"
+              ]
+            },
+            {
+              "name": "货从口出",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_res3_1",
+                "rogue_6:scene_ro6_res3_2",
+                "rogue_6:scene_ro6_res3_3",
+                "rogue_6:scene_ro6_res3_4",
+                "rogue_6:scene_ro6_res3_enter"
+              ],
+              "repeatable": true
+            },
+            {
+              "name": "沉重的契约",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_res4_1",
+                "rogue_6:scene_ro6_res4_2",
+                "rogue_6:scene_ro6_res4_3",
+                "rogue_6:scene_ro6_res4_enter"
+              ]
+            },
+            {
+              "name": "血衣之下",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_relic1_1",
+                "rogue_6:scene_ro6_relic1_2",
+                "rogue_6:scene_ro6_relic1_3",
+                "rogue_6:scene_ro6_relic1_4",
+                "rogue_6:scene_ro6_relic1_enter"
+              ]
+            },
+            {
+              "name": "被歌颂的影子",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_normal4_1",
+                "rogue_6:scene_ro6_normal4_10",
+                "rogue_6:scene_ro6_normal4_11",
+                "rogue_6:scene_ro6_normal4_12",
+                "rogue_6:scene_ro6_normal4_13",
+                "rogue_6:scene_ro6_normal4_14",
+                "rogue_6:scene_ro6_normal4_15",
+                "rogue_6:scene_ro6_normal4_16",
+                "rogue_6:scene_ro6_normal4_17",
+                "rogue_6:scene_ro6_normal4_18",
+                "rogue_6:scene_ro6_normal4_19",
+                "rogue_6:scene_ro6_normal4_2",
+                "rogue_6:scene_ro6_normal4_20",
+                "rogue_6:scene_ro6_normal4_21",
+                "rogue_6:scene_ro6_normal4_22",
+                "rogue_6:scene_ro6_normal4_23",
+                "rogue_6:scene_ro6_normal4_24",
+                "rogue_6:scene_ro6_normal4_25",
+                "rogue_6:scene_ro6_normal4_26",
+                "rogue_6:scene_ro6_normal4_27",
+                "rogue_6:scene_ro6_normal4_3",
+                "rogue_6:scene_ro6_normal4_4",
+                "rogue_6:scene_ro6_normal4_5",
+                "rogue_6:scene_ro6_normal4_6",
+                "rogue_6:scene_ro6_normal4_7",
+                "rogue_6:scene_ro6_normal4_8",
+                "rogue_6:scene_ro6_normal4_9",
+                "rogue_6:scene_ro6_normal4_enter"
+              ]
+            },
+            {
+              "name": "临时中介所",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_hire1_1",
+                "rogue_6:scene_ro6_hire1_2",
+                "rogue_6:scene_ro6_hire1_3",
+                "rogue_6:scene_ro6_hire1_enter"
+              ]
+            },
+            {
+              "name": "湖中仙女",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat5_1",
+                "rogue_6:scene_ro6_bat5_2",
+                "rogue_6:scene_ro6_bat5_3",
+                "rogue_6:scene_ro6_bat5_4",
+                "rogue_6:scene_ro6_bat5_5",
+                "rogue_6:scene_ro6_bat5_6",
+                "rogue_6:scene_ro6_bat5_7",
+                "rogue_6:scene_ro6_bat5_8",
+                "rogue_6:scene_ro6_bat5_9",
+                "rogue_6:scene_ro6_bat5_enter"
+              ]
+            },
+            {
+              "name": "擒与缚",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_relic2_1",
+                "rogue_6:scene_ro6_relic2_2",
+                "rogue_6:scene_ro6_relic2_3",
+                "rogue_6:scene_ro6_relic2_enter"
+              ]
+            },
+            {
+              "name": "传奇团伙",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_bat4_1",
+                "rogue_6:scene_ro6_bat4_2",
+                "rogue_6:scene_ro6_bat4_3",
+                "rogue_6:scene_ro6_bat4_enter"
+              ]
+            },
+            {
+              "name": "和平守卫者",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_task1_1",
+                "rogue_6:scene_ro6_task1_2",
+                "rogue_6:scene_ro6_task1_enter"
+              ]
+            },
+            {
+              "name": "泪之聚落",
+              "nodeType": "INCIDENT",
+              "classification": "不期而遇",
+              "sceneIds": [
+                "rogue_6:scene_ro6_chimera2_1",
+                "rogue_6:scene_ro6_chimera2_2",
+                "rogue_6:scene_ro6_chimera2_enter"
+              ]
+            }
+          ],
+          "DUEL": [
+            {
+              "name": "原始娱乐",
+              "nodeType": "DUEL",
+              "classification": "狭路相逢",
+              "sceneIds": [
+                "rogue_6:scene_ro6_sala1_1",
+                "rogue_6:scene_ro6_sala1_2",
+                "rogue_6:scene_ro6_sala1_enter"
+              ]
+            },
+            {
+              "name": "掠夺成性",
+              "nodeType": "DUEL",
+              "classification": "狭路相逢",
+              "sceneIds": [
+                "rogue_6:scene_ro6_sala2_1",
+                "rogue_6:scene_ro6_sala2_2",
+                "rogue_6:scene_ro6_sala2_enter"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "eventImages": {
+    "rogue_6:scene_ro6_bat1": "events/Avg_pic_rogue_6_1.png",
+    "rogue_6:scene_ro6_res1": "events/Avg_pic_rogue_6_7.png",
+    "rogue_6:scene_ro6_res2": "events/Avg_pic_rogue_6_8.png",
+    "rogue_6:scene_ro6_res5": "events/Avg_pic_rogue_6_11.png",
+    "rogue_6:scene_ro6_normal1": "events/Avg_pic_rogue_6_14.png",
+    "rogue_6:scene_ro6_task2": "events/Avg_pic_rogue_6_21.png",
+    "rogue_6:scene_ro6_bat2": "events/Avg_pic_rogue_6_2.png",
+    "rogue_6:scene_ro6_res4": "events/Avg_pic_rogue_6_10.png",
+    "rogue_6:scene_ro6_relic1": "events/Avg_pic_rogue_6_12.png",
+    "rogue_6:scene_ro6_normal3": "events/Avg_pic_rogue_6_16.png",
+    "rogue_6:scene_ro6_normal4": "events/Avg_pic_rogue_6_17.png",
+    "rogue_6:scene_ro6_hire1": "events/Avg_pic_rogue_6_19.png",
+    "rogue_6:scene_ro6_bomb1": "events/Avg_pic_rogue_6_35.png",
+    "rogue_6:scene_ro6_normal2": "events/Avg_pic_rogue_6_15.png",
+    "rogue_6:scene_ro6_res3": "events/Avg_pic_rogue_6_9.png",
+    "rogue_6:scene_ro6_bat3": "events/Avg_pic_rogue_6_3.png",
+    "rogue_6:scene_ro6_bat5": "events/Avg_pic_rogue_6_5.png",
+    "rogue_6:scene_ro6_bat6": "events/Avg_pic_rogue_6_6.png",
+    "rogue_6:scene_ro6_relic2": "events/Avg_pic_rogue_6_13.png",
+    "rogue_6:scene_ro6_chimera2": "events/Avg_pic_rogue_6_38.png",
+    "rogue_6:scene_ro6_sala1": "events/Avg_pic_rogue_6_30.png",
+    "rogue_6:scene_ro6_normal5": "events/Avg_pic_rogue_6_18.png",
+    "rogue_6:scene_ro6_bat4": "events/Avg_pic_rogue_6_4.png",
+    "rogue_6:scene_ro6_task1": "events/Avg_pic_rogue_6_20.png",
+    "rogue_6:scene_ro6_sala2": "events/Avg_pic_rogue_6_31.png"
+  }
+}

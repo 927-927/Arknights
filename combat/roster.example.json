@@ -1,0 +1,52 @@
+{
+  "example": true,
+  "note": "Example roster (CONTRACT.md section 9) until the user supplies the real one. skill is 1-based; skillLevel 8-10 = mastery 1-3. Collectibles are real IS6 (黑流树海) collectibles; each note quotes the effect text and the game buff from research/sources/lubiao/blackstream.json.",
+  "secrecy": 15,
+  "floor": 5,
+  "operators": [
+    { "name": "桃金娘", "elite": 2, "level": 60, "potential": 6, "trust": 100, "skill": 1, "skillLevel": 7 },
+    { "name": "德克萨斯", "elite": 2, "level": 60, "potential": 3, "trust": 100, "skill": 2, "skillLevel": 7 },
+    { "name": "塞雷娅", "elite": 2, "level": 70, "potential": 1, "trust": 100, "skill": 2, "skillLevel": 10 },
+    { "name": "星熊", "elite": 2, "level": 60, "potential": 1, "trust": 100, "skill": 2, "skillLevel": 7 },
+    { "name": "银灰", "elite": 2, "level": 80, "potential": 1, "trust": 100, "skill": 3, "skillLevel": 10, "module": { "type": "X", "stage": 3 } },
+    { "name": "史尔特尔", "elite": 2, "level": 80, "potential": 1, "trust": 100, "skill": 3, "skillLevel": 10 },
+    { "name": "能天使", "elite": 2, "level": 70, "potential": 2, "trust": 100, "skill": 3, "skillLevel": 10, "module": { "type": "Y", "stage": 3 } },
+    { "name": "蓝毒", "elite": 2, "level": 60, "potential": 4, "trust": 100, "skill": 2, "skillLevel": 8 },
+    { "name": "艾雅法拉", "elite": 2, "level": 80, "potential": 1, "trust": 100, "skill": 3, "skillLevel": 10 },
+    { "name": "逻各斯", "elite": 2, "level": 70, "potential": 1, "trust": 100, "skill": 3, "skillLevel": 9 },
+    { "name": "夜莺", "elite": 2, "level": 60, "potential": 1, "trust": 100, "skill": 3, "skillLevel": 7 },
+    { "name": "棘刺", "elite": 2, "level": 75, "potential": 1, "trust": 100, "skill": 3, "skillLevel": 10 }
+  ],
+  "collectibles": [
+    {
+      "name": "贵族刺剑",
+      "note": "RARE. 所有我方近战单位的攻击力+25% (char_attribute_mul: selector.buildable=melee, atk=0.25)",
+      "mods": [ { "stat": "atk", "op": "pct", "value": 0.25, "when": { "position": "MELEE" } } ]
+    },
+    {
+      "name": "银餐叉",
+      "note": "RARE. 所有我方远程单位的攻击力+25% (char_attribute_mul: selector.buildable=ranged, atk=0.25)",
+      "mods": [ { "stat": "atk", "op": "pct", "value": 0.25, "when": { "position": "RANGED" } } ]
+    },
+    {
+      "name": "急救药箱",
+      "note": "RARE. 所有我方单位的生命+35% (char_attribute_mul: max_hp=0.35)",
+      "mods": [ { "stat": "hp", "op": "pct", "value": 0.35 } ]
+    },
+    {
+      "name": "残弩-神速",
+      "note": "SUPER_RARE. 所有【狙击】干员的攻击速度+70 (char_attribute_add: selector.profession=sniper, attack_speed=70)",
+      "mods": [ { "stat": "attackSpeed", "op": "add", "value": 70, "when": { "profession": "SNIPER" } } ]
+    },
+    {
+      "name": "地形图",
+      "note": "NORMAL. 可同时部署人数+1，所有我方单位的防御力+4% (level_char_limit_add: value=1; char_attribute_mul: def=0.04)",
+      "mods": [ { "rule": "deployLimit", "add": 1 }, { "stat": "def", "op": "pct", "value": 0.04 } ]
+    },
+    {
+      "name": "漆黑的舞鞋",
+      "note": "可以在高台部署近战位干员 (deck_card_buff: selector.buildable=melee, buildable_type=3). Rule only: no stat change.",
+      "mods": [ { "rule": "meleeOnHighGround" } ]
+    }
+  ]
+}

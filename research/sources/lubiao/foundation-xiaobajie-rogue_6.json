@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "topicId": "rogue_6",
+  "itemId": "rogue_6_scrap_M_07",
+  "eventId": "rogue_6:scene_ro6_surprise_enter",
+  "updatedAt": "2026-10-21T00:25:20.854289+08:00",
+  "interpretation": "observedFrequencyOnly",
+  "unit": "run-successfulMovementTransaction",
+  "source": {
+    "difficulty": 6,
+    "runCount": 5919,
+    "eventCount": 30282644,
+    "selection": "strict N6 full-start DLC0 cumulative 2026-10-20",
+    "snapshotId": "b04e31f585fbcf968eb6c2437526f761bb55f26ea6bf8d13ba8fc852157f49c0",
+    "archiveDateRange": [
+      "2026-09-05",
+      "2026-10-17"
+    ],
+    "evidenceSha256": {
+      "sourceSelection": "7c4c799ce40ba6aa477bb23a2143069668f40269f15869e2c805b6fff9bd9bfb",
+      "method": "0dba1dce53015649d9937644063abd1a4b83c5227da8c544fd7ca187f8b88a78",
+      "newReview": "f80f50c792f320f2b24259fd4d59534e3bf454afba9f416336e35dd702282cee",
+      "oldCurated": "66d5fdbe8c7fbeed4e4f0d075da1e357b911044e2a4461572ddbed0911b01b55"
+    }
+  },
+  "total": {
+    "sampleCount": 6659,
+    "entryCount": 44,
+    "frequency": 0.006607598738549332
+  },
+  "floors": [
+    {
+      "context": "F1",
+      "label": "I",
+      "sampleCount": 531,
+      "entryCount": 8,
+      "frequency": 0.015065913370998116
+    },
+    {
+      "context": "F2",
+      "label": "II",
+      "sampleCount": 1615,
+      "entryCount": 20,
+      "frequency": 0.01238390092879257
+    },
+    {
+      "context": "F3",
+      "label": "III",
+      "sampleCount": 1423,
+      "entryCount": 6,
+      "frequency": 0.004216444132115249
+    },
+    {
+      "context": "F4",
+      "label": "IV",
+      "sampleCount": 1231,
+      "entryCount": 9,
+      "frequency": 0.007311129163281885
+    },
+    {
+      "context": "F4R",
+      "label": "IV·追忆",
+      "sampleCount": 97,
+      "entryCount": 1,
+      "frequency": 0.010309278350515464
+    },
+    {
+      "context": "F5",
+      "label": "V",
+      "sampleCount": 1523,
+      "entryCount": 0,
+      "frequency": 0.0
+    },
+    {
+      "context": "TH",
+      "label": "树洞",
+      "sampleCount": 239,
+      "entryCount": 0,
+      "frequency": 0.0
+    }
+  ],
+  "ordinals": [
+    {
+      "label": "首次留存使用",
+      "sampleCount": 3876,
+      "entryCount": 32,
+      "frequency": 0.008255933952528379
+    },
+    {
+      "label": "后续使用",
+      "sampleCount": 2783,
+      "entryCount": 12,
+      "frequency": 0.004311893639956881
+    }
+  ],
+  "runsWithUses": 3876,
+  "review": {
+    "complete": true,
+    "reviewedAt": "2026-10-21T00:44:50.478047+08:00",
+    "reviewer": "Codex visual review",
+    "imagesCompared": 322691,
+    "eventCaptures": 316032,
+    "reviewedPositiveImages": 264,
+    "reviewedUnnamedConfirms": 1214,
+    "reviewedNearestNegatives": 128,
+    "reviewedFloorChains": 44,
+    "reviewedMissingBeforeConfirms": 95,
+    "readErrors": 0,
+    "unresolved": 0,
+    "extraKeywordRuns": 0,
+    "note": "旧批逐条数据及原审核哈希保持不变；本轮新增图片已独立核验。逐图核对 42 张阳性、349 张未命名确认、32 张最近阴性，前后楼层证据及 26 张缺少前置场景截图。阳性均为安眠一隅；未命名、最近阴性及缺少前置场景截图均未发现额外安眠一隅。楼层以原始日志和前后地图为准。",
+    "contactSheetSha256": {
+      "contact-sheets/positive-01.jpg": "2260b557fdcf5658dff304511ba0b8d6e3ef07a93ee1040c691fb7652530fbe5",
+      "contact-sheets/positive-02.jpg": "668883de1ab609002bae46f65e96368a6ad71ff831140652bfe7d9fe0b427f2e",
+      "contact-sheets/unknown-01.jpg": "9faba687dc2b74ad19b7f554acee74225b521e1092ac4e522696dde91d7c08c3",
+      "contact-sheets/unknown-02.jpg": "00201a891182120dc982d13e464fbd11dcf6fd5c69ec7de2bab8b0861640d0d4",
+      "contact-sheets/unknown-03.jpg": "7d8ad339de1aa2b8f3063c646285ec6df5083cd7cebe36816c703f145ea68b89",
+      "contact-sheets/unknown-04.jpg": "33e55a5904c60b8ec1838ab9398a1862d223bb8e5421349a8a1a837769afc17e",
+      "contact-sheets/unknown-05.jpg": "9e16241c19edef8ef8f258b281ef0b68ad0ebfcad2a9b0acf74ab20e5aee9420",
+      "contact-sheets/unknown-06.jpg": "18e98d3b3d4bad7c66d50fdeba24e4ac245c600508a42e03b86e9e12161ea65f",
+      "contact-sheets/unknown-07.jpg": "6bd12993fbee11430ee31fb620dfed72f28c2afbd2d9333d7615959355ae4987",
+      "contact-sheets/unknown-08.jpg": "88c20b076922f9c1a7b8a0a8ccd2d6dc874c8d710c0639e57f5b78d5aca9ea27",
+      "contact-sheets/unknown-09.jpg": "82dd1a5d22cb22b8c8c9efa35c6c01e49122ecdad4ebe77ad603fb3f3541c5da",
+      "contact-sheets/unknown-10.jpg": "cc1a4cd7f5e3dbb3334c53da0613f47a2b4e5cbb379a8d5f794b737f7c67d384",
+      "contact-sheets/unknown-11.jpg": "136e77674a3432f9b46f3411c733838f892c9e02f6c623f889fa9343efe3e616",
+      "contact-sheets/unknown-12.jpg": "6862d973650ac05f03a0d3b370b0140aff0fd7060006fe973f82980d2908f4e9",
+      "contact-sheets/nearest-negative-01.jpg": "c536f8fc9ec6e7b09058dc74b489f92215b4f459daaf1c8b0d9a4572ef7ed5e8",
+      "contact-sheets/nearest-negative-02.jpg": "6c019cbb99be75be01c79dc36c93db833a281ef3f7e809f77870d713e66c8073",
+      "contact-sheets/floor-complete-01.jpg": "407e03af61323d3f8aa65ebe69b7d06d936fadacc13ec108c76409919fcea8e9",
+      "contact-sheets/floor-complete-02.jpg": "36b86da57bc6abd914d391c29ecd7d8da11b967be293f57a12cdf2284e97dacd",
+      "actual-missing-before-01.jpg": "f385329721b95adb2d64ba1a2a41e8d88689c4b9c699e630217cc94a3f993890"
+    },
+    "evidenceSha256": {
+      "actual-uses.json": "8de70de04a6301f71cf687a353ffd1aa04b160a5220fe8fb76b9fe0e9d5c0d1d",
+      "scene-scores.json": "8318afa015b01aa1eb3f5b6424c9d0d48cc56892ed41bcb73a24f2dc73b16fca",
+      "scene-summary.json": "e91a95a3085e8fb231803ec1affe79908a2f79c79a729042042f5921aee0a5ca",
+      "unfinished-dispositions.json": "cb04d43b3903ff22ead6bd6ddb184f7eeaaaccacfb5f546ae86df90753328e2d",
+      "unfinished-log-evidence.json": "88f1f97a017ad4ad95680895447317981903781ad7211b1b037c0f5e90babd88",
+      "floor-chains-reviewed-input.json": "78cb024067ce4b610c9b5964fb24accaaf7f35207d632ba7ddf608126d906b18",
+      "missing-before.json": "3dd1c18a108aaefefb3abe53e6ba0c206fdb5cb615e8787edc07516108ab8cf4",
+      "scan-summary.json": "fc0ff8c169c2135df945238bf5fd267cd234b5322f68101847db65e15d1721f6",
+      "check_before.py": "3ec490710c9ed9595b464dc701e24fe06fcccd475dffe4da34d7b17f6e32ef6b",
+      "scan_xiaobajie_incremental.py": "c0b55cb488be0d5ad6da63d20c2311dec33870c1571d45d5fd8a6dbb066a8a99",
+      "score_xiaobajie_incremental.py": "0a4516e96174f08562e65def724bd2c6c5976568c38a38f9dcfb127955f6d09b",
+      "xiaobajie_complete_floor_chains.py": "0c86bf40b37d2762bad17b08ceee7d744af0d1f0050963e9c0edb08ca3c0a63f",
+      "merge_xiaobajie_incremental.py": "0dba1dce53015649d9937644063abd1a4b83c5227da8c544fd7ca187f8b88a78"
+    },
+    "baselineReview": {
+      "curatedSha256": "66d5fdbe8c7fbeed4e4f0d075da1e357b911044e2a4461572ddbed0911b01b55",
+      "review": {
+        "complete": true,
+        "reviewedAt": "2026-10-01T13:17:04.841014+08:00",
+        "reviewer": "Codex visual review",
+        "imagesCompared": 214988,
+        "eventCaptures": 210282,
+        "reviewedPositiveImages": 222,
+        "reviewedUnnamedConfirms": 865,
+        "reviewedNearestNegatives": 96,
+        "reviewedFloorChains": 37,
+        "reviewedMissingBeforeConfirms": 69,
+        "readErrors": 0,
+        "unresolved": 0,
+        "extraKeywordRuns": 0,
+        "note": "旧批逐条数据及原审核哈希保持不变；本轮新增图片已独立核验。逐图核对 24 张安眠一隅正例、4 组进入前后层数链、98 张未命名确认图、32 张最近负例和 9 张缺少进入前图的确认图；未发现额外安眠一隅，四次进入均有后续层数推进。其余图片仅使用已校验的场景距离识别，不声明全量人工复核。",
+        "contactSheetSha256": {
+          "contact-sheets/positive-01.jpg": "00615c9b74ba2e245c1f50345c2e8331b62047d779a5eef28eb2385eb54d5a0d",
+          "contact-sheets/unknown-01.jpg": "19c9f097883e4150341c4e790becddf8e6a4ef6e10ec1bd378cbb1cbdae04b57",
+          "contact-sheets/unknown-02.jpg": "aa793bc9174dca3adba8f0ebff312dbacf904d489c6b892ab7289d775c6e0211",
+          "contact-sheets/unknown-03.jpg": "c098e7ddb6a23d1ae7f75179a3be0c9505d7793527e760078c465e2f03a7d2a7",
+          "contact-sheets/unknown-04.jpg": "a1d848c7d29c5684b45cdfc4ced0a7a047a087d01b357d89cfa5f84af33f72c0",
+          "contact-sheets/nearest-negative-01.jpg": "4405af726d3fa35dbffd546e2a568163ed41f57481a2bb3dde1e60216875fce1",
+          "contact-sheets/nearest-negative-02.jpg": "3f290ac657849052f872214e8f1ef83276e2fe8c1b5aefe93663215e5e3f8404",
+          "contact-sheets/floor-complete-01.jpg": "4049bc421c5694f1eda7dfd23dd88923e7bab0a29af64947c5206362f2a6db3d",
+          "actual-missing-before-01.jpg": "936107813480f398dfd3bf0d6709069bcf01d7e19af2461fbadd07a6601a047d"
+        },
+        "evidenceSha256": {
+          "actual-uses.json": "49a40955f7844d1f5769c55fb2af46ad092ea9e5ef787c638152277c60cbcae4",
+          "scene-scores.json": "7f6818a6fbd394b78d255dbb05b3a43b3fb80498e25255b873dced51cb7d4482",
+          "scene-summary.json": "9bc94805901f37edfe0cbde1bab0a37dc9e24aade0abf0382c99291a7e6004bf",
+          "floor-chains-reviewed-input.json": "4ef5a21427b58cfe64999df846d5f442a90df4e83f38e4a1b08c83a722657726",
+          "missing-before.json": "8daa0a2c0e4c5479b0d80dc415360ccc93134c4e2a73f702cdbeb69d8dc7fd96",
+          "scan-summary.json": "291326f56b22e4f2497524cb8920818b5345823d05045d78a4dc6e98c0cf9c80",
+          "check_before.py": "3ec490710c9ed9595b464dc701e24fe06fcccd475dffe4da34d7b17f6e32ef6b",
+          "scan_xiaobajie_incremental.py": "665b08db462ff6c0c318640c88c02061126e97972d6d5ae3abbc002ffb2fec7a",
+          "score_xiaobajie_incremental.py": "5c1f1638b2956045312d973d8b9addc04b52527db54f230d2882cb104a102801",
+          "xiaobajie_complete_floor_chains.py": "0c86bf40b37d2762bad17b08ceee7d744af0d1f0050963e9c0edb08ca3c0a63f",
+          "merge_xiaobajie_incremental.py": "2d59db95eba51c446165f056fb708391c8a1a7c26da87c4f0b106301c9aa00e0"
+        },
+        "baselineReview": {
+          "curatedSha256": "da8e687c29942e8064ea7e4f400edae4df8d0544dc9f8d3bc4d88655a7d57d78",
+          "review": {
+            "complete": true,
+            "reviewedAt": "2026-09-27T02:05:45.162924+08:00",
+            "reviewer": "Codex visual review",
+            "imagesCompared": 185839,
+            "eventCaptures": 181680,
+            "reviewedPositiveImages": 198,
+            "reviewedUnnamedConfirms": 767,
+            "reviewedNearestNegatives": 64,
+            "reviewedFloorChains": 33,
+            "reviewedMissingBeforeConfirms": 60,
+            "readErrors": 0,
+            "unresolved": 0,
+            "extraKeywordRuns": 0,
+            "note": "旧批逐条数据及原审核哈希保持不变；本轮新增图片已独立核验。2026-09-27 逐图复核 78 张安眠阳性、278 张未命名确认、32 张最近阴性、13 组前后楼层以及 30 张缺同代次前图的非命中确认。全体 81,326 张图作场景筛查，无新增安眠候选；其余图片未声称逐张人工审阅。30 条缺前图保留匹配 floor/generation 快照。31 条陈旧 M07 选择状态由预览与成功确认一致的其他移动排除，空事务选择不当作使用。",
+            "contactSheetSha256": {
+              "contact-sheets/positive-01.jpg": "88ae6cfe0caa8078c2fc3ba06c93ae39833e99b4c3fd425442976fae91baf7c1",
+              "contact-sheets/positive-02.jpg": "05f5b41d23891be0283c0567c1355e4c865bb4ddfc6f5ad4248e225c850b52cf",
+              "contact-sheets/positive-03.jpg": "6ec3f62a1adb4ec5a49fb3e954baa33faf33da9a718b8d11d7af42260ef9803e",
+              "contact-sheets/unknown-01.jpg": "4230bd7394b2da0a90f31289edcf244cc96e90f1ec75215542dec95d47b38e63",
+              "contact-sheets/unknown-02.jpg": "06f32520ec6442fd9238657c1b062822892df9968aa3aabfcfdda5a885a7d861",
+              "contact-sheets/unknown-03.jpg": "6d9a32caebc665f34b632048d729beadffdba4d18a8634753fa188c1d308af9a",
+              "contact-sheets/unknown-04.jpg": "8282135125008bbd1857bbd0d4d41990e5d9e5018f35246056f12f0a92d2822a",
+              "contact-sheets/unknown-05.jpg": "671cb7ccf7e9149257fac306135b29885ee30db8d3400e3cce48b26c2fee98b0",
+              "contact-sheets/unknown-06.jpg": "d732e4af0536df47f5fbfb13a1219a4cb57b6e965a0f1f5365c05c2db3d25191",
+              "contact-sheets/unknown-07.jpg": "caa7470a02c8cf9b0fadfc3257e1e9f5202620d9846d35a25cd984b68c80987e",
+              "contact-sheets/unknown-08.jpg": "05a8ea65dec8a5647cd3b5dfd74aba7d761a31111258c1f123ff066995a72d75",
+              "contact-sheets/unknown-09.jpg": "b55cdb0bc5f801fa59bcfd97089c08ed40675cab05a6dcba4d98f86d407a07a9",
+              "contact-sheets/unknown-10.jpg": "2e430c1bd8642fd23147443577102befdb8aff834733c5bff163c89080f9d671",
+              "contact-sheets/nearest-negative-01.jpg": "3683400faa5973147f4408485ce3a351f9f5f3b0f52bb9eb9e9a7d7c8b4095ba",
+              "contact-sheets/nearest-negative-02.jpg": "638ed02db0dca16bd46f0411c983f11d71cb21d4327461f423e34feec55406ee",
+              "contact-sheets/floor-complete-01.jpg": "7608ac4a654baa58f50558dc18294daf1e27814fa8ac60613ab79d7b598db581",
+              "contact-sheets/floor-complete-02.jpg": "4498ea04a464e8a80ad8afa87c220c6d0a5486e86b7169c526b76202b779d4fd",
+              "contact-sheets/floor-complete-03.jpg": "f0d5f56bc9555ec0e210e7988c6b1dcdcd2ca520b6dd93a37f418aae6efbc627",
+              "actual-missing-before-01.jpg": "5237af7fd2d9903aab9d0404818bf58bb7ec372f2e48b247c1e8169585e0c7c7"
+            },
+            "evidenceSha256": {
+              "actual-uses.json": "ac67ee2cc5ccbd95e0f5a3c0d5020854b64c79cf6ec8d4b1c67c7eaa262b1d1e",
+              "scene-scores.json": "313166f184aa36016bd69e9d9753ebc31d62eea02df09591ceafff04fa359a6c",
+              "scene-summary.json": "b880b516ee14b76541be4143af50246016b03f9c38234c1cdd1455a2d94a784c",
+              "floor-chains-reviewed-input.json": "e3332d6ded61098db16cce6ee5f5e3205e59701eed27af79b0828850e6967f5c",
+              "missing-before.json": "43902031398e2e6e6549cb135c40f1ae26c2a8e3acf1bb46350e989162bb13b2",
+              "scan-summary.json": "ed24b97dffec6105c722883a0d3b752f7675dd35c7eaa23b8c1d4deb5ce530a1",
+              "check_before.py": "3ec490710c9ed9595b464dc701e24fe06fcccd475dffe4da34d7b17f6e32ef6b",
+              "scan_xiaobajie_incremental.py": "fd01a2c53ba259985333166f5e86293b888668e2bf7af7c8841b8d1c718dc594",
+              "score_xiaobajie_incremental.py": "5c1f1638b2956045312d973d8b9addc04b52527db54f230d2882cb104a102801",
+              "xiaobajie_complete_floor_chains.py": "0c86bf40b37d2762bad17b08ceee7d744af0d1f0050963e9c0edb08ca3c0a63f",
+              "merge_xiaobajie_incremental.py": "2f92eea1b3d2bb3996f3a56f320ad57bf3835ac523a64f45814272f0da3c7d92"
+            },
+            "baselineReview": {
+              "curatedSha256": "5547e0cc579400123ca82f92af6f607ba9ecec5af9c2d655e6125d1b7cb9b912",
+              "review": {
+                "complete": true,
+                "reviewedAt": "2026-09-19T23:09:23.165439+00:00",
+                "reviewer": "Codex visual review",
+                "imagesCompared": 104513,
+                "eventCaptures": 101987,
+                "reviewedPositiveImages": 120,
+                "reviewedUnnamedConfirms": 489,
+                "reviewedNearestNegatives": 32,
+                "reviewedFloorChains": 20,
+                "reviewedMissingBeforeConfirms": 30,
+                "readErrors": 0,
+                "unresolved": 0,
+                "extraKeywordRuns": 0,
+                "note": "逐图查看阳性、489张未命名确认、32张最近阴性、20组前后楼层以及30张缺同代次前图的非命中确认。其余图片仅机器筛查；无新增安眠。30条缺前图有匹配floor/generation快照。20条其他移动的陈旧选中状态排除；2条预览未完成确认排除。",
+                "contactSheetSha256": {
+                  "positive-01.jpg": "e91a3edaf3cd7209ff5a0e730df6329ed7c8a288b31209d25edb810d2f80f4af",
+                  "positive-02.jpg": "29f1c466843a9885e72d60a473ea8425b43f68201fc5a185b62d6c7e32cc95f9",
+                  "positive-03.jpg": "014da3dd63a2dd13a03391ac2babc650d8fd1bdc76553ba12197069bd636d34e",
+                  "unknown-01.jpg": "17bf1630f77a81b6bc01d9dad8f6f14ed96357baf0309a12d9db0837ab428b41",
+                  "unknown-02.jpg": "467def4ec78919554bdad7a2fc4e7cebe0c41587409f7d323d25ad8103b33151",
+                  "unknown-03.jpg": "9c84b34287b170576278a65f3097d11480b9e4947946ef561cfd99464cb2b816",
+                  "unknown-04.jpg": "ea69d8679071b2d8985279395622e70685b51d055b7205d7e63e5a8e879627c6",
+                  "unknown-05.jpg": "9c2c69b602e9e0be9926bcbd11fbf8e21382c031d237899ce81d289092e5a96c",
+                  "unknown-06.jpg": "ce878d85144fecde83c428ed32490200ede1e359f209e8a8132dcb788c92bc64",
+                  "unknown-07.jpg": "797ff4e35daeea5a877d80eaa1ec007485b5b0ac0460beabd71903b07e4664d9",
+                  "unknown-08.jpg": "9a35b32a337811ae26d27c4dc35dbc47ea7e3d5c0f74fa4488b7e69ad6ebb5b7",
+                  "unknown-09.jpg": "3514d805eff808ceae8e42befc293582780bdd99c1691ec33c0c421514aca4cb",
+                  "unknown-10.jpg": "c3cd1091d04b176c1e77047287d1f93d0bd7f0f794f29da758631e5faef95ead",
+                  "unknown-11.jpg": "a030054bdaa95f62caa2ef084b0dc10e652b09ae5e4ea32c6a3ee97ca6b5a0be",
+                  "negative-01.jpg": "247501d9af1c9b8f7bfc120a15669e892c5b2266c50d43f2fd9919fc3088b9e8",
+                  "floor-review-01.jpg": "8181ed30dacca26dca7a674b36c3d37b27fb075af34d6c557503865c48955047",
+                  "floor-review-02.jpg": "241cb567e0186857e0684335808bbc96f0977408f7032f32dba3d53b2cb4afe0",
+                  "floor-review-03.jpg": "0a310b5c081e2e32fa3e777f6b335c0a2e69065430ea634cf8006d641c14924f",
+                  "floor-review-04.jpg": "24873611af1a2b5a2183ff89b0416306f709665839f88eb7d96e6430a872cc63",
+                  "actual-missing-before-01.jpg": "730c3949738553479268f52776f1be3c1b1331efdc22c638aa8d2af73dd2503a"
+                },
+                "evidenceSha256": {
+                  "actual-uses.json": "3888fc732ba843a85d02c44b63c5e6b587980e772d7f9a5dc057f61c21832126",
+                  "scene-scores.json": "2efe02ec6db7559ea35e6ce450de212d47fa73470bc4e5ad3d6e0005a650059d",
+                  "floor-chains-reviewed-input.json": "9fe096579a1ba90232758ae9c4f6fad4a80cec0d48e56c991c5edef9ab34a39e",
+                  "missing-before.json": "3dc4e22bf594989356516a3034ba4d525bef641d2556dd0511567ad18a96a14a",
+                  "statistics.json": "eb3ddca48b6538e8f3065eec81afc3b282fb941ee3dd10c708e48520ef7f7402",
+                  "scan_raw.py": "b6301c469a2462b3b7f97207a9098b3ad6d17e01fbeaa3c9fd8cd1a076d8944b",
+                  "images.py": "bea193ae712e78293f3ba9a5cdbcd2cf224b11712562115aaeaee839f1a32d4c",
+                  "check_before.py": "3ec490710c9ed9595b464dc701e24fe06fcccd475dffe4da34d7b17f6e32ef6b"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "limitations": [
+    "各层频次为观测结果；零次观测不代表无法触发。",
+    "同局使用可能相关，首次指第一条留存成功使用；分层及首次子集不重复累计。"
+  ],
+  "supersedes": {
+    "dataset": "blackflow_occurrence_observations.json",
+    "section": "xiaobajie",
+    "mode": "cumulative-replacement"
+  },
+  "auditSha256": "78784706f6af2ea8ced08c5030aae4754402c49f2ec721633c34c3ececb812ff"
+}

@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "topicId": "rogue_6",
+  "updatedAt": "2026-10-20T16:51:16.206194+00:00",
+  "sampleCount": 27812,
+  "floors": [
+    {
+      "id": "1",
+      "label": "I",
+      "sampleCount": 5914,
+      "rows": [
+        {
+          "templateId": "F1-T01",
+          "count": 1937,
+          "frequency": 0.3275278998985458
+        },
+        {
+          "templateId": "F1-T02",
+          "count": 1971,
+          "frequency": 0.3332769699019276
+        },
+        {
+          "templateId": "F1-T03",
+          "count": 2006,
+          "frequency": 0.3391951301995266
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "label": "II",
+      "sampleCount": 5788,
+      "rows": [
+        {
+          "templateId": "F2-T01",
+          "count": 586,
+          "frequency": 0.10124395300621976
+        },
+        {
+          "templateId": "F2-T02",
+          "count": 554,
+          "frequency": 0.09571527297857636
+        },
+        {
+          "templateId": "F2-T03",
+          "count": 560,
+          "frequency": 0.0967519004837595
+        },
+        {
+          "templateId": "F2-T04",
+          "count": 531,
+          "frequency": 0.09174153420870768
+        },
+        {
+          "templateId": "F2-T05",
+          "count": 586,
+          "frequency": 0.10124395300621976
+        },
+        {
+          "templateId": "F2-T06",
+          "count": 669,
+          "frequency": 0.11558396682791984
+        },
+        {
+          "templateId": "F2-T07",
+          "count": 552,
+          "frequency": 0.09536973047684866
+        },
+        {
+          "templateId": "F2-T08",
+          "count": 587,
+          "frequency": 0.10141672425708362
+        },
+        {
+          "templateId": "F2-T09",
+          "count": 598,
+          "frequency": 0.10331720801658605
+        },
+        {
+          "templateId": "F2-T10",
+          "count": 565,
+          "frequency": 0.09761575673807879
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "label": "III",
+      "sampleCount": 5600,
+      "rows": [
+        {
+          "templateId": "F3-T01",
+          "count": 570,
+          "frequency": 0.10178571428571428
+        },
+        {
+          "templateId": "F3-T02",
+          "count": 518,
+          "frequency": 0.0925
+        },
+        {
+          "templateId": "F3-T03",
+          "count": 583,
+          "frequency": 0.10410714285714286
+        },
+        {
+          "templateId": "F3-T04",
+          "count": 577,
+          "frequency": 0.10303571428571429
+        },
+        {
+          "templateId": "F3-T05",
+          "count": 576,
+          "frequency": 0.10285714285714286
+        },
+        {
+          "templateId": "F3-T06",
+          "count": 549,
+          "frequency": 0.09803571428571428
+        },
+        {
+          "templateId": "F3-T07",
+          "count": 556,
+          "frequency": 0.09928571428571428
+        },
+        {
+          "templateId": "F3-T08",
+          "count": 559,
+          "frequency": 0.09982142857142857
+        },
+        {
+          "templateId": "F3-T09",
+          "count": 575,
+          "frequency": 0.10267857142857142
+        },
+        {
+          "templateId": "F3-T10",
+          "count": 537,
+          "frequency": 0.09589285714285714
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "label": "IV",
+      "sampleCount": 5201,
+      "rows": [
+        {
+          "templateId": "F4-T01",
+          "count": 491,
+          "frequency": 0.09440492213035954
+        },
+        {
+          "templateId": "F4-T02",
+          "count": 523,
+          "frequency": 0.10055758507979234
+        },
+        {
+          "templateId": "F4-T03",
+          "count": 517,
+          "frequency": 0.0994039607767737
+        },
+        {
+          "templateId": "F4-T04",
+          "count": 480,
+          "frequency": 0.09228994424149202
+        },
+        {
+          "templateId": "F4-T05",
+          "count": 546,
+          "frequency": 0.10497981157469717
+        },
+        {
+          "templateId": "F4-T06",
+          "count": 520,
+          "frequency": 0.09998077292828303
+        },
+        {
+          "templateId": "F4-T07",
+          "count": 574,
+          "frequency": 0.11036339165545088
+        },
+        {
+          "templateId": "F4-T08",
+          "count": 547,
+          "frequency": 0.10517208229186695
+        },
+        {
+          "templateId": "F4-T09",
+          "count": 518,
+          "frequency": 0.09959623149394348
+        },
+        {
+          "templateId": "F4-T10",
+          "count": 485,
+          "frequency": 0.0932512978273409
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "label": "V",
+      "sampleCount": 4968,
+      "rows": [
+        {
+          "templateId": "F5-T01",
+          "count": 485,
+          "frequency": 0.09762479871175524
+        },
+        {
+          "templateId": "F5-T02",
+          "count": 511,
+          "frequency": 0.10285829307568438
+        },
+        {
+          "templateId": "F5-T03",
+          "count": 478,
+          "frequency": 0.09621578099838969
+        },
+        {
+          "templateId": "F5-T04",
+          "count": 507,
+          "frequency": 0.10205314009661835
+        },
+        {
+          "templateId": "F5-T05",
+          "count": 442,
+          "frequency": 0.0889694041867955
+        },
+        {
+          "templateId": "F5-T06",
+          "count": 508,
+          "frequency": 0.10225442834138486
+        },
+        {
+          "templateId": "F5-T07",
+          "count": 529,
+          "frequency": 0.10648148148148148
+        },
+        {
+          "templateId": "F5-T08",
+          "count": 494,
+          "frequency": 0.09943639291465378
+        },
+        {
+          "templateId": "F5-T09",
+          "count": 523,
+          "frequency": 0.10527375201288244
+        },
+        {
+          "templateId": "F5-T10",
+          "count": 491,
+          "frequency": 0.09883252818035426
+        }
+      ]
+    },
+    {
+      "id": "remembrance",
+      "label": "追忆",
+      "sampleCount": 341,
+      "rows": [
+        {
+          "templateId": "F4-T01",
+          "count": 52,
+          "frequency": 0.15249266862170088
+        },
+        {
+          "templateId": "F4-T02",
+          "count": 31,
+          "frequency": 0.09090909090909091
+        },
+        {
+          "templateId": "F4-T03",
+          "count": 37,
+          "frequency": 0.10850439882697947
+        },
+        {
+          "templateId": "F4-T04",
+          "count": 27,
+          "frequency": 0.07917888563049853
+        },
+        {
+          "templateId": "F4-T05",
+          "count": 25,
+          "frequency": 0.07331378299120235
+        },
+        {
+          "templateId": "F4-T06",
+          "count": 34,
+          "frequency": 0.09970674486803519
+        },
+        {
+          "templateId": "F4-T07",
+          "count": 40,
+          "frequency": 0.11730205278592376
+        },
+        {
+          "templateId": "F4-T08",
+          "count": 36,
+          "frequency": 0.10557184750733138
+        },
+        {
+          "templateId": "F4-T09",
+          "count": 28,
+          "frequency": 0.08211143695014662
+        },
+        {
+          "templateId": "F4-T10",
+          "count": 31,
+          "frequency": 0.09090909090909091
+        }
+      ]
+    }
+  ],
+  "sourceManifestSha256": "b71489861d3684113e63a81b468f0a99185c2ce8d7b26131e4f9db03cab90f74",
+  "exclusions": {
+    "incomplete_or_mismatched_edges": 410,
+    "outside_outer_floor_scope": 7743,
+    "excluded_hopeful_soil": 292,
+    "missing_graph": 43,
+    "ambiguousRepeatedRunFloor": 12
+  }
+}

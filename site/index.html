@@ -277,7 +277,7 @@ footer { padding-block: 32px 48px; color: var(--ink-2); font-size: 14px; display
   <ol class="findings">
     <li><span class="k">1</span>
       <h4 data-l="en">Never bank AP while a fresh node is in reach. <span class="tag model">model</span></h4><h4 data-l="zh">只要还有新节点够得着，就别把行动力留到出口。<span class="tag model">模型</span></h4>
-      <p data-l="en">An extra AP is worth <b data-k="lamHopeRange">1.3–2.4</b> hope on the map; the exit converts it at 1. The gap holds across content mixes and survives halving node values.</p><p data-l="zh">多 1 点行动力在地图上值 <b data-k="lamHopeRange">1.3–2.4</b> 希望，出口只按 1 希望兑换。换节点构成、把节点价值减半，这个差距依然成立。</p>
+      <p data-l="en">An extra AP is worth <b data-k="lamHopeRange">1.3–2.4</b> hope on the map; the exit converts it at 1. The gap holds across content mixes, and still holds, narrowly, with node values halved.</p><p data-l="zh">多 1 点行动力在地图上值 <b data-k="lamHopeRange">1.3–2.4</b> 希望，出口只按 1 希望兑换。换节点构成后差距依然存在；即使把节点价值减半，也仍略高于出口价。</p>
       <a href="#step"><span data-l="en">Price of a step</span><span data-l="zh">行动力价值</span></a></li>
     <li><span class="k">2</span>
       <h4 data-l="en">Floor Ⅰ is on rails; +1 AP there is about 1 hope. <span class="tag exact">exact</span></h4><h4 data-l="zh">第Ⅰ层是固定轨道，在那里 +1 行动力约等于 1 希望。<span class="tag exact">精确</span></h4>
@@ -297,7 +297,7 @@ footer { padding-block: 32px 48px; color: var(--ink-2); font-size: 14px; display
       <a href="#parts"><span data-l="en">Parts</span><span data-l="zh">加工品</span></a></li>
     <li><span class="k">6</span>
       <h4 data-l="en">Merchant visits matter more than box size. <span class="tag model">model</span></h4><h4 data-l="zh">进秘境行商的次数比零件箱容量更重要。<span class="tag model">模型</span></h4>
-      <p data-l="en">With few parts held, a bigger box adds little. One extra 秘境行商 visit adds about <b data-k="huntGain">9</b> ingots of trading profit. Box size starts to matter once movement parts fill half the box.</p><p data-l="zh">箱里零件不多时，扩容收益很小。多进一次秘境行商，交易利润约多 <b data-k="huntGain">9</b> 源石锭。加工品占满半箱之后，容量才开始成为瓶颈。</p>
+      <p data-l="en">Skipping the floor Ⅲ 秘境行商 costs about <b data-k="huntGain">8</b> ingots of trading profit, while growing the box from 10 to 14 adds nothing unless two or fewer slots are free. 多边贸易's sell bonus is worth more than its extra slots.</p><p data-l="zh">跳过第Ⅲ层的秘境行商，交易利润约少 <b data-k="huntGain">8</b> 源石锭；而零件箱从 10 扩到 14，除非只剩两格以下空位，否则几乎没有收益。多边贸易的卖出奖励比它的扩容更值钱。</p>
       <a href="#merchant"><span data-l="en">Merchant</span><span data-l="zh">秘境行商</span></a></li>
     <li><span class="k">7</span>
       <h4 data-l="en">Information is cheap once you know the templates. <span class="tag model">model</span></h4><h4 data-l="zh">熟悉模板之后，视野信息很便宜。<span class="tag model">模型</span></h4>
@@ -463,14 +463,14 @@ footer { padding-block: 32px 48px; color: var(--ink-2); font-size: 14px; display
   </div>
   <div class="tscroll" id="naturalTable"></div>
   <h3><span data-l="en">Trading over a whole run</span><span data-l="zh">整局交易模拟</span></h3>
-  <div class="prose"><p data-l="en">A Monte Carlo trader visits 秘境行商 on floors Ⅱ–Ⅴ, sees offers drawn from MAA's recorded shop layouts and offer rates, buys whatever is expected to grow past its price, and liquidates on floor Ⅴ. It earns 10 ingots per zone from other sources.</p>
-    <p data-l="zh">蒙特卡洛交易者在第Ⅱ–Ⅴ层进入秘境行商，货架按 MAA 记录的商店布局和出现率随机生成；它买入预计能涨过售价的自然物，并在第Ⅴ层全部卖出。每区域另有 10 源石锭的其他收入。</p></div>
+  <div class="prose"><p data-l="en">A Monte Carlo trader visits 秘境行商 on floors Ⅱ–Ⅴ, sees offers drawn from MAA's recorded shop layouts and offer rates, buys whatever is expected to grow past its price, and liquidates on floor Ⅴ. It earns 10 ingots per zone from other sources. With one visit per floor it makes about <b data-k="tradeBase">25</b> ingots per run, roughly a tenth of what routing is worth.</p>
+    <p data-l="zh">蒙特卡洛交易者在第Ⅱ–Ⅴ层进入秘境行商，货架按 MAA 记录的商店布局和出现率随机生成；它买入预计能涨过售价的自然物，并在第Ⅴ层全部卖出。每区域另有 10 源石锭的其他收入。每层进一次时，它每局约赚 <b data-k="tradeBase">25</b> 源石锭，大约是路线价值的十分之一。</p></div>
   <figure class="panel"><div id="tradeChart" class="chart"></div>
     <figcaption data-l="en"><b>Trading profit per run (ingots), mean with 10th–90th percentile.</b> “Slots held” is how much of the box movement parts and concept parts already occupy.</figcaption>
     <figcaption data-l="zh"><b>每局交易利润（源石锭），均值及 10%–90% 分位。</b>“占用格”指零件箱里已被加工品和概念体占去的格数。</figcaption></figure>
   <div class="rule-box"><b class="h"><span data-l="en">Rule</span><span data-l="zh">规则</span></b>
-    <p data-l="en">Plan routes through 秘境行商 on floors Ⅱ–Ⅳ before you buy capacity. Buy growth items early, because their growth compounds with every battle, move and recruit that follows. Sell everything on floor Ⅴ, as MAA's own trade profile does. 空间租赁 and 多边贸易 pay once your box is crowded with movement parts.</p>
-    <p data-l="zh">先让路线经过第Ⅱ–Ⅳ层的秘境行商，再考虑扩容。增值型自然物要早买，之后的每场作战、每次移动和招募都会让它继续增值。第Ⅴ层全部卖出，MAA 自己的交易配置也是这样做的。等零件箱被加工品挤满时，空间租赁和多边贸易分队才真正划算。</p></div>
+    <p data-l="en">Plan routes through 秘境行商 on floors Ⅱ–Ⅳ before you buy capacity. Buy growth items early, because their growth compounds with every battle, move and recruit that follows. Sell everything on floor Ⅴ, as MAA's own trade profile does. Extra capacity only pays when the box is nearly full of movement parts; 多边贸易's +8 per three sold is the bigger gain.</p>
+    <p data-l="zh">先让路线经过第Ⅱ–Ⅳ层的秘境行商，再考虑扩容。增值型自然物要早买，之后的每场作战、每次移动和招募都会让它继续增值。第Ⅴ层全部卖出，MAA 自己的交易配置也是这样做的。只有零件箱快被加工品塞满时，扩容才划算；多边贸易“卖 3 个 +8”的奖励才是更大的收益。</p></div>
 </section>
 
 <section id="info">

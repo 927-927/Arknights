@@ -63,7 +63,7 @@
   }
 
   // ---------- node contents ----------
-  const COMBAT = new Set(['battle', 'elite', 'duel', 'boss']);
+  const COMBAT = new Set(['battle', 'elite', 'duel', 'boss', 'savage', 'roamer']);
   const TYPE_INFO = {
     battle: ['作战', 'Battle'], elite: ['紧急作战', 'Emergency battle'], duel: ['狭路相逢', 'Duel'],
     incident: ['不期而遇', 'Encounter'], wish: ['得偿所愿', 'Wish'], rest: ['安全的角落', 'Safe corner'],
@@ -71,12 +71,13 @@
     sacrifice: ['失与得', 'Loss & gain'], expedition: ['先行一步', 'Go ahead'], light: ['羽瞰点', 'Lookout'],
     portal: ['误入奇境', 'Wonderland'], door: ['曲折密道', 'Tunnel'], empty: ['林间空地', 'Clearing'],
     final: ['险路尽头', 'Dead-end exit'], boss: ['险路恶敌', 'Boss exit'], evac: ['险路小径', 'Hidden exit'], start: ['起点', 'Start'],
+    savage: ['“居民”据点', 'Resident stronghold'], roamer: ['流窜的“居民”', 'Roaming resident'], fate: ['命运所指', 'Fate'],
   };
   // Content mix: relative weights. Not published by the game; adjustable assumption.
   const DEFAULT_MIX = { battle: 30, elite: 8, incident: 18, wish: 5, light: 5, rest: 5, shop: 4, scrap: 4, employ: 3, sacrifice: 3, expedition: 3, duel: 3, portal: 2, empty: 5 };
   const NOT_ON = { rest: [1], employ: [1, 6], sacrifice: [1, 6], expedition: [1, 5, 6], duel: [1, 2, 6] };
   // Value of completing each node, in ingot-equivalents (IE). Adjustable assumption.
-  const DEFAULT_VALUES = { battle: 6, elite: 12, duel: 9, incident: 9, wish: 12, rest: 10, shop: 5, scrap: 6, employ: 2, sacrifice: 5, expedition: 10, light: 0, portal: 6, door: 0, empty: 0, final: 0, boss: 0, evac: 0, start: 0 };
+  const DEFAULT_VALUES = { battle: 6, elite: 12, duel: 9, incident: 9, wish: 12, rest: 10, shop: 5, scrap: 6, employ: 2, sacrifice: 5, expedition: 10, light: 0, portal: 6, door: 0, empty: 0, final: 0, boss: 0, evac: 0, start: 0, savage: 16, roamer: 4, fate: 0 };
   const DEFAULT_PARAMS = {
     hopeIE: 3.33,        // 1 hope in ingots (桑尼的邀请: 3 hope = 10 ingots)
     carryIE: 3.33,       // value of 1 AP carried out through 险路小径
@@ -86,6 +87,7 @@
     bossPursuitIE: -6,   // boss floors: the pursuit version of the boss instead of the boss
     pEvac: 0.5,          // chance a non-boss floor has a 险路小径
     pDoor: 0.35,         // chance a floor has a pair of 曲折密道
+    realMix: true,       // sample each cell from the recorded P(type | floor, distance) (lubiao, 20,530 maps)
     secrecy: 0,
   };
 
@@ -108,8 +110,52 @@
     return { combat: cs / cw, non: ns / nw };
   }
 
+  // Recorded node mix by walking distance. Exits are fixed by the template, so they are left out.
+  const NOT_SAMPLED = new Set(['final', 'boss', 'fate', 'start']);
+  function distanceRow(floor, d) {
+    const nd = D && D.nodeDist && D.nodeDist[floor];
+    if (!nd) return null;
+    const ds = Object.keys(nd).map(Number).sort((a, b) => a - b);
+    const key = ds.includes(d) ? d : ds.reduce((best, x) => (Math.abs(x - d) < Math.abs(best - d) ? x : best), ds[0]);
+    const row = Object.entries(nd[key]).filter(([t]) => !NOT_SAMPLED.has(t));
+    return row.length ? row : null;
+  }
+  // What an unseen node is likely to be, given its floor, walking distance and icon (凶戾 hostile / 诡秘 mystery).
+  function deduce(floor, d, hostile) {
+    const ni = D && D.nodeIcon && D.nodeIcon[floor];
+    if (!ni) return null;
+    const ds = Object.keys(ni).map(Number);
+    const key = ds.includes(d) ? d : ds.reduce((best, x) => (Math.abs(x - d) < Math.abs(best - d) ? x : best), ds[0]);
+    const row = ni[key][hostile ? 'hostile' : 'mystery'];
+    const ent = Object.entries(row || {}).filter(([t]) => !NOT_SAMPLED.has(t));
+    const tot = ent.reduce((a, [, p]) => a + p, 0);
+    return tot > 0 ? ent.map(([t, p]) => [t, p / tot]) : null;
+  }
+  function deducedValue(floor, d, hostile, values) {
+    const post = deduce(floor, d, hostile);
+    if (!post) return null;
+    return post.reduce((a, [t, p]) => a + p * ((values || DEFAULT_VALUES)[t] ?? 0), 0);
+  }
+
+  function populateReal(m, r) {
+    const types = new Array(m.n).fill(null);
+    types[m.start] = 'start';
+    for (const e of m.exits) types[e] = m.exitType;
+    for (let i = 0; i < m.n; i++) if (!types[i]) types[i] = weightedPick(r, distanceRow(m.floor, m.dist[i]) || [['empty', 1]]);
+    // at most one hidden exit; tunnels come in pairs
+    const evacs = []; for (let i = 0; i < m.n; i++) if (types[i] === 'evac') evacs.push(i);
+    evacs.slice(1).forEach(i => { types[i] = 'empty'; });
+    if (m.exitType === 'boss' && evacs.length) types[evacs[0]] = 'empty';
+    const pair = new Int16Array(m.n).fill(-1);
+    const doors = []; for (let i = 0; i < m.n; i++) if (types[i] === 'door') doors.push(i);
+    for (let k = 0; k + 1 < doors.length; k += 2) { pair[doors[k]] = doors[k + 1]; pair[doors[k + 1]] = doors[k]; }
+    if (doors.length % 2) types[doors[doors.length - 1]] = 'empty';
+    return { types, pair };
+  }
+
   function populate(m, r, opts) {
     const o = Object.assign({}, DEFAULT_PARAMS, opts);
+    if (o.realMix && !o.mix && D && D.nodeDist && D.nodeDist[m.floor]) return populateReal(m, r);
     const types = new Array(m.n).fill(null);
     types[m.start] = 'start';
     for (const e of m.exits) types[e] = m.exitType;
@@ -356,7 +402,8 @@
         if (known) { bel[i] = actual[i]; if (isExitType(P.types[i])) exitKnown[i] = 1; }
         else {
           const combat = COMBAT.has(P.types[i]);
-          bel[i] = combat ? cat.combat : cat.non;
+          const ded = o.deduce !== false ? deducedValue(m.floor, m.dist[i], combat, o.values) : null;
+          bel[i] = ded != null ? ded : combat ? cat.combat : cat.non;
           btypes[i] = combat ? 'battle' : (P.types[i] === 'light' ? 'empty' : 'incident');
           if (isExitType(P.types[i])) btypes[i] = 'incident';
         }
@@ -583,7 +630,7 @@
   const BF = {
     D, rng, pick, weightedPick, MAPS, mapsOnFloor, buildMap, geometry, bfs,
     COMBAT, TYPE_INFO, DEFAULT_MIX, DEFAULT_VALUES, DEFAULT_PARAMS, floorMix, categoryMeans,
-    populate, solve, valuesFor, playZone, revealFrom, fitPrices, PRICE_VARS,
+    populate, populateReal, deduce, deducedValue, solve, valuesFor, playZone, revealFrom, fitPrices, PRICE_VARS,
     naturalGrowth, tradeRun, mean, quantile, isExitType,
   };
   root.BF = BF;

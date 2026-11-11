@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "topicId": "rogue_6",
+  "updatedAt": "2026-10-01T05:31:30.177904+00:00",
+  "denominator": "identified-utopia-within-floor",
+  "reviewStatus": "machine-observed",
+  "ideologies": [
+    {
+      "id": "blackstream-veins",
+      "name": "黑流地脉"
+    },
+    {
+      "id": "tilted-dune",
+      "name": "倾斜沙丘"
+    },
+    {
+      "id": "dewarming-rail",
+      "name": "去温栏"
+    },
+    {
+      "id": "micro-capsule",
+      "name": "微型胶囊"
+    },
+    {
+      "id": "storage-room",
+      "name": "储藏室"
+    },
+    {
+      "id": "fragile-alliance",
+      "name": "易碎同盟"
+    },
+    {
+      "id": "stopping-point",
+      "name": "停止点"
+    },
+    {
+      "id": "diffused-mist",
+      "name": "弥散虚雾"
+    },
+    {
+      "id": "brave-new-land",
+      "name": "美丽新大地"
+    },
+    {
+      "id": "hopeful-soil",
+      "name": "希望的沃土"
+    }
+  ],
+  "floors": [
+    {
+      "id": "1",
+      "label": "I",
+      "sampleCount": 142,
+      "counts": {
+        "blackstream-veins": 0,
+        "tilted-dune": 21,
+        "dewarming-rail": 23,
+        "micro-capsule": 13,
+        "storage-room": 17,
+        "fragile-alliance": 17,
+        "stopping-point": 24,
+        "diffused-mist": 27,
+        "brave-new-land": 0,
+        "hopeful-soil": 0
+      }
+    },
+    {
+      "id": "2",
+      "label": "II",
+      "sampleCount": 590,
+      "counts": {
+        "blackstream-veins": 79,
+        "tilted-dune": 67,
+        "dewarming-rail": 71,
+        "micro-capsule": 75,
+        "storage-room": 70,
+        "fragile-alliance": 75,
+        "stopping-point": 74,
+        "diffused-mist": 72,
+        "brave-new-land": 7,
+        "hopeful-soil": 0
+      }
+    },
+    {
+      "id": "3",
+      "label": "III",
+      "sampleCount": 1212,
+      "counts": {
+        "blackstream-veins": 129,
+        "tilted-dune": 148,
+        "dewarming-rail": 145,
+        "micro-capsule": 142,
+        "storage-room": 147,
+        "fragile-alliance": 168,
+        "stopping-point": 152,
+        "diffused-mist": 156,
+        "brave-new-land": 16,
+        "hopeful-soil": 9
+      }
+    },
+    {
+      "id": "4",
+      "label": "IV",
+      "sampleCount": 1168,
+      "counts": {
+        "blackstream-veins": 129,
+        "tilted-dune": 138,
+        "dewarming-rail": 133,
+        "micro-capsule": 133,
+        "storage-room": 120,
+        "fragile-alliance": 119,
+        "stopping-point": 129,
+        "diffused-mist": 143,
+        "brave-new-land": 6,
+        "hopeful-soil": 118
+      }
+    },
+    {
+      "id": "4R",
+      "label": "IV追忆",
+      "sampleCount": 3,
+      "counts": {
+        "blackstream-veins": 0,
+        "tilted-dune": 0,
+        "dewarming-rail": 0,
+        "micro-capsule": 0,
+        "storage-room": 0,
+        "fragile-alliance": 0,
+        "stopping-point": 0,
+        "diffused-mist": 0,
+        "brave-new-land": 0,
+        "hopeful-soil": 3
+      }
+    },
+    {
+      "id": "5",
+      "label": "V",
+      "sampleCount": 1140,
+      "counts": {
+        "blackstream-veins": 125,
+        "tilted-dune": 124,
+        "dewarming-rail": 146,
+        "micro-capsule": 130,
+        "storage-room": 127,
+        "fragile-alliance": 142,
+        "stopping-point": 122,
+        "diffused-mist": 134,
+        "brave-new-land": 10,
+        "hopeful-soil": 80
+      }
+    }
+  ],
+  "audit": {
+    "inputMaps": 19901,
+    "excluded": {
+      "unknown": 15425,
+      "conflict": 207,
+      "unknown_title_or_floor": 14
+    },
+    "sourceSha256": "a9db1ed8653f74ee41d85a4a71daa65d154454f080e4047dec03bb1fab04a644"
+  },
+  "sampleCount": 4255
+}
